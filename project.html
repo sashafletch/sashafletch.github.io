@@ -3,34 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>Lupo Cloud Storage</title>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+      <link rel="stylesheet" type="text/css" href="styles/style.css">
+      <link rel="stylesheet" type="text/css" href="styles/lupo.css">
+      <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:400,600,600i,700|Raleway:300,400,500,600" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   </head>
   <body>
-    <aside>
-      <img id="logo" src="images/logo.png" alt="F">
-    </aside>
-      <nav class="nav_main">
-        <ul>
-          <li>Work</li>
-            <ul>
-              <li><a href="#">Lupo Cloud Storage</a></li>
-              <li><a href="#">Ruck</a></li>
-            </ul>
-          <li>Contact</li>
-            <ul>
-              <li><a href="mailto:rashaafletcher@gmail.com">Email</a></li>
-              <li><a href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">LinkedIn</a></li>
-              <li><a href="https://github.com/sashafletch">Github</a></li>
-            </ul>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">About Me</a></li>
-        </ul>
-      </nav>
+    <section>
+      <aside id="sidebar">
+      </aside>
+        <header>
+          <div>
+            <div>
+              <img id="logo" src="images/logo.png" alt="F">
+            </div>
+            <div class="top-right">
+                <nav>
+                  <ul class="nav_main">
+                    <li class="nav-item whiteNavItem dropdown">Work</li>
+                        <ul class="dropdown-content">
+                          <li class="dropdown-nav-item"><a href="#">Lupo Cloud Storage</a></li>
+                          <li class="dropdown-nav-item"><a href="#">Ruck</a></li>
+                        </ul>
+                    <li class="nav-item whiteNavItem"><a href="#">About Me</a></li>
+                    <li class="nav-item whiteNavItem"><a href="#">Resume</a></li>
+                    <li class="nav-item whiteNavItem dropdown">Contact</li>
+                      <ul class="dropdown-content">
+                        <li class="dropdown-nav-item"><a href="mailto:rashaafletcher@gmail.com">Email</a></li>
+                        <li class="dropdown-nav-item"><a href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">LinkedIn</a></li>
+                        <li class="dropdown-nav-item"><a href="https://github.com/sashafletch">Github</a></li>
+                      </ul>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <img class="hero" src="images/woman_working.jpg" alt="Woman Working">
+        </header>
+    </section>
     <main>
   <!--hero content-->
       <section>
-        <header class="container">
-          <img src="images/woman_working.jpg" alt="Woman Working">
-          <div class="row">
+        <header>
+          <div class="row container">
             <div class="column one-half">
               <h3 class="text-center">A digital workplace for concentrative and collaborative work</h3>
               <a class="button text-center" href="">View Prototype</a>
@@ -90,16 +106,16 @@
   <!--Lupo Overview-->
       <section>
           <header class="slider">
-            <h1 class="vertical_line">Lupo Cloud Storage</h1>
+            <h2 class="vertical_line">Lupo Cloud Storage</h2>
             <p>Cloud storage has become a staple tool for users and has shifted how they work, interact, and share information. However, while there are many platforms, there is still room for changing interactions on the cloud. Lupo is a cloud storage site that focuses on collaboration, capitalizing on the rise of remote work across industries.</p>
           </header>
           <div class="row container">
             <div class="column one-half">
-              <h2>The Challenge</h2>
+              <h3>The Challenge</h3>
               <p>The cloud storage and organization market is relatively young but has helped shape how information is stored and shared. But many advanced features are not accessible under a free subscription and collaborative options are limited even under paid options.</p>
             </div>
             <div class="column one-half">
-              <h2>The Solution</h2>
+              <h3>The Solution</h3>
               <p>Lupo extends collaborative features by allowing users to develop teams with a team lead, keeping all members up-to-date about changes to documents and other files. Team members can add text, video, and audio comments; diversifying methods of collaboration inspires more creativity and furthers communication.</p>
             </div>
           </div>
@@ -107,14 +123,14 @@
   <!--Discovery-->
       <section>
         <header id="discovery">
-          <h1 class="vertical_line">Discovery</h1>
+          <h2 class="vertical_line">Discovery</h2>
         </header>
         <div class="container">
   <!--Competitive Analysis-->
-          <h2>The Competition</h2>
+          <h3>The Competition</h3>
           <div class="row">
             <div class="column one-half polygon">
-              <h3>Data Storage Options</h3>
+              <h4>Data Storage Options</h4>
               <div class="row">
                 <div class="column one-third">
                   <img src="images/onedrive.png" alt="Microsoft OneDrive">
@@ -125,7 +141,7 @@
               </div>
             </div>
             <div class="column one-half polygon">
-              <h3>Limited Collaborative Options</h3>
+              <h4>Limited Collaborative Options</h4>
               <div class="row">
                 <div class="column one-third">
                   <img src="images/drive.png" alt="Google Drive">
@@ -137,7 +153,7 @@
             </div>
           </div>
           <div class="center polygon">
-            <h3>Consistency</h3>
+            <h4>Consistency</h4>
             <div class="row">
               <div class="column one-third">
                 <img src="images/dropbox.png" alt="Dropbox">
@@ -148,7 +164,7 @@
             </div>
           </div>
   <!--User Research-->
-          <h2>Early Insights</h2>
+          <h3>Early Insights</h3>
           <p>To understand what users are looking for in cloud storage, I conducted a survey that was posted online through various social media platforms and public forums. I also wanted to better understand how users viewed major cloud storage sites like Google Drive and Dropbox; what did they think was missing?</p>
       <!--Slideshow-->
           <div class="slideshow-container">
@@ -181,7 +197,7 @@
         </div>
         <br>
   <!--User Personas-->
-        <h2>User Personas</h2>
+        <h3>User Personas</h3>
         <p>To better understand the needs of users, I then conducted two interviews from survey participants: </p>
         <div class="row">
           <div class="column one-half text-center">
@@ -192,11 +208,11 @@
               <li>Profession:IT</li>
             </ul>
             <div class="polygon">
-              <h3>Motivation</h3>
+              <h4>Motivation</h4>
               <p>Kara first began using Dropbox as a free option but eventually outgrew it and disliked their pricing options. Actively looking for the best value platform, she switched from Box and others before finally settling on Mega.nz.</p>
             </div>
             <div class="polygon">
-              <h3>Frustration</h3>
+              <h4>Frustration</h4>
               <ul>
                 <li>Cost</li>
                 <li>Untrustworthy</li>
@@ -211,11 +227,11 @@
               <li>Profession: Teacher</li>
             </ul>
             <div class="polygon">
-              <h3>Motivation</h3>
+              <h4>Motivation</h4>
               <p>To better meet the needs of a more tech-focused generation, he hopes that using the collaborative features in cloud storage platforms like Google Drive will help keep his students motivated and make them feel better supported.</p>
             </div>
             <div class="polygon">
-              <h3>Frustration</h3>
+              <h4>Frustration</h4>
               <ul>
                 <li>No audio/video option</li>
                 <li>Sharing cumbersome</li>
@@ -237,10 +253,10 @@
   <!--Information Architecture-->
       <section>
         <header id="information">
-          <h1 class="vertical_line">Information Architecture</h1>
+          <h2 class="vertical_line">Information Architecture</h2>
         </header>
         <div class="container">
-          <h2>The User</h2>
+          <h3>The User</h3>
           <p>Many users try to utilize features of collaboration and expect that in their chosen platform. In contrast to others, Lupo focuses on collaboration as the main purpose of the cloud. The MVP focused on providing the following user stories:</p>
           <ul id="userstories">
             <li>Search for a file</li>
@@ -252,7 +268,7 @@
           <a class="button" href="#">View User Stories</a>
           <br>
   <!--User Flows-->
-          <h2>The Flow</h2>
+          <h3>The Flow</h3>
           <div class="row">
             <div class="column one-half">
               <p><i>Onboarding</i></p>
@@ -266,7 +282,7 @@
           </div>
           <br>
   <!--Sketches/Wireframes-->
-          <h2>Sketches and Wireframes</h2>
+          <h3>Sketches and Wireframes</h3>
           <div class="row">
             <div class="column one-half">
               <img src="images/landing_page_sketch.jpg" alt="Landing Page Sketch">
@@ -288,11 +304,11 @@
   <!--Branding-->
       <section>
         <header class="vertical_line" id="branding">
-          <h1>Branding & Identity</h1>
+          <h3>Branding & Identity</h3>
         </header>
         <div class="container">
           <div class="slider">
-            <h2 id="black_h2">The Logo</h2>
+            <h3 id="black_h3">The Logo</h3>
             <div class="banner">
               <img src="images/sketch1.png" alt="Logo Sketch 1">
               <img src="images/sketch2.png" alt="Logo Sketch 2">
@@ -370,7 +386,7 @@
           </section>
     <!--User Testing-->
           <section class="container">
-            <h2>The Tests</h2>
+            <h3>The Tests</h3>
             <article class="slider">
               <p>Before finalizing my high-fidelity mockups, there were still a few questions I had concerning the user interface. So, I conducted preference tests on Usabilityhub to better inform my design process. The first preference test  looked at the organization of comments on the document home page, the second compared the color of the sign-up page, and the final preference test compared the design of the landing page. Initial usability tests showed that users were focusing on different areas of the page upon it’s initiation, subtly suggesting a weak visual hierarchy and organization. </p>
             </article>
@@ -423,10 +439,10 @@
   <!--Final Design-->
           <section>
             <header id="finalDesign">
-              <h1 class="vertical_line">Final Design</h1>
+              <h2 class="vertical_line">Final Design</h2>
             </header>
             <div class="container">'
-              <h2>The MVP</h2>
+              <h3>The MVP</h3>
               <div class="create_goal">
                 <p class="mvpFont"><span class="semibold_italic">Create</span> a brand that is trustworthy</p>
                 <img src="images/landing_closeup.png" alt="Landing Page CloseUp">
@@ -471,8 +487,8 @@
               </div>
               <br>
       <!--Final Thoughts-->
-              <h2>Final Thoughts</h2>
-              <h2 class="black_h2 text-center"><i>Patience is key</i></h2>
+              <h3>Final Thoughts</h3>
+              <h3 class="black_h3 text-center"><i>Patience is key</i></h3>
                 <div class="polygon">
                   <p>While there were many triumphs in the completion of this project primarily because of user feedback, market research, and user testing, there were also some lessons I learned as a designer. One of my main mistakes working on this project was my inclination to change direction based on an individual user’s opinion without carefully considering whether their opinion was an outlier or representative of the norm. Moving forward, I would be more persistent in clarifying the distinction so as not to make arbitrary changes to a design at the expense of other users.<br>Furthermore, I think it is important that I spend more time further developing my sketches. When starting a new project, my excitement often drives me to want to begin designing the interface as soon as possible. However, especially in larger projects, it is very important to fully explore all possible alternatives before deciding on a final design. I think had I worked slower in the beginning, there wouldn’t have been a need for as many small iterations from simple mistakes or gaps in user input. Moving forward, my main goal as a designer will be to further develop my patience in the Strategy phase.
                   </p>
@@ -489,29 +505,21 @@
             </div>
           </div>
         </main>
-          <footer>
-            <div class="container">
-              <div class="row">
-                <div class="one-half column footer-copy">
-                  <p class="copyright">© 2018 Sasha Fletcher/Designed and Developed by Sasha Fletcher</p>
-                </div>
-    <!--Footer Icons-->
-                <div class="one-half column footer-icons">
-                  <a href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">
-                    <img class="linkedin-icon" src="images/linkedin-logo.svg">
-                  </a>
-                  <a href="https://twitter.com/Sasha_Fletch">
-                    <img class="twitter-icon" src="images/twitter-logo-silhouette.svg">
-                  </a>
-                  <a href="https://www.facebook.com/rashaa.fletcher">
-                    <img class="facebook-icon" src="images/facebook-logo.svg">
-                  </a>
-                  <a href="https://github.com/sashafletch">
-                    <img class="github-icon" src="images/github-character.svg">
-                  </a>
-                </div>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="column footer-copy">
+                <p class="copyright">© 2018 Sasha Fletcher/Designed and Developed by Sasha Fletcher</p>
+              </div>
+              <!--Footer Icons-->
+              <div class="column footer-icons">
+                <a href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/" class="fa fa-linkedin"></a>
+                <a href="https://twitter.com/Sasha_Fletch" class="fa fa-twitter"></a>
+                <a href="https://www.facebook.com/rashaa.fletcher" class="fa fa-facebook"></a>
+                <a href="https://github.com/sashafletch" class="fa fa-github"></a>
               </div>
             </div>
-          </footer>
+          </div>
+        </footer>
       </body>
 </html>

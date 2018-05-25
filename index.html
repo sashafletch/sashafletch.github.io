@@ -2,75 +2,102 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Fletch Designs</title>
+    <title>Portolio | Sasha Fletcher</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/landing.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:400,600,600i,700|Raleway:300,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   </head>
   <body>
-    <aside>
-      <img id="logo" src="images/logo.png" alt="F">
-    </aside>
-      <nav class="nav_main">
-        <ul>
-          <li>Work</li>
-            <ul>
-              <li><a href="#">Lupo Cloud Storage</a></li>
-              <li><a href="#">Ruck</a></li>
-            </ul>
-          <li>Contact</li>
-            <ul>
-              <li><a href="mailto:rashaafletcher@gmail.com">Email</a></li>
-              <li><a href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">LinkedIn</a></li>
-              <li><a href="https://github.com/sashafletch">Github</a></li>
-            </ul>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">About Me</a></li>
-        </ul>
-      </nav>
+    <section>
+      <aside id="sidebar">
+      </aside>
+        <header>
+          <div class="header-inner">
+            <div>
+              <img id="logo" src="images/logo.png" alt="F">
+            </div>
+            <div class="top-right">
+                <nav>
+                  <ul class="nav_main white_background">
+                    <li class="nav-item greyNavItem dropdown">Work</li>
+                        <ul class="dropdown-content">
+                          <li class="dropdown-nav-item"><a href="#">Lupo Cloud Storage</a></li>
+                          <li class="dropdown-nav-item"><a href="#">Ruck</a></li>
+                        </ul>
+                    <li class="nav-item greyNavItem"><a href="#">About Me</a></li>
+                    <li class="nav-item greyNavItem"><a href="#">Resume</a></li>
+                    <li class="nav-item greyNavItem dropdown">Contact</li>
+                      <ul class="dropdown-content">
+                        <li class="dropdown-nav-item"><a href="mailto:rashaafletcher@gmail.com">Email</a></li>
+                        <li class="dropdown-nav-item"><a href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">LinkedIn</a></li>
+                        <li class="dropdown-nav-item"><a href="https://github.com/sashafletch">Github</a></li>
+                      </ul>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+    </section>
     <main>
-      <header>
-        <h1>Sasha Fletcher</h1>
-        <p>Hello! I am a UX/UI Designer based in Oakland, CA. As a designer, I focus on developing creative design solutions to build inclusive and exciting experiences for users.</p>
-      </header>
-      <!--Projects-->
-      <section class="slide lupo">
-        <div class="container">
-          <h3>Lupo</h3>
-          <p>A cloud storage platform for telecommuters</p>
-          <a class="button" href="projects/lupo">Learn More</a>
+      <section class="intro">
+        <div>
+          <h1 class="fadeInDown">Sasha Fletcher</h1>
+          <div class="line"></div>
+          <p class="fadeInDelay">Hello! I am a <b>UX/UI Designer</b> based in <b>Oakland, CA.</b><br> I focus on developing creative design solutions to build inclusive and exciting experiences for users.</p>
+        </div>
+        <div class="see_more fadeInDelay2">
+          <i class="fa fa-arrow-down column bounce"></i>
+          <p class="column">Scroll down to see more!</p>
         </div>
       </section>
-      <section class="slide ruck">
-        <div class="container">
-          <h3>Ruck</h3>
-          <p>A rugby-inspired mobile fitness app</p>
-        </div>
+      <!--Projects-->
+      <section class="grid">
+          <figure class="effect-chico">
+            <img src="images/woman_working.jpg" alt="Woman working on computer">
+            <figcaption class="container">
+              <h3>Lupo</h3>
+              <p>A cloud storage platform for telecommuters</p>
+              <a href="projects/lupo"></a>
+            </figcaption>
+          </figure>
+          <figure class="effect-chico">
+            <img src="images/people_workout.jpg" alt="People working out">
+            <figcaption class="container">
+              <h3>Ruck</h3>
+              <p>A rugby-inspired mobile fitness app</p>
+              <!-- <a class="button projectbtn" href="projects/lupo">Learn More</a> -->
+            </figcaption>
+          </figure>
       </section>
       <!--About Me-->
       <section class="about">
         <div class="container">
           <h2 class="vertical_line">About Me</h2>
-          <div class="row">
-            <div class="column">
+          <div class="row about_me">
+            <div class="column one-half">
               <p>My road to UX Design has been filled with a lot of twists and turns, but <b>my background in psychology, anthropology, and education has informed my design experience, helping me to build creative and empathetic solutions for users.</b></p>
               <p>For most of my life, I intended to become a psychotherapist or work in psychology research because of the field’s focus on improving other’s lived experiences through communication and analysis. I have always had a desire to understand behaviors by carefully evaluating cognitive processes. Whether I was seeing psychology through a social lens or a neurological lens, I was consistently <b>fascinated by the influences behind individual behavior and thinking.</b></p>
               <p>My road to UX Design has been filled with a lot of twists and turns, but my background in psychology, anthropology, and education has informed my design experience, helping me to build creative and empathetic solutions for users.For most of my life, I intended to become a psychotherapist or work in psychology research because of the field’s focus on improving other’s lived experiences through communication and analysis. I have always had a desire to understand behaviors by carefully evaluating cognitive processes. Whether I was seeing psychology through a social lens or a neurological lens, I was consistently fascinated by the influences behind individual behavior and thinking.However, I soon discovered I preferred UX design over traditional psychology research; <b>UX seeks to provide research that can inform decision making and directly influence the experiences of the everyday user.</b> It also doesn’t completely isolate research from practice; UX covers everything that initially inspired me within my undergraduate education.
               </p>
-              </div>
-            <div class="column">
-              <img src="images/sasha.jpg" alt="Sasha">
+            </div>
+            <div class="column one-half">
+              <img id="sashapic" class="fadeInUp" src="images/sasha.jpg" alt="Sasha">
             </div>
           </div>
           <a class="button" href="about">Learn More</a>
         </div>
       </section>
       <!--Skills Section-->
-      <section class="skills">
+      <section>
         <div class="container">
           <h2 class="vertical_line">My Skills</h2>
-          <div class="row">
+          <div class="row skills">
             <div class="one-third column">
               <h3>UX Design</h3>
-              <ul>
+              <ul class="skills_list">
                 <li>User Research</li>
                 <li>Branding Identity</li>
                 <li>Information Architecture</li>
@@ -82,7 +109,7 @@
             </div>
             <div class="one-third column">
               <h3>Design Tools</h3>
-              <ul>
+              <ul class="skills_list">
                 <li>Balsamiq</li>
                 <li>Figma</li>
                 <li>Adobe Illustrator</li>
@@ -94,7 +121,7 @@
             </div>
             <div class="one-third column">
               <h3>Frontend</h3>
-              <ul>
+              <ul class="skills_list">
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>Javascript</li>
@@ -110,17 +137,17 @@
       <!--Contact Me-->
       <section class="contact">
         <div class="container">
-          <h2>Get in Touch</h2>
-          <p>Interested in getting to know more about my work, want to work together or just want to chat about UX? Contact me today!</p>
+          <h2 class="vertical_line">Get in Touch</h2>
+          <p>Interested in getting to know more <br>about my work, want to work together <br>or just want to chat about UX? <br>Contact me today!</p>
           <div class="row">
-            <div class="one-fifth column">
-              <a class="button" href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">LinkedIn</a>
+            <div class="column">
+              <a class="contactbtn" href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">LinkedIn</a>
             </div>
-            <div class="one-fifth column">
-              <a class="button" href="mailto:rashaafletcher@gmail.com">Email</a>
+            <div class="column">
+              <a class="contactbtn" href="mailto:rashaafletcher@gmail.com">Email</a>
             </div>
-            <div class="one-fifth column">
-              <a class="button" href="https://github.com/sashafletch">Github</a>
+            <div class="column">
+              <a class="contactbtn" href="https://github.com/sashafletch">Github</a>
             </div>
           </div>
         </div>
@@ -129,23 +156,15 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="one-half column footer-copy">
+          <div class="column footer-copy">
             <p class="copyright">© 2018 Sasha Fletcher/Designed and Developed by Sasha Fletcher</p>
           </div>
           <!--Footer Icons-->
-          <div class="one-half column footer-icons">
-            <a href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">
-              <img class="linkedin-icon" src="images/linkedin-logo.svg">
-            </a>
-            <a href="https://twitter.com/Sasha_Fletch">
-              <img class="twitter-icon" src="images/twitter-logo-silhouette.svg">
-            </a>
-            <a href="https://www.facebook.com/rashaa.fletcher">
-              <img class="facebook-icon" src="images/facebook-logo.svg">
-            </a>
-            <a href="https://github.com/sashafletch">
-              <img class="github-icon" src="images/github-character.svg">
-            </a>
+          <div class="column footer-icons">
+            <a href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/" class="fa fa-linkedin"></a>
+            <a href="https://twitter.com/Sasha_Fletch" class="fa fa-twitter"></a>
+            <a href="https://www.facebook.com/rashaa.fletcher" class="fa fa-facebook"></a>
+            <a href="https://github.com/sashafletch" class="fa fa-github"></a>
           </div>
         </div>
       </div>
