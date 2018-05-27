@@ -1,7 +1,84 @@
-.whiteNavItem {
+.lupo_header {
+  background: linear-gradient( rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20) ), url("../images/woman_working.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 440px;
+  margin-top: 0;
+  max-width: 100%;
+}
+
+#discovery {
+  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ), url("../images/glasses.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 40%;
+  height: 250px;
+  margin-top: 0;
+  max-width: 100%;
+}
+
+#information {
+  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ), url("../images/woman_writing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 60%;
+  color: #F2F2F2;
+  height: 250px;
+  margin-top: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+#branding {
+  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ), url("../images/colored_pencils.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 17%;
+  color: #F2F2F2;
+  height: 250px;
+  margin-top: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+#core1, #core2, #core3 {
   color: #FFF;
 }
 
-.whiteNavItem:hover {
-  color: #9c9c9c;
+#core1 {
+  background-color: #2A004A;
+}
+
+#core2 {
+  background-color: #4E008A;
+}
+
+#core3 {
+  background-color: #F7A800;
+}
+
+#support1 {
+  background-color: #FEFEFA;
+  border: .25px solid #000;
+}
+
+#support2 {
+  background-color: #FFF600;
+}
+
+#support3 {
+  background-color: #B067DF;
+}
+
+#font_poiret {
+  font-family: 'Poiret One', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+#font_lato {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 75px;
+  margin-top: 0;
 }
