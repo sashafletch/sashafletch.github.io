@@ -5,6 +5,7 @@
     <title>Lupo Cloud Storage</title>
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
       <link rel="stylesheet" type="text/css" href="styles/style.css">
+      <link rel="stylesheet" type="text/css" href="styles/project.css">
       <link rel="stylesheet" type="text/css" href="styles/lupo.css">
       <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:400,600,600i,700|Raleway:300,400,500,600" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Lato:300|Poiret+One" rel="stylesheet">
@@ -29,8 +30,8 @@
                         <li class="dropdown-nav-item"><a href="#">Ruck</a></li>
                       </ul>
                     </li>
-                    <li class="nav-item whiteNavItem"><a href="#">About Me</a></li>
-                    <li class="nav-item whiteNavItem"><a href="#">Resume</a></li>
+                    <li class="nav-item whiteNavItem" id="nav_about"><a href="#">About Me</a></li>
+                    <li class="nav-item whiteNavItem" id="nav_resume"><a href="#">Resume</a></li>
                     <li class="nav-item whiteNavItem dropdown"><a href="#">Contact</a>
                       <ul class="dropdown-content">
                         <li class="dropdown-nav-item"><a href="mailto:rashaafletcher@gmail.com">Email</a></li>
@@ -340,7 +341,7 @@
         </header>
         <div class="slider inline" id="thelogo">
           <div class="container">
-            <h3 id="black_h3">The Logo</h3>
+            <h3 class="white_h3">The Logo</h3>
             <div class="banner">
               <div class="row1-sketch">
                 <img id="logo_sketch1" src="images/sketch1.png" alt="Logo Sketch 1">
@@ -381,7 +382,7 @@
         </div>
         <p>Both mood boards used orange as a highlight because of its association with stimulating mental activity. Both were also meant to uphold the general brand themes I had chosen for Lupo based on market research: dynamic, vibrant, sophisticated, professional.</p>
     <!--Typography-->
-        <article>
+        <article class="clearfix">
           <aside id="article_content" class="column">
             <p id="font_poiret">Poiret One</p>
             <p id="font_lato">Lato</p>
@@ -419,64 +420,83 @@
     </div>
   </section>
     <!--User Testing-->
-          <section class="container">
-            <h3>The Tests</h3>
+          <section>
+            <h3 class="container">The Tests</h3>
             <article class="slider">
-              <p>Before finalizing my high-fidelity mockups, there were still a few questions I had concerning the user interface. So, I conducted preference tests on Usabilityhub to better inform my design process. The first preference test  looked at the organization of comments on the document home page, the second compared the color of the sign-up page, and the final preference test compared the design of the landing page. Initial usability tests showed that users were focusing on different areas of the page upon it’s initiation, subtly suggesting a weak visual hierarchy and organization. </p>
+              <div class="container">
+                <p>Before finalizing my high-fidelity mockups, there were still a few questions I had concerning the user interface. So, I conducted preference tests on Usabilityhub to better inform my design process. The first preference test  looked at the organization of comments on the document home page, the second compared the color of the sign-up page, and the final preference test compared the design of the landing page. Initial usability tests showed that users were focusing on different areas of the page upon it’s initiation, subtly suggesting a weak visual hierarchy and organization. </p>
+              </div>
             </article>
-            <div class="row">
-              <div class="column one-third">
-                <img src="images/dochome_v1.png" alt="Document Page Version 1">
-                <img src="images/dochome_v2.png" alt="Document Page Version 2">
-                <div class="percent">
-                  <p>80%</p>
-                </div>
-              </div>
-              <div class="column one-third">
-                <img src="images/purple_signup.png" alt="Purple Sign Up Page">
-                <img src="images/white_signup.png" alt="White Sign Up Page">
-                <div class="percent">
-                  <p>60%</p>
-                </div>
-              </div>
-              <div class="column one-third">
-                <img src="images/land_v1.png" alt="Landing Page Version 1">
-                <img src="images/land_v2.png" alt="Landing Page Version 2">
-                <div class="percent">
-                  <p>75%</p>
-                </div>
+          <div class="container preference-tests">
+            <div class="preferencerow1">
+              <div class="column">
+                <img id="preference1a" src="images/dochome_v1.png" alt="Document Page Version 1">
+                <img id="preference2a" src="images/purple_signup.png" alt="Purple Sign Up Page">
+                <img id="preference3a" src="images/land_v1.png" alt="Landing Page Version 1">
               </div>
             </div>
-              <div class="row">
-                <blockquote class="column one-half">
-                  <p class="bold_italic">“I think the files on the home page should be the same size”</p>
-                </blockquote>
-                <blockquote class="column one-half">
-                  <p class="bold_italic">“The purple navigation is a bit too feminine”</p>
-                </blockquote>
+            <div class="preferencerow2">
+              <div class="column">
+                <img id="preference1b" src="images/dochome_v2.png" alt="Document Page Version 2">
+                <img id="preference2b" src="images/white_signup.png" alt="White Sign Up Page">
+                <img id="preference3b" src="images/land_v2.png" alt="Landing Page Version 2">
               </div>
-              <div>
-                <aside class="old_mock">
-                  <img src="images/home_purple.png" alt="Home Page First Version">
-                  <img src="images/account_purple.png" alt="Account Settings First Version">
-                </aside>
-                <aside class="new_mock">
-                  <img src="images/home_white.png" alt="Home Page Final Version">
-                  <img src="images/account_white.png" alt="Account Settings Final Version">
-                </aside>
+            </div>
+            <div class="preference-results">
+              <div class="percent" id="percent1">
+                <p>80%</p>
               </div>
-            <a class="button" href="#">View Full Results</a>
-            <article class="slider">
+              <div class="percent" id="percent2">
+                <p>60%</p>
+              </div>
+              <div class="percent"id="percent3">
+                <p>75%</p>
+              </div>
+            </div>
+          </div>
+          <div class="container clearfix">
+            <blockquote class="column">
+              <p class="bold_italic"><b>“I think the files on the home page should be the same size”</b></p>
+            </blockquote>
+            <blockquote class="column">
+              <p class="bold_italic"><b>“The purple navigation is a bit too feminine”</b></p>
+            </blockquote>
+          </div>
+          <div class="container" id="mockups">
+            <div class="row">
+              <div class="column forty-five">
+                <img id="mock1a" src="images/home_purple.png" alt="Home Page First Version">
+                <img id="mock2a" src="images/account_purple.png" alt="Account Settings First Version">
+              </div>
+              <div class="column bullet-listing ten">
+                <div class="wrapper">
+                  <span class="bullet"></span>
+                  <div class="vertical-line"></div>
+                  <span class="bullet"></span>
+                </div>
+              </div>
+              <div class="column forty-five">
+                <img id="mock1b" src="images/home_white.png" alt="Home Page Final Version">
+                <img id="mock2b" src="images/account_white.png" alt="Account Settings Final Version">
+              </div>
+            </div>
+            <a class="button bigbutton" href="#">View Full Results</a>
+          </div>
+        </section>
+        <section class="wrap">
+          <article class="slider inline" id="testcontent">
+            <div class="container">
               <p>Along with preference tests, I conducted a few more usability tests before completing my final design. Usability tests  generated some important additional information that users preferred to see, such as including pricing information on the Account Settings home page, adding a leader to the group profile, the ability for users to make certain documents public to invite collaboration, and including the name of the document the users last collaborated on.</p>
-            </article>
-          </section>
+            </div>
+          </article>
   <!--Final Design-->
-          <section>
-            <header id="finalDesign">
+            <header class="inline" id="finalDesign">
               <h2>Final Design</h2>
               <div class="horizontal_line"></div>
             </header>
-            <div class="container">'
+          </section>
+          <section class="closeups">
+            <div class="container clearfix">'
               <h3>The MVP</h3>
               <div class="create_goal">
                 <p class="mvpFont"><span class="semibold_italic">Create</span> a brand that is trustworthy</p>
@@ -486,7 +506,7 @@
               <div class="allow_goal">
                 <p class="mvpFont"><span class="semibold_italic">Allow</span> users to customize</p>
                 <img src="images/user_home_closeup.png" alt="Home Page CloseUp">
-                <p id="allow_content">Customizable features, such as tags, folders, and favorites. All three allow users to stay organized and productive in their own way.</p>
+                <p id="allow_content">Lupo provides customizable features, such as tags, folders, and favorites. Users also have the ability to customize their dashboard by dragging and <br>dropping folders, tags, categories, or contact group files.</p>
               </div>
               <div>
                 <div class="extend_goal1">
@@ -504,38 +524,49 @@
                 <img src="images/account_closeup.png" alt="Document Page CloseUp">
                 <p id="cost_content">Lupo provides users with multiple subscription options, ranging from 5Gb to unlimited data. Collaborative features are also not limited to just paid subscribers.</p>
               </div>
-              <article class="slider">
-                <p>Cloud storage sites tend to be simplistic and rather dull. If Lupo is to replace the traditional work environment, it needed to be engaging. Lupo responds to this need by providing an interface that is dynamic and vibrant while still maintaining a level of sophistication and professionalism. The right workplace is key to increasing employee peace of mind and productivity.</p>
-              </article>
-    <!--Prototypes-->
-              <div>
-                <div id="lupo_web">
-                  <p><i>Web</i></p>
-                  <img src="images/lupo_web.png" alt="Web Prototype">
-                  <a class="button" href="#">View Prototype</a>
-                </div>
-                <div id="lupo_mobile">
-                  <p><i>Mobile</i></p>
-                  <img src="images/lupo_mobile.png" alt="Mobile Prototype">
-                  <a class="button" href="#">View Prototype</a>
-                </div>
-              </div>
-              <br>
-      <!--Final Thoughts-->
-              <h3>Final Thoughts</h3>
-              <h3 class="black_h3"><i>Patience is key</i></h3>
-                <div>
-                  <p>While there were many triumphs in the completion of this project primarily because of user feedback, market research, and user testing, there were also some lessons I learned as a designer. One of my main mistakes working on this project was my inclination to change direction based on an individual user’s opinion without carefully considering whether their opinion was an outlier or representative of the norm. Moving forward, I would be more persistent in clarifying the distinction so as not to make arbitrary changes to a design at the expense of other users.<br>Furthermore, I think it is important that I spend more time further developing my sketches. When starting a new project, my excitement often drives me to want to begin designing the interface as soon as possible. However, especially in larger projects, it is very important to fully explore all possible alternatives before deciding on a final design. I think had I worked slower in the beginning, there wouldn’t have been a need for as many small iterations from simple mistakes or gaps in user input. Moving forward, my main goal as a designer will be to further develop my patience in the Strategy phase.
-                  </p>
-                </div>
             </div>
           </section>
+          <section>
+              <article id="protoslider">
+                <div class="container">
+                  <p>Cloud storage sites tend to be simplistic and rather dull. If Lupo is to replace the traditional work environment, it needed to be engaging. Lupo responds to this need by providing an interface that is dynamic and vibrant while still maintaining a level of sophistication and professionalism. The right workplace is key to increasing employee peace of mind and productivity.</p>
+                </div>
+              </article>
+    <!--Prototypes-->
+              <div class="container clearfix">
+                <div id="lupo_web" class="column one-half">
+                  <p><i>Web</i></p>
+                  <img src="images/lupo_web.png" alt="Web Prototype">
+                </div>
+                <div id="lupo_mobile" class="column one-half">
+                  <p><i>Mobile</i></p>
+                  <img src="images/lupo_mobile.png" alt="Mobile Prototype">
+                </div>
+              </div>
+                <div class="row container">
+                  <div class="column one-half">
+                    <a class="button bigbutton" href="#" id="web_viewbtn">View Prototype</a>
+                  </div>
+                  <div class="column one-half">
+                    <a class="button bigbutton" href="#" id="mobile_viewbtn">View Prototype</a>
+                  </div>
+                </div>
+      <!--Final Thoughts-->
+            <div class="container">
+              <h3>Final Thoughts</h3>
+              <h3 class="black_h3" id="conclusion"><i>Patience is key</i></h3>
+                <p>While there were many triumphs in the completion of this project primarily because of user feedback, market research, and user testing, there were also some lessons I learned as a designer. One of my main mistakes working on this project was my inclination to change direction based on an individual user’s opinion without carefully considering whether their opinion was an outlier or representative of the norm. Moving forward, I would be more persistent in clarifying the distinction so as not to make arbitrary changes to a design at the expense of other users.</p>
+                <p>Furthermore, I think it is important that I spend more time further developing my sketches. When starting a new project, my excitement often drives me to want to begin designing the interface as soon as possible. However, especially in larger projects, it is very important to fully explore all possible alternatives before deciding on a final design. I think had I worked slower in the beginning, there wouldn’t have been a need for as many small iterations from simple mistakes or gaps in user input. Moving forward, my main goal as a designer will be to further develop my patience in the Strategy phase.
+                </p>
+                <div class="last_polygon"></div>
+              </div>
+          </section>
       <!--Previous/Next-->
-          <div>
-            <div id="prevButton">
+          <div class="container" id="prevNext">
+            <div id="prevButton" class="column one-half">
               <a href="#">Previous</a>
             </div>
-            <div id="nextButton">
+            <div id="nextButton" class="column one-half">
               <a href="#">Next</a>
             </div>
           </div>

@@ -41,6 +41,19 @@
   width: 100%;
 }
 
+#sketch1, #sketch2, #sketch3 {
+  padding-bottom: 50px;
+  height: 500px;
+}
+
+#sketch1 {
+  object-position: 50% 50%;
+}
+
+#thelogo {
+  height: 525px;
+}
+
 #core1, #core2, #core3 {
   color: #FFF;
 }
@@ -72,13 +85,193 @@
 
 #font_poiret {
   font-family: 'Poiret One', cursive;
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 0;
 }
 
 #font_lato {
   font-family: 'Lato', sans-serif;
   font-size: 1.25rem;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
   margin-top: 0;
+}
+
+#preference1a, #preference1b {
+  object-position: 50% 0;
+}
+
+#preference2a, #preference2b {
+  object-position: 0% 50%;
+}
+
+#preference3a, #preference3b {
+  border-top: none;
+  border-bottom: none;
+}
+
+.preference-tests img {
+  border: 1px solid #E0E0E0;
+}
+
+#mock1a, #mock1b {
+  height: 400px;
+  object-fit: contain;
+  width: 300px;
+}
+
+#mock2a, #mock2b {
+  height: 200px;
+  object-fit: cover;
+  width: 300px;
+}
+
+#mock1b, #mock2b {
+  margin-left: 200px;
+}
+
+#mockups .bullet-listing {
+  margin-top: 200px;
+}
+
+#mockups .vertical-line {
+  height: 225px;
+}
+
+#testcontent {
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+#finalDesign {
+  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ), url("../images/final_design.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  color: #F2F2F2;
+  height: 250px;
+  margin-top: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+
+.create_goal .mvpFont, .extend_goal1 .mvpFont, .cost_goal .mvpFont {
+  position: absolute;
+  right: 100px;
+  text-align: right;
+}
+
+.allow_goal .mvpFont {
+  text-align: left;
+  left: 0;
+  position: absolute;
+}
+
+#create_content {
+  margin-top: 400px;
+}
+
+#create_content, #allow_content, #extend_content1, #extend_content2, #cost_content {
+  text-align: center;
+  width: 30%;
+}
+
+.create_goal img {
+  height: 630px;
+  position: absolute;
+  right: 0;
+  top: 16em;
+  width: 720px;
+}
+
+.allow_goal img {
+  height: 750px;
+  left: 150px;
+  object-fit: contain;
+  position: absolute;
+  top: 60em;
+  width: 700px;
+}
+
+.allow_goal .mvpFont {
+  left: 150px;
+  top: 31.5em;
+}
+
+#allow_content {
+  top: 68em;
+  right: 100px;
+}
+
+.extend_goal1 .mvpFont {
+  top: 60em;
+}
+
+.extend_goal1 img {
+  height: 750px;
+  object-fit: contain;
+  position: absolute;
+  top: 110em;
+  right: 100px;
+  width: 850px;
+}
+
+#extend_content1 {
+  top: 110em;
+  left: 150px;
+}
+
+.extend_goal2 .mvpFont {
+  top: 110em;
+}
+
+.extend_goal2 img {
+  height: 750px;
+  object-fit: contain;
+  position: absolute;
+  top: 150em;
+  left: 150px;
+  width: 800px;
+}
+
+#extend_content2 {
+  top: 130em;
+  right: 100px;
+}
+
+.cost_goal .mvpFont {
+  top: 110em;
+}
+
+.cost_goal img {
+  height: 750px;
+  object-fit: contain;
+  position: absolute;
+  top: 194em;
+  right: 100px;
+  width: 700px;
+}
+
+#cost_content {
+  top: 173em;
+  left: 150px;
+}
+
+#lupo_web img {
+  height: 600px;
+  width: 600px;
+  object-fit: contain;
+  margin-top: 0;
+}
+
+#lupo_mobile img {
+  height: 400px;
+  width: 300px;
+  object-fit: contain;
+  margin: 66px 0 0 100px;
+}
+
+#lupo_mobile p {
+  margin-left: 100px;
 }
