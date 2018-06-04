@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portolio | Sasha Fletcher</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -12,16 +13,16 @@
   </head>
   <body>
     <div>
-      <aside id="sidebar">
+      <aside class="sidebar">
       </aside>
         <header>
           <div class="header-inner">
             <div>
-              <img id="logo" src="images/logo.png" alt="F">
+              <img class="logo" src="images/logo.png" alt="F">
             </div>
             <div class="top-right">
-                <nav>
-                  <ul class="nav_main white_background">
+                <nav class="white_background">
+                  <ul class="nav_main">
                     <li class="nav-item greyNavItem dropdown">Work
                         <ul class="dropdown-content">
                           <li class="dropdown-nav-item"><a href="#">Lupo Cloud Storage</a></li>
@@ -43,12 +44,37 @@
           </div>
         </header>
     </div>
+    <nav class="nav_mobile">
+      <div class="menuToggle">
+        <input type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menu">
+          <li class="mobile-nav-item dropdown"><a href="#">Work
+            <ul class="dropdown-content">
+              <li class="mobile-nav-item dropdown-nav-item"><a href="#">Lupo Cloud Storage</a></li>
+              <li class="mobile-nav-item dropdown-nav-item"><a href="#">Ruck</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav-item"><a href="#">About Me</a></li>
+          <li class="mobile-nav-item"><a href="#">Resume</a></li>
+          <li class="mobile-nav-item dropdown"><a href="#">Contact</a>
+            <ul class="dropdown-content">
+              <li class="mobile-nav-item dropdown-nav-item"><a href="mailto:rashaafletcher@gmail.com">Email</a></li>
+              <li class="mobile-nav-item dropdown-nav-item"><a href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">LinkedIn</a></li>
+              <li class="mobile-nav-item dropdown-nav-item"><a href="https://github.com/sashafletch">Github</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <main>
       <section class="intro">
         <div>
           <h1 class="fadeInDown">Sasha Fletcher</h1>
           <div class="line"></div>
-          <p class="fadeInDelay">Hello! I am a <b>UX/UI Designer</b> based in <b>Oakland, CA.</b><br> I focus on developing creative design solutions to build inclusive and exciting experiences for users.</p>
+          <p class="fadeInDelay">Hello! I am a <b>UX/UI Designer</b> based in <b>Oakland, CA.</b> I focus on developing creative design solutions to build inclusive and exciting experiences for users.</p>
         </div>
         <div class="see_more fadeInDelay2">
           <i class="fa fa-arrow-down column bounce"></i>
@@ -90,7 +116,7 @@
               </p>
             </div>
             <div class="column one-half">
-              <img id="sashapic" class="fadeInUp" src="images/sasha.jpg" alt="Sasha">
+              <img id="sashapic" src="images/sasha.jpg" alt="Sasha">
             </div>
           </div>
           <a class="button medbutton" href="about">Learn More</a>
@@ -177,5 +203,7 @@
         </div>
       </div>
     </footer>
+    <!--Scripts-->
+    <script src="scripts/navbar.js"></script>
   </body>
 </html>

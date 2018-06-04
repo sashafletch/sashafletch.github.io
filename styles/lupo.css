@@ -41,55 +41,110 @@
   width: 100%;
 }
 
-#sketch1, #sketch2, #sketch3 {
+.banner {
+  height: 450px;
+  margin-left: 75px;
+  position: relative;
+}
+
+.mobile_banner {
+  display: none;
+}
+
+.banner img {
+  display: inline-block;
+  height: 200px;
+  object-fit: contain;
+  width: 200px;
+}
+
+.sketch1, .sketch2, .sketch3 {
   padding-bottom: 50px;
   height: 500px;
 }
 
-#sketch1 {
+.sketch1 {
   object-position: 50% 50%;
 }
 
-#thelogo {
+.thelogo {
   height: 525px;
 }
 
-#core1, #core2, #core3 {
+.row1-sketch img {
+  margin-right: 75px;
+}
+
+.row2-sketch img {
+  margin-right: 50px;
+  position: absolute;
+  z-index: 1;
+}
+
+.logo_sketch4, .logo_sketch5, .logo_sketch6 {
+  top: 100px;
+}
+
+.logo_sketch4 {
+  left: 135px;
+}
+
+.logo_sketch5 {
+  left: 420px;
+}
+
+.logo_sketch6 {
+  left: 700px;
+}
+
+.logo_sequence img {
+  padding: 50px 50px 0 80px;
+}
+
+.sequence2 {
+  padding-top: 70px;
+}
+
+.sequence-line2 {
+  right: 50px;
+}
+
+.core1, .core2, .core3 {
   color: #FFF;
 }
 
-#core1 {
+.core1 {
   background-color: #2A004A;
 }
 
-#core2 {
+.core2 {
   background-color: #4E008A;
 }
 
-#core3 {
+.core3 {
   background-color: #F7A800;
 }
 
-#support1 {
+.support1 {
   background-color: #FEFEFA;
   border: .25px solid #000;
 }
 
-#support2 {
+.support2 {
   background-color: #FFF600;
 }
 
-#support3 {
+.support3 {
   background-color: #B067DF;
 }
 
-#font_poiret {
+.font_poiret {
   font-family: 'Poiret One', cursive;
   font-size: 2rem;
   margin-bottom: 0;
 }
 
-#font_lato {
+.font_lato {
   font-family: 'Lato', sans-serif;
   font-size: 1.25rem;
   margin-bottom: 50px;
@@ -109,35 +164,59 @@
   border-bottom: none;
 }
 
+#preference2b {
+  left: 385px;
+}
+
+#preference3b {
+  left: 730px;
+}
+
 .preference-tests img {
   border: 1px solid #E0E0E0;
 }
 
-#mock1a, #mock1b {
+.percent1, .percent2, .percent3 {
+  top: 350px;
+}
+
+.percent1 {
+  left: 300px;
+}
+
+.percent2 {
+  left: 630px;
+}
+
+.percent3 {
+  right: 200px;
+}
+
+.mock1a, .mock1b {
   height: 400px;
   object-fit: contain;
   width: 300px;
 }
 
-#mock2a, #mock2b {
+.mock2a, .mock2b {
   height: 200px;
   object-fit: cover;
   width: 300px;
 }
 
-#mock1b, #mock2b {
+.mock1b, .mock2b {
   margin-left: 200px;
 }
 
-#mockups .bullet-listing {
+.mockups .bullet-listing {
   margin-top: 200px;
 }
 
-#mockups .vertical-line {
+.mockups .vertical-line {
   height: 225px;
 }
 
-#testcontent {
+.testcontent {
   height: 300px;
   margin-top: 50px;
   margin-bottom: 0;
@@ -168,11 +247,11 @@
   position: absolute;
 }
 
-#create_content {
+.create_content {
   margin-top: 400px;
 }
 
-#create_content, #allow_content, #extend_content1, #extend_content2, #cost_content {
+.create_content, .allow_content, .extend_content1, .extend_content2, .cost_content {
   text-align: center;
   width: 30%;
 }
@@ -199,7 +278,7 @@
   top: 31.5em;
 }
 
-#allow_content {
+.allow_content {
   top: 68em;
   right: 100px;
 }
@@ -217,7 +296,7 @@
   width: 850px;
 }
 
-#extend_content1 {
+.extend_content1 {
   top: 110em;
   left: 150px;
 }
@@ -235,7 +314,7 @@
   width: 800px;
 }
 
-#extend_content2 {
+.extend_content2 {
   top: 130em;
   right: 100px;
 }
@@ -253,7 +332,7 @@
   width: 700px;
 }
 
-#cost_content {
+.cost_content {
   top: 173em;
   left: 150px;
 }
@@ -272,6 +351,270 @@
   margin: 66px 0 0 100px;
 }
 
-#lupo_mobile p {
+.lupo_mobile p {
   margin-left: 100px;
+}
+
+/*Media Queries*/
+
+/*Phone*/
+@media screen and (min-width: 320px) and (max-width: 574px) {
+  #discovery, #information, #branding, #finalDesign {
+    height: 100px;
+  }
+
+  .collab_flow {
+    display: none;
+  }
+
+  .sketch1, .sketch2, .sketch3, .wire3 {
+    height: 300px;
+  }
+
+  .wire1 {
+    height: 500px;
+  }
+
+  .wire2 {
+    height: 150px;
+  }
+
+  /*Branding*/
+
+  .thelogo {
+    height: auto;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .mobile_banner {
+    display: block;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .mobile_banner img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+  }
+
+  .logo_sequence img {
+    padding: 0;
+    object-fit: cover;
+  }
+
+  .tests_intro {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .testcontent {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .mobile_closeups img {
+    height: auto;
+    margin: 0 auto;
+    position: static;
+    display: block;
+    width: 100%;
+  }
+
+  .create_content, .allow_content, .extend_content1, .extend_content2, .cost_content {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .create_goal .mvpFont, .extend_goal1 .mvpFont, .cost_goal .mvpFont, .allow_goal .mvpFont {
+    position: static;
+    text-align: right;
+  }
+
+  .protoslider {
+    height: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  #lupo_web img {
+    display: block;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  #lupo_mobile img {
+    display: block;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .mobile_viewbtn, .web_viewbtn {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .preference-tests {
+    height: 775px;
+  }
+
+  #preference1b, #preference2b, #preference3b {
+    left: 40px;
+  }
+
+  #preference1b {
+    top: 70px;
+  }
+
+  #preference2b {
+    top: 322px;
+  }
+
+  #preference3b {
+    top: 550px;
+  }
+
+  .percent1, .percent2, .percent3 {
+    left: 225px;
+  }
+
+  .percent1 {
+    top: 147px
+  }
+
+  .percent2 {
+    top: 400px;
+  }
+
+  .percent3 {
+    top: 625px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .preference-tests {
+    height: 870px;
+  }
+
+  #preference1b, #preference2b, #preference3b {
+    left: 90px;
+  }
+
+  #preference1b {
+    top: 70px;
+  }
+
+  #preference2b {
+    top: 345px;
+  }
+
+  #preference3b {
+    top: 620px;
+  }
+
+  .percent1, .percent2, .percent3 {
+    left: 265px;
+  }
+
+  .percent1 {
+    top: 160px
+  }
+
+  .percent2 {
+    top: 440px;
+  }
+
+  .percent3 {
+    top: 710px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .preference-tests {
+    height: 870px;
+  }
+
+  #preference1b, #preference2b, #preference3b {
+    left: 90px;
+  }
+
+  #preference1b {
+    top: 70px;
+  }
+
+  #preference2b {
+    top: 345px;
+  }
+
+  #preference3b {
+    top: 620px;
+  }
+
+  .percent1, .percent2, .percent3 {
+    left: 300px;
+  }
+
+  .percent1 {
+    top: 160px
+  }
+
+  .percent2 {
+    top: 440px;
+  }
+
+  .percent3 {
+    top: 710px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .description_text {
+    margin-top: 0;
+  }
+
+  #discovery, #information, #branding, #finalDesign {
+    height: 200px,
+  }
+
+  #discovery h2, #information h2, #branding h2, #finalDesign h2 {
+    padding-top: 65px;
+  }
+
+  .competitionIcon {
+    margin-top: 0;
+  }
+
+  .comp_descript {
+    width: 100%;
+  }
+
+  .right-column .polygon {
+    margin-top: 22px;
+  }
+
+  .consistency .polygon {
+    border-left: 250px solid transparent;
+  	border-right: 250px solid transparent;
+  	border-bottom: 3px solid #FADE39;
+    display: block;
+    margin: 0 auto;
+    height: 0;
+    width: 100%;
+  }
+
+  .consistency {
+    margin: 0 0 50px 0;
+  }
 }

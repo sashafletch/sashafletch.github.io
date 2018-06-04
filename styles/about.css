@@ -1,0 +1,129 @@
+/*Navigation Bar*/
+
+.greyNavItem, #nav_about a, #nav_resume a{
+  color: #9c9c9c;
+}
+
+.greyNavItem:hover, .greyNavItem a:hover {
+  color: #050505;
+}
+
+.intro {
+  text-align: center;
+  padding: 100px 200px 100px 250px;
+}
+
+.intro h1 {
+  margin-bottom: 10px;
+}
+
+.intro p {
+  padding-top: 25px;
+}
+
+.line {
+  height: 3px;
+  background:#3BA09E;
+  position: absolute;
+  margin-bottom: 10px;
+  -webkit-animation-name: underline;
+  animation-name: underline;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes underline {
+   0% {
+     width: 0;
+     right: 0;
+   }
+   50% {
+     width: 40%;
+     right: 20%;
+   }
+   75% {
+     width: 20%;
+     right: 40%;
+   }
+   100% {
+     width: 30%;
+     right: 35%;
+   }
+ }
+
+.origins h3, .hobbies h3, .origins p, .hobbies p {
+  color: #FFF;
+}
+
+.origins {
+  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ), url("../images/lake_merritt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 40%;
+  height: 275px;
+  margin-top: 0;
+  max-width: 100%;
+}
+
+.introduction_design {
+  position: relative;
+}
+
+.introduction_design img {
+  height:500px;
+  object-fit: cover;
+  padding: 20px 0 0 25px;
+  position: absolute;
+  width:500px;
+}
+
+.hobbies {
+  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ), url("../images/atv_landscape.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 40%;
+  height: 275px;
+  margin-top: 75px;
+  max-width: 100%;
+}
+
+.importance_design {
+  width: 70%;
+}
+
+.contact {
+  background: linear-gradient( rgba(59, 160, 158, 0.20), rgba(59, 160, 158, 0.20) ), url("../images/contact_me.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 440px;
+  margin-top: 120px;
+  max-width: 100%;
+}
+
+.contactbtn {
+  background-color: #3BA09E;
+  border-radius: 5px;
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  display: inline-block;
+  margin: 30px 100px 0 0;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 125px;
+}
+
+.contactbtn:hover {
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  cursor: pointer;
+}
+
+.contact h2 {
+  margin-top: 20px;
+  padding-top: 50px;
+}
