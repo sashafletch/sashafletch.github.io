@@ -100,12 +100,11 @@ header {
 }
 
 .logo {
-  float: left;
-  margin: 0;
-  position: fixed;
-  padding: 10px 0 0 20px;
-  width: 5%;
-  z-index: 99;
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 75%;
+  z-index: 8;
 }
 
 .top-right {
@@ -214,7 +213,8 @@ nav.colored-in {
 }
 
 .sidebar {
-  border-left: 80px solid #000000;
+  width: 80px;
+  background: #000;
   height:100%;
   left: 0%;
   margin-left: -3px;
@@ -534,7 +534,7 @@ footer {
 .menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #FFF;
 }
 
 /*
@@ -564,7 +564,7 @@ footer {
   padding: 50px;
   padding-top: 125px;
 
-  background: #e0e0e0;
+  background: #46BEBC;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -617,7 +617,7 @@ footer {
 }
 
 .dropdown-content {
-  background-color: #e0e0e0;
+  background-color: #46BEBC;
   box-shadow: none;
   display: none;
   list-style-type: none;
@@ -634,7 +634,7 @@ footer {
 }
 
 .dropdown-content a:hover {
-  background-color: #e0e0e0;
+  background-color: inherit;
   color: #000;
 }
 
@@ -744,10 +744,10 @@ footer {
     font-size: 0.875rem;
   }
 
-  .logo {
+  /* .logo {
       padding: 10px 0 0 0;
       margin-left: 20px;
-    }
+    } */
 }
 /*Laptop*/
 @media screen and (min-width: 991px) {
@@ -771,14 +771,14 @@ footer {
     height: 75px;
   }
 
-  .logo {
+  /* .logo {
     float: left;
     margin: 0;
     position: fixed;
     padding: 10px 0 0 5px;
     width: 5%;
     z-index: 99;
-  }
+  } */
 
   .nav_main li {
     font-size: 1.25rem;

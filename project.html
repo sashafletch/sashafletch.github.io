@@ -16,22 +16,20 @@
   <body>
     <section>
       <aside class="sidebar">
+          <a href="index.html"><img class="logo" src="images/logo.png" alt="F"></a>
       </aside>
         <header>
           <div>
-            <div>
-              <img class="logo" src="images/logo.png" alt="F">
-            </div>
             <div class="top-right">
                 <nav>
                   <ul class="nav_main">
                     <li class="nav-item whiteNavItem dropdown"><a href="#">Work</a>
                       <ul class="dropdown-content">
-                        <li class="dropdown-nav-item"><a href="#">Lupo Cloud Storage</a></li>
+                        <li class="dropdown-nav-item"><a href="project.html">Lupo Cloud Storage</a></li>
                         <li class="dropdown-nav-item"><a href="#">Ruck</a></li>
                       </ul>
                     </li>
-                    <li class="nav-item whiteNavItem" id="nav_about"><a href="#">About Me</a></li>
+                    <li class="nav-item whiteNavItem" id="nav_about"><a href="about.html">About Me</a></li>
                     <li class="nav-item whiteNavItem" id="nav_resume"><a href="#">Resume</a></li>
                     <li class="nav-item whiteNavItem dropdown"><a href="#">Contact</a>
                       <ul class="dropdown-content">
@@ -52,11 +50,11 @@
                 <ul class="menu">
                   <li class="mobile-nav-item dropdown"><a href="#">Work
                     <ul class="dropdown-content">
-                      <li class="mobile-nav-item dropdown-nav-item"><a href="#">Lupo Cloud Storage</a></li>
+                      <li class="mobile-nav-item dropdown-nav-item"><a href="project.html">Lupo Cloud Storage</a></li>
                       <li class="mobile-nav-item dropdown-nav-item"><a href="#">Ruck</a></li>
                     </ul>
                   </li>
-                  <li class="mobile-nav-item"><a href="#">About Me</a></li>
+                  <li class="mobile-nav-item"><a href="about.html">About Me</a></li>
                   <li class="mobile-nav-item"><a href="#">Resume</a></li>
                   <li class="mobile-nav-item dropdown"><a href="#">Contact</a>
                     <ul class="dropdown-content">
@@ -85,7 +83,7 @@
           <div class="row container">
             <div class="column one-half">
               <h3 class="description_text">A digital workplace for concentrative and collaborative work</h3>
-              <a class="button text-center bigbutton" href="">View Prototype</a>
+              <a class="button text-center bigbutton" href="#">View Prototype</a>
             </div>
           </div>
       </section>
@@ -410,7 +408,7 @@
       </div>
     </section>
     <section>
-      <div class="container">
+      <div class="container clearfix">
     <!--Moodboard Slideshow-->
         <div class="moodboard-container">
           <img class="moodboardSlides" src="images/moodboard_blue.png" alt="Blue Moodboard">
@@ -418,8 +416,11 @@
         </div>
         <p>Both mood boards used orange as a highlight because of its association with stimulating mental activity. Both were also meant to uphold the general brand themes I had chosen for Lupo based on market research: dynamic, vibrant, sophisticated, professional.</p>
     <!--Typography-->
-        <article class="clearfix typography">
-          <aside class="column article_content">
+      </div>
+        <article class="typography">
+          <div class="clearfix">
+          <aside class="column article_content clearfix">
+            <div class="container">
             <p class="font_poiret">Poiret One</p>
             <p class="font_lato">Lato</p>
             <p>Core Colors</p>
@@ -446,13 +447,56 @@
                 <p>#B067DF</p>
               </div>
             </div>
+          </div>
         </aside>
         <aside class="slider column article">
             <p> I chose purple as the core color for Lupo with yellow and orange as supporting colors. Yellow is often associated with happiness and energy; orange is said to stimulate confidence and mental activity. And finally, purple is historically associated with royalty from the Roman Empire. The use of purple as a primary brand identifier corroborates its association with wisdom, creativity, and sophistication.</p>
             <p> Poiret One was chosen as the headline typeface and Lato as the body typeface. Poiret One has very clean lines with very strong geometric shapes that is in alignment with the professional purpose of the site. I decided on Lato because it complements the header with the same level of simplicity and geometric shapes. While slightly decorative, it doesn’t add too much detail that would distract from the overall refined theme of the site but does add interest.</p>
         </aside>
+      </div>
+      <div class="container">
         <a class="button bigbutton" href="#">View Style Guide</a>
+      </div>
       </article>
+    </div>
+    <div class="tablet_typography">
+      <article class="clearfix">
+        <aside class="column article_content">
+          <div class="container">
+            <p class="font_poiret">Poiret One</p>
+            <p class="font_lato">Lato</p>
+            <div class="color_row color_row1">
+              <div class="column color_circle core1 circle-text">
+                  <p>#2A004A</p>
+              </div>
+              <div class="column color_circle core2 circle-text">
+                  <p>#4E008A</p>
+              </div>
+              <div class="column color_circle core3 circle-text">
+                <p>#F7A800</p>
+              </div>
+              <div class="column color_circle support1 circle-text">
+                <p>#FEFEFA</p>
+              </div>
+              <div class="column color_circle support2 circle-text">
+                <p>#FFF600</p>
+              </div>
+              <div class="column color_circle support3 circle-text">
+                <p>#B067DF</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <aside class="column">
+          <div class="article slider">
+            <p> I chose purple as the core color for Lupo with yellow and orange as supporting colors. Yellow is often associated with happiness and energy; orange is said to stimulate confidence and mental activity. And finally, purple is historically associated with royalty from the Roman Empire. The use of purple as a primary brand identifier corroborates its association with wisdom, creativity, and sophistication.</p>
+            <p> Poiret One was chosen as the headline typeface and Lato as the body typeface. Poiret One has very clean lines with very strong geometric shapes that is in alignment with the professional purpose of the site. I decided on Lato because it complements the header with the same level of simplicity and geometric shapes. While slightly decorative, it doesn’t add too much detail that would distract from the overall refined theme of the site but does add interest.</p>
+          </div>
+        </aside>
+      </article>
+      <div class="container">
+        <a class="button bigbutton" href="#">View Style Guide</a>
+      </div>
     </div>
     <div class="mobile_typography">
       <article class="clearfix">
@@ -504,29 +548,30 @@
             </article>
           <div class="container preference-tests">
             <div class="preferencerow1">
-              <div class="column">
                 <img id="preference1a" src="images/dochome_v1.png" alt="Document Page Version 1">
                 <img id="preference2a" src="images/purple_signup.png" alt="Purple Sign Up Page">
                 <img id="preference3a" src="images/land_v1.png" alt="Landing Page Version 1">
-              </div>
             </div>
             <div class="preferencerow2">
-              <div class="column">
                 <img id="preference1b" src="images/dochome_v2.png" alt="Document Page Version 2">
                 <img id="preference2b" src="images/white_signup.png" alt="White Sign Up Page">
                 <img id="preference3b" src="images/land_v2.png" alt="Landing Page Version 2">
-              </div>
             </div>
-            <div class="preference-results">
-              <div class="percent percent1">
-                <p>80%</p>
-              </div>
-              <div class="percent percent2">
-                <p>60%</p>
-              </div>
-              <div class="percent percent3">
-                <p>75%</p>
-              </div>
+          </div>
+          <div class="container mobile_preference">
+            <div class="preference1">
+                <img id="preference1a" src="images/dochome_v1.png" alt="Document Page Version 1">
+                <img id="preference1b" src="images/dochome_v2.png" alt="Document Page Version 2">
+            </div>
+            <div class="white_horizontal_line"></div>
+            <div class="preference2">
+              <img id="preference2a" src="images/purple_signup.png" alt="Purple Sign Up Page">
+              <img id="preference2b" src="images/white_signup.png" alt="White Sign Up Page">
+            </div>
+            <div class="white_horizontal_line"></div>
+            <div class="preference3">
+              <img id="preference3a" src="images/land_v1.png" alt="Landing Page Version 1">
+              <img id="preference3b" src="images/land_v2.png" alt="Landing Page Version 2">
             </div>
           </div>
           <div class="container clearfix">
@@ -573,28 +618,28 @@
           <section>
             <div class="container clearfix closeups">'
               <h3>The MVP</h3>
-              <div class="create_goal">
+              <div class="create_goal clearfix">
                 <p class="mvpFont"><span class="semibold_italic">Create</span> a brand that is trustworthy</p>
                 <img src="images/landing_closeup.png" alt="Landing Page CloseUp">
                 <p class="create_content">Lupo establishes trust with the user by visibly displaying pricing content on the landing page</p>
               </div>
-              <div class="allow_goal">
+              <div class="allow_goal clearfix">
                 <p class="mvpFont"><span class="semibold_italic">Allow</span> users to customize</p>
                 <img src="images/user_home_closeup.png" alt="Home Page CloseUp">
-                <p class="allow_content">Lupo provides customizable features, such as tags, folders, and favorites. Users also have the ability to customize their dashboard by dragging and <br>dropping folders, tags, categories, or contact group files.</p>
+                <p class="allow_content">Lupo provides customizable features, such as tags, folders, and favorites. Users also have the ability to customize their dashboard by dragging and dropping folders, tags, categories, or contact group files.</p>
               </div>
               <div>
-                <div class="extend_goal1">
+                <div class="extend_goal1 clearfix">
                   <p class="mvpFont"><span class="semibold_italic">Extend and diversify</span> collaborative options</p>
                   <img src="images/contact_closeup.png" alt="Contacts CloseUp">
                   <p class="extend_content1">Lupo informs users of the last document and date they worked on a file with another. Through contact cards and group profiles, users can quickly review any updates and are also given notifications in real-time.</p>
                 </div>
-                <div class="extend_goal2">
+                <div class="extend_goal2 clearfix">
                   <img src="images/dochome_closeup.png" alt="Document Page CloseUp">
                   <p class="extend_content2">Lupo users can create, share, and edit files together. They can add commentary in the form of audio, video, or text.</p>
                 </div>
               </div>
-              <div class="cost_goal">
+              <div class="cost_goal clearfix">
                 <p class="mvpFont"><span class="semibold_italic">Be</span> cost-efficient</p>
                 <img src="images/account_closeup.png" alt="Document Page CloseUp">
                 <p class="cost_content">Lupo provides users with multiple subscription options, ranging from 5Gb to unlimited data. Collaborative features are also not limited to just paid subscribers.</p>

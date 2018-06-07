@@ -142,6 +142,7 @@
   font-family: 'Poiret One', cursive;
   font-size: 2rem;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .font_lato {
@@ -235,106 +236,40 @@
 }
 
 
-.create_goal .mvpFont, .extend_goal1 .mvpFont, .cost_goal .mvpFont {
-  position: absolute;
-  right: 100px;
+.mvpFont {
+  margin-right: 0;
   text-align: right;
 }
 
-.allow_goal .mvpFont {
-  text-align: left;
-  left: 0;
-  position: absolute;
-}
-
-.create_content {
-  margin-top: 400px;
-}
-
 .create_content, .allow_content, .extend_content1, .extend_content2, .cost_content {
-  text-align: center;
-  width: 30%;
-}
-
-.create_goal img {
-  height: 630px;
-  position: absolute;
-  right: 0;
-  top: 16em;
-  width: 720px;
-}
-
-.allow_goal img {
-  height: 750px;
-  left: 150px;
-  object-fit: contain;
-  position: absolute;
-  top: 60em;
-  width: 700px;
-}
-
-.allow_goal .mvpFont {
-  left: 150px;
-  top: 31.5em;
-}
-
-.allow_content {
-  top: 68em;
-  right: 100px;
-}
-
-.extend_goal1 .mvpFont {
-  top: 60em;
-}
-
-.extend_goal1 img {
-  height: 750px;
-  object-fit: contain;
-  position: absolute;
-  top: 110em;
-  right: 100px;
-  width: 850px;
-}
-
-.extend_content1 {
-  top: 110em;
-  left: 150px;
-}
-
-.extend_goal2 .mvpFont {
-  top: 110em;
-}
-
-.extend_goal2 img {
-  height: 750px;
-  object-fit: contain;
-  position: absolute;
-  top: 150em;
-  left: 150px;
-  width: 800px;
+  text-align: left;
+  width: 40%;
+  float: left;
 }
 
 .extend_content2 {
-  top: 130em;
-  right: 100px;
+  padding-top: 20px;
 }
 
-.cost_goal .mvpFont {
-  top: 110em;
+.allow_goal img, .extend_goal1 img, .extend_goal2 img, .cost_goal img {
+  float: left;
+  width: 60%;
 }
 
-.cost_goal img {
-  height: 750px;
-  object-fit: contain;
-  position: absolute;
-  top: 194em;
-  right: 100px;
-  width: 700px;
+.create_goal img {
+  float: left;
+  width: 60%;
+}
+
+.create_content {
+}
+
+.allow_content, .extend_content1 {
+  padding-left: 55px;
 }
 
 .cost_content {
-  top: 173em;
-  left: 150px;
+  padding-left: 20px;
 }
 
 #lupo_web img {
@@ -433,6 +368,10 @@
     margin-bottom: 25px;
   }
 
+  .allow_content, .extend_content1, .cost_content {
+    padding-left: 0;
+  }
+
   .create_goal .mvpFont, .extend_goal1 .mvpFont, .cost_goal .mvpFont, .allow_goal .mvpFont {
     position: static;
     text-align: right;
@@ -465,143 +404,89 @@
   }
 }
 
-@media screen and (min-width: 320px) {
-  .preference-tests {
-    height: 775px;
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .mobile_preference img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    max-height: 175px;
+    object-fit: cover;
+    width: 175px
   }
 
-  #preference1b, #preference2b, #preference3b {
-    left: 40px;
+  .mobile_preference {
+    margin-bottom: 50px;
   }
 
-  #preference1b {
-    top: 70px;
-  }
-
-  #preference2b {
-    top: 322px;
-  }
-
-  #preference3b {
-    top: 550px;
-  }
-
-  .percent1, .percent2, .percent3 {
-    left: 225px;
-  }
-
-  .percent1 {
-    top: 147px
-  }
-
-  .percent2 {
-    top: 400px;
-  }
-
-  .percent3 {
-    top: 625px;
+  .white_horizontal_line {
+    background: rgba(70, 190, 188, 0.5);
+    height: 1px;
+    margin: 30px 0 30px 0;
+    width: 100%;
   }
 }
 
-@media screen and (min-width: 375px) {
-  .preference-tests {
-    height: 870px;
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .mobile_preference img {
+    height: auto;
+    margin: 0 auto;
+    max-height: 200px;
+    display: block;
+    margin-bottom: 25px;
+    object-fit: cover;
+    width: 200px;
   }
 
-  #preference1b, #preference2b, #preference3b {
-    left: 90px;
-  }
-
-  #preference1b {
-    top: 70px;
-  }
-
-  #preference2b {
-    top: 345px;
-  }
-
-  #preference3b {
-    top: 620px;
-  }
-
-  .percent1, .percent2, .percent3 {
-    left: 265px;
-  }
-
-  .percent1 {
-    top: 160px
-  }
-
-  .percent2 {
-    top: 440px;
-  }
-
-  .percent3 {
-    top: 710px;
+  .white_horizontal_line {
+    background: rgba(70, 190, 188, 0.5);
+    height: 1px;
+    margin: 30px 0 30px 0;
+    width: 100%;
   }
 }
 
-@media screen and (min-width: 425px) {
-  .preference-tests {
-    height: 870px;
-  }
+@media screen and (min-width: 375px) and (max-width: 424px) {
 
-  #preference1b, #preference2b, #preference3b {
-    left: 90px;
-  }
-
-  #preference1b {
-    top: 70px;
-  }
-
-  #preference2b {
-    top: 345px;
-  }
-
-  #preference3b {
-    top: 620px;
-  }
-
-  .percent1, .percent2, .percent3 {
-    left: 300px;
-  }
-
-  .percent1 {
-    top: 160px
-  }
-
-  .percent2 {
-    top: 440px;
-  }
-
-  .percent3 {
-    top: 710px;
+  #nextButton {
+    padding-left: 60px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) and (max-width: 767px) {
+
+  #nextButton {
+    padding-left: 85px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .description_text {
     margin-top: 0;
   }
 
   #discovery, #information, #branding, #finalDesign {
-    height: 200px,
+    height: 200px;
   }
 
-  #discovery h2, #information h2, #branding h2, #finalDesign h2 {
+  /* #discovery h2, #information h2, #branding h2, #finalDesign h2 {
     padding-top: 65px;
-  }
+  } */
 
   .competitionIcon {
     margin-top: 0;
   }
 
-  .comp_descript {
-    width: 100%;
+  .right-column .comp_descript {
+    margin-bottom: 40px;
   }
 
-  .right-column .polygon {
-    margin-top: 22px;
+  .persona2 div:nth-of-type(1) p {
+    margin-bottom: 40px;
+  }
+
+  .comp_descript {
+    width: 100%;
   }
 
   .consistency .polygon {
@@ -616,5 +501,479 @@
 
   .consistency {
     margin: 0 0 50px 0;
+  }
+
+  .persona2 .polygon:nth-child(1) {
+    margin-top: 40px;
+  }
+
+  .userstories li {
+    font-size: 0.9rem;
+    margin-right: 0;
+  }
+
+  .bullet {
+    height: 10px;
+    width: 10px;
+  }
+
+  .collab_flow {
+    display: none;
+  }
+
+  .ten .wrapper {
+    margin-left: 20px;
+  }
+
+  .banner {
+    height: 300px;
+    margin-left: 35px;
+  }
+
+
+  .sketch_wires .vertical-line {
+    height: 400px;
+  }
+
+  .sketch_wires .bullet-listing {
+    margin-right: 0;
+    margin-top: 170px;
+  }
+
+  .sketch1, .sketch2, .sketch3 {
+    height: auto;
+    padding-bottom: 45px;
+  }
+
+  .landing_wire {
+    margin-bottom: 50px;
+  }
+
+  .banner img {
+    height: auto;
+    width: 170px;
+  }
+
+  .row1-sketch img {
+    margin-right: 0;
+  }
+
+  .logo_sketch4 {
+    left: 80px;
+  }
+
+  .logo_sketch5 {
+    left: 255px;
+  }
+
+  .logo_sequence img {
+    padding: 0;
+  }
+
+  .sequence2 {
+    margin-top: 20px;
+  }
+
+  .logo_sequence div {
+    display: none;
+  }
+
+  /* .tablet_typography aside {
+    width: 50%;
+    margin: 0;
+  } */
+
+  /* .preferencerow1, .preferencerow2 {
+    float: left;
+    position: static;
+    width: 50%;
+  }
+
+  .preferencerow1 img, .preferencerow2 img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: static;
+    text-align: center;
+    width: 95%;
+  } */
+
+  .mobile_preference {
+    display: block;
+  }
+
+  .preference-tests {
+    display: none;
+  }
+
+  .white_horizontal_line {
+    display: none;
+  }
+
+  .mobile_preference div {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .mobile_preference img {
+    max-width: 250px;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    width: 50%;
+  }
+
+  .preference2 img, .preference1 img {
+    margin-bottom: 30px;
+  }
+
+  .mobile_preference img:nth-child(1) {
+    margin-right: 50px;
+  }
+
+  .preference2 img {
+    border: 1px solid #e0e0e0
+  }
+
+  blockquote {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 50%;
+  }
+
+  .mockups .bullet-listing {
+    display: none;
+  }
+
+  .mock1b {
+    margin-left: 40px;
+  }
+
+  .mock1a, .mock1b {
+    margin-bottom: 20px;
+    max-height: 350px;
+  }
+
+  .mock2a {
+    margin-left: 10px;
+  }
+
+  .mock2b {
+    margin-left: 55px;
+  }
+
+  .mvpFont {
+    font-size: 1.5rem;
+  }
+
+  .extend_content2 {
+    padding-left: 20px;
+    padding-top: 0;
+  }
+
+  .protoslider {
+    padding: 50px 0;
+  }
+
+  #lupo_web img {
+    height: auto;
+    width: 300px;
+  }
+
+  #lupo_mobile img {
+    height: auto;
+    margin: 15px 0 0 100px;
+    width: 100px;
+  }
+
+  .web_viewbtn {
+    margin-left: 50px;
+  }
+
+  .mobile_viewbtn {
+    margin-left: 60px
+  }
+
+  #nextButton {
+    padding-left: 155px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .hero_web {
+    height: auto;
+    left: 550px;
+    top: 175px;
+    width: 400px;
+  }
+
+  .hero_mobile {
+    height: auto;
+    left: 830px;
+    top: 250px;
+    width: 150px;
+  }
+
+  .polygon {
+  	border-left: 200px solid transparent;
+  	border-right: 200px solid transparent;
+  	border-bottom: 3px solid #FADE39;
+    height: 0;
+    width: 0;
+  }
+
+  .consistency {
+    margin: 0 0 50px 0;
+  }
+
+  .consistency .polygon {
+    width: 100%;
+  }
+
+  .slideNext {
+    right: 100px;
+  }
+
+  .slidePrev {
+    left: 100px;
+  }
+
+  .goals {
+    height: auto;
+  }
+
+  .userstories li {
+    margin-right: 0;
+  }
+
+  .flow img {
+    margin-left: 0;
+  }
+
+  .sketch_wires img {
+    width: 350px;
+  }
+
+  .sketch1, .sketch2, .sketch3 {
+    height: 400px;
+    margin-bottom: 50px;
+  }
+
+  .sketch_wires .bullet-listing {
+    margin-top: 150px;
+    margin-right: 0;
+    padding-left: 0;
+  }
+
+  .landing_wire {
+    margin-bottom: 60px;
+  }
+
+  .wire3 {
+    height: 350px;
+  }
+
+  .wire2 {
+    height: 250px;
+    margin-bottom: 90px;
+  }
+
+  .row1-sketch img {
+    margin-right: 50px;
+  }
+
+  .logo_sketch5 {
+    left: 380px;
+  }
+
+  .logo_sketch6 {
+    left: 625px;
+  }
+
+  .banner {
+    height: 350px;
+    margin-left: 0;
+  }
+
+  .logo_sequence img {
+    padding: 50px 0 0 80px;
+  }
+
+  .logo_sequence div {
+    left: 250px;
+    width: 100px;
+  }
+
+  .article_content {
+    height: 600px;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .color_circle {
+    height: 90px;
+    width: 90px;
+    margin-right: 0;
+  }
+
+  .color_row {
+    margin-left: 0;
+  }
+
+  .core1, .support1 {
+    margin-bottom: 10px;
+  }
+
+  .core3, .support3 {
+    margin-bottom: 15px;
+  }
+
+  .font_poiret {
+    margin-top: 0;
+  }
+
+  .preferencerow1 img, .preferencerow2 img {
+    height: 250px;
+    margin-right: 30px;
+    width: 250px;
+  }
+
+  .preferencerow2 {
+    margin-bottom: 50px;
+  }
+
+  .mock1b, .mock2b {
+    margin-left: 100px;
+  }
+
+  .mvpFont, .mvpFont p {
+    margin-right: 20px;
+  }
+
+  .allow_content, .extend_content1, .cost_content {
+    padding-left: 55px;
+  }
+
+  .create_goal img {
+    max-width: 400px;
+  }
+
+  .allow_goal img, .extend_goal1 img, .extend_goal2 img, .cost_goal img {
+    max-width: 450px;
+  }
+
+  #lupo_web img {
+    height: 500px;
+    width: 500px;
+  }
+
+  #lupo_mobile img {
+    height: 300px;
+    width: 200px;
+    margin: 66px 0 0 125px;
+  }
+
+  .web_viewbtn {
+    margin-left: 150px;
+  }
+
+  .mobile_viewbtn {
+    margin-left: 130px;
+  }
+
+  #nextButton {
+    padding-left: 250px
+  }
+
+  .footer-icons {
+    padding-right: 10px;
+  }
+
+
+
+}
+
+@media screen and (min-width: 1440px) {
+  h2 {
+    padding-left: 150px;
+  }
+
+  .design_role {
+    margin-right: 100px;
+  }
+
+  .right-column .comp_descript {
+    margin-top: 50px;
+  }
+
+  .goals {
+    height: auto;
+  }
+
+  .banner {
+    height: 375px;
+  }
+
+  .banner img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .sketch1, .sketch2, .sketch3 {
+    margin-left: 50px;
+  }
+
+  .logo_sketch5 {
+    left: 500px;
+  }
+
+  .logo_sketch6 {
+    left: 850px;
+  }
+
+  .logo_sequence {
+    margin-left: 200px;
+  }
+
+  .sequence-line2 {
+    right: 200px;
+  }
+
+  .sketch_wires .bullet {
+    height: 20px;
+    width: 20px;
+  }
+
+  .mockups .forty-five {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mockups img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .mock1b {
+    margin-left: 0;
+  }
+
+  .mock1a, .mock1b {
+    width: 550px;
+  }
+
+  .mock2a, .mock2b {
+    height: 300px;
+  }
+
+  .preferencerow2 img {
+    margin-bottom: 50px;
   }
 }
