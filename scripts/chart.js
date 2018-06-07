@@ -41,26 +41,3 @@ var chart = new Chart(ctx, {
       }
     }
 });
-
-// var ctx = document.getElementById('graph3').getContext('2d');
-// var chart = new Chart(ctx, {
-//     // The type of chart we want to create
-//     type: 'bar',
-//
-//     // The data for our dataset
-//     data: {
-//         labels: ["Access files", "Collaborate", "Security", "Backup Inform", "Extend Storage"],
-//         datasets: [{
-//             label: "Reason for Cloud Storage",
-//             backgroundColor: 'rgb(255, 99, 132)',
-//             borderColor: 'rgb(255, 99, 132)',
-//             data: [95, 71, 9, 80, 35]
-//         }]
-//     },
-//     options: {
-//       title: {
-//         display: true,
-//         text: "Main Reason(s) for Cloud Storage"
-//       }
-//     }
-// });

@@ -13,20 +13,3 @@ if (heroImg) {
   });
 
 }
-
-
-
-// var mobile = window.matchMedia('(max-width: 574px)');
-// function myFunction(mobile) {
-//   if (mobile.matches) {
-//     window.addEventListener('scroll', function(){
-//       if(window.scrollY > heroImg.height){
-//
-//       }
-//     })
-//   }
-// }
-//
-// window.addEventListener('scroll', function(){
-//   if(responsive.matches)
-// })
