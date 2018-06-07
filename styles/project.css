@@ -108,7 +108,7 @@ nav.greyNavItem, nav.greyNavItem a {
 }
 
 .bold_italic {
-  font-weight: 400;
+  font-weight: 600;
   font-style: italic;
 }
 
@@ -125,10 +125,6 @@ nav.greyNavItem, nav.greyNavItem a {
 
 .slider h2 {
   margin-top: 0;
-}
-
-.slider p {
-  margin-top: 5px;
 }
 
 .left-column {
@@ -149,7 +145,6 @@ nav.greyNavItem, nav.greyNavItem a {
 
 .competitionIcon {
   height: 75px;
-  margin-top: 50px;
   object-fit: cover;
   padding-right: 10px;
   width: 85px;
@@ -160,6 +155,7 @@ nav.greyNavItem, nav.greyNavItem a {
 	border-right: 250px solid transparent;
 	border-bottom: 5px solid #FADE39;
   height: 0;
+  margin: 20px 0;
   width: 100%;
 }
 
@@ -253,7 +249,7 @@ nav.greyNavItem, nav.greyNavItem a {
 }
 
 .persona1 img, .persona2 img {
-  margin: 0 auto;
+  margin: 20px auto;
   display: block;
   width: 100%;
   max-width: 250px;
@@ -278,7 +274,7 @@ nav.greyNavItem, nav.greyNavItem a {
 }
 
 .goals {
-  height: 450px;
+  height: auto;
   margin-top: 75px;
   margin-bottom: 0;
 }
@@ -381,7 +377,7 @@ nav.greyNavItem, nav.greyNavItem a {
 }
 
 .wirecontent {
-  height: 250px;
+  height: auto;
   margin-bottom: 0;
 }
 
@@ -396,6 +392,7 @@ nav.greyNavItem, nav.greyNavItem a {
 .black_h3 {
   color: #000;
   margin-top: 0;
+  font-style: italic;
 }
 
 
@@ -439,7 +436,6 @@ nav.greyNavItem, nav.greyNavItem a {
 
 .article_content {
   background-color: #F2F2F2;
-  height: 600px;
   width: 45%;
 }
 
@@ -450,14 +446,14 @@ nav.greyNavItem, nav.greyNavItem a {
 
 .color_circle {
   border-radius: 50%;
-  height: 125px;
+  height: 100px;
   margin-right: 20px;
-  width: 125px;
+  width: 100px;
 }
 
 .color_circle p {
   font-size: 1rem;
-  padding-top: 20px;
+  padding-top: 35px;
   text-align: center;
 }
 
@@ -467,7 +463,7 @@ nav.greyNavItem, nav.greyNavItem a {
 
 .article {
   float: right;
-  height: 600px;
+  height: auto;
   padding: 30px;
   margin-bottom: 0;
   width: 50%;
@@ -508,7 +504,7 @@ nav.greyNavItem, nav.greyNavItem a {
 blockquote {
   margin-top: 0;
   text-align: center;
-  width: 40%;
+  width: 50%;
 }
 
 blockquote p {
@@ -568,6 +564,7 @@ blockquote p {
 	border-right: 250px solid transparent;
 	border-bottom: 5px solid #FADE39;
   height: 0;
+  margin: 25px 0;
   width: 100%;
 }
 
@@ -661,13 +658,17 @@ blockquote p {
 
 /*Phone*/
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  h4 {
+    margin-top: 20px;
+  }
+
   .container {
     padding: 10px 25px 0 25px;
   }
 
   .button {
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 100%;
   }
 
@@ -711,8 +712,8 @@ blockquote p {
     padding: 20px 0 10px 0;
   }
 
-  .slider p {
-    margin-top: 0;
+  p {
+    margin: 20px 0;
   }
 
   .white_horizontal_line {
@@ -976,6 +977,11 @@ blockquote p {
   }
 }
 
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .color_circle p {
+    padding-top: 60px;
+  }
+}
 /*Tablet*/
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -985,7 +991,7 @@ blockquote p {
   }
 
   .slider {
-    padding: 50px 0;
+    padding: 20px 0;
   }
 
   .hero {
@@ -1016,7 +1022,7 @@ blockquote p {
   	border-right: 125px solid transparent;
   	border-bottom: 3px solid #FADE39;
     height: 0;
-    width: 0;
+    width: 100%;
   }
 
   .graphSlides img {
@@ -1110,11 +1116,6 @@ blockquote p {
       width: 90%;
       padding: 30px;
       margin: 0;
-    }
-
-    .article_content {
-      height: 700px;
-      width: 45%;
     }
 
     .footer-copy p {

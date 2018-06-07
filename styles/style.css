@@ -74,7 +74,12 @@ h3 {
   font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 2px;
-  margin-bottom: 30px;
+  margin: 30px 0;
+}
+
+h4 {
+  margin: 15px 0;
+  font-weight: bold;
 }
 
 p {
@@ -445,207 +450,207 @@ footer {
 
 /*Phone*/
 @media screen and (min-width: 320px) and (max-width: 574px) {
-.container {
-    padding: 10px 25px 0 25px;
+  .container {
+      padding: 10px 25px 0 25px;
+    }
+
+  .nav_main {
+    display: none;
+    }
+
+  .nav_mobile {
+    display: inline-block;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+
+  .mobile-nav-item a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
   }
 
-.nav_main {
-  display: none;
+  .mobile-nav-item a:hover {
+    color: #FFF;
   }
 
-.nav_mobile {
-  display: inline-block;
-  justify-content: space-evenly;
-  align-items: center;
+  .mobile-nav-item li:hover {
+    background: #3BA09E;
   }
 
-.mobile-nav-item a {
-  text-decoration: none;
-  color: #232323;
-  transition: color 0.3s ease;
-}
+  .menuToggle {
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 30px;
+    z-index: 1;
 
-.mobile-nav-item a:hover {
-  color: #FFF;
-}
+    -webkit-user-select: none;
+    user-select: none;
+  }
 
-.mobile-nav-item li:hover {
-  background: #3BA09E;
-}
+  .menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
 
-.menuToggle {
-  display: block;
-  position: relative;
-  top: 0px;
-  left: 30px;
-  z-index: 1;
+    cursor: pointer;
 
-  -webkit-user-select: none;
-  user-select: none;
-}
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
 
-.menuToggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
+    -webkit-touch-callout: none;
+  }
 
-  cursor: pointer;
+  .menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
 
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+    background: #cdcdcd;
+    border-radius: 3px;
 
-  -webkit-touch-callout: none;
-}
+    z-index: 1;
 
-.menuToggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
+    transform-origin: 4px 0px;
 
-  background: #cdcdcd;
-  border-radius: 3px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
 
-  z-index: 1;
+  .menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
 
-  transform-origin: 4px 0px;
+  .menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
 
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
+  /*
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  .menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #FFF;
+  }
 
-.menuToggle span:first-child {
-  transform-origin: 0% 0%;
-}
+  /*
+   *hide the middle one.
+   */
+  .menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
 
-.menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
+  /*
+   * last one should go the other direction
+   */
+  .menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
 
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-.menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #FFF;
-}
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+  .menu {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    margin: -100px 0 0 -100px;
+    padding: 50px;
+    padding-top: 125px;
 
-/*
- *hide the middle one.
- */
-.menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
+    background: #46BEBC;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
 
-/*
- * last one should go the other direction
- */
-.menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
-}
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-.menu {
-  position: absolute;
-  width: 400px;
-  height: 600px;
-  margin: -100px 0 0 -100px;
-  padding: 50px;
-  padding-top: 125px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
 
-  background: #46BEBC;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
+  .menu li {
+    margin-left: 50px;
+    padding: 10px 0;
+  }
 
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  /*
+   * And let's slide it in from the left
+   */
+  .menuToggle input:checked ~ ul {
+    transform: none;
+  }
 
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
+  .nav-item a:hover {
+    cursor: pointer;
+  }
 
-.menu li {
-  margin-left: 50px;
-  padding: 10px 0;
-}
+  .nav-item:before, .nav-item a:before {
+    background: #3BA09E;
+    border-radius: 5px;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transition: .25s linear;
+    visibility: hidden;
+    width: 100%;
+  }
 
-/*
- * And let's slide it in from the left
- */
-.menuToggle input:checked ~ ul {
-  transform: none;
-}
+  .nav-item:hover:before, .nav-item > a:hover:before,
+  .nav-item:focus:before, .nav-item > a:focus:before {
+    transform: scaleX(1);
+    visibility: visible;
+  }
 
-.nav-item a:hover {
-  cursor: pointer;
-}
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
 
-.nav-item:before, .nav-item a:before {
-  background: #3BA09E;
-  border-radius: 5px;
-  bottom: 0;
-  content: "";
-  height: 3px;
-  left: 0;
-  position: absolute;
-  transform: scaleX(0);
-  transition: .25s linear;
-  visibility: hidden;
-  width: 100%;
-}
+  .dropdown-content {
+    background-color: #46BEBC;
+    box-shadow: none;
+    display: none;
+    list-style-type: none;
+    padding-left: 0;
+    position: absolute;
+    min-width: 200px;
+    z-index: 1;
+  }
 
-.nav-item:hover:before, .nav-item > a:hover:before,
-.nav-item:focus:before, .nav-item > a:focus:before {
-  transform: scaleX(1);
-  visibility: visible;
-}
+  .dropdown-content a {
+    display: block;
+    padding: 0;
+    text-decoration: none;
+  }
 
-.dropdown {
-  display: inline-block;
-  position: relative;
-}
+  .dropdown-content a:hover {
+    background-color: inherit;
+    color: #000;
+  }
 
-.dropdown-content {
-  background-color: #46BEBC;
-  box-shadow: none;
-  display: none;
-  list-style-type: none;
-  padding-left: 0;
-  position: absolute;
-  min-width: 200px;
-  z-index: 1;
-}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
-.dropdown-content a {
-  display: block;
-  padding: 0;
-  text-decoration: none;
-}
-
-.dropdown-content a:hover {
-  background-color: inherit;
-  color: #000;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-nav-item a {
-  color: #000;
-  text-align: left;
-}
+  .dropdown-nav-item a {
+    color: #000;
+    text-align: left;
+  }
 
   h1 {
     font-size: 2.25rem;

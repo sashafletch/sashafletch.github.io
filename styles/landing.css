@@ -272,8 +272,12 @@ figure.effect-chico:hover p {
     padding: 100px 25px 100px 25px;
   }
 
+  .button {
+    margin-top: 20px;
+  }
+
   .about_me p {
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   .skills {
@@ -288,10 +292,14 @@ figure.effect-chico:hover p {
     margin: 0 100px 20px 0;
     width: 150px;
   }
-.contact {
-  height: 470px;
-  margin-top: 30px;
-}
+  .contact {
+    height: 470px;
+    margin-top: 30px;
+  }
+
+  .contact p {
+    padding-bottom: 25px;
+  }
 }
 
 /*Tablet*/
@@ -310,6 +318,10 @@ figure.effect-chico:hover p {
   object-fit: cover;
   right: 25px;
   width: 250px;
+  }
+
+  p {
+    margin-top: 10px;
   }
 }
 
