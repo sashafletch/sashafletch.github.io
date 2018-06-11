@@ -311,7 +311,7 @@ nav.greyNavItem, nav.greyNavItem a {
 }
 
 .wrapper {
-  height: audio;
+  height: auto;
   width: auto;
 }
 
@@ -444,7 +444,7 @@ nav.greyNavItem, nav.greyNavItem a {
 }
 
 .color_row {
-  height: 107px;
+  height: auto;
   margin-left: 20px;
 }
 
@@ -651,7 +651,7 @@ blockquote p {
 }
 
 #nextButton {
-  padding-left: 480px;
+  padding-left: 30%;
 }
 
 .prevNext {
@@ -668,7 +668,7 @@ blockquote p {
   }
 
   .container {
-    padding: 10px 25px 0 25px;
+    padding: 10px 25px;
   }
 
   .button {
@@ -717,7 +717,7 @@ blockquote p {
 
   .slider {
     height: auto;
-    margin-bottom: 25px;
+    margin-bottom: 0;
     padding: 20px 0 10px 0;
   }
 
@@ -726,7 +726,7 @@ blockquote p {
   }
 
   .white_horizontal_line {
-    margin: 10px 0 10px 50px;
+    margin: 10px 0 0 50px;
     width: 25%;
   }
 
@@ -822,7 +822,6 @@ blockquote p {
   .wirecontent {
     height: auto;
     margin-bottom: 0;
-    margin-top: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -901,7 +900,7 @@ blockquote p {
 
   .article {
     height: auto;
-    margin: 0 0 20px 0;
+    margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
