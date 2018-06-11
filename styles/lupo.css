@@ -200,7 +200,7 @@
 }
 
 .testcontent {
-  height: 300px;
+  height: auto;
   margin-top: 50px;
   margin-bottom: 0;
 }
@@ -320,6 +320,7 @@
     display: block;
     margin: 0 auto;
     height: auto;
+    max-width: 200px;
     width: 100%;
   }
 
@@ -459,7 +460,13 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .project_title {
+    top: 110px;
+    left: 110px;
+  }
+
   .description_text {
+    line-height: 120%;
     margin-top: 0;
   }
 
@@ -516,6 +523,10 @@
   .bullet {
     height: 10px;
     width: 10px;
+  }
+
+  .vertical-line {
+    height: 14px;
   }
 
   .collab_flow {

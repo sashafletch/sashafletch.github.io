@@ -7,6 +7,10 @@ body, html {
   overflow-y: visible;
 }
 
+main {
+  padding-left: 20px;
+}
+
 .clearfix::after{
   content: '';
   clear: both;
@@ -222,7 +226,6 @@ nav.colored-in {
   background: #000;
   height:100%;
   left: 0%;
-  margin-left: -3px;
   position: fixed;
   top:0;
   z-index: 6;
@@ -235,6 +238,7 @@ nav.colored-in {
   color: #050505;
   display: block;
   margin-top: 30px;
+  margin-bottom: 30px;
   padding: 10px 20px 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -450,6 +454,10 @@ footer {
 
 /*Phone*/
 @media screen and (min-width: 320px) and (max-width: 574px) {
+  main {
+    padding-left: 0;
+  }
+
   .container {
       padding: 10px 25px 0 25px;
     }
@@ -467,6 +475,7 @@ footer {
   .mobile-nav-item a {
     text-decoration: none;
     color: #232323;
+    font-size: 30px;
     transition: color 0.3s ease;
   }
 
@@ -585,8 +594,12 @@ footer {
     padding: 10px 0;
   }
 
+  .menu li a {
+    margin-left: 0;
+  }
+
   /*
-   * And let's slide it in from the left
+   * slide it in from the left
    */
   .menuToggle input:checked ~ ul {
     transform: none;
@@ -716,7 +729,11 @@ footer {
 }
 
 /*Big Phone and Tablet*/
-@media screen and (min-width: 575px) {
+@media screen and (min-width: 575px) and (max-width: 990px) {
+  main {
+    padding-left: 0;
+  }
+
   h1 {
     font-size: 3rem;
   }

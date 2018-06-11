@@ -38,7 +38,7 @@ nav.greyNavItem, nav.greyNavItem a {
 
 .hero_web {
   height: 500px;
-  left: 850px;
+  left: 60%;
   object-fit: contain;
   position: absolute;
   top: 50px;
@@ -48,7 +48,7 @@ nav.greyNavItem, nav.greyNavItem a {
 
 .hero_mobile {
   height: 300px;
-  left: 1200px;
+  left: 80%;
   object-fit: contain;
   position: absolute;
   top: 250px;
@@ -59,7 +59,7 @@ nav.greyNavItem, nav.greyNavItem a {
 /*body*/
 
 .container {
-  padding: 25px 30px 0 150px;
+  padding: 30px 30px 30px 100px;
 }
 
 .column {
@@ -87,6 +87,10 @@ nav.greyNavItem, nav.greyNavItem a {
   margin-top: 20px;
 }
 
+.project_description h3 {
+  line-height: 150%;
+}
+
 .design_role {
   margin-top: 10px;
   margin-bottom: 75px;
@@ -99,6 +103,7 @@ nav.greyNavItem, nav.greyNavItem a {
 }
 
 .design_role p {
+  margin-top: 0;
   margin-bottom: 2px;
   padding: 0;
 }
@@ -119,12 +124,12 @@ nav.greyNavItem, nav.greyNavItem a {
   color: white;
   height: auto;
   margin-bottom: 50px;
-  padding: 50px 50px 50px 0;
   width: 100%;
 }
 
 .slider h2 {
   margin-top: 0;
+  padding-top: 30px;
 }
 
 .left-column {
@@ -146,6 +151,7 @@ nav.greyNavItem, nav.greyNavItem a {
 .competitionIcon {
   height: 75px;
   object-fit: cover;
+  margin-right: 10px;
   padding-right: 10px;
   width: 85px;
 }
@@ -281,7 +287,6 @@ nav.greyNavItem, nav.greyNavItem a {
 
 .goals_content {
   color: #FFF;
-  padding-top: 0;
 }
 
 /*User Stories*/
@@ -312,15 +317,14 @@ nav.greyNavItem, nav.greyNavItem a {
 
 .vertical-line {
   background-color: #3BA09E;
-  height: 10px;
+  height: 27px;
   margin: 0 auto;
   width: 2px;
 }
 
 .userstories li {
-  font-size: 1.25rem;
-  line-height: 150%;
-  /* margin-right: 600px; */
+  font-size: 1.7rem;
+  line-height: 170%;
 }
 
 /*User Flows*/
@@ -440,14 +444,14 @@ nav.greyNavItem, nav.greyNavItem a {
 }
 
 .color_row {
-  height: 125px;
+  height: 107px;
   margin-left: 20px;
 }
 
 .color_circle {
   border-radius: 50%;
   height: 100px;
-  margin-right: 20px;
+  margin-right: 50px;
   width: 100px;
 }
 
@@ -458,7 +462,7 @@ nav.greyNavItem, nav.greyNavItem a {
 }
 
 .color_row1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .article {
@@ -468,6 +472,8 @@ nav.greyNavItem, nav.greyNavItem a {
   margin-bottom: 0;
   width: 50%;
 }
+
+/*User Testing*/
 
 .mobile_preference {
   display: none;
@@ -536,10 +542,9 @@ blockquote p {
 .protoslider {
   background: #3BA09E;
   color: #FFF;
-  height: 275px;
+  height: auto;
   width: 100%;
   margin-bottom: 50px;
-  padding: 50px 50px 50px 0;
 }
 
 .protoslider p {
@@ -646,7 +651,7 @@ blockquote p {
 }
 
 #nextButton {
-  padding-left: 350px;
+  padding-left: 480px;
 }
 
 .prevNext {
@@ -683,6 +688,10 @@ blockquote p {
   .project_title {
     top: 150px;
     left: 30px;
+  }
+
+  .project_description {
+    margin-bottom: 0;
   }
 
   .one-half {
@@ -987,12 +996,12 @@ blockquote p {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
   .container {
-    padding: 25px 35px 0 115px;
+    padding: 25px 35px 25px 115px;
   }
 
-  .slider {
+  /* .slider {
     padding: 20px 0;
-  }
+  } */
 
   .hero {
     height: 250px;
@@ -1129,7 +1138,7 @@ blockquote p {
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .container {
-    padding: 25px 30px 0 135px;
+    padding: 30px 30px 30px 110px;
   }
 
   .hero {

@@ -78,7 +78,6 @@
   text-align: center;
   max-width: 100%;
   padding: 0;
-  width: 100%;
 }
 
 .grid figure {
@@ -86,7 +85,8 @@
   overflow: hidden;
   display: block;
   max-width: 100%;
-  max-height: 500px;
+  max-height: 400px;
+  margin-left: 77px;
   cursor: pointer;
   color: white;
   width: 100%;
@@ -110,8 +110,8 @@
 /*hover effect*/
 
 figure.effect-chico img {
-  max-width: 90%;
-  width: 90%;
+  max-width: 100%;
+  width: 100%;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale(1.12);
@@ -131,25 +131,26 @@ figure.effect-chico figcaption {
 figure.effect-chico figcaption::before {
 	position: absolute;
 	top: 30px;
-	right: 30px;
+	right: 105px;
 	bottom: 30px;
 	left: 30px;
 	border: 1px solid #fff;
 	content: '';
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }
 
 figure.effect-chico figcaption::before,
 figure.effect-chico p {
 	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+	transition: opacity 1s, transform 1s;
 }
 
 figure.effect-chico h3 {
-	padding: 20% 0 20px 0;
+	padding: 8%;
   color: #FFF;
+  margin: 0;
 }
 
 figure.effect-chico p {
@@ -171,12 +172,10 @@ figure.effect-chico:hover p {
 		padding: 0 10px;
 		text-align: center;
 	}
-	.grid figure {
-		display: inline-block;
-		float: none;
-		margin: 10px auto;
-		width: 100%;
-	}
+
+  figure.effect-chico figcaption::before {
+    left: 105px;
+  }
 }
 
 /*About Me*/
@@ -187,9 +186,9 @@ figure.effect-chico:hover p {
 
 #sashapic {
   height:500px;
+  margin-right: 50px;
   padding: 20px 0 0 25px;
-  position: absolute;
-  right: 100px;
+  float: right;
   width:500px;
 }
 
@@ -268,6 +267,17 @@ figure.effect-chico:hover p {
 
 @media only screen and (min-width: 320px) and (max-width: 574px) {
 
+  figure.effect-chico figcaption::before {
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .grid figure {
+    margin-left: 0;
+  }
+
   .intro {
     padding: 100px 25px 100px 25px;
   }
@@ -300,11 +310,15 @@ figure.effect-chico:hover p {
   .contact p {
     padding-bottom: 25px;
   }
+
+  .grid {
+    margin: 50px 0 0 0;
+  }
 }
 
 /*Tablet*/
 
-@media only screen and (min-width: 575px) {
+@media only screen and (min-width: 575px) and (max-width: 991px) {
 .contact {
     height: 410px;
   }
@@ -315,25 +329,70 @@ figure.effect-chico:hover p {
   }
 
 #sashapic {
+  margin-right: 0;
   object-fit: cover;
-  right: 25px;
   width: 250px;
   }
 
   p {
     margin-top: 10px;
   }
+
+  .grid {
+    margin: 50px 50px 0 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  figure.effect-chico figcaption::before {
+    left: 30px;
+    right: 55px;
+  }
 }
 
 
 /*Laptop*/
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 991px) and (max-width: 1024px) {
 
 #sashapic {
+    margin-right: 0;
     object-fit: cover;
     width: 400px;
   }
   .contact {
     height: 450px;
+  }
+}
+
+/*Extra Large Laptop*/
+
+@media only screen and (min-width: 2560px) {
+
+  p {
+    line-height: 200%;
+  }
+
+  .grid figure {
+    max-height: 700px;
+  }
+
+  figure.effect-chico figcaption::before {
+    right: 110px;
+  }
+
+  #sashapic {
+    margin-right: 150px;
+    object-position: 50% 20%;
+    object-fit: cover;
+    padding: 0 0 0 25px;
+    width: 900px;
+  }
+
+  figure.effect-chico figcaption::before {
+    padding: 0;
+  }
+
+  figure.effect-chico h3 {
+    padding: 5%;
   }
 }
