@@ -129,7 +129,7 @@ nav.greyNavItem, nav.greyNavItem a {
 
 .slider h2 {
   margin-top: 0;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .left-column {
@@ -145,7 +145,7 @@ nav.greyNavItem, nav.greyNavItem a {
 
 #discovery h2 {
   color: #F2F2F2;
-  padding-top: 75px;
+  padding-top: 70px;
 }
 
 .competitionIcon {
@@ -292,7 +292,7 @@ nav.greyNavItem, nav.greyNavItem a {
 /*User Stories*/
 
 #information h2 {
-  padding-top: 0;
+  padding-top: 18px;
 }
 
 .bullet {
@@ -377,7 +377,7 @@ nav.greyNavItem, nav.greyNavItem a {
 }
 
 .wirebutton {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .wirecontent {
@@ -457,7 +457,7 @@ nav.greyNavItem, nav.greyNavItem a {
 
 .color_circle p {
   font-size: 1rem;
-  padding-top: 35px;
+  padding-top: 37px;
   text-align: center;
 }
 
@@ -987,12 +987,25 @@ blockquote p {
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
   .color_circle p {
-    padding-top: 60px;
+    padding-top: 55px;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .design_role {
+    margin-bottom: 50px;
   }
 }
 /*Tablet*/
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    padding-left: 0;
+  }
+
+  h2 {
+    padding-left: 115px;
+  }
 
   .container {
     padding: 25px 35px 25px 115px;
@@ -1137,7 +1150,7 @@ blockquote p {
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .container {
-    padding: 30px 30px 30px 110px;
+    padding: 25px 30px 25px 50px;
   }
 
   .hero {

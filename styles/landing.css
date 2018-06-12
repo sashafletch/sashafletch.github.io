@@ -58,16 +58,15 @@
 
 .see_more {
   margin: 0 auto;
-  width: 250px;
+  width: auto;
   text-align: center;
-}
-
-.see_more p {
-  font-size: 1rem;
 }
 
 .fa-arrow-down {
   padding-top: 35px;
+  /* margin-right: auto; */
+  /* margin-left: auto; */
+  width: 100%;
 }
 
 /*Project*/
@@ -118,21 +117,26 @@ figure.effect-chico img {
 }
 
 figure.effect-chico:hover img {
-	opacity: 0.5;
+  opacity: 0.5;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
 
+figure.effect-chico:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 figure.effect-chico figcaption {
 	padding: 3em;
+  transition: all 1s, transform 1s;
 }
 
 figure.effect-chico figcaption::before {
 	position: absolute;
 	top: 25px;
-	right: 35px;
+	right: 25px;
 	bottom: 25px;
-	left: 20px;
+	left: 25px;
 	border: 1px solid #fff;
 	content: '';
 	-webkit-transform: scale(1.5);
@@ -219,8 +223,13 @@ figure.effect-chico:hover p {
 }
 
 .skills_list {
+  font-size: 1.25rem;
   list-style-type: none;
   padding-left: 0;
+}
+
+.skills_h2 {
+  margin-top: 0;
 }
 
 .skills li {
@@ -234,7 +243,6 @@ figure.effect-chico:hover p {
   background-size: cover;
   background-repeat: no-repeat;
   height: 440px;
-  margin-top: 120px;
   max-width: 100%;
 }
 
@@ -244,7 +252,7 @@ figure.effect-chico:hover p {
   box-shadow: 2px 5px rgba(0, 0, 0, 0.25);
   color: #FFF;
   display: inline-block;
-  margin: 30px 100px 0 0;
+  margin: 30px 100px 25px 0;
   padding: 10px 20px 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -293,6 +301,10 @@ figure.effect-chico:hover p {
     padding-right: 0;
   }
 
+  .skills_list {
+    font-size: 1rem;
+  }
+
   #sashapic {
     display: none;
   }
@@ -318,34 +330,38 @@ figure.effect-chico:hover p {
 /*Tablet*/
 
 @media only screen and (min-width: 575px) and (max-width: 991px) {
-.contact {
-    height: 410px;
-  }
+  .contact {
+      height: 410px;
+    }
 
-.contactbtn {
-    margin: 50px 50px 0 0;
-    width: 125px;
-  }
+  .contactbtn {
+      margin: 50px 50px 0 0;
+      width: 125px;
+    }
 
-#sashapic {
-  margin-right: 0;
-  object-fit: cover;
-  width: 250px;
-  }
+  #sashapic {
+    margin-right: 0;
+    object-fit: cover;
+    width: 250px;
+    }
 
-  p {
-    margin-top: 10px;
-  }
+    p {
+      margin-top: 10px;
+    }
 
-  .grid {
-    margin: 50px 50px 0 0;
+    .grid {
+      margin: 50px 0 0 0;
+    }
   }
-}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .intro {
+    padding: 100px;
+  }
+
   figure.effect-chico figcaption::before {
     left: 30px;
-    right: 55px;
+    right: 30px;
   }
 }
 
@@ -359,7 +375,7 @@ figure.effect-chico:hover p {
     width: 400px;
   }
   .contact {
-    height: 450px;
+    height: auto;
   }
 }
 
