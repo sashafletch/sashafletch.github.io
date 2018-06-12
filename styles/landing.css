@@ -189,7 +189,6 @@ figure.effect-chico:hover p {
 
 #sashapic {
   height:500px;
-  margin-right: 50px;
   padding: 20px 0 0 25px;
   float: right;
   width:500px;
@@ -266,7 +265,7 @@ figure.effect-chico:hover p {
 }
 
 .contact h2 {
-  margin-top: 20px;
+  margin-top: 0;
   padding-top: 50px;
 }
 
@@ -351,6 +350,10 @@ figure.effect-chico:hover p {
 
     .grid {
       margin: 50px 0 0 0;
+    }
+
+    .skills_list {
+      font-size: 1rem;
     }
   }
 
