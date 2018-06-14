@@ -1,3 +1,7 @@
+body, html {
+  overflow-x: hidden;
+}
+
 /*Navigation Bar*/
 
 nav.greyNavItem, nav.greyNavItem a {
@@ -75,7 +79,7 @@ nav.greyNavItem, nav.greyNavItem a {
 }
 
 .comp_descript {
-  width: 80%;
+  width: 100%;
 }
 
 .description_text {
@@ -85,6 +89,7 @@ nav.greyNavItem, nav.greyNavItem a {
 .project_description {
   margin-bottom: 25px;
   margin-top: 20px;
+  padding-left: 50px;
 }
 
 .project_description h3 {
@@ -129,7 +134,7 @@ nav.greyNavItem, nav.greyNavItem a {
 
 .slider h2 {
   margin-top: 0;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .left-column {
@@ -138,6 +143,7 @@ nav.greyNavItem, nav.greyNavItem a {
 
 .right-column {
   padding-right: 10px;
+  padding-left: 20px;
 }
 
 
@@ -169,84 +175,19 @@ nav.greyNavItem, nav.greyNavItem a {
   margin: 50px 250px 50px 250px;
 }
 
-/*Slideshow*/
-.slideshow-container {
-  height: 400px;
-  position: relative;
-  margin: auto;
-  max-width: 100%;
+.mobile_graphs p {
+  margin-top: 20px;
 }
 
-.graphSlides {
-  display: none;
+canvas {
+  height: 600px !important;
+  width: 600px !important;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.graphSlides img {
-  height: 300px;
-  display: block;
-  margin: 0 auto;
-  object-fit: contain;
-  width: 500px;
-}
-
-.slidePrev, .slideNext {
-  border-radius: 0 3px 3px 0;
-  color: #000;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-top: -22px;
-  padding: 16px;
-  position: absolute;
-  top: 40%;
-  transition: 0.6s ease;
-  width: auto;
-}
-
-.slideNext {
-  border-radius: 3px 0 0 3px;
-  right: 205px;
-}
-
-.slidePrev {
-  left: 175px;
-}
-
-.slidePrev:hover, .slideNext:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.slide_text {
-  bottom: 10px;
-  color: #000;
-  font-size: 0.9rem;
-  padding: 8px 12px;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-
-.dot {
-  background-color: #bbb;
-  border-radius: 50%;
-  cursor: pointer;
-  display: inline-block;
-  height: 15px;
-  margin: 0 2px;
-  transition: background-color 0.6s ease;
-  width: 15px;
-}
-
-.dots_center {
-  text-align: center;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-.mobile_graphs {
-  display: none;
+#graph1, #graph2 {
+  margin-top: 40px;
 }
 
 /*Personas*/
@@ -269,6 +210,7 @@ nav.greyNavItem, nav.greyNavItem a {
 .persona1 h3, .persona2 h3 {
   color: #000;
   font-weight: 400;
+  padding-top: 25px;
 }
 
 .wrap {
@@ -360,29 +302,6 @@ nav.greyNavItem, nav.greyNavItem a {
 
 .forty-five {
   width: 45%;
-}
-
-.landing_wire {
-  height: 500px;
-  margin-bottom: 90px;
-}
-
-.wire2, .wire3 {
-  padding-left: 50px;
-}
-
-.wire2 {
-  margin-bottom: 100px;
-  object-position: center;
-}
-
-.wirebutton {
-  margin-bottom: 30px;
-}
-
-.wirecontent {
-  height: auto;
-  margin-bottom: 0;
 }
 
 /*Branding*/
@@ -479,32 +398,28 @@ nav.greyNavItem, nav.greyNavItem a {
   display: none;
 }
 
-.preferencerow1 img, .preferencerow2 img {
+.preference-tests p {
+  padding-right: 50px;
+}
+
+.preference_line {
+  background: rgba(70, 190, 188, 0.5);
+  height: 1px;
+  margin: 30px 0 30px 0;
+  width: 100%;
+}
+
+.preferencerow1 img, .preferencerow2 img, .preferencerow3 img {
   height: 275px;
   margin-right: 60px;
   object-fit: cover;
   width: 275px;
 }
 
-.preferencerow1, .preferencerow2, .preference-results {
+.preferencerow1, .preferencerow2, .preference-results, .preferencerow3 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.preferencerow1 {
-  margin-bottom: 50px;
-}
-
-.percent {
-  background-color: #FADE39;
-  height: 50px;
-  width: 75px;
-}
-
-.percent p {
-  margin-top: 10px;
-  text-align: center;
 }
 
 blockquote {
@@ -662,6 +577,7 @@ blockquote p {
 /*Media Queries*/
 
 /*Phone*/
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   h4 {
     margin-top: 20px;
@@ -690,8 +606,18 @@ blockquote p {
     left: 30px;
   }
 
+  .design_role {
+    margin-bottom: 50px;
+  }
+
+  .slider h2 {
+    padding-top: 0;
+  }
+
   .project_description {
     margin-bottom: 0;
+    padding-left: 20px;
+    margin-right: 20px;
   }
 
   .one-half {
@@ -721,8 +647,12 @@ blockquote p {
     padding: 20px 0 10px 0;
   }
 
+  .right-column {
+    padding-left: 0;
+  }
+
   p {
-    margin: 20px 0;
+    margin: 10px 0;
   }
 
   .white_horizontal_line {
@@ -747,16 +677,9 @@ blockquote p {
     margin: 0 0 40px 0;
   }
 
-  .slideshow-container {
-    display: none;
-  }
-
-  .dots_center {
-    display: none;
-  }
-
-  .mobile_graphs {
-    display: block;
+  canvas {
+    height: 250px !important;
+    width: 250px !important;
   }
 
   #graph1, #graph2 {
@@ -778,6 +701,7 @@ blockquote p {
 
   .goals {
     height: auto;
+    margin-top: 50px;
     margin-bottom: 0;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -883,7 +807,6 @@ blockquote p {
       line-height:1em;
       margin-top:-0.5em;
       text-align:center;
-      /* color:white; */
   }
 
   .color_circle p {
@@ -985,30 +908,12 @@ blockquote p {
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 424px) {
-  .color_circle p {
-    padding-top: 55px;
-  }
-}
-
-@media screen and (min-width: 425px) and (max-width: 767px) {
-  .design_role {
-    margin-bottom: 50px;
-  }
-}
 /*Tablet*/
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  main {
-    padding-left: 0;
-  }
-
-  h2 {
-    padding-left: 115px;
-  }
 
   .container {
-    padding: 25px 35px 25px 115px;
+    padding: 25px 35px;
   }
 
   /* .slider {
@@ -1046,25 +951,14 @@ blockquote p {
     width: 100%;
   }
 
-  .graphSlides img {
-    margin-left: 55px;
-  }
-
-  .slideNext, .slidePrev {
-    margin-top: -30px;
-  }
-
-  .slideNext {
-    right: 10px;
-  }
-
-  .slidePrev {
-    left: 0px;
-  }
-
   .persona1 li, .persona2 li {
     font-size: 1.125rem;
     line-height: 150%;
+  }
+
+  canvas {
+    height: 400px !important;
+    width: 400px !important;
   }
 
   .sketch_wires img {
@@ -1134,23 +1028,19 @@ blockquote p {
     .article {
       height: auto;
       float: right;
-      width: 90%;
-      padding: 30px;
+      width: 95%;
+      padding: 20px;
       margin: 0;
     }
 
-    .footer-copy p {
-      font-size: 0.825rem;
-    }
-
-    .footer-icons {
-      padding-right: 0;
+    #nextButton {
+      padding-left: 155px;
     }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .container {
-    padding: 25px 30px 25px 50px;
+    padding: 25px 60px;
   }
 
   .hero {
@@ -1164,5 +1054,24 @@ blockquote p {
 }
 
 @media screen and (min-width: 1440px) {
+  .container {
+    padding: 50px 200px;
+  }
+
+  .design_role {
+    padding: 30px 50px;
+  }
+
+  .project_description {
+    padding: 50px 145px;
+  }
+
+  .white_horizontal_line {
+    margin: 10px 0 0 200px;
+  }
+
+  .horizontal_line {
+    margin: 10px 0 15px 200px;
+  }
 
 }

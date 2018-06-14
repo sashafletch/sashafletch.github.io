@@ -6,6 +6,7 @@ var chart = new Chart(ctx, {
     // The data for our dataset
     data: {
         labels: ["Yes", "No", "Not sure"],
+        fontSize: 24,
         datasets: [{
             label: "Do Users Collaborate?",
             backgroundColor: ["#FADE39", "#46bebc", "#E81D62"],
@@ -13,10 +14,15 @@ var chart = new Chart(ctx, {
         }]
     },
     options: {
+      responsive: true,
       title: {
         display: true,
-        text: "Do Users Collaborate?"
-      }
+        text: "Do Users Collaborate?",
+        fontSize: 24
+      },
+      scale: {
+        pointLabels: {  fontSize:24 }
+      },
     }
 });
 
@@ -35,9 +41,14 @@ var chart = new Chart(ctx, {
         }]
     },
     options: {
+      responsive: true,
       title: {
         display: true,
-        text: "Who Users Collaborate With"
-      }
+        text: "Who Users Collaborate With",
+        fontSize: 24
+      },
+      scale: {
+        pointLabels: {  fontSize:24 }
+      },
     }
 });

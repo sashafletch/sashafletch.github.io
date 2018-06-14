@@ -57,6 +57,7 @@
                 <span></span>
                 <span></span>
                 <ul class="menu">
+                  <li class="mobile-nav-item dropdown"><a href="index.html">Home</a></li>
                   <li class="mobile-nav-item dropdown"><a href="#">Work
                     <ul class="dropdown-content">
                       <li class="mobile-nav-item dropdown-nav-item"><a href="lupo.html">Lupo Cloud Storage</a></li>
@@ -80,16 +81,16 @@
             <figure class="header_img">
               <img class="hero" src="https://sashafletch.github.io/images/woman_working.jpg" alt="Woman Working">
             </figure>
-            <h1 class="fadeInDown project_title column">Lupo Cloud Storage</h1>
-            <img class="hero_web fadeInDown" src="images/lupo_web.png" alt="Lupo Web Prototype">
-            <img class="hero_mobile fadeInDelay" src="images/lupo_mobile.png" alt="Lupo Mobile Prototype">
+            <h1 class="project_title column">Lupo Cloud Storage</h1>
+            <img class="hero_web" src="images/lupo_web.png" alt="Lupo Web Prototype">
+            <img class="hero_mobile" src="images/lupo_mobile.png" alt="Lupo Mobile Prototype">
           </div>
         </header>
     </section>
     <main>
   <!--Project Description-->
       <section class="project_description">
-          <div class="row container">
+          <div class="row">
             <div class="column one-half">
               <h3 class="description_text">A digital workplace for concentrative and collaborative work</h3>
               <a class="button text-center bigbutton" href="https://invis.io/3ZGRZF9MDPS#/290246161_Landing_Page">View Prototype</a>
@@ -98,7 +99,6 @@
       </section>
   <!--Design Role-->
       <section>
-        <div class="container">
           <div class="row design_role">
             <div class="column one-third">
               <h3>Design Roles</h3>
@@ -139,7 +139,6 @@
               </div>
             </div>
           </div>
-        </div>
       </section>
   <!--Lupo Overview-->
       <section>
@@ -199,39 +198,12 @@
   <!--User Research-->
           <h3>Early Insights</h3>
           <p>To understand what users are looking for in cloud storage, I conducted a survey that was posted online through various social media platforms and public forums. I also wanted to better understand how users viewed major cloud storage sites like Google Drive and Dropbox; what did they think was missing?</p>
-      <!--Slideshow-->
-          <div class="slideshow-container">
-            <div class="graphSlides fade">
-              <img src="images/graph1.png" alt="Graph 1">
-              <aside class="slide_text">Of the survey participants, 88% stated that they use collaborative features on cloud storage.</aside>
-            </div>
-            <div class="graphSlides fade">
-              <img src="images/graph2.png" alt="Graph 2">
-              <aside class="slide_text">Of the survey participants, 70% indicated that use collaborative features most often with work colleagues than with friends or family.</aside>
-            </div>
-            <div class="graphSlides fade">
-              <img src="images/graph3.png" alt="Graph 3">
-              <aside class="slide_text">Survey results indicate collaboration as one of the key reasons participants use cloud storage, emphasizing the importance of it as a feature.</aside>
-            </div>
-
-      <!--Next and previous buttons-->
-            <a class="slidePrev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="slideNext" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-      <!--Dots/Bars-->
-        <div class="dots_center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
         <div class="mobile_graphs">
           <p>Survey results indicated collaboration as one of the key reasons participants use cloud storage, emphasizing the importance of it as a feature.</p>
           <canvas id="graph1"></canvas>
           <canvas id="graph2"></canvas>
         </div>
         <a class="button bigbutton" href="https://drive.google.com/file/d/1unH7nWOAGAsPb6SjLEOksLKSLvmVCRQA/view?usp=sharing">View Full Results</a>
-
   <!--User Personas-->
         <h3>User Personas</h3>
         <p>To better understand the needs of users, I then conducted two interviews from survey participants: </p>
@@ -244,8 +216,9 @@
               <li>Profession: IT</li>
             </ul>
             <div>
+              <div class="polygon"></div>
               <h3>Motivation</h3>
-              <p>Kara first began using Dropbox as a free option but eventually outgrew it and disliked their pricing options. Actively looking for the best value platform, she switched from Box and others before finally settling on Mega.nz.</p>
+              <p>Kara first began using Dropbox as a free option but eventually outgrew it and disliked their pricing options. She switched to Box and then Mega.nz.</p>
             <div class="polygon"></div>
             </div>
             <div>
@@ -265,8 +238,9 @@
               <li>Profession: Teacher</li>
             </ul>
             <div>
+              <div class="polygon"></div>
               <h3>Motivation</h3>
-              <p>To better meet the needs of a more tech-focused generation, he hopes that using the collaborative features in cloud storage platforms like Google Drive will help keep his students motivated and make them feel better supported.</p>
+              <p>To better meet the needs of a more tech-focused generation, John hopes to use collaborative features to support his students and keep them motivated.</p>
               <div class="polygon"></div>
             </div>
             <div>
@@ -327,7 +301,7 @@
           <a class="button bigbutton" href="https://drive.google.com/file/d/1kAFD-q55YgI8ce8HxEIArAntm8BR5ger/view?usp=sharing">View User Stories</a>
           <br>
   <!--User Flows-->
-          <h3>The Flow</h3>
+          <h3>User Flows</h3>
           <div class="row flow">
             <div class="column one-half">
               <p><i>Onboarding</i></p>
@@ -407,10 +381,8 @@
           </div>
           <div class="logo_sequence">
               <img class="column sequence1" src="images/sequence1.png" alt="Logo Version 1">
-                <!-- <div></div> -->
               <img class= "column sequence2" src="images/sequence2.png" alt="Logo Version 2">
-                <!-- <div class="sequence-line2"></div> -->
-              <img src="images/final_sequence.png" alt="Final Logo Version">
+              <img class="sequence3" src="images/final_sequence.png" alt="Final Logo Version">
           </div>
           <div class="container">
             <p>In helping to make a final decision on the logo, I also developed several mood boards that explored different color palettes and themes: </p>
@@ -431,7 +403,7 @@
         <article class="typography">
           <div class="clearfix">
           <aside class="column article_content clearfix">
-            <div class="container">
+            <div>
             <p class="font_poiret">Poiret One</p>
             <p class="font_lato">Lato</p>
             <p>Core Colors</p>
@@ -463,7 +435,7 @@
         <aside class="slider column article">
             <p> I chose purple as the core color for Lupo with yellow and orange as supporting colors. Yellow is often associated with happiness and energy; orange is said to stimulate confidence and mental activity. And finally, purple is historically associated with royalty from the Roman Empire. The use of purple as a primary brand identifier corroborates its association with wisdom, creativity, and sophistication.</p>
             <br>
-            <p> Poiret One was chosen as the headline typeface and Lato as the body typeface. Poiret One has very clean lines with very strong geometric shapes that is in alignment with the professional purpose of the site. I decided on Lato because it complements the header with the same level of simplicity and geometric shapes. While slightly decorative, it doesn’t add too much detail that would distract from the overall refined theme of the site but does add interest.</p>
+            <p> Poiret One was chosen as the headline typeface and Lato as the body typeface. Poiret One has very clean lines with very strong geometric shapes that is in alignment with the professional purpose of the site.</p>
         </aside>
       </div>
       <div class="container">
@@ -517,22 +489,22 @@
             <p class="font_poiret">Poiret One</p>
             <p class="font_lato">Lato</p>
             <div class="color_row color_row1">
-              <div class="column color_circle core1">
-                  <p>#2A004A</p>
+              <div class="column color_circle core1 circle-text">
+                <p>#2A004A</p>
               </div>
-              <div class="column color_circle core2">
-                  <p>#4E008A</p>
+              <div class="column color_circle core2 circle-text">
+                <p>#4E008A</p>
               </div>
-              <div class="column color_circle core3">
-                  <p>#F7A800</p>
+              <div class="column color_circle core3 circle-text">
+                <p>#F7A800</p>
               </div>
-              <div class="column color_circle support1">
+              <div class="column color_circle support1 circle-text">
                 <p>#FEFEFA</p>
               </div>
-              <div class="column color_circle support2">
+              <div class="column color_circle support2 circle-text">
                 <p>#FFF600</p>
               </div>
-              <div class="column color_circle support3">
+              <div class="column color_circle support3 circle-text">
                 <p>#B067DF</p>
               </div>
             </div>
@@ -560,14 +532,21 @@
             </article>
           <div class="container preference-tests">
             <div class="preferencerow1">
+                <p>Test 1</p>
                 <img id="preference1a" src="images/dochome_v1.png" alt="Document Page Version 1">
-                <img id="preference2a" src="images/purple_signup.png" alt="Purple Sign Up Page">
-                <img id="preference3a" src="images/land_v1.png" alt="Landing Page Version 1">
-            </div>
-            <div class="preferencerow2">
                 <img id="preference1b" src="images/dochome_v2.png" alt="Document Page Version 2">
+            </div>
+            <div class="preference_line"></div>
+            <div class="preferencerow2">
+                <p>Test 2</p>
+                <img id="preference2a" src="images/purple_signup.png" alt="Purple Sign Up Page">
                 <img id="preference2b" src="images/white_signup.png" alt="White Sign Up Page">
-                <img id="preference3b" src="images/land_v2.png" alt="Landing Page Version 2">
+            </div>
+            <div class="preference_line"></div>
+            <div class="preferencerow3">
+              <p>Test 3</p>
+              <img id="preference3a" src="images/land_v1.png" alt="Landing Page Version 1">
+              <img id="preference3b" src="images/land_v2.png" alt="Landing Page Version 2">
             </div>
           </div>
           <div class="container mobile_preference">
@@ -727,7 +706,7 @@
                 <a class="button bigbutton mobile_viewbtn" href="https://invis.io/QEKLT2HT5KF#/291639961_Mobile_Landing_Page">View Prototype</a>
               </div>
       <!--Final Thoughts-->
-            <div class="container">
+            <div class="container final">
               <h3>Final Thoughts</h3>
               <h3 class="black_h3" id="conclusion"><i>"Patience is key"</i></h3>
                 <p>While there were many triumphs in the completion of this project primarily because of user feedback, market research, and user testing, there were also some lessons I learned as a designer. One of my main mistakes working on this project was my inclination to change direction based on an individual user’s opinion without carefully considering whether their opinion was an outlier or representative of the norm. Moving forward, I would be more persistent in clarifying the distinction so as not to make arbitrary changes to a design at the expense of other users.</p>
@@ -747,7 +726,6 @@
           </div>
         </main>
         <footer>
-          <div class="container">
             <div class="row">
               <div class="column footer-copy">
                 <p class="copyright">© 2018 Sasha Fletcher/Designed and Developed by Sasha Fletcher</p>
@@ -760,7 +738,6 @@
                 <a href="https://github.com/sashafletch" class="fa fa-github"></a>
               </div>
             </div>
-          </div>
         </footer>
         <!--Scripts-->
         <script src="scripts/slideshow.js"></script>

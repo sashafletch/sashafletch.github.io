@@ -29,8 +29,8 @@
   margin-bottom: 10px;
   -webkit-animation-name: underline;
   animation-name: underline;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
   -webkit-animation-fill-mode: both;
@@ -42,32 +42,11 @@
      width: 0;
      right: 0;
    }
-   50% {
-     width: 40%;
+   100% {
+     width: 50%;
      right: 20%;
    }
-   75% {
-     width: 20%;
-     right: 40%;
-   }
-   100% {
-     width: 30%;
-     right: 35%;
-   }
  }
-
-.see_more {
-  margin: 0 auto;
-  width: auto;
-  text-align: center;
-}
-
-.fa-arrow-down {
-  padding-top: 35px;
-  /* margin-right: auto; */
-  /* margin-left: auto; */
-  width: 100%;
-}
 
 /*Project*/
 
@@ -187,6 +166,10 @@ figure.effect-chico:hover p {
   position: relative;
 }
 
+.about_me p:nth-child(2), .about_me p:nth-child(3) {
+  margin-top: 10px;
+}
+
 #sashapic {
   height:500px;
   padding: 20px 0 0 25px;
@@ -227,7 +210,7 @@ figure.effect-chico:hover p {
   padding-left: 0;
 }
 
-.skills_h2 {
+.about h2 {
   margin-top: 0;
 }
 
@@ -269,9 +252,24 @@ figure.effect-chico:hover p {
   padding-top: 50px;
 }
 
+.footer-copy {
+  padding: 25px 0 25px 0;
+}
+
 /*Phone*/
 
 @media only screen and (min-width: 320px) and (max-width: 574px) {
+
+  @keyframes underline {
+     0% {
+       width: 0;
+       right: 0;
+     }
+     100% {
+       width: 50%;
+       right: 25%;
+     }
+   }
 
   figure.effect-chico figcaption::before {
     right: 20px;
@@ -324,6 +322,11 @@ figure.effect-chico:hover p {
   .grid {
     margin: 50px 0 0 0;
   }
+
+  .footer-copy {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 /*Tablet*/
@@ -342,10 +345,6 @@ figure.effect-chico:hover p {
     margin-right: 0;
     object-fit: cover;
     width: 250px;
-    }
-
-    p {
-      margin-top: 10px;
     }
 
     .grid {
@@ -372,17 +371,31 @@ figure.effect-chico:hover p {
 /*Laptop*/
 @media only screen and (min-width: 991px) and (max-width: 1024px) {
 
-#sashapic {
-    margin-right: 0;
-    object-fit: cover;
-    width: 400px;
+  #sashapic {
+      margin-right: 0;
+      object-fit: cover;
+      width: 400px;
+    }
+    .contact {
+      height: auto;
+    }
   }
-  .contact {
-    height: auto;
-  }
-}
 
 /*Extra Large Laptop*/
+@media only screen and (min-width: 1440px) {
+  .horizontal_line {
+    margin: 10px 0 15px 50px;
+  }
+
+  #sashapic {
+    height: 400px;
+    object-position: 50% 20%;
+    object-fit: cover;
+    margin-right: 50px;
+    padding: 0 0 0 25px;
+    width: 400px;
+  }
+}
 
 @media only screen and (min-width: 2560px) {
 
