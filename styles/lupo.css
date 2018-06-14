@@ -72,7 +72,6 @@
 }
 
 .sketch1, .sketch2, .sketch3 {
-  padding-bottom: 50px;
   height: 500px;
 }
 
@@ -162,7 +161,6 @@
 .font_lato {
   font-family: 'Lato', sans-serif;
   font-size: 1.25rem;
-  margin-bottom: 30px;
   margin-top: 0;
 }
 
@@ -197,7 +195,8 @@
 }
 
 .wire2, .wire3, .landing_wire {
-  padding-left: 50px;
+  margin-left: 75px;
+  padding: 20px;
 }
 
 .wire2 {
@@ -264,7 +263,7 @@
 
 .create_content, .allow_content, .extend_content1, .extend_content2, .cost_content {
   text-align: left;
-  width: 40%;
+  width: 50%;
   float: left;
 }
 
@@ -274,16 +273,16 @@
 
 .allow_goal img, .extend_goal1 img, .extend_goal2 img, .cost_goal img {
   float: left;
-  width: 60%;
+  width: 50%;
 }
 
 .create_goal img {
   float: left;
-  width: 60%;
+  width: 50%;
 }
 
-.allow_content, .extend_content1, .cost_content, .extend_content2, .create_content {
-  padding-left: 55px;
+.laptop_prototypes {
+  padding: 25px 0 25px 160px;
 }
 
 #lupo_web img {
@@ -448,10 +447,6 @@
     width: 175px
   }
 
-  .mobile_preference {
-    margin-bottom: 50px;
-  }
-
   .preference_line {
     background: rgba(70, 190, 188, 0.5);
     height: 1px;
@@ -563,6 +558,14 @@
     margin-right: 0;
   }
 
+  .goals {
+    margin-top: 0;
+  }
+
+  #information {
+    margin-bottom: 0;
+  }
+
   .bullet {
     height: 10px;
     width: 10px;
@@ -587,7 +590,11 @@
 
 
   .sketch_wires .vertical-line {
-    height: 400px;
+    height: 300px;
+  }
+
+  .sketch_wires img {
+    height: 300px;
   }
 
   .sketch_wires .bullet-listing {
@@ -595,18 +602,11 @@
     margin-top: 170px;
   }
 
-  .sketch1, .sketch2, .sketch3 {
-    height: auto;
-    padding-bottom: 45px;
-  }
-
-  .landing_wire {
-    margin-top: 40px;
-    margin-bottom: 150px;
-  }
-
-  .wire2 {
-    margin-bottom: 170px;
+  .wire2, .wire3, .landing_wire {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .banner img {
@@ -627,6 +627,10 @@
   }
 
   .logo_sketch5 {
+    visibility: hidden;
+  }
+
+  .logo_sketch6 {
     left: 255px;
   }
 
@@ -642,8 +646,8 @@
     display: none;
   }
 
-  .article_content {
-    height: 641px;
+  .article_content, .article {
+    height: 560px;
   }
 
   #preference1a, #preference2a, #preference3a {
@@ -686,6 +690,10 @@
     width: 50%;
   }
 
+  .forty-five {
+    padding: 0;
+  }
+
   .testcontent {
     margin-top: 0;
   }
@@ -712,6 +720,7 @@
   }
 
   .mvpFont {
+    text-align: left;
     font-size: 1.5rem;
     margin: 40px 0;
   }
@@ -721,8 +730,12 @@
   }
 
   .allow_content, .extend_content1, .cost_content, .extend_content2, .create_content {
-    padding-left: 55px;
-    padding-top: 100px;
+    padding-top: 75px;
+    padding-right: 20px;
+  }
+
+  .laptop_prototypes {
+    padding: 25px 0 25px 50px;
   }
 
   .protoslider {
@@ -745,7 +758,7 @@
   }
 
   .web_viewbtn {
-    margin-left: 50px;
+    margin-left: 25px;
   }
 
   .mobile_viewbtn {
@@ -768,8 +781,13 @@
   	border-right: 200px solid transparent;
   	border-bottom: 3px solid #FADE39;
     height: 0;
-    margin: 20px 0;
+    margin: 0 auto;
+    margin-top: 20px;
     width: 0;
+  }
+
+  .right-column .comp_descript {
+    margin-bottom: 30px;
   }
 
   .consistency {
@@ -802,10 +820,15 @@
 
   .wrapper {
     margin-top: 5px;
+    margin-left: 30px;
   }
 
   .bullet-listing {
     margin-top: 15px;
+  }
+
+  .flow {
+    margin-left: 50px;
   }
 
   .flow img {
@@ -814,10 +837,10 @@
 
   .sketch_wires img {
     width: 350px;
+    height: 350px;
   }
 
-  .sketch1, .sketch2, .sketch3 {
-    height: 400px;
+  .sketch1, .sketch2 {
     margin-bottom: 50px;
   }
 
@@ -832,57 +855,65 @@
     width: 20px;
   }
 
-  .landing_wire {
-    margin-bottom: 100px;
+  .wire2, .wire3, .landing_wire {
+    margin-left: 0;
+    padding: 20px 0;
   }
 
-  .wire3 {
-    height: 350px;
+  .landing_wire {
+    margin-bottom: 50px;
   }
+
+  /* .wire3 {
+    height: 350px;
+  } */
 
   .wire2 {
     height: 250px;
-    margin-bottom: 135px;
+    margin-bottom: 25px;
   }
 
-  .row1-sketch img {
-    margin-right: 50px;
+  .logo_sketch4 {
+    left: 120px;
   }
 
   .logo_sketch5 {
-    left: 380px;
+    left: 340px;
+  }
+
+  .row1-sketch img {
+    margin-right: 20px;
   }
 
   .logo_sketch6 {
-    left: 625px;
+    left: 560px;
   }
 
   .banner {
     height: 300px;
+    margin-left: 0;
   }
 
   .logo_sequence img {
     padding: 50px 25px 0 10px;
   }
 
+  .logo_sequence {
+    margin-left: 12%;
+  }
+
   .sequence2 {
     margin-top: 25px;
   }
 
-  .logo_sequence div {
-    left: 250px;
-    width: 100px;
-  }
-
-  .sequence-line2 {
-    right: 235px;
-    width: 100px;
-  }
-
   .article_content {
-    height: 525px;
+    height: 520px;
     margin-top: 0;
     padding: 25px 30px 25px 50px;
+  }
+
+  .article {
+    height: 520px;
   }
 
   .article_content p {
@@ -935,11 +966,12 @@
   }
 
   .mock1b, .mock2b {
-    margin-left: 100px;
+    margin-left: 50px;
   }
 
   .mvpFont {
     margin: 30px 40px 30px 0;
+    text-align: left;
   }
 
   .cost_goal .mvpFont {
@@ -950,8 +982,8 @@
     margin-right: 20px;
   }
 
-  .allow_content, .cost_content, .extend_content2 {
-    padding-top: 150px;
+  .allow_content, .cost_content, .extend_content2, .create_content {
+    padding-top: 120px;
   }
 
   .extend_content1 {
@@ -966,6 +998,10 @@
     max-width: 450px;
   }
 
+  .laptop_prototypes {
+    padding: 25px 0 25px 100px;
+  }
+
   #lupo_web img {
     height: 500px;
     width: 500px;
@@ -978,7 +1014,7 @@
   }
 
   .web_viewbtn {
-    margin-left: 150px;
+    margin-left: 100px;
   }
 
   .mobile_viewbtn {
@@ -988,8 +1024,6 @@
   .footer-icons {
     padding-right: 10px;
   }
-
-
 
 }
 
@@ -1008,6 +1042,15 @@
 
   .goals {
     height: auto;
+    margin-top: 0;
+  }
+
+  .sketch1, .sketch2 {
+    margin-bottom: 100px;
+  }
+
+  .sketch_wires .vertical-line {
+    height: 500px;
   }
 
   .bullet-listing {
@@ -1027,8 +1070,8 @@
     width: 250px;
   }
 
-  .sketch1, .sketch2, .sketch3 {
-
+  .row1-sketch img {
+    margin-right: 50px;
   }
 
   .logo_sketch5 {
@@ -1061,8 +1104,18 @@
     padding: 30px 30px 30px 100px;
   }
 
+  .article {
+    height: 425px;
+  }
+
   .color_row1 {
     margin-bottom: 140px;
+  }
+
+  .color_circle {
+    height: 90px;
+    width: 90px;
+    margin-right: 50px;
   }
 
   .mockups .forty-five {
@@ -1091,17 +1144,30 @@
     height: 300px;
   }
 
+  .mvpFont {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: left;
+  }
 
   .create_content {
     padding-top: 175px;
+    margin-left: 0;
+    text-align: left;
   }
 
   .allow_content, .cost_content, .extend_content2 {
     padding-top: 150px;
+    padding-right: 30px;
   }
 
   .extend_content1 {
     padding-top: 125px;
+    padding-right: 30px;
+  }
+
+  .web_viewbtn {
+    margin-left: 0;
   }
 
   .final p {

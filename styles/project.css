@@ -55,7 +55,7 @@ nav.greyNavItem, nav.greyNavItem a {
   left: 80%;
   object-fit: contain;
   position: absolute;
-  top: 250px;
+  top: 200px;
   width: 250px;
   z-index: 3;
 }
@@ -180,14 +180,15 @@ nav.greyNavItem, nav.greyNavItem a {
 }
 
 canvas {
-  height: 600px !important;
-  width: 600px !important;
+  height: 50% !important;
+  width: 50% !important;
   margin-right: auto;
   margin-left: auto;
 }
 
 #graph1, #graph2 {
   margin-top: 40px;
+  float: left;
 }
 
 /*Personas*/
@@ -281,6 +282,7 @@ canvas {
 .sketch_wires img {
   object-fit: contain;
   width: 450px;
+  height: 450px;
 }
 
 .sketch_wires .bullet {
@@ -302,6 +304,7 @@ canvas {
 
 .forty-five {
   width: 45%;
+  padding: 50px;
 }
 
 /*Branding*/
@@ -320,7 +323,7 @@ canvas {
 
 
 .logo_sequence {
-  margin-left: 100px;
+  margin-left: 20%;
   position: relative;
 }
 
@@ -566,7 +569,7 @@ blockquote p {
 }
 
 #nextButton {
-  padding-left: 30%;
+  padding-left: 35%;
 }
 
 .prevNext {
@@ -684,6 +687,7 @@ blockquote p {
 
   #graph1, #graph2 {
     margin-bottom: 40px;
+    float: none;
   }
 
   .mobile_graphs p {
@@ -728,6 +732,7 @@ blockquote p {
 
   .forty-five {
     width: 100%;
+    padding: 0;
   }
 
   .sketch_wires .bullet-listing {
@@ -736,6 +741,7 @@ blockquote p {
 
   .sketch_wires img {
     display: block;
+    height: 250px;
     margin: 0 auto;
     margin-bottom: 40px;
     object-fit: contain;
@@ -954,11 +960,6 @@ blockquote p {
   .persona1 li, .persona2 li {
     font-size: 1.125rem;
     line-height: 150%;
-  }
-
-  canvas {
-    height: 400px !important;
-    width: 400px !important;
   }
 
   .sketch_wires img {
