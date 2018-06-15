@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120685831-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-120685831-1');
-    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lupo Cloud Storage</title>
@@ -21,6 +11,16 @@
       <link href="https://fonts.googleapis.com/css?family=Lato:300|Poiret+One" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120685831-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120685831-1');
+      </script>
   </head>
   <body>
     <section>
@@ -39,12 +39,12 @@
                       </ul>
                     </li>
                     <li class="nav-item whiteNavItem" id="nav_about"><a href="about.html">About Me</a></li>
-                    <li class="nav-item whiteNavItem" id="nav_resume"><a href="https://drive.google.com/file/d/154yJLtAI8HrkAb5N81X-xb6kT1esxpYT/view?usp=sharing">Resume</a></li>
+                    <li class="nav-item whiteNavItem" id="nav_resume"><a target="_blank" href="https://drive.google.com/file/d/154yJLtAI8HrkAb5N81X-xb6kT1esxpYT/view?usp=sharing">Resume</a></li>
                     <li class="nav-item whiteNavItem dropdown"><a href="#">Contact</a>
                       <ul class="dropdown-content">
-                        <li class="dropdown-nav-item"><a href="mailto:rashaafletcher@gmail.com">Email</a></li>
-                        <li class="dropdown-nav-item"><a href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">LinkedIn</a></li>
-                        <li class="dropdown-nav-item"><a href="https://github.com/sashafletch">Github</a></li>
+                        <li class="dropdown-nav-item"><a target="_blank" href="mailto:rashaafletcher@gmail.com">Email</a></li>
+                        <li class="dropdown-nav-item"><a  target="_blank" href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">LinkedIn</a></li>
+                        <li class="dropdown-nav-item"><a target="_blank" href="https://github.com/sashafletch">Github</a></li>
                       </ul>
                     </li>
                 </ul>
@@ -65,12 +65,12 @@
                     </ul>
                   </li>
                   <li class="mobile-nav-item"><a href="about.html">About Me</a></li>
-                  <li class="mobile-nav-item"><a href="https://drive.google.com/file/d/154yJLtAI8HrkAb5N81X-xb6kT1esxpYT/view?usp=sharing">Resume</a></li>
+                  <li class="mobile-nav-item"><a target="_blank" href="https://drive.google.com/file/d/154yJLtAI8HrkAb5N81X-xb6kT1esxpYT/view?usp=sharing">Resume</a></li>
                   <li class="mobile-nav-item dropdown"><a href="#">Contact</a>
                     <ul class="dropdown-content">
-                      <li class="mobile-nav-item dropdown-nav-item"><a href="mailto:rashaafletcher@gmail.com">Email</a></li>
-                      <li class="mobile-nav-item dropdown-nav-item"><a href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">LinkedIn</a></li>
-                      <li class="mobile-nav-item dropdown-nav-item"><a href="https://github.com/sashafletch">Github</a></li>
+                      <li class="mobile-nav-item dropdown-nav-item"><a target="_blank" href="mailto:rashaafletcher@gmail.com">Email</a></li>
+                      <li class="mobile-nav-item dropdown-nav-item"><a target="_blank" href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">LinkedIn</a></li>
+                      <li class="mobile-nav-item dropdown-nav-item"><a target="_blank" href="https://github.com/sashafletch">Github</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -93,7 +93,7 @@
           <div class="row">
             <div class="column one-half">
               <h3 class="description_text">A digital workplace for concentrative and collaborative work</h3>
-              <a class="button text-center bigbutton" href="https://invis.io/3ZGRZF9MDPS#/290246161_Landing_Page">View Prototype</a>
+              <a class="button text-center bigbutton" target="_blank" href="https://invis.io/3ZGRZF9MDPS#/290246161_Landing_Page">View Prototype</a>
             </div>
           </div>
       </section>
@@ -170,45 +170,52 @@
   <!--Competitive Analysis-->
           <h3>The Competition</h3>
           <div class="row">
-            <div class="column left-column one-half">
+            <div class="column left-column one-third">
               <h4>Data Storage Options</h4>
               <div class="row">
                 <img class="column one-third competitionIcon" src="images/onedrive.png" alt="Microsoft OneDrive">
                 <p class="column comp_descript">Data storage ranges broadly from 15 GB of free data to only 2 GB. Free subscriptions are generally limited because of the focus on working professionals/businesses.</p>
               </div>
-              <div class="polygon"></div>
             </div>
-            <div class="column one-half right-column">
-              <h4>Limited Collaborative Options</h4>
+            <div class="column one-third right-column">
+              <h4>Collaboration</h4>
               <div class="row">
                 <img class="column one-third competitionIcon" src="images/drive.png" alt="Google Drive">
                 <p class="column comp_descript">Free subscriptions often limit collaborative options for users. Even under paid subscriptions, collaborative options are not very extensive.</p>
               </div>
-              <div class="polygon"></div>
             </div>
-          </div>
-          <div class="consistency">
-            <h4>Consistency</h4>
-            <div class="row">
-              <img class="column one-third competitionIcon" src="images/dropbox.png" alt="Dropbox">
-              <p class="column comp_descript">To take advantage of collaboration, users have to switch into different platforms which makes it confusing and cumbersome. Some features are only available on the web.</p>
+            <div class="column one-third consistency">
+              <h4>Consistency</h4>
+              <div class="row">
+                <img class="column one-third competitionIcon" src="images/dropbox.png" alt="Dropbox">
+                <p class="column comp_descript">To take advantage of collaboration, users have to switch into different platforms which makes it confusing and cumbersome. Some features are only available on the web.</p>
+              </div>
             </div>
-            <div class="polygon"></div>
-          </div>
+        </div>
+        <div class="polygon"></div>
+
   <!--User Research-->
           <h3>Early Insights</h3>
           <p>To understand what users are looking for in cloud storage, I conducted a survey that was posted online through various social media platforms and public forums. I also wanted to better understand how users viewed major cloud storage sites like Google Drive and Dropbox; what did they think was missing?</p>
         <div class="mobile_graphs clearfix">
           <p>Survey results indicated collaboration as one of the key reasons participants use cloud storage, emphasizing the importance of it as a feature.</p>
-          <canvas id="graph1"></canvas>
-          <canvas id="graph2"></canvas>
+          <div>
+            <h4>Do Users Collaborate?</h4>
+            <div id="js-legend" class="chart-legend"></div>
+            <canvas id="graph1"></canvas>
+          </div>
+          <div>
+            <h4>Who Users Collaborate With</h4>
+            <div id="js-legend2" class="chart-legend"></div>
+            <canvas id="graph2"></canvas>
+          </div>
         </div>
-        <a class="button bigbutton" href="https://drive.google.com/file/d/1unH7nWOAGAsPb6SjLEOksLKSLvmVCRQA/view?usp=sharing">View Full Results</a>
+        <a class="button bigbutton" target="_blank" href="https://drive.google.com/file/d/1unH7nWOAGAsPb6SjLEOksLKSLvmVCRQA/view?usp=sharing">View Full Results</a>
   <!--User Personas-->
         <h3>User Personas</h3>
         <p>To better understand the needs of users, I then conducted two interviews from survey participants: </p>
         <div class="row">
-          <div class="column one-half left-column text-center persona1">
+          <div class="column one-half text-center persona1">
             <img src="images/kara.png">
             <ul>
               <li>Name: Kara</li>
@@ -266,7 +273,7 @@
               <p><span class="bold">Extend and diversify </span>collaborative options for users while still having an intuitive and simple design</p>
               <p><span class="bold">Be</span> cost-efficient for individual users</p>
               <p><span class="bold">Allow</span> users to customize features and have more control over their cloud's organization to meet work needs</p>
-          </div>
+            </div>
           </article>
           <header class="inline" id="information">
             <h2>Information Architecture</h2>
@@ -298,48 +305,42 @@
                 <li>Customize dashboard for easier access to files</li>
               </ul>
           </div>
-          <a class="button bigbutton" href="https://drive.google.com/file/d/1kAFD-q55YgI8ce8HxEIArAntm8BR5ger/view?usp=sharing">View User Stories</a>
-          <br>
+          <a class="button bigbutton" target="_blank" href="https://drive.google.com/file/d/1kAFD-q55YgI8ce8HxEIArAntm8BR5ger/view?usp=sharing">View User Stories</a>
   <!--User Flows-->
           <h3>User Flows</h3>
           <div class="row flow">
             <div class="column one-half">
               <p><i>Onboarding</i></p>
               <img src="images/userflow1.jpg" alt="Onboarding User Flow">
-              <a class="button bigbutton" href="https://drive.google.com/file/d/1YoNOhgvEjftO03LGPubFoe-dBSsxUQPL/view?usp=sharing">View User Flows</a>
+              <a class="button bigbutton" target="_blank" href="https://drive.google.com/file/d/1YoNOhgvEjftO03LGPubFoe-dBSsxUQPL/view?usp=sharing">View User Flows</a>
             </div>
             <div class="column one-half collab_flow">
               <p><i>Add Collaborators</i></p>
               <img src="images/userflow2.jpg" alt="Add Collaborators User Flow">
             </div>
           </div>
-          <br>
   <!--Sketches/Wireframes-->
-          <h3>Sketches and Wireframes</h3>
-        </div>
           <div class="row sketch_wires">
-            <div class="column forty-five">
+            <h3>Sketches and Wireframes</h3>
+            <div class="landing">
+              <p>Landing Page</p>
               <img class="sketch1" src="images/landing_page_sketch.jpg" alt="Landing Page Sketch">
-              <img class="sketch2" src="images/account_sketch.jpg" alt="Account Settings Page Sketch">
-              <img class="sketch3" src="images/home_sketch.jpg" alt="User Home Page Sketch">
-            </div>
-            <div class="column bullet-listing ten">
-              <div class="wrapper">
-                <span class="bullet"></span>
-                <div class="vertical-line"></div>
-                <span class="bullet"></span>
-                <div class="vertical-line"></div>
-                <span class="bullet"></span>
-              </div>
-            </div>
-            <div class="column forty-five" id="wireframes">
               <img class="landing_wire" src="images/landing_wire.png" alt="Landing Page Wireframe">
+            </div>
+            <div class="preference_line"></div>
+            <div class="account">
+              <p>Account Settings</p>
+              <img class="sketch2" src="images/account_sketch.jpg" alt="Account Settings Page Sketch">
               <img class="wire2" src="images/account_wire.png" alt="Account Settings Page Wireframe">
+            </div>
+            <div class="preference_line"></div>
+            <div class="home">
+              <p>User Home Page</p>
+              <img class="sketch3" src="images/home_sketch.jpg" alt="User Home Page Sketch">
               <img class="wire3" src="images/home_wire.png" alt="User Home Page Wireframe">
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <a class="button bigbutton wirebutton" href="https://drive.google.com/drive/folders/1luER-bvF9slPxmHRgAiNvyZL6u56oUOn?usp=sharing">View Wireframes</a>
+          <a class="button bigbutton wirebutton" target="_blank" href="https://drive.google.com/drive/folders/1luER-bvF9slPxmHRgAiNvyZL6u56oUOn?usp=sharing">View Wireframes</a>
         </div>
     </section>
     <section class="wrap">
@@ -441,7 +442,7 @@
         </aside>
       </div>
       <div class="container">
-        <a class="button bigbutton" href="https://drive.google.com/file/d/1ArfMIYsL9mZAYF0pAu2EOiKsHPV0ysS6/view?usp=sharing">View Style Guide</a>
+        <a class="button bigbutton" target="_blank" href="https://drive.google.com/file/d/1ArfMIYsL9mZAYF0pAu2EOiKsHPV0ysS6/view?usp=sharing">View Style Guide</a>
       </div>
       </article>
     </div>
@@ -482,7 +483,7 @@
         </aside>
       </article>
       <div class="container">
-        <a class="button bigbutton" href="https://drive.google.com/file/d/1ArfMIYsL9mZAYF0pAu2EOiKsHPV0ysS6/view?usp=sharing">View Style Guide</a>
+        <a class="button bigbutton" target="_blank" href="https://drive.google.com/file/d/1ArfMIYsL9mZAYF0pAu2EOiKsHPV0ysS6/view?usp=sharing">View Style Guide</a>
       </div>
     </div>
     <div class="mobile_typography">
@@ -522,7 +523,7 @@
       </aside>
     </article>
     <div class="container">
-      <a class="button bigbutton" href="https://drive.google.com/file/d/1ArfMIYsL9mZAYF0pAu2EOiKsHPV0ysS6/view?usp=sharing">View Style Guide</a>
+      <a class="button bigbutton"  target="_blank" href="https://drive.google.com/file/d/1ArfMIYsL9mZAYF0pAu2EOiKsHPV0ysS6/view?usp=sharing">View Style Guide</a>
     </div>
   </div>
   </section>
@@ -570,32 +571,25 @@
             </div>
           </div>
           <div class="container clearfix">
-            <blockquote class="column">
-              <p class="bold_italic"><b>“I think the files on the home page should be the same size”</b></p>
+            <p>Testing participants also provided me with important feedback concerning my mockups that led to other general shifts in the design.</p>
+            <blockquote>
+              <p class="bold_italic">“I think the files on the home page should be the same size”</p>
             </blockquote>
-            <blockquote class="column">
-              <p class="bold_italic"><b>“The purple navigation is a bit too feminine”</b></p>
-            </blockquote>
-          </div>
-          <div class="container mockups">
-            <div class="row">
-              <div class="column forty-five">
-                <img class="mock1a" src="images/home_purple.png" alt="Home Page First Version">
-                <img class="mock2a" src="images/account_purple.png" alt="Account Settings First Version">
-              </div>
-              <div class="column bullet-listing ten">
-                <div class="wrapper">
-                  <span class="bullet"></span>
-                  <div class="vertical-line"></div>
-                  <span class="bullet"></span>
-                </div>
-              </div>
-              <div class="column forty-five">
-                <img class="mock1b" src="images/home_white.png" alt="Home Page Final Version">
-                <img class="mock2b" src="images/account_white.png" alt="Account Settings Final Version">
-              </div>
+            <div class="mock1">
+              <p>Home Page</p>
+              <img class="mock1a" src="images/home_purple.png" alt="Home Page First Version">
+              <img class="mock1b" src="images/home_white.png" alt="Home Page Final Version">
             </div>
-            <a class="button bigbutton" href="https://drive.google.com/file/d/1uuzL08ZVNyi_FlzHGHe3xEa7AzcdQMoc/view?usp=sharing">View Full Results</a>
+            <div class="preference_line"></div>
+            <blockquote>
+              <p class="bold_italic">“The purple navigation is a bit too feminine”</p>
+            </blockquote>
+            <div class="mock2">
+              <p>Account Settings</p>
+              <img class="mock2a" src="images/account_purple.png" alt="Account Settings First Version">
+              <img class="mock2b" src="images/account_white.png" alt="Account Settings Final Version">
+            </div>
+            <a class="button bigbutton" target="_blank" href="https://drive.google.com/file/d/1uuzL08ZVNyi_FlzHGHe3xEa7AzcdQMoc/view?usp=sharing">View Full Results</a>
           </div>
         </section>
         <section class="wrap">
@@ -690,10 +684,10 @@
               </div>
                 <div class="row container">
                   <div class="column one-half">
-                    <a class="button bigbutton web_viewbtn" href="https://invis.io/3ZGRZF9MDPS#/290246161_Landing_Page">View Prototype</a>
+                    <a class="button bigbutton web_viewbtn" target="_blank" href="https://invis.io/3ZGRZF9MDPS#/290246161_Landing_Page">View Prototype</a>
                   </div>
                   <div class="column one-half">
-                    <a class="button bigbutton mobile_viewbtn" href="https://invis.io/QEKLT2HT5KF#/291639961_Mobile_Landing_Page">View Prototype</a>
+                    <a class="button bigbutton mobile_viewbtn" target="_blank" href="https://invis.io/QEKLT2HT5KF#/291639961_Mobile_Landing_Page">View Prototype</a>
                   </div>
                 </div>
               </div>
@@ -702,12 +696,12 @@
                   <p><i>Web</i></p>
                   <img src="images/lupo_web.png" alt="Web Prototype">
                 </div>
-                <a class="button bigbutton web_viewbtn" href="https://invis.io/3ZGRZF9MDPS#/290246161_Landing_Page">View Prototype</a>
+                <a class="button bigbutton web_viewbtn" target="_blank" href="https://invis.io/3ZGRZF9MDPS#/290246161_Landing_Page">View Prototype</a>
                 <div id="lupo_mobile" class="clearfix">
                   <p><i>Mobile</i></p>
                   <img src="images/lupo_mobile.png" alt="Mobile Prototype">
                 </div>
-                <a class="button bigbutton mobile_viewbtn" href="https://invis.io/QEKLT2HT5KF#/291639961_Mobile_Landing_Page">View Prototype</a>
+                <a class="button bigbutton mobile_viewbtn" target="_blank" href="https://invis.io/QEKLT2HT5KF#/291639961_Mobile_Landing_Page">View Prototype</a>
               </div>
       <!--Final Thoughts-->
             <div class="container final">
@@ -736,10 +730,10 @@
               </div>
               <!--Footer Icons-->
               <div class="footer-icons">
-                <a href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/" class="fa fa-linkedin"></a>
-                <a href="https://twitter.com/Sasha_Fletch" class="fa fa-twitter"></a>
-                <a href="https://www.facebook.com/rashaa.fletcher" class="fa fa-facebook"></a>
-                <a href="https://github.com/sashafletch" class="fa fa-github"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/" class="fa fa-linkedin"></a>
+                <a target="_blank" href="https://twitter.com/Sasha_Fletch" class="fa fa-twitter"></a>
+                <a target="_blank" href="https://www.facebook.com/rashaa.fletcher" class="fa fa-facebook"></a>
+                <a target="_blank" href="https://github.com/sashafletch" class="fa fa-github"></a>
               </div>
             </div>
         </footer>

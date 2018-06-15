@@ -18,10 +18,6 @@
   max-width: 100%;
 }
 
-.consistency img {
-  margin-bottom: 10px;
-}
-
 .goals_content p:first-child {
     margin-bottom: 20px;
   }
@@ -53,6 +49,7 @@
 
 .bold {
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .banner {
@@ -186,16 +183,12 @@
   border: 1px solid #E0E0E0;
 }
 
-#preference1a, #preference2a, #preference3a {
-  margin-right: 150px;
-}
-
-.landing_wire {
-  margin-bottom: 90px;
+.preference-tests img {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .wire2, .wire3, .landing_wire {
-  margin-left: 75px;
   padding: 20px;
 }
 
@@ -213,6 +206,11 @@
   margin-bottom: 0;
 }
 
+.mock1 img, .mock2 img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .mock1a, .mock1b {
   height: 300px;
   margin-bottom: 25px;
@@ -222,20 +220,8 @@
 
 .mock2a, .mock2b {
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
   width: 300px;
-}
-
-.mock1b, .mock2b {
-  margin-left: 200px;
-}
-
-.mockups .bullet-listing {
-  margin-top: 200px;
-}
-
-.mockups .vertical-line {
-  height: 225px;
 }
 
 .testcontent {
@@ -311,9 +297,23 @@
 
 /*Phone*/
 @media screen and (min-width: 320px) and (max-width: 574px) {
+
+  .project_description {
+    padding: 0 25px;
+  }
+
+  .project_description h3 {
+    margin-top: 20px;
+    font-size: 1.25rem;
+  }
+
   #discovery, #information, #branding, #finalDesign {
     height: 100px;
     margin-bottom: 0;
+  }
+
+  .persona1, .persona2 {
+    padding: 0;
   }
 
   .persona1 ul, .persona2 ul {
@@ -334,6 +334,10 @@
 
   .wire2 {
     height: 150px;
+  }
+
+  .consistency {
+    margin: 0 0 10px 0;
   }
 
   /*Branding*/
@@ -385,6 +389,15 @@
 
   #preference1a {
     margin-top: 20px;
+  }
+
+  .font_poiret {
+    margin-top: 0;
+  }
+
+  .home, .landing, .account {
+    display: block;
+    margin-top: 0;
   }
 
   .mobile_closeups img {
@@ -502,8 +515,11 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .project_title {
-    top: 110px;
     left: 110px;
+  }
+
+  .project_description {
+    padding: 25px 35px;
   }
 
   .description_text {
@@ -511,10 +527,22 @@
     margin-top: 0;
   }
 
-  #discovery, #information, #branding, #finalDesign {
-    height: 200px;
+  .design_role h3 {
+    margin-top: 50px;
   }
 
+  .design_role {
+    padding: 0;
+  }
+
+  .slider {
+    padding: 0;
+  }
+
+  #discovery, #information, #branding, #finalDesign {
+    height: 200px;
+    margin-bottom: 0;
+  }
 
   .competitionIcon {
     margin-top: 0;
@@ -536,8 +564,8 @@
     width: 100%;
   }
 
-  .consistency {
-    margin: 50px 0;
+  .mobile_graphs h4 {
+    font-size: 1.15rem;
   }
 
   .persona2 h3, .persona1 h3 {
@@ -578,34 +606,17 @@
     display: none;
   }
 
-  .ten .wrapper {
-    margin-left: 20px;
-  }
-
   .banner {
     height: 300px;
     margin-left: 35px;
-  }
-
-
-  .sketch_wires .vertical-line {
-    height: 300px;
   }
 
   .sketch_wires img {
     height: 300px;
   }
 
-  .sketch_wires .bullet-listing {
-    margin-right: 0;
-    margin-top: 170px;
-  }
-
-  .wire2, .wire3, .landing_wire {
-    margin-left: 0;
-    margin-bottom: 0;
-    padding-right: 20px;
-    padding-left: 20px;
+  .sketch_wires {
+    display: block;
   }
 
   .banner img {
@@ -615,6 +626,7 @@
 
   .logo_sequence {
     margin-left: 20px;
+    margin-top: 20px;
   }
 
   .row1-sketch img {
@@ -647,6 +659,10 @@
 
   .article_content, .article {
     height: 560px;
+  }
+
+  .article.slider {
+    padding: 25px;
   }
 
   #preference1a, #preference2a, #preference3a {
@@ -686,7 +702,7 @@
   blockquote {
     margin: 0 auto;
     margin-top: 30px;
-    width: 50%;
+    margin-bottom: 30px;
   }
 
   .forty-five {
@@ -697,25 +713,12 @@
     margin-top: 0;
   }
 
-  .mockups .bullet-listing {
-    display: none;
-  }
-
-  .mock1b {
-    margin-left: 40px;
-  }
-
   .mock1a, .mock1b {
-    margin-bottom: 20px;
-    max-height: 350px;
+    max-height: 250px;
   }
 
-  .mock2a {
-    margin-left: 10px;
-  }
-
-  .mock2b {
-    margin-left: 55px;
+  .mock2a, .mock2b {
+    max-width: 200px;
   }
 
   .mvpFont {
@@ -734,11 +737,11 @@
   }
 
   .laptop_prototypes {
-    padding: 25px 0 25px 50px;
+    padding: 25px 0 0 50px;
   }
 
-  .protoslider {
-    padding: 50px 0;
+  .final h3:first-child {
+    margin-top: 0;
   }
 
   #lupo_web img {
@@ -775,6 +778,10 @@
     width: 150px;
   }
 
+  #discovery, #information, #branding, #finalDesign {
+    margin-bottom: 0;
+  }
+
   .polygon {
   	border-left: 200px solid transparent;
   	border-right: 200px solid transparent;
@@ -782,31 +789,24 @@
     height: 0;
     margin: 0 auto;
     margin-top: 20px;
-    width: 0;
+    width: 100%;
   }
 
   .right-column .comp_descript {
     margin-bottom: 30px;
   }
 
-  .consistency {
-    margin: 0 0 50px 0;
-  }
-
-  .consistency .polygon {
-    width: 100%;
-  }
-
-  .slideNext {
-    right: 100px;
-  }
-
-  .slidePrev {
-    left: 100px;
-  }
-
   .goals {
+    margin-top: 50px;
     height: auto;
+  }
+
+  .persona1 {
+    padding-right: 70px;
+  }
+
+  .testcontent {
+    margin-top: 0;
   }
 
   .userstories li {
@@ -837,39 +837,6 @@
   .sketch_wires img {
     width: 350px;
     height: 350px;
-  }
-
-  .sketch1, .sketch2 {
-    margin-bottom: 50px;
-  }
-
-  .sketch_wires .bullet-listing {
-    margin-top: 150px;
-    margin-right: 0;
-    padding-left: 0;
-  }
-
-  .sketch_wires .bullet {
-    height: 20px;
-    width: 20px;
-  }
-
-  .wire2, .wire3, .landing_wire {
-    margin-left: 0;
-    padding: 20px 0;
-  }
-
-  .landing_wire {
-    margin-bottom: 50px;
-  }
-
-  /* .wire3 {
-    height: 350px;
-  } */
-
-  .wire2 {
-    height: 250px;
-    margin-bottom: 25px;
   }
 
   .logo_sketch4 {
@@ -945,6 +912,10 @@
     margin-top: 0;
   }
 
+  .tests_intro {
+    margin-bottom: 50px;
+  }
+
   .preferencerow1 img, .preferencerow2 img, .preferencerow3 img {
     height: 250px;
     margin-right: 30px;
@@ -962,10 +933,6 @@
 
   .preferencerow2 {
     margin-bottom: 50px;
-  }
-
-  .mock1b, .mock2b {
-    margin-left: 50px;
   }
 
   .mvpFont {
@@ -1031,25 +998,13 @@
     padding-left: 200px;
   }
 
-  .design_role {
-    margin-right: 100px;
-  }
-
-  .right-column .comp_descript {
-    margin-bottom: 30px;
+  #discovery, #information, #branding, #finalDesign {
+    margin-bottom: 0;
   }
 
   .goals {
     height: auto;
     margin-top: 0;
-  }
-
-  .sketch1, .sketch2 {
-    margin-bottom: 100px;
-  }
-
-  .sketch_wires .vertical-line {
-    height: 500px;
   }
 
   .bullet-listing {
@@ -1094,11 +1049,6 @@
     padding-top: 50px;
   }
 
-  .sketch_wires .bullet {
-    height: 20px;
-    width: 20px;
-  }
-
   .article_content {
     padding: 30px 30px 30px 100px;
   }
@@ -1131,16 +1081,24 @@
     width: 100%;
   }
 
-  .mock1b {
-    margin-left: 0;
+  .mock1 {
+    margin-top: 30px;
   }
 
   .mock1a, .mock1b {
-    width: 550px;
+    width: 250px;
   }
 
   .mock2a, .mock2b {
-    height: 300px;
+    height: 250px;
+  }
+
+  .testcontent {
+    margin-top: 0;
+  }
+
+  .closeups h3 {
+    margin-top: 0;
   }
 
   .mvpFont {

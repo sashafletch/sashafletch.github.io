@@ -592,7 +592,7 @@ footer {
   .menu {
     position: absolute;
     width: 400px;
-    height: 600px;
+    height: 1200px;
     margin: -100px 0 0 -100px;
     padding: 50px;
     padding-top: 125px;
@@ -843,10 +843,6 @@ footer {
 
   h3 {
     font-size:1.8rem;
-  }
-
-  p {
-    font-size: 1.25rem;
   }
 
   nav {

@@ -1,12 +1,11 @@
 var ctx = document.getElementById('graph1').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
-    type: 'doughnut',
+    type: 'pie',
 
     // The data for our dataset
     data: {
         labels: ["Yes", "No", "Not sure"],
-        fontSize: 24,
         datasets: [{
             label: "Do Users Collaborate?",
             backgroundColor: ["#FADE39", "#46bebc", "#E81D62"],
@@ -14,22 +13,24 @@ var chart = new Chart(ctx, {
         }]
     },
     options: {
+      tooltips: {enabled: false},
       responsive: true,
       title: {
-        display: true,
+        display: false,
         text: "Do Users Collaborate?",
-        fontSize: 24
       },
-      scale: {
-        pointLabels: {  fontSize:24 }
-      },
+      legend: {
+        display: false,
+      }
     }
 });
+
+document.getElementById('js-legend').innerHTML = chart.generateLegend();
 
 var ctx = document.getElementById('graph2').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
-    type: 'doughnut',
+    type: 'pie',
 
     // The data for our dataset
     data: {
@@ -41,14 +42,16 @@ var chart = new Chart(ctx, {
         }]
     },
     options: {
+      tooltips: {enabled: false},
       responsive: true,
       title: {
-        display: true,
+        display: false,
         text: "Who Users Collaborate With",
-        fontSize: 24
       },
-      scale: {
-        pointLabels: {  fontSize:24 }
-      },
+    legend: {
+      display: false,
     }
+  }
 });
+
+document.getElementById('js-legend2').innerHTML = chart.generateLegend();
