@@ -665,6 +665,10 @@ blockquote {
     margin: 10px 0;
   }
 
+  .footer-copy p {
+    margin: 10px;
+  }
+
   .white_horizontal_line {
     margin: 10px 0 0 50px;
     width: 25%;
@@ -900,6 +904,10 @@ blockquote {
 
   .footer-icons {
     padding-right: 0;
+  }
+
+  .footer-copy {
+    width: 50%;
   }
 }
 

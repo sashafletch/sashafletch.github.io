@@ -9,6 +9,7 @@ if (heroImg) {
     }
       if(window.scrollY <= heroImg.height){
       nav.classList.remove('colored-in');
+      nav.classList.remove('greyNavItem');
     }
   });
 
