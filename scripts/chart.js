@@ -13,7 +13,10 @@ var chart = new Chart(ctx, {
         }]
     },
     options: {
-      tooltips: {enabled: false},
+      tooltips: {
+        titleFontSize: 22,
+        bodyFontSize: 22
+      },
       responsive: true,
       title: {
         display: false,
@@ -42,7 +45,10 @@ var chart = new Chart(ctx, {
         }]
     },
     options: {
-      tooltips: {enabled: false},
+      tooltips: {
+        titleFontSize: 22,
+        bodyFontSize: 22
+      },
       responsive: true,
       title: {
         display: false,

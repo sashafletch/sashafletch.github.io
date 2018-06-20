@@ -26,6 +26,11 @@
   width: 100%;
 }
 
+.collab_flow p {
+  margin-left: 30px;
+  margin-bottom: 13%;
+}
+
 #branding {
   background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ), url("../images/colored_pencils.jpg");
   background-size: cover;
@@ -817,10 +822,6 @@
     margin-top: 15px;
   }
 
-  .flow {
-    margin-left: 50px;
-  }
-
   .flow img {
     margin-left: 0;
   }
@@ -1049,7 +1050,7 @@
   }
 
   .color_row1 {
-    margin-bottom: 140px;
+    margin-bottom: 50px;
   }
 
   .color_circle {

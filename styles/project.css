@@ -283,7 +283,6 @@ canvas {
 /*User Flows*/
 .flow img {
   height: 600px;
-  margin-left: 100px;
   object-fit: contain;
   width: 400px;
 }
@@ -1021,7 +1020,6 @@ blockquote {
         line-height:1em;
         margin-top:-0.5em;
         text-align:center;
-        /* color:white; */
     }
 
     .color_circle p {
@@ -1034,6 +1032,10 @@ blockquote {
       width: 95%;
       padding: 20px;
       margin: 0;
+    }
+
+    .flow img {
+      margin-left: 100px;
     }
 
     #nextButton {
@@ -1083,6 +1085,18 @@ blockquote {
 
   .horizontal_line {
     margin: 10px 0 15px 200px;
+  }
+
+  .project_title {
+    left: 20%;
+  }
+
+  .hero_web {
+    top: 25%;
+  }
+
+  .hero_mobile {
+    top: 90%;
   }
 
 }
