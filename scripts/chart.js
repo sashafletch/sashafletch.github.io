@@ -14,8 +14,18 @@ var chart = new Chart(ctx, {
     },
     options: {
       tooltips: {
-        titleFontSize: 22,
-        bodyFontSize: 22
+        titleFontSize: 28,
+        bodyFontSize: 28,
+        callbacks: {
+          title: function(tooltipItems, data) {
+          return '';
+        },
+          label: function(tooltipItem, data) {
+            var datasetLabel = '';
+            var label = data.labels[tooltipItem.index];
+            return data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]+'%';
+          }
+        }
       },
       responsive: true,
       title: {
@@ -37,7 +47,7 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ["Friends", "Family", "Work Colleagues", "Clasmates", "Students"],
+        labels: ["Friends", "Family", "Colleagues", "Classmates", "Students"],
         datasets: [{
             label: "Who users collaborate with",
             backgroundColor: [ "#FADE39","#E81D62", "#46BEBC", "#8AC249", "#9B26AF"],
@@ -46,8 +56,18 @@ var chart = new Chart(ctx, {
     },
     options: {
       tooltips: {
-        titleFontSize: 22,
-        bodyFontSize: 22
+        titleFontSize: 28,
+        bodyFontSize: 28,
+        callbacks: {
+          title: function(tooltipItems, data) {
+          return '';
+        },
+          label: function(tooltipItem, data) {
+            var datasetLabel = '';
+            var label = data.labels[tooltipItem.index];
+            return data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]+'%';
+          }
+        }
       },
       responsive: true,
       title: {
