@@ -854,10 +854,8 @@
 
   .logo_sequence img {
     padding: 50px 25px 0 10px;
-  }
-
-  .logo_sequence {
-    margin-left: 12%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .sequence2 {
