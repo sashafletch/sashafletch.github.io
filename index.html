@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/landing.css">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Raleway:300,400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -22,34 +22,54 @@
   </head>
   <body>
     <div>
-      <aside class="sidebar">
-          <a href="index.html"><img class="logo" src="images/logo.png" alt="F"></a>
-      </aside>
-        <header>
-          <div class="header-inner">
-            <div class="top-right">
-                <nav class="white_background">
-                  <ul class="nav_main">
-                    <li class="nav-item greyNavItem dropdown">Work
-                        <ul class="dropdown-content work">
-                          <li class="dropdown-nav-item"><a href="lupo.html">Lupo Cloud Storage</a></li>
-                          <li class="dropdown-nav-item"><a href="#">Ruck</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item" id="nav_about"><a href="about.html">About Me</a></li>
-                    <li class="nav-item" id="nav_resume"><a target="_blank" href="https://drive.google.com/file/d/154yJLtAI8HrkAb5N81X-xb6kT1esxpYT/view?usp=sharing">Resume</a></li>
-                    <li class="nav-item greyNavItem dropdown">Contact
-                      <ul class="dropdown-content">
-                        <li class="dropdown-nav-item"><a target="_blank" href="mailto:rashaafletcher@gmail.com">Email</a></li>
-                        <li class="dropdown-nav-item"><a target="_blank" href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">LinkedIn</a></li>
-                        <li class="dropdown-nav-item"><a target="_blank" href="https://github.com/sashafletch">Github</a></li>
-                      </ul>
-                    </li>
+      <header>
+        <nav class="white_background nav-shadow">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="F"></a>
+            <ul class="nav_main">
+              <li class="nav-item greyNavItem dropdown">Work
+                  <ul class="dropdown-content work">
+                    <li class="dropdown-nav-item"><a href="lupo.html">Lupo Cloud Storage</a></li>
+                    <li class="dropdown-nav-item"><a href="#">Burpi</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item" id="nav_about"><a href="about.html">About Me</a></li>
+              <li class="nav-item" id="nav_resume"><a target="_blank" href="https://drive.google.com/file/d/154yJLtAI8HrkAb5N81X-xb6kT1esxpYT/view?usp=sharing">Resume</a></li>
+              <li class="nav-item greyNavItem dropdown">Contact
+                <ul class="dropdown-content">
+                  <li class="dropdown-nav-item"><a target="_blank" href="mailto:rashaafletcher@gmail.com">Email</a></li>
+                  <li class="dropdown-nav-item"><a target="_blank" href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">LinkedIn</a></li>
+                  <li class="dropdown-nav-item"><a target="_blank" href="https://github.com/sashafletch">Github</a></li>
                 </ul>
-              </nav>
-            </div>
+              </li>
+          </ul>
+        </nav>
+        <nav class="nav_mobile white_background">
+          <div class="menuToggle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="menu">
+              <li class="mobile-nav-item dropdown"><a href="index.html">Home</a></li>
+              <li class="mobile-nav-item dropdown"><a href="#">Work
+                <ul class="dropdown-content">
+                  <li class="mobile-nav-item dropdown-nav-item"><a href="lupo.html">Lupo Cloud Storage</a></li>
+                  <li class="mobile-nav-item dropdown-nav-item"><a href="#">Burpi</a></li>
+                </ul>
+              </li>
+              <li class="mobile-nav-item"><a href="about.html">About Me</a></li>
+              <li class="mobile-nav-item"><a target="_blank" href="https://drive.google.com/file/d/154yJLtAI8HrkAb5N81X-xb6kT1esxpYT/view?usp=sharing">Resume</a></li>
+              <li class="mobile-nav-item dropdown"><a href="#">Contact</a>
+                <ul class="dropdown-content">
+                  <li class="mobile-nav-item dropdown-nav-item"><a target="_blank" href="mailto:rashaafletcher@gmail.com">Email</a></li>
+                  <li class="mobile-nav-item dropdown-nav-item"><a target="_blank" href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">LinkedIn</a></li>
+                  <li class="mobile-nav-item dropdown-nav-item"><a target="_blank" href="https://github.com/sashafletch">Github</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
-        </header>
+        </nav>
+      </header>
     </div>
     <nav class="nav_mobile">
       <div class="menuToggle">
@@ -62,7 +82,7 @@
           <li class="mobile-nav-item dropdown"><a href="#">Work
             <ul class="dropdown-content">
               <li class="mobile-nav-item dropdown-nav-item"><a href="lupo.html">Lupo Cloud Storage</a></li>
-              <li class="mobile-nav-item dropdown-nav-item"><a href="#">Ruck</a></li>
+              <li class="mobile-nav-item dropdown-nav-item"><a href="#">Burpi</a></li>
             </ul>
           </li>
           <li class="mobile-nav-item"><a href="about.html">About Me</a></li>
@@ -87,28 +107,26 @@
       </section>
       <!--Projects-->
       <h2>Projects</h2>
-      <div class="horizontal_line"></div>
       <section class="grid">
+        <figure class="effect-chico">
+          <img class="burpi-image" src="images/burpi-pic.jpg" alt="People working out">
+          <figcaption class="container clearfix">
+            <h3>BURPI</h3>
+            <p>A social fitness app</p>
+          </figcaption>
+        </figure>
           <figure class="effect-chico">
-            <img src="images/woman_working.jpg" alt="Woman working on computer">
+            <img src="images/lupo-pic.jpg" alt="Woman working on computer">
             <figcaption class="container">
-              <h3>Lupo</h3>
+              <h3>LUPO</h3>
               <p>A cloud storage platform for telecommuters</p>
               <a href="lupo.html"></a>
-            </figcaption>
-          </figure>
-          <figure class="effect-chico">
-            <img src="images/people_workout.jpg" alt="People working out">
-            <figcaption class="container clearfix">
-              <h3>Ruck</h3>
-              <p>A rugby-inspired mobile fitness app</p>
             </figcaption>
           </figure>
       </section>
       <!--Skills Section-->
       <section>
         <h2 class="skills_h2">My Skills</h2>
-        <div class="horizontal_line"></div>
         <div class="container">
           <div class="row skills">
             <div class="one-third column">
@@ -153,25 +171,34 @@
       <!--About Me-->
       <section class="about">
         <h2>About Me</h2>
-        <div class="horizontal_line"></div>
         <div class="container">
           <div class="row about_me">
-            <div class="column one-half">
+            <div class="column">
               <p>My road to UX Design has been filled with a lot of twists and turns, but <span class="bold">my background in psychology, anthropology, and education has informed my design experience, helping me to build creative and empathetic solutions for users.</span></p>
               <p>UX seeks to provide research that can inform decision making and directly influence the experiences of the everyday user. As a curriculum developer for several years, I became familiar with the iterative design process, and I now use the same skills in my design work. <span class="bold">I focus heavily on fully understanding the market, the user, and the goals of the product in order to develop solutions.</span> By emphasizing testing throughout the design process, focusing on familiar UI patterns, and staying true to the initial goals and scope of the project, I ensure that my designs are user-friendly and are creative solutions to real-world problems.
               </p>
-            </div>
-            <div class="column one-half">
-              <img id="sashapic" src="images/sasha.jpg" alt="Sasha">
             </div>
           </div>
           <a class="button medbutton" href="about.html">Learn More</a>
         </div>
       </section>
+      <section class="tablet_about">
+        <h2>About Me</h2>
+        <div class="container">
+          <div class="about_me">
+            <div>
+              <p>My road to UX Design has been filled with a lot of twists and turns, but <span class="bold">my background in psychology, anthropology, and education has informed my design experience, helping me to build creative and empathetic solutions for users.</span></p>
+              <p>UX seeks to provide research that can inform decision making and directly influence the experiences of the everyday user. As a curriculum developer for several years, I became familiar with the iterative design process, and I now use the same skills in my design work. <span class="bold">I focus heavily on fully understanding the market, the user, and the goals of the product in order to develop solutions.</span> By emphasizing testing throughout the design process, focusing on familiar UI patterns, and staying true to the initial goals and scope of the project, I ensure that my designs are user-friendly and are creative solutions to real-world problems.
+              </p>
+            </div>
+          </div>
+          <a class="button medbutton" href="about.html">Learn More</a>
+        </div>
+      </section>
+
       <!--Contact Me-->
       <section class="contact">
           <h2>Get in Touch</h2>
-          <div class="horizontal_line"></div>
         <div class="container">
           <p>Interested in getting to know more <br>about my work, want to work together <br>or just want to chat about UX? <br>Contact me today!</p>
           <div class="row">

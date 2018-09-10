@@ -18,46 +18,66 @@ nav.greyNavItem, nav.greyNavItem a {
 
 /*Intro*/
 .project-title-container{
-  position: relative;
+  padding-top: 150px;
 }
 
 .project_title {
-  color: #FFF;
-  left: 150px;
-  position: absolute;
+  color: #000;
   text-align: center;
-  top: 50%;
-  z-index: 1;
 }
 
-.hero {
+/*section headers*/
+#discovery {
+  background: linear-gradient( rgba(214, 188, 193, 0.60), rgba(214, 188, 193, 0.35) ), url("../images/glasses.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 40%;
   height: 250px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
   max-width: 100%;
-  object-fit: cover;
-  object-position: 50% 10%;
+}
+
+#information {
+  background: linear-gradient( rgba(214, 188, 193, 0.70), rgba(214, 188, 193, 0.35) ), url("../images/woman_writing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 60%;
+  color: #F2F2F2;
+  height: 250px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  max-width: 100%;
   width: 100%;
-  z-index: -1;
 }
 
-.hero_web {
-  height: 500px;
-  left: 60%;
-  object-fit: contain;
-  position: absolute;
-  top: 5%;
-  width: 500px;
-  z-index: 1;
+#branding {
+  background: linear-gradient( rgba(214, 188, 193, 0.20), rgba(214, 188, 193, 0.35) ), url("../images/colored_pencils.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 17%;
+  color: #F2F2F2;
+  height: 250px;
+  margin-top: 0;
+  max-width: 100%;
+  width: 100%;
 }
 
-.hero_mobile {
-  height: 300px;
-  left: 80%;
-  object-fit: contain;
-  position: absolute;
-  top: 70%;
-  width: 250px;
-  z-index: 3;
+#finalDesign {
+  background: linear-gradient( rgba(214, 188, 193, 0.20), rgba(214, 188, 193, 0.35) ), url("../images/final_design.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 250px;
+  margin-top: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+#finalDesign h2 {
+  padding-top: 60px;
+  padding-left: 200px;
+  color: #F2F2F2;
 }
 
 /*body*/
@@ -83,7 +103,7 @@ h3 {
 }
 
 .description_text {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .project_description {
@@ -91,17 +111,17 @@ h3 {
 }
 
 .project_description h3 {
-  line-height: 150%;
+  line-height: 1.5;
 }
 
 .design_role {
   margin-top: 10px;
   margin-bottom: 75px;
-  padding: 0 120px;
+  /* padding: 0 120px; */
 }
 
 .design_role ul {;
-  line-height: 140%;
+  line-height: 1.4;
   margin: 0;
   padding: 0;
 }
@@ -124,15 +144,16 @@ h3 {
 /*Slider*/
 
 .slider {
-  background: #3BA09E;
-  color: white;
+  background: #f9f9f9;
+  color: #000;
   height: auto;
   width: 100%;
 }
 
 .slider h2 {
+  color: #000;
   margin-top: 0;
-  padding-top: 30px;
+  padding: 30px 0 20px 0;
 }
 
 .left-column {
@@ -144,12 +165,18 @@ h3 {
   padding-left: 20px;
 }
 
+.overview h3 {
+  padding-top: 15px;
+}
+
 
 /*Discovery*/
 
 #discovery h2 {
   color: #F2F2F2;
-  padding-top: 70px;
+  margin-top: 0;
+  padding-top: 100px;
+  padding-left: 200px;
 }
 
 .competitionIcon {
@@ -158,15 +185,6 @@ h3 {
   margin-right: 10px;
   padding-right: 10px;
   width: 75px;
-}
-
-.polygon {
-	border-left: 250px solid transparent;
-	border-right: 250px solid transparent;
-	border-bottom: 5px solid #FADE39;
-  height: 0;
-  margin: 20px 0;
-  width: 100%;
 }
 
 .mobile_graphs p {
@@ -238,14 +256,11 @@ canvas {
   margin-bottom: 0;
 }
 
-.goals_content {
-  color: #FFF;
-}
-
 /*User Stories*/
 
-#information h2 {
-  padding-top: 18px;
+#information h2, #branding h2 {
+  padding: 50px 0 0 200px;
+  color: #F2F2F2;
 }
 
 .bullet {
@@ -276,8 +291,7 @@ canvas {
 }
 
 .userstories li {
-  font-size: 1.7rem;
-  line-height: 170%;
+  line-height: 1.7;
 }
 
 /*User Flows*/
@@ -308,12 +322,6 @@ canvas {
 }
 
 /*Branding*/
-
-
-.white_h3 {
-  color: #FFF;
-  margin-top: 0;
-}
 
 .black_h3 {
   color: #000;
@@ -356,13 +364,13 @@ canvas {
   display: none;
 }
 
-.typography {
+/* .typography {
   margin-top: 50px;
-}
+} */
 
 .article_content {
-  background-color: #F2F2F2;
-  width: 45%;
+  background-color: #F9F9F9;
+  width: 50%;
 }
 
 .color_row {
@@ -388,9 +396,9 @@ canvas {
 }
 
 .article {
-  float: right;
+  float: left;
   height: auto;
-  padding: 30px;
+  padding-left: 30px;
   margin-bottom: 0;
   width: 50%;
 }
@@ -406,7 +414,7 @@ canvas {
 }
 
 .preference_line {
-  background: rgba(70, 190, 188, 0.5);
+  background: #DB9BAC;
   height: 1px;
   margin: 30px 0 30px 0;
   width: 100%;
@@ -449,15 +457,15 @@ blockquote {
 }
 
 .protoslider {
-  background: #3BA09E;
-  color: #FFF;
+  background: #F9F9F9;
+  color: #000;
   height: auto;
   width: 100%;
   margin-bottom: 50px;
 }
 
 .protoslider p {
-  margin-top: 0px;
+  padding-top: 25px;
 }
 
 .web_viewbtn {
@@ -488,7 +496,7 @@ blockquote {
   width: 150px;
   height: 50px;
   border-radius: 5px 10px 10px 5px;
-  background: #46BEBC;
+  background: #DB9BAC;
   color: #FFF;
   line-height: 50px;
   text-align: center;
@@ -502,7 +510,7 @@ blockquote {
   width: 32px;
   height: 15px;
   border-radius: 5px;
-  background: #46BEBC;
+  background: #DB9BAC;
 }
 #prevButton a:before {
   top: 9px;
@@ -523,7 +531,7 @@ blockquote {
   width: 150px;
   height: 50px;
   border-radius: 10px 5px 5px 10px;
-  background: #46BEBC;
+  background: #DB9BAC;
   color: #FFF;
   line-height: 50px;
   text-align: center;
@@ -537,7 +545,7 @@ blockquote {
   width: 32px;
   height: 15px;
   border-radius: 5px;
-  background: #46BEBC;
+  background: #DB9BAC;
 }
 
 #nextButton a:before {
@@ -556,7 +564,6 @@ blockquote {
 
 #prevButton a:hover, #nextButton a:hover {
   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.25);
-  color: #e0e0e0;
 }
 
 #nextButton {
@@ -573,6 +580,10 @@ blockquote {
 /*Phone*/
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .project-title-container {
+    padding-top: 100px;
+  }
+
   h4 {
     margin-top: 20px;
   }
@@ -594,32 +605,19 @@ blockquote {
     padding: 10px 25px;
   }
 
+  .article {
+    padding-left: 0;
+  }
+
   .button {
     display: block;
     margin: 20px auto;
     width: 100%;
   }
 
-  .menuToggle {
-    top: 20px;
-  }
-
-  .hero {
-    height: 250px;
-  }
-
-  .project_title {
-    top: 150px;
-    left: 30px;
-  }
-
   .design_role {
     margin-bottom: 50px;
     padding: 0;
-  }
-
-  .slider h2 {
-    padding-top: 0;
   }
 
   .project_description {
@@ -641,6 +639,10 @@ blockquote {
     display: none;
   }
 
+  .overview h3 {
+    padding-top: 0;
+  }
+
   .design_role h3 {
     display: block;
     margin: 0 auto;
@@ -650,10 +652,8 @@ blockquote {
     width: 150px;
   }
 
-  .slider {
-    height: auto;
-    margin-bottom: 0;
-    padding: 20px 0 10px 0;
+  #branding h2 {
+    margin: 0;
   }
 
   .right-column {
@@ -668,13 +668,8 @@ blockquote {
     margin: 10px;
   }
 
-  .white_horizontal_line {
-    margin: 10px 0 0 50px;
-    width: 25%;
-  }
-
   #discovery h2 {
-    padding-top: 25px;
+    padding-top: 35px;
   }
 
   .competitionIcon {
@@ -711,7 +706,7 @@ blockquote {
 
   .goals {
     height: auto;
-    margin-top: 50px;
+    margin-top: 0;
     margin-bottom: 0;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -915,26 +910,27 @@ blockquote {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
   .container {
-    padding: 25px 35px;
+    padding: 25px 75px;
   }
 
-  .hero {
-    height: 150px;
-    object-position: 50% 0%;
+  h2 {
+    padding-left: 25px;
   }
 
-  .hero_web {
-    height: 300px;
-    left: 450px;
-    top: 140px;
-    width: 300px;
-  }
-
-  .hero_mobile {
+  #discovery, #information, #branding, #finalDesign {
     height: 200px;
-    left: 620px;
-    top: 250px;
-    width: 150px;
+    margin-bottom: 0;
+  }
+
+  #discovery h2, #information h2, #branding h2, #finalDesign h2 {
+    padding-left: 75px;
+  }
+
+  .hero_image {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 75%;
   }
 
   .design_role h3 {
@@ -963,6 +959,10 @@ blockquote {
     line-height: 150%;
   }
 
+  .persona2 {
+    padding-right: 0;
+  }
+
   .sketch_wires img {
     width: 250px;
   }
@@ -978,87 +978,102 @@ blockquote {
 
   .tablet_typography {
     display: block;
-    margin-top: 50px;
+    margin-top: 25px;
   }
 
   .tablet_typography aside {
-    width: 50%;
+    width: 40%;
+  }
+
+  .article_content {
+    margin-left: 75px;
+    padding: 20px;
   }
 
   .color_row {
     margin-left: 0;
   }
 
-    .color_circle {
-      width: 50%;
-      height: 0;
-      margin-right: 0;
-      padding-bottom: 50%;
+  .color_circle {
+    width: 50%;
+    height: 0;
+    margin-right: 0;
+    padding-bottom: 50%;
+    -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+  }
+
+  .circle-text {
+    width: 50%;
+  }
+
+  .circle-text:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height:0;
+      padding-bottom: 100%;
       -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-    }
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+  }
+  .circle-text p {
+      float:left;
+      width:100%;
+      padding-top:50%;
+      line-height:1em;
+      margin-top:-0.5em;
+      text-align:center;
+  }
 
-    .circle-text {
-      width: 50%;
-    }
-
-    .circle-text:after {
-        content: "";
-        display: block;
-        width: 100%;
-        height:0;
-        padding-bottom: 100%;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-    }
-    .circle-text p {
-        float:left;
-        width:100%;
-        padding-top:50%;
-        line-height:1em;
-        margin-top:-0.5em;
-        text-align:center;
-    }
-
-    .color_circle p {
+  .color_circle p {
       font-size: 0.825rem;
-    }
+  }
 
-    .article {
-      height: auto;
-      float: right;
-      width: 95%;
-      padding: 20px;
-      margin: 0;
-    }
+  .support3 {
+    margin-bottom: 25px;
+  }
 
-    .flow img {
-      margin-left: 100px;
-    }
+  .article {
+    height: auto;
+    float: right;
+    width: 95%;
+    padding: 0 20px;
+    margin: 0;
+  }
 
-    #nextButton {
-      padding-left: 155px;
-    }
+  .tests_intro {
+    padding: 0 75px;
+  }
+
+  .tests_intro h3 {
+    margin-top: 0;
+  }
+
+  .laptop_prototypes {
+    padding: 0 75px;
+  }
+
+  .flow img {
+    height: auto;
+    margin-left: 100px;
+  }
+
+  #nextButton {
+    padding-left: 160px;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .container {
-    padding: 25px 60px;
+    padding: 25px 200px;
   }
 
-  .hero {
-    height: 200px;
-    object-position: 50% 10%;
-  }
-
-  .design_role {
-    padding: 0;
-  }
-
-  .project_description {
-    padding: 0 60px;
+  .hero_image {
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .design_role h3 {
@@ -1066,7 +1081,7 @@ blockquote {
   }
 
   h3 {
-    margin-top: 40px;
+    margin-top: 0;
   }
 }
 
@@ -1075,7 +1090,24 @@ blockquote {
     padding: 50px 200px;
   }
 
-  header.slider {
+  .hero_image {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .project_description h3 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .project_description .button {
+    margin: 0 auto;
+    display: block;
+  }
+
+  div.slider {
     margin-bottom: 0;
   }
 
@@ -1089,14 +1121,6 @@ blockquote {
 
   .project_title {
     left: 20%;
-  }
-
-  .hero_web {
-    top: 25%;
-  }
-
-  .hero_mobile {
-    top: 90%;
   }
 
 }

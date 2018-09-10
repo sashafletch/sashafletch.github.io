@@ -1,46 +1,12 @@
-#discovery {
-  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ), url("../images/glasses.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 10% 40%;
-  height: 250px;
-  margin-top: 0;
-  margin-bottom: 50px;
-  max-width: 100%;
-}
+
 
 .goals_content p:first-child {
     margin-bottom: 20px;
   }
 
-#information {
-  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ), url("../images/woman_writing.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 10% 60%;
-  color: #F2F2F2;
-  height: 250px;
-  margin-top: 0;
-  margin-bottom: 50px;
-  max-width: 100%;
-  width: 100%;
-}
-
 .collab_flow p {
   margin-left: 30px;
   margin-bottom: 13%;
-}
-
-#branding {
-  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ), url("../images/colored_pencils.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 100% 17%;
-  color: #F2F2F2;
-  height: 250px;
-  margin-top: 0;
-  max-width: 100%;
-  width: 100%;
 }
 
 .bold {
@@ -48,20 +14,27 @@
   text-transform: uppercase;
 }
 
-.banner {
-  height: 450px;
-  position: relative;
-}
-
 .mobile_banner {
   display: none;
 }
 
-.banner img {
+.row1-sketch img, .row2-sketch img {
   display: inline-block;
   height: 200px;
   object-fit: contain;
+  margin-top: 8px;
   width: 200px;
+}
+
+.row1-sketch, .row2-sketch {
+  padding: 0 4px;
+}
+
+.banner {
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 0 4px;
 }
 
 .sketch1, .sketch2, .sketch3 {
@@ -74,32 +47,6 @@
 
 .thelogo {
   height: 525px;
-}
-
-.row1-sketch img {
-  margin-right: 50px;
-}
-
-.row2-sketch img {
-  margin-right: 50px;
-  position: absolute;
-  z-index: 1;
-}
-
-.logo_sketch4, .logo_sketch5, .logo_sketch6 {
-  top: 100px;
-}
-
-.logo_sketch4 {
-  left: 135px;
-}
-
-.logo_sketch5 {
-  left: 420px;
-}
-
-.logo_sketch6 {
-  left: 700px;
 }
 
 .logo_sequence img {
@@ -226,18 +173,6 @@
   margin-bottom: 0;
 }
 
-#finalDesign {
-  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ), url("../images/final_design.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  color: #F2F2F2;
-  height: 250px;
-  margin-top: 0;
-  max-width: 100%;
-  width: 100%;
-}
-
 
 .mvpFont {
   text-align: right;
@@ -263,15 +198,13 @@
   width: 50%;
 }
 
-.laptop_prototypes {
-  padding: 25px 0 25px 160px;
+#lupo_web {
+  text-align: center;
 }
 
 #lupo_web img {
-  height: 600px;
-  width: 600px;
-  object-fit: contain;
-  margin-top: 0;
+  display: inline-block;
+  width: 100%;
 }
 
 #lupo_mobile img {
@@ -294,8 +227,16 @@
 /*Phone*/
 @media screen and (min-width: 320px) and (max-width: 574px) {
 
+  .hero_image {
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 100%;
+  }
+
   .project_description {
     padding: 0 25px;
+    text-align: center;
   }
 
   .project_description h3 {
@@ -306,6 +247,14 @@
   #discovery, #information, #branding, #finalDesign {
     height: 100px;
     margin-bottom: 0;
+  }
+
+  #discovery h2, #information h2, #branding h2, #finalDesign h2 {
+    padding-left: 25px;
+  }
+
+  #information h2, #finalDesign h2 {
+    padding-top: 10px;
   }
 
   .persona1, .persona2 {
@@ -367,8 +316,7 @@
 
   .tests_intro {
     height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 25px;
   }
 
   .testcontent {
@@ -426,7 +374,6 @@
 
   #lupo_web img {
     display: block;
-    height: 250px;
     margin: auto;
     margin-bottom: 10px;
     width: 100%;
@@ -457,7 +404,6 @@
   }
 
   .preference_line {
-    background: rgba(70, 190, 188, 0.5);
     height: 1px;
     margin: 30px 0 30px 0;
     width: 100%;
@@ -469,6 +415,13 @@
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
+  .hero_image {
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 100%;
+  }
+
   .mobile_preference img {
     height: auto;
     margin: 0 auto;
@@ -480,7 +433,6 @@
   }
 
   .preference_line {
-    background: rgba(70, 190, 188, 0.5);
     height: 1px;
     margin: 30px 0 30px 0;
     width: 100%;
@@ -510,12 +462,22 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    overflow-x: visible;
+  }
+
   .project_title {
     left: 110px;
   }
 
   .project_description {
-    padding: 25px 35px;
+    padding: 0 35px;
+    text-align: center;
+  }
+
+  .project_description .button {
+    display: block;
+    margin: 0 auto;
   }
 
   .description_text {
@@ -529,15 +491,6 @@
 
   .design_role {
     padding: 0;
-  }
-
-  .slider {
-    padding: 0;
-  }
-
-  #discovery, #information, #branding, #finalDesign {
-    height: 200px;
-    margin-bottom: 0;
   }
 
   .competitionIcon {
@@ -602,11 +555,6 @@
     display: none;
   }
 
-  .banner {
-    height: 300px;
-    margin-left: 35px;
-  }
-
   .sketch_wires img {
     height: 300px;
   }
@@ -621,24 +569,12 @@
   }
 
   .logo_sequence {
-    margin-left: 20px;
+    margin-left: 60px;
     margin-top: 20px;
   }
 
   .row1-sketch img {
     margin-right: 0;
-  }
-
-  .logo_sketch4 {
-    left: 80px;
-  }
-
-  .logo_sketch5 {
-    visibility: hidden;
-  }
-
-  .logo_sketch6 {
-    left: 255px;
   }
 
   .logo_sequence img {
@@ -653,13 +589,9 @@
     display: none;
   }
 
-  .article_content, .article {
-    height: 560px;
-  }
-
-  .article.slider {
+  /* .article.slider {
     padding: 25px;
-  }
+  } */
 
   #preference1a, #preference2a, #preference3a {
     margin-right: 50px;
@@ -732,35 +664,33 @@
     padding-right: 20px;
   }
 
-  .laptop_prototypes {
-    padding: 25px 0 0 50px;
-  }
-
   .final h3:first-child {
     margin-top: 0;
   }
 
   #lupo_web img {
+    display: block;
     height: auto;
-    width: 300px;
+    margin: 0 auto;
+    width: 100%;
   }
 
-  #lupo_mobile img {
+  /* #lupo_mobile img {
     height: auto;
     margin: 15px 0 0 100px;
     width: 100px;
-  }
+  } */
 
   .final p {
     padding-bottom: 20px;
   }
 
   .web_viewbtn {
-    margin-left: 25px;
+    margin-left: 0;
   }
 
   .mobile_viewbtn {
-    margin-left: 60px
+    margin-left: 80px
   }
 
 }
@@ -793,16 +723,12 @@
   }
 
   .goals {
-    margin-top: 50px;
-    height: auto;
+    margin-top: 0;
+    margin-bottom: 25px;
   }
 
   .persona1 {
     padding-right: 70px;
-  }
-
-  .testcontent {
-    margin-top: 0;
   }
 
   .userstories li {
@@ -813,14 +739,9 @@
     padding-top: 10px;
   }
 
-  .wrapper {
-    margin-top: 5px;
-    margin-left: 30px;
-  }
-
-  .bullet-listing {
+  /* .bullet-listing {
     margin-top: 15px;
-  }
+  } */
 
   .flow img {
     margin-left: 0;
@@ -831,29 +752,12 @@
     height: 350px;
   }
 
-  .logo_sketch4 {
-    left: 120px;
-  }
-
-  .logo_sketch5 {
-    left: 340px;
-  }
-
-  .row1-sketch img {
-    margin-right: 20px;
-  }
-
-  .logo_sketch6 {
-    left: 560px;
-  }
-
-  .banner {
-    height: 300px;
-    margin-left: 5%;
+  .sketch_wires h3 {
+    margin-top: 10px;
   }
 
   .logo_sequence img {
-    padding: 50px 25px 0 10px;
+    padding: 0 25px 0 10px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -863,13 +767,9 @@
   }
 
   .article_content {
-    height: 520px;
+    height: auto;
     margin-top: 0;
     padding: 25px 30px 25px 50px;
-  }
-
-  .article {
-    height: 520px;
   }
 
   .article_content p {
@@ -904,6 +804,7 @@
 
   .tests_intro {
     margin-bottom: 50px;
+    padding: 0 200px 25px 200px;
   }
 
   .preferencerow1 img, .preferencerow2 img, .preferencerow3 img {
@@ -954,21 +855,6 @@
     max-width: 450px;
   }
 
-  .laptop_prototypes {
-    padding: 25px 0 25px 100px;
-  }
-
-  #lupo_web img {
-    height: 500px;
-    width: 500px;
-  }
-
-  #lupo_mobile img {
-    height: 300px;
-    width: 200px;
-    margin: 66px 0 0 125px;
-  }
-
   .web_viewbtn {
     margin-left: 100px;
   }
@@ -1005,10 +891,6 @@
     padding-top: 20px;
   }
 
-  .banner {
-    height: 375px;
-  }
-
   .banner img {
     height: 250px;
     width: 250px;
@@ -1016,14 +898,6 @@
 
   .row1-sketch img {
     margin-right: 50px;
-  }
-
-  .logo_sketch5 {
-    left: 450px;
-  }
-
-  .logo_sketch6 {
-    left: 770px;
   }
 
   .logo_sequence {
@@ -1040,11 +914,19 @@
   }
 
   .article_content {
-    padding: 30px 30px 30px 100px;
+    padding: 30px 0 30px 50px;
   }
 
   .article {
     height: 425px;
+  }
+
+  .tests_intro {
+    padding: 0 200px;
+  }
+
+  .tests_intro h3 {
+    margin-top: 0;
   }
 
   .color_row1 {
@@ -1113,8 +995,16 @@
     padding-right: 30px;
   }
 
+  .laptop_prototypes {
+    padding: 0 200px;
+  }
+
   .web_viewbtn {
     margin-left: 0;
+  }
+
+  .final h3 {
+    margin-top: 0;
   }
 
   .final p {
