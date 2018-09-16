@@ -64,10 +64,10 @@ nav.greyNavItem, nav.greyNavItem a {
 }
 
 #finalDesign {
-  background: linear-gradient( rgba(214, 188, 193, 0.20), rgba(214, 188, 193, 0.35) ), url("../images/final_design.png");
+  background: linear-gradient( rgba(214, 188, 193, 0.9), rgba(214, 188, 193, 0.3) ), url("../images/4881.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   height: 250px;
   margin-top: 0;
   max-width: 100%;
@@ -88,6 +88,10 @@ nav.greyNavItem, nav.greyNavItem a {
 
 h3 {
   margin-top: 70px;
+}
+
+.center {
+  text-align: center;
 }
 
 .one-half {
@@ -169,6 +173,10 @@ h3 {
   padding-top: 15px;
 }
 
+.overview .right-column {
+  padding-right: 0;
+}
+
 
 /*Discovery*/
 
@@ -220,26 +228,46 @@ canvas {
 }
 
 .persona1 {
-  padding-right: 60px;
+  margin-top: 25px;
+  padding-right: 0;
 }
 
-.persona1 img, .persona2 img {
+.persona1 img, .persona2 img, .persona3 img {
   margin: 20px auto;
   display: block;
   width: 100%;
   max-width: 250px;
 }
 
-.persona1 li, .persona2 li {
-  font-size: 1.25rem;
+.persona1 li, .persona2 li, .persona3 li {
+  font-size: 1rem;
   line-height: 150%;
 }
 
-.persona1 h3, .persona2 h3 {
+.persona1 h3, .persona2 h3, .persona3 h3 {
   color: #000;
   font-weight: 400;
   padding-top: 25px;
   margin-top: 0;
+}
+
+.persona1 div, .persona2 div, .persona3 div {
+  display: inline-block;
+  text-align: left;
+}
+
+.motivation h3 {
+  padding-top: 0;
+}
+
+.demographic {
+  max-width: 40%;
+}
+
+.persona-info {
+  max-width: 60%;
+  padding-right: 0;
+  padding-left: 50px;
 }
 
 .wrap {
@@ -329,12 +357,6 @@ canvas {
   font-style: italic;
 }
 
-
-.logo_sequence {
-  margin-left: 20%;
-  position: relative;
-}
-
 .logo_sequence div {
   background-color: #3BA09E;
   bottom: 100px;
@@ -380,14 +402,14 @@ canvas {
 
 .color_circle {
   border-radius: 50%;
-  height: 100px;
-  margin-right: 50px;
-  width: 100px;
+  height: 80px;
+  margin-right: 5px;
+  width: 80px;
 }
 
 .color_circle p {
-  font-size: 1rem;
-  padding-top: 37px;
+  font-size: .75rem;
+  padding-top: 30px;
   text-align: center;
 }
 
@@ -473,7 +495,7 @@ blockquote {
 }
 
 .mobile_viewbtn {
-  margin-left: 160px;
+  margin-left: 200px;
 }
 
 #conclusion {
@@ -481,103 +503,24 @@ blockquote {
   text-align: center;
 }
 
-.last_polygon {
-  border-left: 250px solid transparent;
-	border-right: 250px solid transparent;
-	border-bottom: 5px solid #FADE39;
-  height: 0;
-  margin: 25px 0;
-  width: 100%;
-}
-
-#prevButton a {
-  position: relative;
-  display: block;
-  width: 150px;
-  height: 50px;
-  border-radius: 5px 10px 10px 5px;
-  background: #DB9BAC;
-  color: #FFF;
-  line-height: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-#prevButton a:before, #prevButton a:after {
-  content: '';
-  position: absolute;
-  left: -15px;
-  width: 32px;
-  height: 15px;
-  border-radius: 5px;
-  background: #DB9BAC;
-}
-#prevButton a:before {
-  top: 9px;
-  -webkit-transform: rotate(-60deg);
-  -ms-transform: rotate(-60deg);
-  transform: rotate(-60deg);
-}
-#prevButton a:after {
-  bottom: 9px;
-  -webkit-transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
-  transform: rotate(60deg);
-}
-
-#nextButton a {
-  position: relative;
-  display: block;
-  width: 150px;
-  height: 50px;
-  border-radius: 10px 5px 5px 10px;
-  background: #DB9BAC;
-  color: #FFF;
-  line-height: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-#nextButton a:before, #nextButton a:after {
-  content: '';
-  position: absolute;
-  right: -15px;
-  width: 32px;
-  height: 15px;
-  border-radius: 5px;
-  background: #DB9BAC;
-}
-
-#nextButton a:before {
-  top: 9px;
-  -webkit-transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
-  transform: rotate(60deg);
-}
-
-#nextButton a:after {
-  bottom: 9px;
-  -webkit-transform: rotate(-60deg);
-  -ms-transform: rotate(-60deg);
-  transform: rotate(-60deg);
-}
-
-#prevButton a:hover, #nextButton a:hover {
-  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.25);
-}
-
-#nextButton {
-  padding-left: 35%;
-}
-
-.prevNext {
-  margin-top: 75px;
-  margin-bottom: 75px;
-}
 
 /*Media Queries*/
 
 /*Phone*/
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .color_circle {
+    height: 65px;
+    width: 65px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+  .color_circle {
+    height: 90px;
+    width: 90px;
+  }
+}
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .project-title-container {
@@ -625,6 +568,36 @@ blockquote {
     padding-left: 20px;
     margin-right: 20px;
     font-size: 1.25rem;
+  }
+
+  .hero_image {
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .project_description h3 {
+    margin-top: 20px;
+    font-size: 1.25rem;
+  }
+
+  .project_description {
+    padding: 0 25px;
+    text-align: center;
+  }
+
+  #discovery, #information, #branding, #finalDesign {
+    height: 100px;
+    margin-bottom: 0;
+  }
+
+  #discovery h2, #information h2, #branding h2, #finalDesign h2 {
+    padding-left: 25px;
+  }
+
+  #information h2, #finalDesign h2 {
+    padding-top: 10px;
   }
 
   .one-half {
@@ -681,16 +654,6 @@ blockquote {
     width: 100%;
   }
 
-  canvas {
-    height: 250px !important;
-    width: 250px !important;
-  }
-
-  #graph1, #graph2 {
-    margin-bottom: 40px;
-    float: none;
-  }
-
   .mobile_graphs p {
     margin-bottom: 20px;
     width: 100%;
@@ -702,6 +665,25 @@ blockquote {
 
   .persona1 li, .persona2 li {
     font-size: 1.025rem;
+  }
+
+  .demographic {
+    float: none;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .demographic ul {
+    text-align: center;
+  }
+
+  .persona-info {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .motivation h3 {
+    padding-top: 25px;
   }
 
   .goals {
@@ -734,6 +716,11 @@ blockquote {
   .forty-five {
     width: 100%;
     padding: 0;
+  }
+
+  .home, .landing, .account {
+    display: block;
+    margin-top: 0;
   }
 
   .sketch_wires img {
@@ -769,17 +756,10 @@ blockquote {
   }
 
   .color_circle {
-    width: 50%;
-    height: 0;
-    margin-right: 0;
-    padding-bottom: 50%;
-    -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
-  }
-
-  .circle-text {
-    width: 50%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-right: 5px;
   }
 
   .circle-text:after {
@@ -874,28 +854,6 @@ blockquote {
     width: 100%;
   }
 
-  #prevButton, #nextButton {
-    width: 50%;
-  }
-
-  #nextButton {
-    padding-left: 35px;
-  }
-
-  #prevButton a, #nextButton a{
-    width: 100px;
-  }
-
-  .polygon, .last_polygon {
-    border-left: 100px solid transparent;
-  	border-right: 100px solid transparent;
-  	border-bottom: 5px solid #FADE39;
-    display: block;
-    height: 0;
-    margin: 0 auto;
-    width: 100%;
-  }
-
   .footer-icons {
     padding-right: 0;
   }
@@ -933,6 +891,10 @@ blockquote {
     width: 75%;
   }
 
+  .project_description {
+    padding: 0 75px;
+  }
+
   .design_role h3 {
     text-align: center;
   }
@@ -940,14 +902,6 @@ blockquote {
   h3 {
     margin-top: 40px;
     margin-bottom: 30px;
-  }
-
-  .polygon {
-  	border-left: 125px solid transparent;
-  	border-right: 125px solid transparent;
-  	border-bottom: 3px solid #FADE39;
-    height: 0;
-    width: 100%;
   }
 
   .persona1 {
@@ -981,54 +935,32 @@ blockquote {
     margin-top: 25px;
   }
 
-  .tablet_typography aside {
-    width: 40%;
-  }
-
-  .article_content {
-    margin-left: 75px;
-    padding: 20px;
-  }
-
   .color_row {
     margin-left: 0;
-  }
-
-  .color_circle {
-    width: 50%;
-    height: 0;
-    margin-right: 0;
-    padding-bottom: 50%;
-    -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
-  }
-
-  .circle-text {
-    width: 50%;
+    margin-right: 5px;
   }
 
   .circle-text:after {
-      content: "";
-      display: block;
-      width: 100%;
-      height:0;
-      padding-bottom: 100%;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
+    content: "";
+    display: block;
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
   }
   .circle-text p {
-      float:left;
-      width:100%;
-      padding-top:50%;
-      line-height:1em;
-      margin-top:-0.5em;
-      text-align:center;
+    float:left;
+    width:100%;
+    padding-top:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
   }
 
   .color_circle p {
-      font-size: 0.825rem;
+    font-size: 0.825rem;
   }
 
   .support3 {
@@ -1111,16 +1043,23 @@ blockquote {
     margin-bottom: 0;
   }
 
-  .white_horizontal_line {
-    margin: 10px 0 0 200px;
-  }
-
-  .horizontal_line {
-    margin: 10px 0 15px 200px;
-  }
-
   .project_title {
     left: 20%;
   }
+
+  .color_circle {
+    height: 150px;
+    width: 150px;
+  }
+
+  .color_circle p {
+    padding-top: 65px;
+  }
+
+  .persona1 div, .persona2 div, .persona3 div {
+    margin-bottom: 15px;
+  }
+
+
 
 }

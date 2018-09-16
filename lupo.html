@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lupo Cloud Storage</title>
@@ -11,7 +12,6 @@
       <link href="https://fonts.googleapis.com/css?family=Lato:300|Poiret+One" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-      <head>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120685831-1"></script>
       <script>
@@ -30,8 +30,8 @@
             <ul class="nav_main">
               <li class="nav-item greyNavItem dropdown">Work
                   <ul class="dropdown-content work">
+                    <li class="dropdown-nav-item"><a href="burpi.html">Burpi</a></li>
                     <li class="dropdown-nav-item"><a href="lupo.html">Lupo Cloud Storage</a></li>
-                    <li class="dropdown-nav-item"><a href="#">Burpi</a></li>
                   </ul>
               </li>
               <li class="nav-item" id="nav_about"><a href="about.html">About Me</a></li>
@@ -55,8 +55,8 @@
               <li class="mobile-nav-item dropdown"><a href="index.html">Home</a></li>
               <li class="mobile-nav-item dropdown"><a href="#">Work
                 <ul class="dropdown-content">
+                  <li class="mobile-nav-item dropdown-nav-item"><a href="burpi.html">Burpi</a></li>
                   <li class="mobile-nav-item dropdown-nav-item"><a href="lupo.html">Lupo Cloud Storage</a></li>
-                  <li class="mobile-nav-item dropdown-nav-item"><a href="#">Burpi</a></li>
                 </ul>
               </li>
               <li class="mobile-nav-item"><a href="about.html">About Me</a></li>
@@ -73,11 +73,10 @@
         </nav>
       </header>
     </div>
-
   <!--Project Description-->
     <div class="project-title-container">
-        <h1 class="project_title">Lupo Cloud Storage</h1>
-        <img class="hero_image" src="images/frame.png" alt="Lupo Web Prototype">
+      <h1 class="project_title">Lupo Cloud Storage</h1>
+      <img class="hero_image" src="images/lupo_web.jpg" alt="Lupo Web Prototype">
     </div>
     <div class="project_description">
       <h3 class="description_text">A digital workplace for concentrative and collaborative work</h3>
@@ -155,7 +154,6 @@
           <h2>Discovery</h2>
         </header>
         <div class="container">
-  <!--Competitive Analysis-->
           <h3>The Competition</h3>
           <div class="row">
             <div class="column left-column one-third">
@@ -179,12 +177,15 @@
                 <p class="column comp_descript">To take advantage of collaboration, users have to switch into different platforms which makes it confusing and cumbersome. Some features are only available on the web.</p>
               </div>
             </div>
+          </div>
         </div>
-
+      </section>
   <!--User Research-->
-          <h3>Early Insights</h3>
-          <p>To understand what users are looking for in cloud storage, I conducted a survey that was posted online through various social media platforms and public forums. I also wanted to better understand how users viewed major cloud storage sites like Google Drive and Dropbox; what did they think was missing?</p>
-        <div class="mobile_graphs clearfix">
+      <section>
+          <div class="container">
+            <h3>Early Insights</h3>
+            <p>To understand what users are looking for in cloud storage, I conducted a survey that was posted online through various social media platforms and public forums. I also wanted to better understand how users viewed major cloud storage sites like Google Drive and Dropbox; what did they think was missing?</p>
+            <div class="mobile_graphs clearfix">
           <p>Survey results indicated collaboration as one of the key reasons participants use cloud storage, emphasizing the importance of it as a feature.</p>
           <div>
             <h4>Do Users Collaborate?</h4>
@@ -197,68 +198,75 @@
             <canvas id="graph2"></canvas>
           </div>
         </div>
-        <a class="button bigbutton" target="_blank" href="https://drive.google.com/file/d/1unH7nWOAGAsPb6SjLEOksLKSLvmVCRQA/view?usp=sharing">View Full Results</a>
-  <!--User Personas-->
-        <h3>User Personas</h3>
-        <p>To better understand the needs of users, I then conducted two interviews from survey participants: </p>
-        <div class="row">
-          <div class="column one-half text-center persona1">
-            <img src="images/kara.png">
-            <ul>
-              <li>Name: Kara</li>
-              <li>Age: 35</li>
-              <li>Profession: IT</li>
-            </ul>
-            <div>
-              <div class="preference_line"></div>
-              <h3>Motivation</h3>
-              <p>Kara first began using Dropbox as a free option but eventually outgrew it and disliked their pricing options. She switched to Box and then Mega.nz.</p>
-            <div class="preference_line"></div>
-            </div>
-            <div>
-              <h3>Frustration</h3>
-              <ul>
-                <li>Cost</li>
-                <li>Untrustworthy</li>
-              </ul>
-              <div class="preference_line"></div>
-            </div>
+            <a class="button bigbutton" target="_blank" href="https://drive.google.com/file/d/1unH7nWOAGAsPb6SjLEOksLKSLvmVCRQA/view?usp=sharing">View Full Results</a>
           </div>
-          <div class="column one-half right-column text-center persona2">
-            <img src="images/john.png">
-            <ul>
-              <li>Name: John</li>
-              <li>Age: 43</li>
-              <li>Profession: Teacher</li>
-            </ul>
-            <div>
-              <div class="preference_line"></div>
-              <h3>Motivation</h3>
-              <p>To better meet the needs of a more tech-focused generation, John hopes to use collaborative features to support his students and keep them motivated.</p>
-              <div class="preference_line"></div>
+      </section>
+  <!--User Personas-->
+      <section>
+        <div class="container">
+          <h3>User Personas</h3>
+          <p>To better understand the needs of users, I then conducted two interviews from survey participants: </p>
+          <div>
+            <div class="text-center persona1 clearfix">
+              <div class="demographic column">
+                <img src="images/kara.jpg">
+                <ul>
+                  <li>Name: Kara</li>
+                  <li>Age: 35</li>
+                  <li>Profession: IT</li>
+                </ul>
+              </div>
+              <div class="persona-info">
+                <div class="motivation">
+                  <h3>Motivation</h3>
+                  <p>Kara first began using Dropbox as a free option but eventually outgrew it and disliked their pricing options. She switched to Box and then Mega.nz.</p>
+                </div>
+                <div class="frustration">
+                  <h3>Frustration</h3>
+                  <ul>
+                    <li>Cost</li>
+                    <li>Untrustworthy</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>Frustration</h3>
-              <ul>
-                <li>No audio/video option</li>
-                <li>Sharing cumbersome</li>
-              </ul>
-              <div class="preference_line"></div>
+            <div class="preference_line"></div>
+            <div class="text-center persona2 clearfix">
+              <div class="demographic column">
+                <img src="images/john.png">
+                <ul>
+                  <li>Name: John</li>
+                  <li>Age: 43</li>
+                  <li>Profession: Teacher</li>
+                </ul>
+              </div>
+              <div class="persona-info">
+                <div class="motivation">
+                  <h3>Motivation</h3>
+                  <p>To better meet the needs of a more tech-focused generation, John hopes to use collaborative features to support his students and keep them motivated.</p>
+                </div>
+                <div class="frustration">
+                  <h3>Frustration</h3>
+                  <ul>
+                    <li>No audio/video option</li>
+                    <li>Sharing cumbersome</li>
+                  </ul>
+                </div>
+              </div>
             </div>
+            <div class="preference_line"></div>
+            <article class="inline goals">
+              <div class="goals_content">
+                <p>Through individuals like John and Kara, Lupo developed a purpose and overarching goals:
+                <p><span class="bold">Create</span> a brand that is trustworthy for working professionals</p>
+                <p><span class="bold">Provide</span> an interface that is dynamic and vibrant while still maintaining a level of sophistication and professionalism</p>
+                <p><span class="bold">Extend and diversify </span>collaborative options for users while still having an intuitive and simple design</p>
+                <p><span class="bold">Be</span> cost-efficient for individual users</p>
+                <p><span class="bold">Allow</span> users to customize features and have more control over their cloud's organization to meet work needs</p>
+              </div>
+            </article>
           </div>
         </div>
-        <article class="inline goals">
-          <div class="goals_content">
-            <p>Through individuals like John and Kara, Lupo developed a purpose and overarching goals:
-            <p><span class="bold">Create</span> a brand that is trustworthy for working professionals</p>
-            <p><span class="bold">Provide</span> an interface that is dynamic and vibrant while still maintaining a level of sophistication and professionalism</p>
-            <p><span class="bold">Extend and diversify </span>collaborative options for users while still having an intuitive and simple design</p>
-            <p><span class="bold">Be</span> cost-efficient for individual users</p>
-            <p><span class="bold">Allow</span> users to customize features and have more control over their cloud's organization to meet work needs</p>
-          </div>
-        </article>
-
-      </div>
       </section>
   <!--Information Architecture-->
       <section>
@@ -278,20 +286,27 @@
               </ul>
           </div>
           <a class="button bigbutton" target="_blank" href="https://drive.google.com/file/d/1kAFD-q55YgI8ce8HxEIArAntm8BR5ger/view?usp=sharing">View User Stories</a>
+      </section>
   <!--User Flows-->
+      <section>
+        <div class="container">
           <h3>User Flows</h3>
           <div class="row flow">
-            <div class="column one-half">
+            <div>
               <p>Onboarding</p>
               <img src="images/userflow1.jpg" alt="Onboarding User Flow">
-              <a class="button bigbutton" target="_blank" href="https://drive.google.com/file/d/1YoNOhgvEjftO03LGPubFoe-dBSsxUQPL/view?usp=sharing">View User Flows</a>
             </div>
-            <div class="column one-half collab_flow">
+            <div class="collab_flow">
               <p>Add Collaborators</p>
               <img src="images/userflow2.jpg" alt="Add Collaborators User Flow">
+              <a class="button bigbutton" target="_blank" href="https://drive.google.com/file/d/1YoNOhgvEjftO03LGPubFoe-dBSsxUQPL/view?usp=sharing">View User Flows</a>
             </div>
           </div>
+        </div>
+      </section>
   <!--Sketches/Wireframes-->
+      <section>
+        <div class="container">
           <div class="row sketch_wires">
             <h3>Sketches and Wireframes</h3>
             <div class="landing">
@@ -317,10 +332,9 @@
           </article>
           <a class="button bigbutton wirebutton" target="_blank" href="https://drive.google.com/drive/folders/1luER-bvF9slPxmHRgAiNvyZL6u56oUOn?usp=sharing">View Wireframes</a>
         </div>
-    </section>
-    <section class="wrap">
+      </section>
   <!--Branding-->
-      <div>
+      <section class="wrap">
         <header class="inline" id="branding">
           <h2>Branding & Identity</h2>
         </header>
@@ -348,59 +362,56 @@
                 <img class="logo_sketch6" src="images/sketch6.png" alt="Logo Sketch 6">
               </div>
               <p>Lupo capitalizes on the lack of brand symbols within the cloud storage market to distinguish itself. With it’s focus on collaboration, innovation, and reliability, a familiar cultural representation is that of a wolf. Culturally, these animals are admired for their tenacity and ability to band together for a common goal; they are often seen as majestic animals with a keen intelligence, which are all traits Lupo sees in it’s users as collaborators on the platform.</p>
+              <div class="logo_sequence clearfix">
+                <img class="column sequence1" src="images/sequence1.png" alt="Logo Version 1">
+                <img class= "column sequence2" src="images/sequence2.png" alt="Logo Version 2">
+                <img class="sequence3" src="images/final_sequence.png" alt="Final Logo Version">
             </div>
-          <div class="logo_sequence">
-              <img class="column sequence1" src="images/sequence1.png" alt="Logo Version 1">
-              <img class= "column sequence2" src="images/sequence2.png" alt="Logo Version 2">
-              <img class="sequence3" src="images/final_sequence.png" alt="Final Logo Version">
-          </div>
-          <div class="container">
-            <p>In helping to make a final decision on the logo, I also developed several mood boards that explored different color palettes and themes: </p>
-          </div>
+              <div>
+                <p>In helping to make a final decision on the logo, I also developed several mood boards that explored different color palettes and themes: </p>
+              </div>
+            </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="container clearfix">
-    <!--Moodboard Slideshow-->
-        <div class="moodboard-container">
-          <img class="moodboardSlides" src="images/moodboard_blue.png" alt="Blue Moodboard">
-          <img class="moodboardSlides" src="images/moodboard_purple.png" alt="Purple Moodboard">
+  <!--Moodboard Slideshow-->
+        <div class="container clearfix">
+          <div class="moodboard-container">
+            <img class="moodboardSlides" src="images/moodboard_blue.png" alt="Blue Moodboard">
+            <img class="moodboardSlides" src="images/moodboard_purple.png" alt="Purple Moodboard">
+          </div>
+          <p>Both mood boards used orange as a highlight because of its association with stimulating mental activity. Both were also meant to uphold the general brand themes I had chosen for Lupo based on market research: dynamic, vibrant, sophisticated, professional.</p>
         </div>
-        <p>Both mood boards used orange as a highlight because of its association with stimulating mental activity. Both were also meant to uphold the general brand themes I had chosen for Lupo based on market research: dynamic, vibrant, sophisticated, professional.</p>
-    <!--Typography-->
-      </div>
+  <!--Typography-->
         <div class="typography container">
           <div class="clearfix">
             <aside class="column article_content clearfix">
-            <div>
-            <p class="font_poiret">Poiret One</p>
-            <p class="font_lato">Lato</p>
-            <p>Core Colors</p>
-            <div class="color_row color_row1 clearfix">
-              <div class="column color_circle core1 circle-text">
-                  <p>#2A004A</p>
+              <div>
+                <p class="font_poiret">Poiret One</p>
+                <p class="font_lato">Lato</p>
+                <p>Core Colors</p>
+                <div class="color_row color_row1 clearfix">
+                  <div class="column color_circle core1 circle-text">
+                      <p>#2A004A</p>
+                  </div>
+                  <div class="column color_circle core2 circle-text">
+                      <p>#4E008A</p>
+                  </div>
+                  <div class="column color_circle core3 circle-text">
+                      <p>#F7A800</p>
+                  </div>
+                </div>
+                <p>Supporting Colors</p>
+                <div class="color_row">
+                  <div class="column color_circle support1 circle-text">
+                    <p>#FEFEFA</p>
+                  </div>
+                  <div class="column color_circle support2 circle-text">
+                    <p>#FFF600</p>
+                  </div>
+                  <div class="column color_circle support3 circle-text">
+                    <p>#B067DF</p>
+                  </div>
+                </div>
               </div>
-              <div class="column color_circle core2 circle-text">
-                  <p>#4E008A</p>
-              </div>
-              <div class="column color_circle core3 circle-text">
-                  <p>#F7A800</p>
-              </div>
-            </div>
-            <p>Supporting Colors</p>
-            <div class="color_row">
-              <div class="column color_circle support1 circle-text">
-                <p>#FEFEFA</p>
-              </div>
-              <div class="column color_circle support2 circle-text">
-                <p>#FFF600</p>
-              </div>
-              <div class="column color_circle support3 circle-text">
-                <p>#B067DF</p>
-              </div>
-            </div>
-          </div>
             </aside>
             <aside class="column article">
               <p> I chose purple as the core color for Lupo with yellow and orange as supporting colors. Yellow is often associated with happiness and energy; orange is said to stimulate confidence and mental activity. And finally, purple is historically associated with royalty from the Roman Empire. The use of purple as a primary brand identifier corroborates its association with wisdom, creativity, and sophistication.</p>
@@ -412,269 +423,274 @@
             <a class="button bigbutton" target="_blank" href="https://drive.google.com/file/d/1ArfMIYsL9mZAYF0pAu2EOiKsHPV0ysS6/view?usp=sharing">View Style Guide</a>
           </div>
         </div>
-    <div class="tablet_typography">
-      <article class="clearfix">
-        <aside class="column article_content">
-          <div>
-            <p class="font_poiret">Poiret One</p>
-            <p class="font_lato">Lato</p>
-            <div class="color_row color_row1">
-              <div class="column color_circle core1 circle-text">
-                  <p>#2A004A</p>
+        <div class="tablet_typography">
+          <article class="clearfix">
+            <aside class="column article_content">
+              <div>
+                <p class="font_poiret">Poiret One</p>
+                <p class="font_lato">Lato</p>
+                <p>Core Colors</p>
+                <div class="color_row color_row1 clearfix">
+                  <div class="column color_circle core1 circle-text">
+                    <p>#2A004A</p>
+                  </div>
+                  <div class="column color_circle core2 circle-text">
+                    <p>#4E008A</p>
+                  </div>
+                  <div class="column color_circle core3 circle-text">
+                    <p>#F7A800</p>
+                  </div>
+                </div>
+                <p>Supporting Colors</p>
+                <div class="color_row1">
+                  <div class="column color_circle support1 circle-text">
+                    <p>#FEFEFA</p>
+                  </div>
+                  <div class="column color_circle support2 circle-text">
+                    <p>#FFF600</p>
+                  </div>
+                  <div class="column color_circle support3 circle-text">
+                    <p>#B067DF</p>
+                  </div>
+                </div>
               </div>
-              <div class="column color_circle core2 circle-text">
-                  <p>#4E008A</p>
+            </aside>
+            <aside class="column">
+              <div class="article">
+                <p> I chose purple as the core color for Lupo with yellow and orange as supporting colors. Yellow is often associated with happiness and energy; orange is said to stimulate confidence and mental activity. And finally, purple is historically associated with royalty from the Roman Empire. The use of purple as a primary brand identifier corroborates its association with wisdom, creativity, and sophistication.</p>
+                <br>
+                <p> Poiret One was chosen as the headline typeface and Lato as the body typeface. Poiret One has very clean lines with very strong geometric shapes that is in alignment with the professional purpose of the site.</p>
               </div>
-              <div class="column color_circle core3 circle-text">
-                <p>#F7A800</p>
-              </div>
-              <div class="column color_circle support1 circle-text">
-                <p>#FEFEFA</p>
-              </div>
-              <div class="column color_circle support2 circle-text">
-                <p>#FFF600</p>
-              </div>
-              <div class="column color_circle support3 circle-text">
-                <p>#B067DF</p>
-              </div>
-            </div>
-          </div>
-        </aside>
-        <aside class="column">
-          <div class="article">
-            <p> I chose purple as the core color for Lupo with yellow and orange as supporting colors. Yellow is often associated with happiness and energy; orange is said to stimulate confidence and mental activity. And finally, purple is historically associated with royalty from the Roman Empire. The use of purple as a primary brand identifier corroborates its association with wisdom, creativity, and sophistication.</p>
-            <br>
-            <p> Poiret One was chosen as the headline typeface and Lato as the body typeface. Poiret One has very clean lines with very strong geometric shapes that is in alignment with the professional purpose of the site.</p>
-          </div>
-        </aside>
-      </article>
-      <div class="container">
-        <a class="button bigbutton" target="_blank" href="https://drive.google.com/file/d/1ArfMIYsL9mZAYF0pAu2EOiKsHPV0ysS6/view?usp=sharing">View Style Guide</a>
-      </div>
-    </div>
-    <div class="mobile_typography">
-      <article class="clearfix">
-        <aside class="column article_content">
+            </aside>
+          </article>
           <div class="container">
-            <p class="font_poiret">Poiret One</p>
-            <p class="font_lato">Lato</p>
-            <div class="color_row color_row1">
-              <div class="column color_circle core1 circle-text">
-                <p>#2A004A</p>
-              </div>
-              <div class="column color_circle core2 circle-text">
-                <p>#4E008A</p>
-              </div>
-              <div class="column color_circle core3 circle-text">
-                <p>#F7A800</p>
-              </div>
-              <div class="column color_circle support1 circle-text">
-                <p>#FEFEFA</p>
-              </div>
-              <div class="column color_circle support2 circle-text">
-                <p>#FFF600</p>
-              </div>
-              <div class="column color_circle support3 circle-text">
-                <p>#B067DF</p>
-              </div>
-            </div>
+            <a class="button bigbutton" target="_blank" href="https://drive.google.com/file/d/1ArfMIYsL9mZAYF0pAu2EOiKsHPV0ysS6/view?usp=sharing">View Style Guide</a>
+          </div>
         </div>
-      </aside>
-      <aside class="slider column article">
-        <div class="container">
-          <p> I chose purple as the core color for Lupo with yellow and orange as supporting colors. Yellow is often associated with happiness and energy; orange is said to stimulate confidence and mental activity. And finally, purple is historically associated with royalty from the Roman Empire. The use of purple as a primary brand identifier corroborates its association with wisdom, creativity, and sophistication.</p>
-          <br>
-          <p> Poiret One was chosen as the headline typeface and Lato as the body typeface. Poiret One has very clean lines with very strong geometric shapes that is in alignment with the professional purpose of the site.</p>
+        <div class="mobile_typography">
+          <div class="clearfix container">
+            <aside class="column article_content clearfix">
+              <div>
+                <p class="font_poiret">Poiret One</p>
+                <p class="font_lato">Lato</p>
+                <p>Core Colors</p>
+                <div class="color_row color_row1 clearfix">
+                  <div class="column color_circle core1 circle-text">
+                    <p>#2A004A</p>
+                  </div>
+                  <div class="column color_circle core2 circle-text">
+                    <p>#4E008A</p>
+                  </div>
+                  <div class="column color_circle core3 circle-text">
+                    <p>#F7A800</p>
+                  </div>
+                </div>
+                <p>Supporting Colors</p>
+                <div class="color_row">
+                  <div class="column color_circle support1 circle-text">
+                    <p>#FEFEFA</p>
+                  </div>
+                  <div class="column color_circle support2 circle-text">
+                    <p>#FFF600</p>
+                  </div>
+                  <div class="column color_circle support3 circle-text">
+                    <p>#B067DF</p>
+                  </div>
+                </div>
+              </div>
+            </aside>
+            <aside class="column article">
+              <p> I chose purple as the core color for Lupo with yellow and orange as supporting colors. Yellow is often associated with happiness and energy; orange is said to stimulate confidence and mental activity. And finally, purple is historically associated with royalty from the Roman Empire. The use of purple as a primary brand identifier corroborates its association with wisdom, creativity, and sophistication.</p>
+              <p> Poiret One was chosen as the headline typeface and Lato as the body typeface. Poiret One has very clean lines with very strong geometric shapes that is in alignment with the professional purpose of the site.</p>
+            </aside>
+          </div>
+          <div class="container">
+            <a class="button bigbutton"  target="_blank" href="https://drive.google.com/file/d/1ArfMIYsL9mZAYF0pAu2EOiKsHPV0ysS6/view?usp=sharing">View Style Guide</a>
+          </div>
         </div>
-      </aside>
-    </article>
-    <div class="container">
-      <a class="button bigbutton"  target="_blank" href="https://drive.google.com/file/d/1ArfMIYsL9mZAYF0pAu2EOiKsHPV0ysS6/view?usp=sharing">View Style Guide</a>
-    </div>
-  </div>
-  </section>
+      </section>
     <!--User Testing-->
-          <section>
-            <article class="tests_intro">
-              <div>
-                <h3>The Tests</h3>
-                <p>Before finalizing my high-fidelity mockups, there were still a few questions I had concerning the user interface. So, I conducted preference tests on Usabilityhub to better inform my design process. The first preference test  looked at the organization of comments on the document home page, the second compared the color of the sign-up page, and the final preference test compared the design of the landing page. Initial usability tests showed that users were focusing on different areas of the page upon it’s initiation, subtly suggesting a weak visual hierarchy and organization. </p>
-              </div>
-            </article>
-          <div class="container preference-tests">
-            <div class="preferencerow1">
-                <p>Test 1</p>
-                <img id="preference1a" src="images/dochome_v1.png" alt="Document Page Version 1">
-                <img id="preference1b" src="images/dochome_v2.png" alt="Document Page Version 2">
-            </div>
-            <div class="preference_line"></div>
-            <div class="preferencerow2">
-                <p>Test 2</p>
-                <img id="preference2a" src="images/purple_signup.png" alt="Purple Sign Up Page">
-                <img id="preference2b" src="images/white_signup.png" alt="White Sign Up Page">
-            </div>
-            <div class="preference_line"></div>
-            <div class="preferencerow3">
-              <p>Test 3</p>
-              <img id="preference3a" src="images/land_v1.png" alt="Landing Page Version 1">
-              <img id="preference3b" src="images/land_v2.png" alt="Landing Page Version 2">
-            </div>
+      <section>
+        <article class="tests_intro">
+          <div>
+            <h3>The Tests</h3>
+            <p>Before finalizing my high-fidelity mockups, there were still a few questions I had concerning the user interface. So, I conducted preference tests on Usabilityhub to better inform my design process. The first preference test  looked at the organization of comments on the document home page, the second compared the color of the sign-up page, and the final preference test compared the design of the landing page. Initial usability tests showed that users were focusing on different areas of the page upon it’s initiation, subtly suggesting a weak visual hierarchy and organization. </p>
           </div>
-          <div class="container mobile_preference">
-            <div class="preference1">
-                <img id="preference1a" src="images/dochome_v1.png" alt="Document Page Version 1">
-                <img id="preference1b" src="images/dochome_v2.png" alt="Document Page Version 2">
-            </div>
-            <div class="preference_line"></div>
-            <div class="preference2">
-              <img id="preference2a" src="images/purple_signup.png" alt="Purple Sign Up Page">
-              <img id="preference2b" src="images/white_signup.png" alt="White Sign Up Page">
-            </div>
-            <div class="preference_line"></div>
-            <div class="preference3">
-              <img id="preference3a" src="images/land_v1.png" alt="Landing Page Version 1">
-              <img id="preference3b" src="images/land_v2.png" alt="Landing Page Version 2">
-            </div>
+        </article>
+        <div class="container preference-tests">
+          <div class="preferencerow1">
+                    <p>Test 1</p>
+                    <img id="preference1a" src="images/dochome_v1.png" alt="Document Page Version 1">
+                    <img id="preference1b" src="images/dochome_v2.png" alt="Document Page Version 2">
+                </div>
+          <div class="preference_line"></div>
+          <div class="preferencerow2">
+                    <p>Test 2</p>
+                    <img id="preference2a" src="images/purple_signup.png" alt="Purple Sign Up Page">
+                    <img id="preference2b" src="images/white_signup.png" alt="White Sign Up Page">
+                </div>
+          <div class="preference_line"></div>
+          <div class="preferencerow3">
+                  <p>Test 3</p>
+                  <img id="preference3a" src="images/land_v1.png" alt="Landing Page Version 1">
+                  <img id="preference3b" src="images/land_v2.png" alt="Landing Page Version 2">
+                </div>
+        </div>
+        <div class="container mobile_preference">
+          <div class="preference1">
+            <img id="preference1a" src="images/dochome_v1.png" alt="Document Page Version 1">
+            <img id="preference1b" src="images/dochome_v2.png" alt="Document Page Version 2">
           </div>
-          <div class="container clearfix">
-            <p>Testing participants also provided me with important feedback concerning my mockups that led to other general shifts in the design.</p>
-            <blockquote>
-              <p class="bold_italic">“I think the files on the home page should be the same size”</p>
-            </blockquote>
-            <div class="mock1">
-              <p>Home Page</p>
-              <img class="mock1a" src="images/home_purple.png" alt="Home Page First Version">
-              <img class="mock1b" src="images/home_white.png" alt="Home Page Final Version">
-            </div>
-            <div class="preference_line"></div>
-            <blockquote>
-              <p class="bold_italic">“The purple navigation is a bit too feminine”</p>
-            </blockquote>
-            <div class="mock2">
-              <p>Account Settings</p>
-              <img class="mock2a" src="images/account_purple.png" alt="Account Settings First Version">
-              <img class="mock2b" src="images/account_white.png" alt="Account Settings Final Version">
-            </div>
-            <div class="testcontent">
-              <p>Along with preference tests, I conducted a few more usability tests before completing my final design. Usability tests  generated some important additional information that users preferred to see, such as including pricing information on the Account Settings home page, adding a leader to the group profile, the ability for users to make certain documents public to invite collaboration, and including the name of the document the users last collaborated on.</p>
-            </div>
-            <a class="button bigbutton" target="_blank" href="https://drive.google.com/file/d/1uuzL08ZVNyi_FlzHGHe3xEa7AzcdQMoc/view?usp=sharing">View Full Results</a>
+          <div class="preference_line"></div>
+          <div class="preference2">
+            <img id="preference2a" src="images/purple_signup.png" alt="Purple Sign Up Page">
+            <img id="preference2b" src="images/white_signup.png" alt="White Sign Up Page">
           </div>
-        </section>
+          <div class="preference_line"></div>
+          <div class="preference3">
+            <img id="preference3a" src="images/land_v1.png" alt="Landing Page Version 1">
+            <img id="preference3b" src="images/land_v2.png" alt="Landing Page Version 2">
+          </div>
+        </div>
+        <div class="container clearfix">
+          <p>Testing participants also provided me with important feedback concerning my mockups that led to other general shifts in the design.</p>
+          <blockquote>
+            <p class="bold_italic">“I think the files on the home page should be the same size”</p>
+          </blockquote>
+          <div class="mock1">
+            <p>Home Page</p>
+            <img class="mock1a" src="images/home_purple.png" alt="Home Page First Version">
+            <img class="mock1b" src="images/home_white.png" alt="Home Page Final Version">
+          </div>
+          <div class="preference_line"></div>
+          <blockquote>
+            <p class="bold_italic">“The purple navigation is a bit too feminine”</p>
+          </blockquote>
+          <div class="mock2">
+            <p>Account Settings</p>
+            <img class="mock2a" src="images/account_purple.png" alt="Account Settings First Version">
+            <img class="mock2b" src="images/account_white.png" alt="Account Settings Final Version">
+          </div>
+          <div class="testcontent">
+            <p>Along with preference tests, I conducted a few more usability tests before completing my final design. Usability tests  generated some important additional information that users preferred to see, such as including pricing information on the Account Settings home page, adding a leader to the group profile, the ability for users to make certain documents public to invite collaboration, and including the name of the document the users last collaborated on.</p>
+          </div>
+          <a class="button bigbutton" target="_blank" href="https://drive.google.com/file/d/1uuzL08ZVNyi_FlzHGHe3xEa7AzcdQMoc/view?usp=sharing">View Full Results</a>
+        </div>
+      </section>
   <!--Final Design-->
-        <section class="wrap">
-            <header class="inline" id="finalDesign">
-              <h2>Final Design</h2>
-            </header>
-        </section>
-        <section>
-            <div class="container clearfix closeups">'
-              <h3>The MVP</h3>
-              <div class="create_goal clearfix">
-                <p class="mvpFont"><span class="semibold_italic">Create</span> a brand that is trustworthy</p>
-                <p class="create_content">Lupo establishes trust with the user by visibly displaying pricing content on the landing page</p>
-                <img src="images/landing_closeup.png" alt="Landing Page CloseUp">
-              </div>
-              <div class="allow_goal clearfix">
-                <p class="mvpFont"><span class="semibold_italic">Allow</span> users to customize</p>
-                <p class="allow_content">Lupo provides customizable features, such as tags, folders, and favorites. Users also have the ability to customize their dashboard by dragging and dropping folders, tags, categories, or contact group files.</p>
-                <img src="images/user_home_closeup.png" alt="Home Page CloseUp">
-              </div>
-              <div>
-                <div class="extend_goal1 clearfix">
-                  <p class="mvpFont"><span class="semibold_italic">Extend and diversify</span> collaborative options</p>
-                  <p class="extend_content1">Lupo informs users of the last document and date they worked on a file with another. Through contact cards and group profiles, users can quickly review any updates and are also given notifications in real-time.</p>
-                  <img src="images/contact_closeup.png" alt="Contacts CloseUp">
-                </div>
-                <div class="extend_goal2 clearfix">
-                  <p class="extend_content2">Lupo users can create, share, and edit files together. They can add commentary in the form of audio, video, or text.</p>
-                  <img src="images/dochome_closeup.png" alt="Document Page CloseUp">
-                </div>
-              </div>
-              <div class="cost_goal clearfix">
-                <p class="mvpFont"><span class="semibold_italic">Be</span> cost-efficient</p>
-                <p class="cost_content">Lupo provides users with multiple subscription options, ranging from 5Gb to unlimited data. Collaborative features are also not limited to just paid subscribers.</p>
-                <img src="images/account_closeup.png" alt="Document Page CloseUp">
-              </div>
-            </div>
-            <div class="mobile_closeups container clearfix">'
-                <h3>The MVP</h3>
-                <div class="create_goal">
-                  <p class="mvpFont"><span class="semibold_italic">Create</span> a brand that is trustworthy</p>
-                  <img src="images/create_ellipse.png" alt="Landing Page CloseUp">
-                  <p class="create_content">Lupo establishes trust with the user by visibly displaying pricing content on the landing page</p>
-                </div>
-                <div class="allow_goal">
-                  <p class="mvpFont"><span class="semibold_italic">Allow</span> users to customize</p>
-                  <img src="images/allow_ellipse.png" alt="Home Page CloseUp">
-                  <p class="allow_content">Lupo provides customizable features, such as tags, folders, and favorites. Users also have the ability to customize their dashboard by dragging and dropping folders, tags, categories, or contact group files.</p>
-                </div>
-                <div>
-                  <div class="extend_goal1">
-                    <p class="mvpFont"><span class="semibold_italic">Extend and diversify</span> collaborative options</p>
-                    <img src="images/extend1_ellipse.png" alt="Contacts CloseUp">
-                    <p class="extend_content1">Lupo informs users of the last document and date they worked on a file with another. Through contact cards and group profiles, users can quickly review any updates and are also given notifications in real-time.</p>
+      <section class="wrap">
+        <header class="inline" id="finalDesign">
+          <h2>Final Design</h2>
+        </header>
+      </section>
+      <section>
+        <div class="container clearfix closeups">'
+                  <h3>The MVP</h3>
+                  <div class="create_goal clearfix">
+                    <p class="mvpFont"><span class="semibold_italic">Create</span> a brand that is trustworthy</p>
+                    <p class="create_content">Lupo establishes trust with the user by visibly displaying pricing content on the landing page</p>
+                    <img src="images/landing_closeup.png" alt="Landing Page CloseUp">
                   </div>
-                  <div class="extend_goal2">
-                    <img src="images/extend2_ellipse.png" alt="Document Page CloseUp">
-                    <p class="extend_content2">Lupo users can create, share, and edit files together. They can add commentary in the form of audio, video, or text.</p>
+                  <div class="allow_goal clearfix">
+                    <p class="mvpFont"><span class="semibold_italic">Allow</span> users to customize</p>
+                    <p class="allow_content">Lupo provides customizable features, such as tags, folders, and favorites. Users also have the ability to customize their dashboard by dragging and dropping folders, tags, categories, or contact group files.</p>
+                    <img src="images/user_home_closeup.png" alt="Home Page CloseUp">
                   </div>
-                </div>
-                <div class="cost_goal">
-                  <p class="mvpFont"><span class="semibold_italic">Be</span> cost-efficient</p>
-                  <img src="images/be_ellipse.png" alt="Document Page CloseUp">
-                  <p class="cost_content">Lupo provides users with multiple subscription options, ranging from 5Gb to unlimited data. Collaborative features are also not limited to just paid subscribers.</p>
-                </div>
-              </div>
-          </section>
-          <section>
-              <article class="protoslider">
-                <div class="container">
-                  <p>Cloud storage sites tend to be simplistic and rather dull. If Lupo is to replace the traditional work environment, it needed to be engaging. Lupo responds to this need by providing an interface that is dynamic and vibrant while still maintaining a level of sophistication and professionalism. The right workplace is key to increasing employee peace of mind and productivity.</p>
-                </div>
-    <!--Prototypes-->
-              <div>
-                <div class="clearfix">
                   <div>
-                    <div class= "laptop_prototypes">
-                      <p><i>Prototypes</i></p>
+                    <div class="extend_goal1 clearfix">
+                      <p class="mvpFont"><span class="semibold_italic">Extend and diversify</span> collaborative options</p>
+                      <p class="extend_content1">Lupo informs users of the last document and date they worked on a file with another. Through contact cards and group profiles, users can quickly review any updates and are also given notifications in real-time.</p>
+                      <img src="images/contact_closeup.png" alt="Contacts CloseUp">
                     </div>
-                    <div id="lupo_web">
-                      <img src="images/lupo_web.png" alt="Web and Mobile Prototype">
-                    </div>
-                  </div>
-                </div>
-                  <div class="row container">
-                    <div class="column one-half">
-                      <a class="button bigbutton web_viewbtn" target="_blank" href="https://invis.io/3ZGRZF9MDPS#/290246161_Landing_Page">View Web</a>
-                    </div>
-                    <div class="column one-half">
-                      <a class="button bigbutton mobile_viewbtn" target="_blank" href="https://invis.io/QEKLT2HT5KF#/291639961_Mobile_Landing_Page">View Mobile</a>
+                    <div class="extend_goal2 clearfix">
+                      <p class="extend_content2">Lupo users can create, share, and edit files together. They can add commentary in the form of audio, video, or text.</p>
+                      <img src="images/dochome_closeup.png" alt="Document Page CloseUp">
                     </div>
                   </div>
+                  <div class="cost_goal clearfix">
+                    <p class="mvpFont"><span class="semibold_italic">Be</span> cost-efficient</p>
+                    <p class="cost_content">Lupo provides users with multiple subscription options, ranging from 5Gb to unlimited data. Collaborative features are also not limited to just paid subscribers.</p>
+                    <img src="images/account_closeup.png" alt="Document Page CloseUp">
+                  </div>
                 </div>
-            </article>
-      <!--Final Thoughts-->
-            <div class="container final">
-              <h3>Final Thoughts</h3>
-              <h3 class="black_h3" id="conclusion"><i>"Patience is key"</i></h3>
-                <p>While there were many triumphs in the completion of this project primarily because of user feedback, market research, and user testing, there were also some lessons I learned as a designer. One of my main mistakes working on this project was my inclination to change direction based on an individual user’s opinion without carefully considering whether their opinion was an outlier or representative of the norm. Moving forward, I would be more persistent in clarifying the distinction so as not to make arbitrary changes to a design at the expense of other users.</p>
-                <p>Furthermore, I think it is important that I spend more time further developing my sketches. When starting a new project, my excitement often drives me to want to begin designing the interface as soon as possible. However, especially in larger projects, it is very important to fully explore all possible alternatives before deciding on a final design. I think had I worked slower in the beginning, there wouldn’t have been a need for as many small iterations from simple mistakes or gaps in user input. Moving forward, my main goal as a designer will be to further develop my patience in the Strategy phase.
-                </p>
-                <div class="preference_line"></div>
+        <div class="mobile_closeups container clearfix">'
+                    <h3>The MVP</h3>
+                    <div class="create_goal">
+                      <p class="mvpFont"><span class="semibold_italic">Create</span> a brand that is trustworthy</p>
+                      <img src="images/create_ellipse.png" alt="Landing Page CloseUp">
+                      <p class="create_content">Lupo establishes trust with the user by visibly displaying pricing content on the landing page</p>
+                    </div>
+                    <div class="allow_goal">
+                      <p class="mvpFont"><span class="semibold_italic">Allow</span> users to customize</p>
+                      <img src="images/allow_ellipse.png" alt="Home Page CloseUp">
+                      <p class="allow_content">Lupo provides customizable features, such as tags, folders, and favorites. Users also have the ability to customize their dashboard by dragging and dropping folders, tags, categories, or contact group files.</p>
+                    </div>
+                    <div>
+                      <div class="extend_goal1">
+                        <p class="mvpFont"><span class="semibold_italic">Extend and diversify</span> collaborative options</p>
+                        <img src="images/extend1_ellipse.png" alt="Contacts CloseUp">
+                        <p class="extend_content1">Lupo informs users of the last document and date they worked on a file with another. Through contact cards and group profiles, users can quickly review any updates and are also given notifications in real-time.</p>
+                      </div>
+                      <div class="extend_goal2">
+                        <img src="images/extend2_ellipse.png" alt="Document Page CloseUp">
+                        <p class="extend_content2">Lupo users can create, share, and edit files together. They can add commentary in the form of audio, video, or text.</p>
+                      </div>
+                    </div>
+                    <div class="cost_goal">
+                      <p class="mvpFont"><span class="semibold_italic">Be</span> cost-efficient</p>
+                      <img src="images/be_ellipse.png" alt="Document Page CloseUp">
+                      <p class="cost_content">Lupo provides users with multiple subscription options, ranging from 5Gb to unlimited data. Collaborative features are also not limited to just paid subscribers.</p>
+                    </div>
+                  </div>
+      </section>
+  <!--Prototypes-->
+      <section>
+        <article class="protoslider">
+            <div class="container">
+              <p>Cloud storage sites tend to be simplistic and rather dull. If Lupo is to replace the traditional work environment, it needed to be engaging. Lupo responds to this need by providing an interface that is dynamic and vibrant while still maintaining a level of sophistication and professionalism. The right workplace is key to increasing employee peace of mind and productivity.</p>
+            </div>
+            <div>
+              <div class="clearfix">
+                <div class= "laptop_prototypes container">
+                  <p><i>Prototypes</i></p>
+                </div>
+                <div id="lupo_web">
+                  <img src="images/lupo-prototypes.png" alt="Web and Mobile Prototype">
+                </div>
               </div>
+              <div class="row container">
+                <div class="column one-half">
+                        <a class="button bigbutton web_viewbtn" target="_blank" href="https://invis.io/3ZGRZF9MDPS#/290246161_Landing_Page">View Web</a>
+                      </div>
+                <div class="column one-half">
+                        <a class="button bigbutton mobile_viewbtn" target="_blank" href="https://invis.io/QEKLT2HT5KF#/291639961_Mobile_Landing_Page">View Mobile</a>
+                      </div>
+              </div>
+            </div>
+        </article>
+      </section>
+          <!--Final Thoughts-->
+      <section>
+        <div class="container final">
+          <h3>Final Thoughts</h3>
+          <h3 class="black_h3" id="conclusion"><i>"Patience is key"</i></h3>
+          <p>While there were many triumphs in the completion of this project primarily because of user feedback, market research, and user testing, there were also some lessons I learned as a designer. One of my main mistakes working on this project was my inclination to change direction based on an individual user’s opinion without carefully considering whether their opinion was an outlier or representative of the norm. Moving forward, I would be more persistent in clarifying the distinction so as not to make arbitrary changes to a design at the expense of other users.</p>
+          <p>Furthermore, I think it is important that I spend more time further developing my sketches. When starting a new project, my excitement often drives me to want to begin designing the interface as soon as possible. However, especially in larger projects, it is very important to fully explore all possible alternatives before deciding on a final design. I think had I worked slower in the beginning, there wouldn’t have been a need for as many small iterations from simple mistakes or gaps in user input. Moving forward, my main goal as a designer will be to further develop my patience in the Strategy phase.</p>
+          <div class="preference_line"></div>
+        </div>
+      </section>
+      <!--Other Projects-->
+      <section class="grid">
+            <figure class="effect-chico">
+              <img class="burpi-image" src="images/burpi-pic3.jpg" alt="People working out">
+              <figcaption class="container clearfix">
+                <h3>BURPI</h3>
+                <p>A social fitness app</p>
+              </figcaption>
+            </figure>
           </section>
-      <!--Previous/Next-->
-          <div class="container prevNext">
-            <div id="prevButton" class="column one-half">
-              <a href="#">Previous</a>
-            </div>
-            <div id="nextButton" class="column one-half">
-              <a href="#">Next</a>
-            </div>
-          </div>
-        </main>
-        <footer>
+    </main>
+    <footer>
             <div class="row">
               <div class="column footer-copy">
                 <p class="copyright">© 2018 Sasha Fletcher/Designed and Developed by Sasha Fletcher</p>

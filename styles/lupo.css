@@ -1,8 +1,16 @@
-
+.persona1 img {
+  width: 250px;
+}
 
 .goals_content p:first-child {
     margin-bottom: 20px;
   }
+
+.flow img {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+}
 
 .collab_flow p {
   margin-left: 30px;
@@ -26,9 +34,9 @@
   width: 200px;
 }
 
-.row1-sketch, .row2-sketch {
+/* .row1-sketch, .row2-sketch {
   padding: 0 4px;
-}
+} */
 
 .banner {
   display: block;
@@ -106,6 +114,7 @@
 
 .article_content {
   height: auto;
+  padding: 25px;
 }
 
 
@@ -204,18 +213,7 @@
 
 #lupo_web img {
   display: inline-block;
-  width: 100%;
-}
-
-#lupo_mobile img {
-  height: 400px;
-  width: 300px;
-  object-fit: contain;
-  margin: 66px 0 0 100px;
-}
-
-.lupo_mobile p {
-  margin-left: 100px;
+  width: 75%;
 }
 
 .final p {
@@ -227,36 +225,6 @@
 /*Phone*/
 @media screen and (min-width: 320px) and (max-width: 574px) {
 
-  .hero_image {
-    display: block;
-    margin: 0 auto;
-    padding-top: 20px;
-    width: 100%;
-  }
-
-  .project_description {
-    padding: 0 25px;
-    text-align: center;
-  }
-
-  .project_description h3 {
-    margin-top: 20px;
-    font-size: 1.25rem;
-  }
-
-  #discovery, #information, #branding, #finalDesign {
-    height: 100px;
-    margin-bottom: 0;
-  }
-
-  #discovery h2, #information h2, #branding h2, #finalDesign h2 {
-    padding-left: 25px;
-  }
-
-  #information h2, #finalDesign h2 {
-    padding-top: 10px;
-  }
-
   .persona1, .persona2 {
     padding: 0;
   }
@@ -267,6 +235,10 @@
 
   .collab_flow {
     display: none;
+  }
+
+  .flow img {
+    width: 100%;
   }
 
   .sketch1, .sketch2, .sketch3, .wire3 {
@@ -339,11 +311,6 @@
     margin-top: 0;
   }
 
-  .home, .landing, .account {
-    display: block;
-    margin-top: 0;
-  }
-
   .mobile_closeups img {
     height: auto;
     margin: 0 auto;
@@ -412,6 +379,16 @@
   .black_h3 {
     margin-top: 40px;
   }
+
+  #graph1, #graph2 {
+    margin-bottom: 40px;
+    float: none;
+  }
+
+  canvas {
+    height: 250px !important;
+    width: 250px !important;
+  }
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
@@ -441,6 +418,17 @@
   .preferencerow1 img, .preferencerow2 img {
     object-fit: contain;
   }
+
+  #graph1, #graph2 {
+    margin-bottom: 40px;
+    float: none;
+  }
+
+  canvas {
+    height: 250px !important;
+    width: 250px !important;
+  }
+
 }
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
@@ -498,7 +486,7 @@
     margin-bottom: 10px;
   }
 
-    .comp_descript {
+  .comp_descript {
     padding-bottom: 20px;
     width: 100%;
   }
@@ -542,11 +530,6 @@
     margin-bottom: 0;
   }
 
-  .bullet {
-    height: 10px;
-    width: 10px;
-  }
-
   .vertical-line {
     height: 14px;
   }
@@ -569,7 +552,7 @@
   }
 
   .logo_sequence {
-    margin-left: 60px;
+    margin-left: 0;
     margin-top: 20px;
   }
 
@@ -587,6 +570,19 @@
 
   .logo_sequence div {
     display: none;
+  }
+
+  .article_content {
+    margin-left: 75px;
+    padding: 20px;
+  }
+
+  .article_content p:nth-of-type(3), .article_content p:nth-of-type(7) {
+    margin-top: 25px;
+  }
+
+  .tablet_typography aside {
+    width: 40%;
   }
 
   /* .article.slider {
@@ -708,16 +704,6 @@
     margin-bottom: 0;
   }
 
-  .polygon {
-  	border-left: 200px solid transparent;
-  	border-right: 200px solid transparent;
-  	border-bottom: 3px solid #FADE39;
-    height: 0;
-    margin: 0 auto;
-    margin-top: 20px;
-    width: 100%;
-  }
-
   .right-column .comp_descript {
     margin-bottom: 30px;
   }
@@ -739,14 +725,6 @@
     padding-top: 10px;
   }
 
-  /* .bullet-listing {
-    margin-top: 15px;
-  } */
-
-  .flow img {
-    margin-left: 0;
-  }
-
   .sketch_wires img {
     width: 350px;
     height: 350px;
@@ -756,10 +734,17 @@
     margin-top: 10px;
   }
 
+  .logo_sequence {
+    margin-right: 0;
+  }
+
   .logo_sequence img {
+    display: block;
+    height: 150px;
     padding: 0 25px 0 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px auto;
+    object-fit: cover;
+    width: 33%
   }
 
   .sequence2 {
@@ -774,16 +759,6 @@
 
   .article_content p {
     padding: 10px;
-  }
-
-  .color_circle {
-    height: 90px;
-    width: 90px;
-    margin-right: 20px;
-  }
-
-  .color_circle p {
-    padding-top: 30px;
   }
 
   .color_row {
@@ -856,7 +831,7 @@
   }
 
   .web_viewbtn {
-    margin-left: 100px;
+    margin-left: 0;
   }
 
   .mobile_viewbtn {
@@ -865,6 +840,10 @@
 
   .footer-icons {
     padding-right: 10px;
+  }
+
+  .persona1 .persona-info {
+    padding-left: 80px;
   }
 
 }
@@ -896,14 +875,6 @@
     width: 250px;
   }
 
-  .row1-sketch img {
-    margin-right: 50px;
-  }
-
-  .logo_sequence {
-    margin-left: 200px;
-  }
-
   .logo_sequence img {
     padding-right: 50px;
     padding-left: 50px;
@@ -914,7 +885,7 @@
   }
 
   .article_content {
-    padding: 30px 0 30px 50px;
+    padding: 25px;
   }
 
   .article {
@@ -929,14 +900,10 @@
     margin-top: 0;
   }
 
-  .color_row1 {
-    margin-bottom: 50px;
-  }
-
-  .color_circle {
-    height: 90px;
-    width: 90px;
-    margin-right: 50px;
+  .color_row {
+    display: block;
+    margin: 15px auto;
+    width: 100%;
   }
 
   .mockups .forty-five {
