@@ -743,7 +743,7 @@
     height: 150px;
     padding: 0 25px 0 10px;
     margin: 10px auto;
-    object-fit: cover;
+    object-fit: contain;
     width: 33%
   }
 
@@ -757,9 +757,9 @@
     padding: 25px 30px 25px 50px;
   }
 
-  .article_content p {
+  /* .article_content p {
     padding: 10px;
-  }
+  } */
 
   .color_row {
     margin-left: 0;
