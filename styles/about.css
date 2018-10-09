@@ -1,44 +1,90 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.white_background {
+  background-color: transparent;
+}
+
+.menuToggle span {
+  background-color: #FFF;
+}
+
+/*Intro========================*/
+
 .intro {
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+.intro-text h1 {
+  color: #FFF;
+  margin-bottom: 1rem;
+  margin-top: 8rem;
   text-align: center;
-  padding: 200px 200px 150px 200px;
 }
 
-.intro h1 {
-  margin-bottom: 10px;
+.about-hero {
+  background: linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.30)), url("../images/13.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
 }
 
-.intro p {
-  padding-top: 25px;
+.about-me-textbox {
+  background-color: #f5f5f5;
+  outline: 2px solid rgba(213, 59, 110, 0.70);
+  outline-offset: -2em;
+  padding: 3em;
+  position: relative;
+  text-align: center;
+  width: 100vw;
+}
+
+.about-me-textbox h2 {
+  background: #f5f5f5;
+  color: rgb(213, 59, 110);
+  font-size: 1.2rem;
+  font-weight: 500;
+  left: 50%;
+  margin-top: 0;
+  padding: 0 .5em;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 1.3em;
 }
 
 .origins h3, .hobbies h3, .origins p, .hobbies p {
   color: #FFF;
 }
 
-.origins {
-  background: linear-gradient( rgba(214, 188, 193, 0.60), rgba(214, 188, 193, 0.20) ), url("../images/lake_merritt.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 10% 40%;
-  height: 200px;
-  margin-top: 0;
-  max-width: 100%;
-}
-
 .introduction_design {
   position: relative;
 }
 
-.introduction_design img {
-  height:500px;
-  object-fit: cover;
-  padding: 20px 0 0 25px;
-  position: absolute;
-  width:500px;
+.introduction_design p, .importance_design p {
+  margin: 10px 0;
+}
+
+.importance_design {
+  width: 100%;
+}
+
+.button {
+  margin-top: 20px
 }
 
 .hobbies {
   background: linear-gradient( rgba(214, 188, 193, 0.20), rgba(214, 188, 193, 0.20) ), url("../images/design-notebook.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 10% 40%;
@@ -47,156 +93,116 @@
   max-width: 100%;
 }
 
-.importance_design {
-  width: 70%;
-}
+/* Contact============ */
 
 .contact {
-  background: linear-gradient( rgba(214, 188, 193, 0.20), rgba(214, 188, 193, 0.20) ), url("../images/contact_me.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 370px;
+  background-color: #D53B6E;
   max-width: 100%;
-}
-
-.contactbtn {
-  border: 2px solid #DB9BAC;
-  color: #050505;
-  display: inline-block;
-  margin: 55px 70px 25px 0;
-  padding: 10px 20px 10px 20px;
+  outline: 2px solid rgb(255, 255, 255);
+  outline-offset: -2em;
+  padding: 3em;
+  position: relative;
   text-align: center;
-  text-decoration: none;
-  width: 125px;
-}
-
-.contactbtn:hover {
-  background-color: #DB9BAC;
-  color: #FFF;
-  cursor: pointer;
+  width: 100vw;
 }
 
 .contact h2 {
+  background-color:#D53B6E;
+  color: #FFF;
+  font-size: 1.2rem;
+  left: 50%;
   margin-top: 0;
-  padding-top: 50px;
+  padding: 0 0.5em;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 1.2em;
 }
+
+.contact p {
+  color: #FFF;
+  text-align: center;
+}
+
+.footer-icons {
+  float: right;
+  padding-top: 25px;
+  padding-right: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.fa {
+  color: #FFF;
+  margin: 0 auto;
+  width: 25%;
+}
+
 
 .footer-copy p {
   width: 100%;
 }
 
-/*Media Queries*/
-@media screen and (min-width: 320px) and (max-width: 574px) {
-  .intro {
-    padding: 100px 20px 50px 20px;
+
+/*Tablet====================*/
+
+@media only screen and (min-width: 575px) {
+
+  .about-me-textbox h2 {
+    font-size: 1.5rem;
+    top: 0.8em;
   }
 
-  .origins {
-    height: 100px;
-    padding-bottom: 20px;
+  .about-me {
+    background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/lake_merritt.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 55% 55%;
+    height: 100vh;
+    margin: 4em;
+    padding: 5em;
   }
 
-  .introduction_design p, .importance_design p {
-    margin: 10px 0;
+  .about-me-textbox {
+    box-shadow: 0 0 3em 0 rgba(0,0,0,.25);
+    padding: 4em;
+    position: relative;
+    text-align: left;
+    top: -13em;
+    left: -7em;
+    width: 55vw;
   }
 
-  .introduction_design img {
-    display: none;
-  }
-
-  .hobbies {
-    height: 100px;
-    margin-top: 25px;
-    padding-bottom: 20px;
-  }
-
-  .importance_design {
-    width: 100%;
-  }
-
-  .contact {
-    height: auto;
-    margin-top: 40px;
-    padding-bottom: 10px;
-  }
-
-  .horizontal_line {
-    margin: 10px 0 10px 30px;
-  }
-
-  .contact h2 {
+  .about-me-textbox h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    left: 2.75em;
     margin-top: 0;
-    padding-top: 25px;
+    padding: 0 .5em;
+    position: absolute;
+    transform: translateX(0);
+    top: 0.8em;
   }
 
-  .contact p {
-    padding-bottom: 20px;
-  }
-
-  .contactbtn {
-    margin: 0 100px 20px 0;
-  }
-
-  .button {
-    margin-top: 20px
-  }
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-
-  .intro {
-    padding: 100px;
-  }
-
-  .introduction_design img {
-    object-position: 50% 50%;
-    width: 50%
-  }
-
-  .contactbtn {
-      margin: 50px 30px 25px 0;
-      width: 125px;
-    }
-
-
-  .contact {
-    height: auto;
-  }
-
-  p {
-    margin-top: 10px;
-  }
-
-  .horizontal_line {
-    margin: 10px 0 0 50px;
-  }
 }
 
 @media screen and (min-width: 1024px) {
 
-  .introduction_design img {
-    object-position: 20% 50%;
-    width: 45%;
-  }
 
   p {
     margin-top: 10px;
+  }
+
+  .footer-icons {
+    display: block;
+    text-align: center;
+  }
+
+  .fa {
+    width: 50px;
   }
 
   .footer-copy p {
     padding-bottom: 25px;
   }
 
-  .horizontal_line {
-    margin: 10px 0 0 50px;
-  }
-
-  .contact {
-    height: auto;
-  }
-
-  .contactbtn {
-    margin: 30px 80px 50px 0;
-  }
 }
