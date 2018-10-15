@@ -1,280 +1,266 @@
-.project_title {
-  margin-bottom: 5px;
-}
 
-.persona1 img {
-  width: 250px;
-}
-
-.goals_content p:first-child {
-    margin-bottom: 20px;
+  .container {
+    padding: 10px 25px;
   }
 
-.flow img {
-  display: block;
-  margin: 0 auto;
-  width: 75%;
-}
-
-.collab_flow p {
-  margin-left: 30px;
-  margin-bottom: 13%;
-}
-
-.bold {
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.mobile_banner {
-  display: none;
-}
-
-.row1-sketch img, .row2-sketch img {
-  display: inline-block;
-  height: 200px;
-  object-fit: contain;
-  margin-top: 8px;
-  width: 200px;
-}
-
-/* .row1-sketch, .row2-sketch {
-  padding: 0 4px;
-} */
-
-.banner {
-  display: block;
-  text-align: center;
-  margin-bottom: 15px;
-  padding: 0 4px;
-}
-
-.sketch1, .sketch2, .sketch3 {
-  height: 500px;
-}
-
-.sketch1 {
-  object-position: 50% 50%;
-}
-
-.thelogo {
-  height: 525px;
-}
-
-.logo_sequence img {
-  padding-right: 50px;
-  padding-left: 80px;
-}
-
-.sequence2 {
-  padding-top: 70px;
-}
-
-.sequence1, .sequence3 {
-  padding-top: 50px;
-}
-
-.core1, .core2, .core3 {
-  color: #FFF;
-}
-
-.core1 {
-  background-color: #2A004A;
-}
-
-.core2 {
-  background-color: #4E008A;
-}
-
-.core3 {
-  background-color: #F7A800;
-}
-
-.support1 {
-  background-color: #FEFEFA;
-  border: .25px solid #000;
-}
-
-.support2 {
-  background-color: #FFF600;
-}
-
-.support3 {
-  background-color: #B067DF;
-}
-
-.font_poiret {
-  font-family: 'Poiret One', cursive;
-  font-size: 2rem;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.font_lato {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.25rem;
-  margin-top: 0;
-}
-
-.article_content {
-  height: auto;
-  padding: 25px;
-}
-
-
-#preference1a, #preference1b {
-  object-position: 50% 0;
-}
-
-#preference2a, #preference2b {
-  object-position: 0% 50%;
-}
-
-#preference3a, #preference3b {
-  border-top: none;
-  border-bottom: none;
-}
-
-#preference2a {
-  border: 1px solid #E0E0E0;
-}
-
-.preference-tests img {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.wire2, .wire3, .landing_wire {
-  padding: 20px;
-}
-
-.wire2 {
-  margin-bottom: 100px;
-  object-position: center;
-}
-
-.wirebutton {
-  margin-bottom: 30px;
-}
-
-.wirecontent {
-  height: auto;
-  margin-bottom: 0;
-}
-
-.mock1 img, .mock2 img {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.mock1a, .mock1b {
-  height: 300px;
-  margin-bottom: 25px;
-  object-fit: contain;
-  width: 300px;
-}
-
-.mock2a, .mock2b {
-  height: 200px;
-  object-fit: contain;
-  width: 300px;
-}
-
-.testcontent {
-  height: auto;
-  margin-top: 50px;
-  margin-bottom: 0;
-}
-
-
-.mvpFont {
-  text-align: right;
-}
-
-.create_content, .allow_content, .extend_content1, .extend_content2, .cost_content {
-  text-align: left;
-  width: 50%;
-  float: left;
-}
-
-.extend_content2 {
-  padding-top: 40px;
-}
-
-.allow_goal img, .extend_goal1 img, .extend_goal2 img, .cost_goal img {
-  float: left;
-  width: 50%;
-}
-
-.create_goal img {
-  float: left;
-  width: 50%;
-}
-
-#lupo_web {
-  text-align: center;
-}
-
-#lupo_web img {
-  display: inline-block;
-  width: 75%;
-}
-
-.final p {
-  margin-bottom: 20px;
-}
-
-/*Media Queries*/
-
-/*Phone*/
-@media screen and (min-width: 320px) and (max-width: 574px) {
-
-  .persona1, .persona2 {
-    padding: 0;
-  }
-
-  .persona1 ul, .persona2 ul {
-    margin-bottom: 15px;
-  }
-
-  .collab_flow {
-    display: none;
-  }
-
-  .flow img {
+  .button {
+    display: block;
+    margin: 20px auto 0 auto;
     width: 100%;
   }
 
-  .sketch1, .sketch2, .sketch3, .wire3 {
-    height: 300px;
+  .slider {
+    background: #f9f9f9;
+    color: #000;
+    height: auto;
+    width: 100%;
   }
 
-  .wire1 {
-    height: 500px;
+  .slider h2 {
+    color: #000;
+    margin-top: 0;
+    padding: 30px 0 20px 0;
   }
 
-  .wire2 {
-    height: 150px;
+
+  /* Typography==================== */
+
+  h2 {
+    margin: 30px auto 10px auto;
+    padding-left: 25px;
   }
 
-  .consistency {
-    margin: 0 0 10px 0;
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
-  /*Branding*/
+  .bold_italic {
+    font-style: italic;
+    color: grey;
+  }
 
-  .thelogo {
+  .center {
+    text-align: center;
+  }
+
+  /*Navigation Bar*/
+
+  nav.greyNavItem, nav.greyNavItem a {
+    color: #000;
+  }
+
+  .whiteNavItem, .whiteNavItem a {
+    color: #FFF;
+  }
+
+  .whiteNavItem:hover, .whiteNavItem a:hover {
+    color: #000;
+  }
+
+/* hero============= */
+
+  .intro {
+    height: 100vh;
+    margin-bottom: 0;
+    overflow-y: hidden;
+  }
+
+  .intro-text h1 {
+    font-family: 'Lovers Quarrel', cursive;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+  }
+
+  .intro-text {
+    color: #fff;
+    padding-top: 10em;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .lupo-hero {
+    background:linear-gradient(rgba(213, 59, 110, 0.40), rgba(255, 255, 255, 0.30)), url("../images/lupo-hero.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+  }
+
+  .lupo-about-textbox {
+    background-color: #f5f5f5;
+    color: #000;
+    outline: 2px solid rgba(213, 59, 110, 0.70);
+    outline-offset: -2em;
+    padding: 3em;
+    position: relative;
+    text-align: center;
+    width: 100vw;
+    }
+
+  .lupo-about-textbox h2 {
+    background: #f5f5f5;
+    color: rgb(213, 59, 110);
+    font-size: 1.12rem;
+    font-weight: 500;
+    left: 50%;
+    margin-top: 0;
+    padding: 0 .5em;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 1.25em;
+  }
+
+  .port-button {
+    background-color: rgba(255,255,255,0.5);
+    border: none;
+    color: #000;
+    font-size: 0.85rem;
+    margin: 4em auto 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+    width: 50vw;
+    }
+
+  .port-button:hover {
+    background-color: rgba(239, 239, 239, 0.5);
+    border: none;
+    color: #FFF;
+  }
+
+  /*Intro*/
+
+  .design_role h3 {
+    display: block;
+    margin: 10px auto;
+    padding-top: 15px;
+    text-align: center;
+    width: 150px;
+  }
+
+  .design_role li, .design_role p {
+    text-align: center;
+  }
+
+  .design_role p {
+    padding: 10px 0 5px 0;
+  }
+
+
+  /* Competitive Analysis============== */
+
+  .competition {
+    max-width: 100%;
+  }
+
+  .competitionIcon {
+    display: inline-block;
+    height: 65px;
+    object-fit: contain;
+    margin: 25px auto;
+    padding-right: 10px;
+    width: 33%;
+  }
+
+  /* User Research====================== */
+
+  #graph1, #graph2 {
+    margin-bottom: 40px;
+    float: none;
+  }
+
+  canvas {
+    height: 250px !important;
+    width: 250px !important;
+  }
+
+  /* Personas================= */
+
+  .demographic {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .demographic img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
     height: auto;
   }
 
-  .banner {
+  .mobile-persona {
+    text-align: center;
+  }
+
+  .mobile-persona h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.75em 0;
+  }
+
+  .mobile-persona h2 {
+    color: rgb(213, 59, 110);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 1em auto 0.25em auto;
+    padding: 0;
+  }
+
+  .persona-info {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .preference_line {
+    background: #DB9BAC;
+    height: 1px;
+    margin: 30px 0 30px 0;
+    width: 100%;
+  }
+
+  .preference_line:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .laptop-persona {
     display: none;
   }
+
+  .goals_content {
+    display: none;
+  }
+
+
+
+  /* User Flows================ */
+
+  .userflows {
+    display: none;
+  }
+
+  /* Wireframes===================== */
+
+  .sketch_wires img {
+    display: block;
+    margin: 25px auto;
+    width: 75%;
+    height: auto;
+  }
+
+  .sketch-wrapper {
+    display: none;
+  }
+
+  /* Branding================== */
 
   .mobile_banner {
     display: block;
     height: auto;
     margin-left: 0;
+    margin-bottom: 2em;
   }
 
   .mobile_banner img {
@@ -286,318 +272,104 @@
   }
 
   .logo_sequence img {
-    padding: 0;
-    object-fit: cover;
-  }
-
-  .tests_intro {
-    height: auto;
-    padding: 10px 25px;
-  }
-
-  .testcontent {
-    height: auto;
-    margin-top: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  #preference1a, #preference2a, #preference3a {
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  #preference1a {
-    margin-top: 20px;
-  }
-
-  .font_poiret {
-    margin-top: 0;
-  }
-
-  .mobile_closeups img {
-    height: auto;
-    margin: 0 auto;
-    position: static;
     display: block;
-    width: 100%;
-  }
-
-  .create_content, .allow_content, .extend_content1, .extend_content2, .cost_content {
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    padding-left: 0;
-  }
-
-  .extend_content2 {
-    padding-top: 0;
-  }
-
-  .mvpFont {
-    text-align: left;
-  }
-
-  .protoslider {
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  #lupo_web img {
-    display: block;
-    margin: auto;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-
-  #lupo_mobile img {
-    display: block;
-    height: 250px;
-    margin: auto;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-
-  .mobile_viewbtn, .web_viewbtn {
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 374px) {
-  .mobile_preference img {
-    display: block;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    max-height: 175px;
-    object-fit: cover;
-    width: 175px
-  }
-
-  .preference_line {
-    height: 1px;
-    margin: 30px 0 30px 0;
-    width: 100%;
-  }
-
-  .black_h3 {
-    margin-top: 40px;
-  }
-
-  #graph1, #graph2 {
-    margin-bottom: 40px;
-    float: none;
-  }
-
-  canvas {
-    height: 250px !important;
-    width: 250px !important;
-  }
-}
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .hero_image {
-    display: block;
-    margin: 0 auto;
-    padding-top: 20px;
-    width: 100%;
-  }
-
-  .mobile_preference img {
-    height: auto;
-    margin: 0 auto;
-    max-height: 200px;
-    display: block;
-    margin-bottom: 25px;
-    object-fit: cover;
-    width: 200px;
-  }
-
-  .preference_line {
-    height: 1px;
-    margin: 30px 0 30px 0;
-    width: 100%;
-  }
-
-  .preferencerow1 img, .preferencerow2 img {
+    height: 150px;
+    margin: 10px auto;
     object-fit: contain;
+    width: 100%
   }
 
-  #graph1, #graph2 {
-    margin-bottom: 40px;
-    float: none;
-  }
-
-  canvas {
-    height: 250px !important;
-    width: 250px !important;
-  }
-
-}
-
-@media screen and (min-width: 375px) and (max-width: 424px) {
-
-  #nextButton {
-    padding-left: 60px;
-  }
-
-  .text-center p {
-    margin-top: 10px;
-  }
-}
-
-@media screen and (min-width: 425px) and (max-width: 767px) {
-
-  #nextButton {
-    padding-left: 85px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  body {
-    overflow-x: visible;
-  }
-
-  .project_title {
-    left: 110px;
-  }
-
-  .project_description {
-    padding: 0 35px;
-    text-align: center;
-  }
-
-  .project_description .button {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .description_text {
-    line-height: 120%;
-    margin-top: 0;
-  }
-
-  .design_role h3 {
-    margin-top: 50px;
-  }
-
-  .design_role {
-    padding: 0;
-  }
-
-  .competitionIcon {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-
-  .comp_descript {
-    padding-bottom: 20px;
-    width: 100%;
-  }
-
-  .consistency .polygon {
-    border-left: 250px solid transparent;
-  	border-right: 250px solid transparent;
-  	border-bottom: 3px solid #FADE39;
-    display: block;
-    margin: 0 auto;
-    height: 0;
-    width: 100%;
-  }
-
-  .mobile_graphs h4 {
-    font-size: 1.15rem;
-  }
-
-  .persona2 h3, .persona1 h3 {
-    margin-top: 20px;
-  }
-
-  .persona1 ul, .persona2 ul {
-    padding-bottom: 20px;
-  }
-
-  .persona1 p {
-    padding-bottom: 24px;
-  }
-
-  .userstories li {
-    font-size: 0.9rem;
-    margin-right: 0;
-  }
-
-  .goals {
-    margin-top: 0;
-  }
-
-  #information {
-    margin-bottom: 0;
-  }
-
-  .vertical-line {
-    height: 14px;
-  }
-
-  .collab_flow {
-    display: none;
-  }
-
-  .sketch_wires img {
-    height: 300px;
-  }
-
-  .sketch_wires {
-    display: block;
-  }
-
-  .banner img {
-    height: auto;
-    width: 170px;
-  }
-
-  .logo_sequence {
-    margin-left: 0;
-    margin-top: 20px;
-  }
-
-  .row1-sketch img {
-    margin-right: 0;
-  }
-
-  .logo_sequence img {
-    padding: 0;
+  .sequence1, .sequence3 {
+    padding: 10px 0 10px 0;
   }
 
   .sequence2 {
-    margin-top: 20px;
+    padding: 25px 0 25px 0;
   }
 
-  .logo_sequence div {
+  .banner {
     display: none;
   }
 
-  .article_content {
-    margin-left: 75px;
-    padding: 20px;
+  .color_row {
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+    width: 100%;
   }
 
-  .article_content p:nth-of-type(3), .article_content p:nth-of-type(7) {
-    margin-top: 25px;
+  .color_circle {
+    border-radius: 50%;
+    display: inline-block;
+    height: 5em;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 5em;
   }
 
-  .tablet_typography aside {
-    width: 40%;
+  .color_circle p {
+    font-size: .75rem;
+    padding-top: 30px;
+    text-align: center;
   }
 
-  /* .article.slider {
-    padding: 25px;
-  } */
-
-  #preference1a, #preference2a, #preference3a {
-    margin-right: 50px;
+  .circle-text:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
   }
 
-  .mobile_preference {
+  .core1, .core2, .core3 {
+    color: #FFF;
+  }
+
+  .core1 {
+    background-color: #2A004A;
+  }
+
+  .core2 {
+    background-color: #4E008A;
+  }
+
+  .core3 {
+    background-color: #F7A800;
+  }
+
+  .support1 {
+    background-color: #FEFEFA;
+    border: .25px solid #000;
+  }
+
+  .support2 {
+    background-color: #FFF600;
+  }
+
+  .support3 {
+    background-color: #B067DF;
+  }
+
+  .font_poiret {
+    font-family: 'Poiret One', cursive;
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .font_lato {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  /* Testing======================= */
+
+  .testing {
     display: block;
   }
 
@@ -605,380 +377,462 @@
     display: none;
   }
 
-  .preference1, .preference2, .preference3 {
-    width: 100%;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-  }
-
   .mobile_preference img {
-    max-width: 250px;
-    height: 250px;
+    display: block;
+    height: auto;
+    margin: 1.5em auto;
     object-fit: cover;
-    width: 50%;
+    width: 50vw;
   }
 
-  .mobile_preference img:nth-child(1) {
-    margin-right: 50px;
+  .preference1 {
+    margin-top: 1em;
   }
 
   #preference2a {
-    border: 1px solid #e0e0e0
+    border: .5px solid #E0E0E0;
+  }
+
+  #preference1a, #preference1b {
+    object-position: 50% 0;
+  }
+
+  #preference2a, #preference2b {
+    object-position: 0% 50%;
   }
 
   blockquote {
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  .forty-five {
-    padding: 0;
-  }
-
-  .testcontent {
-    margin-top: 0;
-  }
-
-  .mock1a, .mock1b {
-    max-height: 250px;
-  }
-
-  .mock2a, .mock2b {
-    max-width: 200px;
-  }
-
-  .mvpFont {
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: left;
-    font-size: 1.5rem;
-    margin: 40px 0;
   }
 
-  .cost_goal .mvpFont {
-    margin-bottom: 0;
-  }
-
-  .allow_content, .extend_content1, .cost_content, .extend_content2, .create_content {
-    padding-top: 75px;
-    padding-right: 20px;
-  }
-
-  .final h3:first-child {
-    margin-top: 0;
-  }
-
-  #lupo_web img {
+  .mock1 img, .mock2 img {
     display: block;
-    height: auto;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  /* #lupo_mobile img {
-    height: auto;
-    margin: 15px 0 0 100px;
-    width: 100px;
-  } */
-
-  .final p {
-    padding-bottom: 20px;
-  }
-
-  .web_viewbtn {
-    margin-left: 0;
-  }
-
-  .mobile_viewbtn {
-    margin-left: 80px
-  }
-
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .hero_web {
-    width: 400px;
-  }
-
-  .hero_mobile {
-    width: 150px;
-  }
-
-  #discovery, #information, #branding, #finalDesign {
-    margin-bottom: 0;
-  }
-
-  .right-column .comp_descript {
-    margin-bottom: 30px;
-  }
-
-  .goals {
-    margin-top: 0;
-    margin-bottom: 25px;
-  }
-
-  .persona1 {
-    padding-right: 70px;
-  }
-
-  .userstories li {
-    margin-right: 0;
-  }
-
-  .userstories {
-    padding-top: 10px;
-  }
-
-  .sketch_wires img {
-    width: 350px;
-    height: 350px;
-  }
-
-  .sketch_wires h3 {
-    margin-top: 10px;
-  }
-
-  .logo_sequence {
-    margin-right: 0;
-  }
-
-  .logo_sequence img {
-    display: block;
-    height: 150px;
-    padding: 0 25px 0 10px;
-    margin: 10px auto;
+    margin: 1.5em auto;
     object-fit: contain;
-    width: 33%
+    width: 50vw;
   }
 
-  .sequence2 {
-    margin-top: 25px;
-  }
+  /* Final Design=================== */
 
-  .article_content {
+  .closeups img {
+    display: block;
     height: auto;
-    margin-top: 0;
-    padding: 25px 30px 25px 50px;
+    margin: 1em auto;
+    width: 75%;
   }
 
-  /* .article_content p {
-    padding: 10px;
-  } */
-
-  .color_row {
-    margin-left: 0;
+  .closeups div {
+    margin-bottom: 1.5em;
   }
 
-  .core1, .support1 {
-    margin-bottom: 10px;
-  }
-
-  .core3, .support3 {
-    margin-bottom: 15px;
-  }
-
-  .font_poiret {
-    margin-top: 0;
-  }
-
-  .tests_intro {
-    margin-bottom: 50px;
-    padding: 0 200px 25px 200px;
-  }
-
-  .preferencerow1 img, .preferencerow2 img, .preferencerow3 img {
-    height: 250px;
-    margin-right: 30px;
-    width: 250px;
-  }
-
-  #preference2b {
-    border-right: 1px solid #e0e0e0;
-  }
-
-  #preference3a, #preference3b {
-    border-right: 1px solid #e0e0e0;
-    border-left: 1px solid #e0e0e0;
-  }
-
-  .preferencerow2 {
-    margin-bottom: 50px;
-  }
-
-  .mvpFont {
-    margin: 30px 40px 30px 0;
-    text-align: left;
-  }
-
-  .cost_goal .mvpFont {
+  .closeups div:last-of-type {
     margin-bottom: 0;
   }
 
-  .mvpFont p {
-    margin-right: 20px;
+  .mobile_viewbtn, .web_viewbtn {
+    margin-top: 0;
+    margin-bottom: 1em;
   }
 
-  .allow_content, .cost_content, .extend_content2, .create_content {
-    padding-top: 120px;
+  .final {
+    background-color: #D53B6E;
+    color: #FFF;
+    outline: 2px solid rgb(255, 255, 255);
+    outline-offset: -2em;
+    margin-top: 25px;
+    padding: 3em;
+    position: relative;
+    width: 100vw;
   }
 
-  .extend_content1 {
-    padding-top: 100px;
+  .final h2 {
+    background: #D53B6E;
+    color:#FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    left: 50%;
+    margin-top: 0;
+    padding: 0 .5em;
+    position: absolute;
+    transform: translateX(-50%);
+    text-align: center;
+    top: 0.6em;
   }
 
-  .create_goal img {
-    max-width: 400px;
+  .final p:nth-of-type(1) {
+    margin-top: 30px;
   }
 
-  .allow_goal img, .extend_goal1 img, .extend_goal2 img, .cost_goal img {
-    max-width: 450px;
+  .final p:nth-of-type(2) {
+    margin-bottom: 1em;
   }
 
-  .web_viewbtn {
-    margin-left: 0;
-  }
-
-  .mobile_viewbtn {
-    margin-left: 130px;
+  .footer-wrapper {
+    display: block;
   }
 
   .footer-icons {
-    padding-right: 10px;
+    text-align: center;
   }
 
-  .persona1 .persona-info {
-    padding-left: 80px;
+  .fa {
+    font-size: 1.5em !important;
+    margin: 5px 10px;
   }
 
-}
+  .footer-copy {
+    padding-left: 30px;
+    width: 100%;
+    }
 
-@media screen and (min-width: 1440px) {
-  h2 {
-    padding-left: 200px;
+  .copyright {
+    display: block;
+    margin: 1em auto;
+    width: 100%;
   }
 
-  #discovery, #information, #branding, #finalDesign {
-    margin-bottom: 0;
+/*Media Queries*/
+
+@media screen and (min-width: 575px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    padding: 25px 75px;
+  }
+
+  .button {
+    margin-left: 0;
+    width: 200px;
+  }
+
+  .intro {
+    overflow-y: hidden;
+  }
+
+  .intro-text h1 {
+    margin-top: .5em;
+  }
+
+  .lupo-about-textbox h2 {
+    font-size: 1.5rem;
+    top: 0.8em;
+    left: 6.75em;
+  }
+
+  .lupo-about {
+    background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/lupo-design.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 55% 25%;
+    background-size: cover;
+    height: 100vh;
+    margin: 4em;
+    padding: 5em;
+  }
+
+  .lupo-about-textbox {
+    box-shadow: 0 0 3em 0 rgba(0,0,0,.25);
+    padding: 4em;
+    position: relative;
+    text-align: left;
+    top: -13em;
+    left: -7em;
+    width: 55vw;
+  }
+
+  .port-button {
+    margin-left: auto;
+    width: 25vw;
+  }
+
+  .title-bar {
+    background: #D53B6E;
+    height: 50px;
+    position: absolute;
+    margin: -7px 0;
+    opacity: 1;
+    width: 40vw;
+    z-index: 2;
+  }
+
+  .section-title {
+    color: #FFF;
+    font-size: 1.25rem;
+    letter-spacing: 0.025em;
+    margin-bottom: 25px;
+    margin-left: 0;
+    max-width: 50%;
+    position: relative;
+    top: 0.4em;
+    z-index: 3;
+  }
+
+  /* User Personas================== */
+  .mobile-persona {
+    display: none;
+  }
+
+  .laptop-persona {
+    display: block;
+  }
+
+  .persona-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 0;
+  }
+
+  .persona-about {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .laptop-persona h2 {
+    color: rgb(213, 59, 110);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 0;
+    padding: 0 .5em;
+    margin-bottom: 0.25em;
+  }
+
+  .laptop-persona h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.75em 0;
+  }
+
+  .persona1-img {
+    background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/kara.jpg");
+    background-repeat: no-repeat;
+    background-position: 55% 2%;
+    background-size: cover;
+  }
+
+  .persona2-img {
+    background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/john.jpg");
+    background-repeat: no-repeat;
+    background-position: 55% 20%;
+    background-size: cover;
+  }
+
+  .goals_content {
+    display: block;
   }
 
   .goals {
     height: auto;
     margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
-  .bullet-listing {
-    padding-top: 25px;
+  .goals img {
+    display: block;
+    height: auto;
+    margin: 20px auto 0 auto;
+    width: 90%;
   }
 
-  .userstories {
-    padding-top: 20px;
+  /* Wireframes===================== */
+
+  .mobile_wires {
+    display: none;
   }
 
-  .banner img {
-    height: 250px;
-    width: 250px;
+  .sketch-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 0;
   }
 
-  .logo_sequence img {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-
-  .sequence1, .sequence3 {
-    padding-top: 50px;
-  }
-
-  .article_content {
-    padding: 25px;
-  }
-
-  .article {
-    height: 425px;
-  }
-
-  .tests_intro {
-    padding: 0 200px;
-  }
-
-  .tests_intro h3 {
-    margin-top: 0;
-  }
-
-  .color_row {
+  .sketch-wrapper img {
     display: block;
     margin: 15px auto;
-    width: 100%;
+    width: 70%;
+    height: auto;
   }
 
-  .mockups .forty-five {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  /* Branding===================== */
+
+  .mobile_banner {
+    display: none;
   }
 
-  .mockups img {
+  .banner {
     display: block;
-    margin: 0 auto;
-    margin-bottom: 50px;
+  }
+
+  .row1-sketch, .row2-sketch {
+    text-align: center;
+  }
+
+  .row1-sketch img, .row2-sketch img {
+    display: inline-block;
+    height: 200px;
     object-fit: contain;
+    margin-top: 8px;
+    width: 200px;
+  }
+
+  .row2-sketch {
+    margin-bottom: 1em;
+  }
+
+  .logo-wrapper {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+
+  /* Testing==================== */
+
+  .mobile_preference {
+    display: none;
+  }
+
+  .preference-tests {
+    display: block;
+  }
+
+  .testing-wrapper {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-row-gap: 2em;
+    margin: 3em auto;
+  }
+
+  .preference-tests img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  blockquote {
+    margin: 2em auto;
+  }
+
+  blockquote p {
+    display: block;
+    font-size: 1.25em;
+    margin: 0 auto;
+    text-align: center;
     width: 100%;
   }
 
-  .mock1 {
-    margin-top: 30px;
+  .mobile_viewbtn, .web_viewbtn {
+    margin: 1em auto;
+    width: 100%;
   }
 
-  .mock1a, .mock1b {
-    width: 250px;
+  /* Final Design================== */
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 0;
+    grid-column-gap: 15px;
   }
 
-  .mock2a, .mock2b {
-    height: 250px;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .container {
+    padding: 25px 200px;
   }
 
-  .testcontent {
+  .intro-text {
+    padding: 175px 100px;
+  }
+
+  .intro-text h1 {
+    font-size: 5.5em;
+  }
+
+  .lupo-about {
+    margin: 5em;
+    padding: 8em;
+    }
+
+  .lupo-about-textbox {
+    padding: 4em;
+    top: -16em;
+    left: -10em;
+    width: 70%;
+  }
+
+  .lupo-about-textbox h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    left: 6.75em;
     margin-top: 0;
+    top: 0.8em;
   }
 
-  .closeups h3 {
-    margin-top: 0;
+  .title-bar {
+    margin: -7px 0;
+    width: 30vw;
   }
 
-  .mvpFont {
-    margin-bottom: 50px;
-    margin-top: 50px;
-    text-align: left;
+  .section-title {
+    left: 20px;
+    margin-bottom: 25px;
+    max-width: 50%;
+    top: 0.5em;
   }
 
-  .create_content {
-    padding-top: 175px;
-    margin-left: 0;
-    text-align: left;
+  /* Personas===================== */
+
+  .persona1-img {
+    background-position: 55% 35%;
   }
 
-  .allow_content, .cost_content, .extend_content2 {
-    padding-top: 150px;
-    padding-right: 40px;
+  /* Footer==================== */
+
+  .footer-icons {
+    padding-top: .25em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    padding: 25px 300px;
   }
 
-  .extend_content1 {
-    padding-top: 125px;
-    padding-right: 30px;
+  .lupo-about-textbox {
+    padding: 4em;
+    }
+
+/* Personas==================== */
+
+  .persona1-img {
+    background-position: 55% 45%;
   }
 
-  .laptop_prototypes {
-    padding: 0 200px;
+  .persona2-img {
+    background-position: 55% 60%;
   }
 
-  .web_viewbtn {
-    margin-left: 0;
+  /* Branding====================== */
+
+  .color_circle {
+    height: 10em;
+    width: 10em;
   }
 
-  .final h3 {
-    margin-top: 0;
-  }
-
-  .final p {
-    margin-bottom: 20px;
+  .color_circle p {
+    padding-top: 75px;
   }
 }

@@ -13,16 +13,8 @@ body, html {
   visibility: hidden;
 }
 
-.slideshow-container {
-  overflow-y: hidden;
-}
-
 .column {
   float: left;
-}
-
-.container {
-  padding: 25px 200px;
 }
 
 .one-half {
@@ -53,16 +45,8 @@ h1 {
   width: 15%;
 }
 
-.white_horizontal_line {
-  background:#FFF;
-  height: 3px;
-  margin: 10px 0 0 50px;
-  padding-left: 5px;
-  width: 15%;
-}
-
 h2 {
-  color: #000;
+  color: #4c4c4c;
   font-family: 'Raleway', sans-serif;
   font-size: 2rem;
   font-weight: bold;
@@ -78,11 +62,10 @@ h3 {
 }
 
 h4 {
-  margin: 15px 0;
-  font-weight: bold;
+  margin: 1.5em 0 1em 0;
 }
 
-p {
+p, li {
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -97,8 +80,8 @@ p {
   box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 }
 
-.greyNavItem a, #nav_about a, #nav_resume a{
-  color: #000;
+.greyNavItem a, #nav_about a, #nav_resume a, .nav-item {
+  color: #FFF;
 }
 
 .greyNavItem:hover, .greyNavItem a:hover {
@@ -164,8 +147,8 @@ nav.colored-in {
 
 .nav-item:before, .nav-item a:before {
   background: #D53B6E;
-  border-rv5adius: 1px;
-  bottom: 0;
+  border-radius: 1px;
+  bottom: 12px;
   content: "";
   height: 4px;
   left: 0;
@@ -228,18 +211,6 @@ ul.dropdown-content {
   text-align: left;
 }
 
-.sidebar {
-  width: 80px;
-  background: linear-gradient( rgba(214, 188, 193, 0.20), rgba(214, 188, 193, 0.20) ), url("../images/sidebar-image2.jpg");
-  background-size: cover;
-  background-position: center;
-  height:100%;
-  left: 0%;
-  position: fixed;
-  top:0;
-  z-index: 6;
-}
-
 .button {
   border: 2px solid #DB9BAC;
   color: #050505;
@@ -276,23 +247,7 @@ ul {
   display: table;
 }
 
-footer {
-  padding: 0px 50px 30px 100px;
-}
-
-/*Project*/
-/* .burpi-image {
-  object-fit: cover;
-  object-position: 50% 120%;
-} */
-
 /*footer*/
-
-footer {
-  background-color: #FFF;
-  height:60px;
-  width: 100%;
-}
 
 .fa {
   border-radius: 50%;
@@ -309,15 +264,6 @@ footer {
   opacity: 0.7;
 }
 
-.footer-copy p {
-  font-size: 1rem;
-  padding-top: 15px;
-}
-
-.footer-icons {
-  float: right;
-  padding-right: 50px;
-}
 
 /*Media Queries*/
 
@@ -326,10 +272,6 @@ footer {
   main {
     padding-left: 0;
   }
-
-  .container {
-      padding: 10px 25px 0 25px;
-    }
 
   .nav_main {
     display: none;
@@ -348,17 +290,17 @@ footer {
 
   .mobile-nav-item a {
     text-decoration: none;
-    color: #232323;
-    font-size: 30px;
+    color: #FFFFFF;
+    font-size: 18px;
     transition: color 0.3s ease;
   }
 
   .mobile-nav-item a:hover {
-    color: #FFF;
+    color: #000;
   }
 
   .mobile-nav-item li:hover {
-    background: #DB9BAC;
+    background: #D53B6E;
   }
 
   .menuToggle {
@@ -395,7 +337,7 @@ footer {
     margin-bottom: 5px;
     position: relative;
 
-    background: #cdcdcd;
+    background: #fff;
     border-radius: 3px;
 
     z-index: 1;
@@ -451,7 +393,7 @@ footer {
     margin: -100px 0 0 -100px;
     padding: 50px;
     padding-top: 125px;
-    background: #DB9BAC;
+    background: #D53B6E;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -509,7 +451,7 @@ footer {
   }
 
   .dropdown-content {
-    background-color: #DB9BAC;
+    background-color: #D53B6E;
     box-shadow: none;
     display: none;
     height: 100vh;
@@ -538,10 +480,6 @@ footer {
   .dropdown-nav-item a {
     color: #000;
     text-align: left;
-  }
-
-  h1 {
-    font-size: 2.25rem;
   }
 
   h2 {
@@ -595,38 +533,13 @@ footer {
       width: 275px;
   }
 
-  footer {
-    padding: 30px 20px;
-  }
-
   .footer-copy p {
     font-size: 0.825rem;
-    padding-left: 0;
-    padding-top: 0;
-    margin-bottom: 15px;
-  }
-
-  .footer-icons {
-    padding-top: 58px;
-    padding-right: 0;
-    width: 50%;
-  }
-
-  .footer-icons a {
-    float: right;
   }
 }
 
 /*Big Phone and Tablet*/
 @media screen and (min-width: 575px) and (max-width: 990px) {
-
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 2.25rem;
-  }
 
   h3 {
     font-size: 1.5rem;
@@ -654,43 +567,14 @@ footer {
 
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .container {
-    padding: 25px 75px;
-  }
 
   h2 {
     padding-left: 75px;
   }
 
-  footer {
-    padding: 30px 0 30px 100px;
-    width: 100%;
-  }
-
   .row {
     display: inline-block;
     width: 100%;
-  }
-
-  .footer-copy {
-    width: 60%;
-  }
-
-  .footer-copy p {
-    font-size: 0.725rem;
-    padding-top: 0;
-    padding-bottom: 20px;
-    margin-top: 0;
-  }
-
-  .footer-icons {
-    width: 40%;
-    padding-right: 50px;
-    float: right;
-  }
-
-  .footer-icons a {
-    float: right;
   }
 }
 /*Laptop*/
@@ -718,6 +602,9 @@ footer {
 
 /*Extra Large Laptop*/
 @media screen and (min-width: 1440px) {
+  .nav-item:before, .nav-item a:before {
+    bottom: 5px;
+  }
 }
 
 @media only screen and (min-width: 2560px) {

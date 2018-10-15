@@ -25,13 +25,14 @@ h2 {
 
 .intro-text h1 {
   color: #FFF;
+  font-family: 'Lovers Quarrel', cursive;
   margin-bottom: 1rem;
   margin-top: 8rem;
   text-align: center;
 }
 
 .about-hero {
-  background: linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.30)), url("../images/13.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.30)), url("../images/about-me.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,7 +84,7 @@ h2 {
 }
 
 .hobbies {
-  background: linear-gradient( rgba(214, 188, 193, 0.20), rgba(214, 188, 193, 0.20) ), url("../images/design-notebook.jpg");
+  background: linear-gradient( rgba(214, 188, 193, 0.20), rgba(214, 188, 193, 0.20) ), url("../images/lupo-design.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -109,13 +110,13 @@ h2 {
 .contact h2 {
   background-color:#D53B6E;
   color: #FFF;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   left: 50%;
   margin-top: 0;
   padding: 0 0.5em;
   position: absolute;
   transform: translateX(-50%);
-  top: 1.2em;
+  top: 1.15em;
 }
 
 .contact p {
@@ -132,7 +133,8 @@ h2 {
 }
 
 .fa {
-  color: #FFF;
+  color: #eca4bc;
+  font-size: 1.4em !important;
   margin: 0 auto;
   width: 25%;
 }
@@ -147,16 +149,21 @@ h2 {
 
 @media only screen and (min-width: 575px) {
 
+  .container {
+    padding: 25px 75px;
+  }
+
   .about-me-textbox h2 {
     font-size: 1.5rem;
     top: 0.8em;
   }
 
   .about-me {
-    background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/lake_merritt.jpg");
+    background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/lake-merritt.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 55% 55%;
+    background-size: cover;
     height: 100vh;
     margin: 4em;
     padding: 5em;
@@ -187,6 +194,13 @@ h2 {
 
 @media screen and (min-width: 1024px) {
 
+  .container {
+    padding: 25px 200px;
+  }
+
+  .intro-text h1 {
+    font-size: 5.5em;
+  }
 
   p {
     margin-top: 10px;
@@ -203,6 +217,17 @@ h2 {
 
   .footer-copy p {
     padding-bottom: 25px;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    padding: 25px 300px;
+  }
+
+  #intro-design-h2, #import-design-h2 {
+    margin: 50px 0 0 100px;
   }
 
 }
