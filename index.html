@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portolio | Sasha Fletcher</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/small-logo.png">
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/landing.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Allura|Lovers+Quarrel|Marck+Script|Mr+De+Haviland" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -31,6 +31,7 @@
             <ul class="nav_main">
               <li class="nav-item dropdown">Work
                   <ul class="dropdown-content work">
+                    <li class="dropdown-nav-item"><a href="pocketchefs.html">Pocket Chefs</a></li>
                     <li class="dropdown-nav-item"><a href="burpi.html">Burpi</a></li>
                     <li class="dropdown-nav-item"><a href="lupo.html">Lupo Cloud Storage</a></li>
                   </ul>
@@ -56,6 +57,7 @@
               <li class="mobile-nav-item dropdown"><a href="index.html">Home</a></li>
               <li class="mobile-nav-item dropdown"><a href="#">Work
                 <ul class="dropdown-content">
+                  <li class="mobile-nav-item dropdown-nav-item"><a href="pocketchefs.html">Pocket Chefs</a></li>
                   <li class="mobile-nav-item dropdown-nav-item"><a href="burpi.html">Burpi</a></li>
                   <li class="mobile-nav-item dropdown-nav-item"><a href="lupo.html">Lupo Cloud Storage</a></li>
                 </ul>
@@ -75,25 +77,36 @@
       </header>
     </div>
     <main>
-      <section class="intro home-hero">
-        <div class="intro-text container">
-          <h1>Sasha Fletcher</h1>
+      <section class="intro clearfix">
+        <div class="intro-text title-container split left">
+          <h1>Hey, it's Sasha!</h1>
           <p><span class="bold">UX/UI Designer</span> based in <span class="bold">Oakland, CA.</span></p>
         </div>
+        <div class="split right"></div>
       </section>
       <section class="home-about" id="startchange">
         <div class="home-about-textbox container">
           <h2>Road to UX</h2>
           <p>You've probably heard alot about empathy when it comes to user-centered design, but with my background in anthropology, psychology, and education, I take empathy and communication to new levels!</p>
           <br>
-          <p>I'm quiet because my nature is to listen and observe before I act, and I'm always in my head, trying to predict human behavior. UX Design is my playground of choice, full of psychological analysis, cross-cultural considerations, and understanding cognitive processes!</p>
+          <p>I'm quiet because my nature is to listen and observe before I act, and I'm always in my head, trying to predict human behavior. UX Design is my playground of choice, full of psychological analysis, problem-solving, and understanding cognitive processes!</p>
         </div>
       </section>
       <!--Projects-->
       <section class="clearfix">
         <h2 class="project-title">My Work</h2>
         <figure class="port-item">
-          <img src="images/burpi-hero2.jpg" alt="Portfolio Item">
+            <img src="images/pocket.png" alt="Portfolio Item">
+            <figcaption class="port-desc container">
+              <h3>Pocket Chefs</h3>
+              <p>Mobile and web redesign</p>
+              <a href="pocketchefs.html" class="button port-button">See Project</a>
+            </figcaption>
+        </figure>
+
+        <!--Portfolio Item 2-->
+        <figure class="port-item">
+          <img src="images/burpi-hero3.jpg" alt="Portfolio Item">
           <figcaption class="clearfix port-desc container">
             <h3>BURPI</h3>
             <p>A social fitness app</p>
@@ -101,12 +114,12 @@
           </figcaption>
         </figure>
 
-        <!--Portfolio Item 2-->
+        <!--Portfolio Item 3-->
         <figure class="port-item">
             <img src="images/lupo-hero2.png" alt="Portfolio Item">
             <figcaption class="port-desc container">
               <h3>LUPO</h3>
-              <p>A cloud storage platform for telecommuters</p>
+              <p>A cloud storage platform</p>
               <a href="lupo.html" class="button port-button">See Project</a>
             </figcaption>
         </figure>
@@ -137,5 +150,7 @@
     <!--Scripts-->
 
     <script src="scripts/navbar.js"></script>
+    <script src="scripts/split.js"></script>
+
   </body>
 </html>

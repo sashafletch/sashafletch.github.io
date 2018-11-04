@@ -1,0 +1,394 @@
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 10px 25px;
+}
+
+.button {
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 100%;
+}
+
+.slider {
+  background: #f9f9f9;
+  color: #000;
+  height: auto;
+  width: 100%;
+}
+
+.slider h2 {
+  color: #000;
+  margin-top: 0;
+  padding: 30px 0 20px 0;
+}
+
+/* Typography==================== */
+
+h2 {
+  margin: 30px auto 10px auto;
+  padding-left: 25px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.bold_italic {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
+/*Navigation Bar*/
+
+nav.greyNavItem, nav.greyNavItem a {
+  color: #000;
+}
+
+.whiteNavItem, .whiteNavItem a {
+  color: #FFF;
+}
+
+.whiteNavItem:hover, .whiteNavItem a:hover {
+  color: #000;
+}
+
+/* hero============= */
+
+.intro {
+  height: 100vh;
+  margin-bottom: 0;
+  overflow-y: hidden;
+}
+
+.intro-text h1 {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.intro-text {
+  color: #fff;
+  padding-top: 10em;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+.pocket-hero {
+  background:linear-gradient(rgba(255, 255, 255, -2.4), rgba(0, 0, 0, 0.5)), url("../images/pocket.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+.pocket-about-textbox {
+  background-color: #f5f5f5;
+  color: #000;
+  outline: 2px solid #ffae3f;
+  outline-offset: -2em;
+  padding: 3em;
+  position: relative;
+  text-align: center;
+  width: 100vw;
+  }
+
+.pocket-about-textbox h2 {
+  background: #f5f5f5;
+  color: #4c4c4c;
+  font-size: 1.12rem;
+  font-weight: 500;
+  left: 50%;
+  margin-top: 0;
+  padding: 0 .5em;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 1.25em;
+}
+
+.port-button {
+  background-color: rgba(255,255,255,0.5);
+  border: none;
+  color: #000;
+  font-size: 0.85rem;
+  margin: 4em auto 0 auto;
+  padding: 10px 20px;
+  text-align: center;
+  width: 50vw;
+  }
+
+.port-button:hover {
+  background-color: rgba(239, 239, 239, 0.5);
+  border: none;
+  color: #FFF;
+}
+
+/*Intro*/
+
+.design_role h3 {
+  display: block;
+  margin: 10px auto;
+  padding-top: 15px;
+  text-align: center;
+  width: 150px;
+}
+
+.design_role li, .design_role p {
+  text-align: center;
+  list-style-type: none;
+}
+
+.design_role p {
+  padding: 10px 0 5px 0;
+}
+
+/* Personas================= */
+
+.demographic {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.demographic img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+}
+
+.mobile-persona {
+  text-align: center;
+}
+
+.mobile-persona h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.75em 0;
+}
+
+.mobile-persona h2 {
+  color: rgb(213, 59, 110);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 1em auto 0.25em auto;
+  padding: 0;
+}
+
+.persona-info {
+  max-width: 100%;
+  padding-left: 0;
+}
+
+.preference_line {
+  background: #DB9BAC;
+  height: 1px;
+  margin: 30px 0 30px 0;
+  width: 100%;
+}
+
+.preference_line:last-of-type {
+  margin-bottom: 0;
+}
+
+.laptop-persona {
+  display: none;
+}
+
+/* User Flows================ */
+
+.userflows {
+  display: none;
+}
+
+/* Wireframes===================== */
+
+  .sketch_wires img {
+    display: block;
+    margin: 25px auto;
+    width: 75%;
+    height: auto;
+  }
+
+  .sketch-wrapper {
+    display: none;
+  }
+
+  .footer-wrapper {
+    display: block;
+  }
+
+  .footer-icons {
+    text-align: center;
+  }
+
+  .fa {
+    font-size: 1.5em !important;
+    margin: 5px 10px;
+  }
+
+  .footer-copy {
+    padding-top: 25px;
+    padding-left: 30px;
+    width: 100%;
+    }
+
+  .copyright {
+    display: block;
+    margin: 1em auto;
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 575px) {
+
+    h3 {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      padding: 25px 75px;
+    }
+
+    .button {
+      margin-left: 0;
+      width: 200px;
+    }
+
+    .intro {
+      overflow-y: hidden;
+    }
+
+    .intro-text h1 {
+      margin-top: .5em;
+    }
+
+    .burpi-about-textbox h2 {
+      font-size: 1.5rem;
+      top: 0.8em;
+      left: 6.75em;
+    }
+
+    .pocket-about {
+      background: url("../images/burpi-design.jpg");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: 55% 25%;
+      background-size: cover;
+      height: 100vh;
+      margin: 4em;
+      padding: 5em;
+    }
+
+    .pocket-about-textbox {
+      box-shadow: 0 0 3em 0 rgba(0,0,0,.25);
+      padding: 4em;
+      position: relative;
+      text-align: left;
+      top: -3em;
+      left: 3em;
+      width: 55vw;
+    }
+
+    .port-button {
+      margin: 0 auto;
+      width: 25vw;
+    }
+
+    .title-bar {
+      background: #ffae3f;
+      height: 50px;
+      position: absolute;
+      margin: -7px 0;
+      opacity: 1;
+      width: 40vw;
+      z-index: 2;
+    }
+
+    .section-title {
+      color: #FFF;
+      font-size: 1.25rem;
+      letter-spacing: 0.025em;
+      margin-bottom: 25px;
+      margin-left: 0;
+      max-width: 50%;
+      position: relative;
+      top: 0.4em;
+      z-index: 3;
+    }
+
+    /* Personas================= */
+
+    .mobile-persona {
+      display: none;
+    }
+
+    .laptop-persona {
+      display: block;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-row-gap: 0;
+    }
+
+    .persona-about {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .laptop-persona h2 {
+      color: rgb(213, 59, 110);
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-top: 0;
+      padding: 0 .5em;
+      margin-bottom: 0.25em;
+    }
+
+    .laptop-persona h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      margin: 0.75em 0;
+    }
+
+    /* User Flows================ */
+
+    .userflows {
+      display: block;
+    }
+
+    .flow img {
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      object-fit: cover;
+      width: 50vw;
+    }
+
+    .footer-wrapper {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      grid-column-gap: 20px;
+      padding: 5px 25px;
+    }
+
+    .footer-icons {
+      padding-top: 1em;
+    }
+
+    .footer-copy {
+      padding: 25px 0 25px 30px;
+    }
+
+  }

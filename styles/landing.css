@@ -16,57 +16,122 @@ h2 {
 }
 
 /*Intro========================*/
+:root {
+  --hover-height: 60%;
+  --other-height: 40%;
+  --speed: 1000ms;
+}
 
 .intro {
+  background: var(--container-bg-color);
   height: 100vh;
   margin-bottom: 0;
+  position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .intro-text h1 {
-  font-family: 'Lovers Quarrel', cursive;
-  margin-bottom: 1rem;
-  margin-top: 5rem;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 2.75rem;
+  margin-top: 2rem;
+  font-size: 2.5rem;
 }
 
+@media only screen and (min-width: 375px) {
+  .intro-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 2.75rem;
+    margin-top: 3.5rem;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .intro-text h1 {
+    font-size: 3.25rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.split {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.split.left {
+  top:0;
+  background-color: rgba(255, 95, 109,0.5);
+}
+
+.split.left:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.split.right {
+  bottom: 0;
+  background: url('../images/12.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.split.right:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.split.left, .split.right, .split.right:before, .split.left:before {
+  transition: var(--speed) all ease-in-out;
+}
+
+.hover-left .left {
+  height: var(--hover-height);
+}
+
+.hover-left .right {
+  height: var(--other-height);
+}
+
+.hover-left .right:before {
+  z-index: 2;
+}
+
+
+.hover-right .right {
+  height: var(--hover-height);
+}
+
+.hover-right .left {
+  height: var(--other-height);
+}
+
+.hover-right .left:before {
+  z-index: 2;
+}
 
 .intro-text {
   color: #fff;
-  padding-top: 10em;
-  text-align: center;
-  width: 100%;
-}
-
-.home-hero {
-  background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/5.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
+  padding: 3em 2em;
 }
 
 .home-about-textbox {
-  background-color: #f5f5f5;
-  outline: 2px solid rgba(213, 59, 110, 0.70);
-  outline-offset: -2em;
-  padding: 3em;
-  position: relative;
-  text-align: center;
-  width: 100vw;
+  color: #000;
+  padding: 2rem;
+  text-align: left;
+  width: 100%;
 }
 
 .home-about-textbox h2 {
-  background: #f5f5f5;
-  color: rgb(213, 59, 110);
-  font-size: 1.2rem;
-  font-weight: 500;
-  left: 50%;
+  color: #4c4c4c;
   margin-top: 0;
-  padding: 0 .5em;
-  position: absolute;
-  transform: translateX(-50%);
-  top: 1.3em;
+  margin-bottom: 15px;
+  padding-left: 0;
 }
 
 /*Portfolio===================  */
@@ -112,24 +177,12 @@ h2 {
   margin: 0;
 }
 
-/* .button {
-    margin-top: 20px;
-  } */
-
-.skills {
-    padding-right: 0;
-  }
-
-.skills_list {
-    font-size: 1rem;
-  }
-
 /* Contact============ */
 
 .contact {
-  background-color: #D53B6E;
+  background-color: #F5f5F5;
   max-width: 100%;
-  outline: 2px solid rgb(255, 255, 255);
+  outline: 2px solid rgba(0,0,0,0.2);
   outline-offset: -2em;
   padding: 3em;
   position: relative;
@@ -138,8 +191,7 @@ h2 {
 }
 
 .contact h2 {
-  background-color:#D53B6E;
-  color: #FFF;
+  background-color: #f5f5f5;
   font-size: 1.2rem;
   left: 50%;
   margin-top: 0;
@@ -150,7 +202,6 @@ h2 {
 }
 
 .contact p {
-  color: #FFF;
   text-align: center;
 }
 
@@ -163,7 +214,7 @@ h2 {
 }
 
 .fa {
-  color: #eca4bc;
+  color: #3f3f3f;
   font-size: 1.4em !important;
   margin: 0 auto;
   width: 15%;
@@ -178,49 +229,70 @@ h2 {
 
 .project-title {
   margin: 25px auto;
-  padding-left: 0;
-  text-align: center;
-  }
+  padding-left: 2rem;
+}
 
 
 /*Tablet====================*/
 
 @media only screen and (min-width: 575px) {
 
-  .home-about-textbox h2 {
-    font-size: 1.5rem;
-    top: 0.8em;
+  :root {
+    --hover-width: 70%;
+    --other-width: 30%;
+    --speed: 1000ms;
   }
 
-  .home-about {
-    background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/12.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 55% 55%;
+  .split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .split.left {
+    left:0;
+  }
+
+  .split.right {
+    right:0;
+  }
+
+  .split.left, .split.right, .split.right:before, .split.left:before {
+    transition: var(--speed) all ease-in-out;
+  }
+
+  .hover-left .left {
+    width: var(--hover-width);
     height: 100vh;
-    margin: 4em;
-    padding: 5em;
+  }
+
+  .hover-left .right {
+    width: var(--other-width);
+    height: 100vh;
+  }
+
+  .hover-right .right {
+    width: var(--hover-width);
+    height: 100vh;
+  }
+
+  .hover-right .left {
+    width: var(--other-width);
+    height: 100vh;
+  }
+
+
+  .home-about-textbox h2 {
+    margin-top: 0;
   }
 
   .home-about-textbox {
-    box-shadow: 0 0 3em 0 rgba(0,0,0,.25);
-    padding: 4em;
-    position: relative;
-    text-align: left;
-    top: -13em;
-    left: -7em;
-    width: 55vw;
+    padding: 3rem;
   }
 
-  .home-about-textbox h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    left: 2.75em;
-    margin-top: 0;
-    padding: 0 .5em;
-    position: absolute;
-    transform: translateX(0);
-    top: 0.8em;
+  .project-title {
+    padding-left: 3rem;
   }
 
   .port-button {
@@ -229,7 +301,7 @@ h2 {
 
   .port-item {
     float: left;
-    width: 50%;
+    width: 33.33%;
   }
 
   .port-desc {
@@ -249,13 +321,13 @@ h2 {
     padding: 25px 0 25px 30px;
   }
 
-
   }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
   .intro-text {
-    padding-top: 100px;
+    padding-top: 8em;
+    padding-left: 3em;
   }
 }
 
@@ -263,6 +335,10 @@ h2 {
 /*Laptop*/
 
 @media only screen and (min-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .intro-text h1 {
     font-size: 5.5em;
     margin-bottom: 1rem;
@@ -271,38 +347,23 @@ h2 {
 
   .intro-text {
     color: #fff;
-    padding-top: 10em;
-    width: 100%;
+    padding-top: 5em;
+    padding-left: 4em;
   }
 
   .intro-text p {
     padding-top: 0;
   }
 
-  .home-about {
-    margin: 5em;
-    padding: 8em;
-  }
-
-  .home-about-textbox {
-    padding: 4em;
-    top: -16em;
-    left: -10em;
-    width: 70%;
-  }
-
-  .home-about-textbox h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    left: 2.75em;
-    margin-top: 0;
-    top: 0.8em;
+  .home-about-textbox, .project-title {
+    padding-left: 200px;
+    padding-right: 200px;
   }
 
   .port-item {
     float: left;
     overflow: hidden;
-    width: 50%;
+    width: 33.33%;
   }
 
   .port-desc {
@@ -325,6 +386,21 @@ h2 {
 
   .footer-copy {
     padding: 25px 0 25px 30px;
+  }
+}
+
+/*Large Laptop*/
+@media only screen and (min-width:1440px) {
+  .home-about-textbox {
+    padding: 0;
+    margin: 50px auto;
+    width: 50%;
+  }
+
+  .project-title {
+    margin: 50px auto 20px auto;
+    padding-left: 0;
+    width: 50%;
   }
 }
 

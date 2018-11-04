@@ -1,3 +1,7 @@
+*,*:before, *:after {
+  box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -17,54 +21,106 @@ h2 {
 
 /*Intro========================*/
 
+:root {
+  --hover-height: 65%;
+  --other-height: 35%;
+  --speed: 1000ms;
+}
+
+.container, .title-container {
+  padding: 10px 25px;
+}
+
 .intro {
+  color: #FFF;
   height: 100vh;
   overflow: hidden;
   padding-top: 100px;
 }
 
 .intro-text h1 {
-  color: #FFF;
-  font-family: 'Lovers Quarrel', cursive;
-  margin-bottom: 1rem;
-  margin-top: 8rem;
-  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 2.75rem;
+  margin-top: 5rem;
+  font-size: 2.5rem;
 }
 
-.about-hero {
-  background: linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.30)), url("../images/about-me.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
+@media only screen and (min-width: 375px) {
+  .intro-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 2.75rem;
+    margin-top: 4rem;
+  }
 }
 
-.about-me-textbox {
-  background-color: #f5f5f5;
-  outline: 2px solid rgba(213, 59, 110, 0.70);
-  outline-offset: -2em;
-  padding: 3em;
-  position: relative;
-  text-align: center;
-  width: 100vw;
+@media only screen and (min-width: 425px) {
+  .intro-text h1 {
+    font-size: 3.25rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
 }
 
-.about-me-textbox h2 {
-  background: #f5f5f5;
-  color: rgb(213, 59, 110);
-  font-size: 1.2rem;
-  font-weight: 500;
-  left: 50%;
-  margin-top: 0;
-  padding: 0 .5em;
+.split {
   position: absolute;
-  transform: translateX(-50%);
-  top: 1.3em;
+  width: 100%;
+  height: 65%;
+  overflow: hidden;
 }
 
-.origins h3, .hobbies h3, .origins p, .hobbies p {
-  color: #FFF;
+.split.left {
+  top:0;
+  background-color: rgba(255, 95, 109,0.5);
+}
+
+.split.left:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.split.right {
+  bottom: 0;
+  background: url('../images/lake-merritt.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.split.right:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+
+.split.left, .split.right, .split.right:before, .split.left:before {
+  transition: var(--speed) all ease-in-out;
+}
+
+.hover-left .left {
+  height: var(--hover-height);
+}
+
+.hover-left .right {
+  height: var(--other-height);
+}
+
+.hover-left .right:before {
+  z-index: 2;
+}
+
+
+.hover-right .right {
+  height: var(--hover-height);
+}
+
+.hover-right .left {
+  height: var(--other-height);
+}
+
+.hover-right .left:before {
+  z-index: 2;
 }
 
 .introduction_design {
@@ -75,31 +131,16 @@ h2 {
   margin: 10px 0;
 }
 
-.importance_design {
-  width: 100%;
-}
-
 .button {
   margin-top: 20px
-}
-
-.hobbies {
-  background: linear-gradient( rgba(214, 188, 193, 0.20), rgba(214, 188, 193, 0.20) ), url("../images/lupo-design.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 10% 40%;
-  height: 200px;
-  margin-top: 25px;
-  max-width: 100%;
 }
 
 /* Contact============ */
 
 .contact {
-  background-color: #D53B6E;
+  background-color: #F5f5F5;
   max-width: 100%;
-  outline: 2px solid rgb(255, 255, 255);
+  outline: 2px solid rgba(0, 0, 0, 0.2);
   outline-offset: -2em;
   padding: 3em;
   position: relative;
@@ -108,8 +149,7 @@ h2 {
 }
 
 .contact h2 {
-  background-color:#D53B6E;
-  color: #FFF;
+  background-color:#f5f5f5;
   font-size: 1.25rem;
   left: 50%;
   margin-top: 0;
@@ -120,8 +160,11 @@ h2 {
 }
 
 .contact p {
-  color: #FFF;
   text-align: center;
+}
+
+.footer-copy {
+  margin: 1rem 2rem;
 }
 
 .footer-icons {
@@ -133,7 +176,7 @@ h2 {
 }
 
 .fa {
-  color: #eca4bc;
+  color: #3f3f3f;
   font-size: 1.4em !important;
   margin: 0 auto;
   width: 25%;
@@ -149,45 +192,79 @@ h2 {
 
 @media only screen and (min-width: 575px) {
 
-  .container {
+  .container, .title-container {
     padding: 25px 75px;
   }
 
-  .about-me-textbox h2 {
-    font-size: 1.5rem;
-    top: 0.8em;
-  }
-
-  .about-me {
-    background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/lake-merritt.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 55% 55%;
-    background-size: cover;
-    height: 100vh;
-    margin: 4em;
-    padding: 5em;
-  }
-
-  .about-me-textbox {
-    box-shadow: 0 0 3em 0 rgba(0,0,0,.25);
-    padding: 4em;
-    position: relative;
-    text-align: left;
-    top: -13em;
-    left: -7em;
-    width: 55vw;
-  }
-
-  .about-me-textbox h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    left: 2.75em;
-    margin-top: 0;
-    padding: 0 .5em;
+  /* .split {
+    height: 100%;
+    top: 0;
+    margin: 0;
+    overflow: hidden;
     position: absolute;
-    transform: translateX(0);
-    top: 0.8em;
+  } */
+
+  .left {
+    background-color: #ffae3f;
+    width: 40vw;
+  }
+
+  .right {
+    background: url("../images/lake-merritt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 60vw;
+  }
+
+  :root {
+    --hover-width: 70%;
+    --other-width: 30%;
+    --speed: 1000ms;
+  }
+
+  .split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .split.left {
+    left:0;
+  }
+
+  .split.right {
+    right:0;
+  }
+
+  .split.left, .split.right, .split.right:before, .split.left:before {
+    transition: var(--speed) all ease-in-out;
+  }
+
+  .hover-left .left {
+    width: var(--hover-width);
+    height: 100vh;
+  }
+
+  .hover-left .right {
+    width: var(--other-width);
+    height: 100vh;
+  }
+
+  .hover-right .right {
+    width: var(--hover-width);
+    height: 100vh;
+  }
+
+  .hover-right .left {
+    width: var(--other-width);
+    height: 100vh;
+  }
+
+  .intro-text {
+    color: #FFF;
+    padding: 2em;
   }
 
 }
@@ -224,6 +301,10 @@ h2 {
 @media only screen and (min-width: 1440px) {
   .container {
     padding: 25px 300px;
+  }
+
+  .intro-text {
+    padding: 4em;
   }
 
   #intro-design-h2, #import-design-h2 {

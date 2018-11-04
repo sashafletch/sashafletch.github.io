@@ -27,7 +27,7 @@ body, html {
 
 /*typography*/
 :root {
-  color: #050505;
+  color: rgba(0,0,0,.54);
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
 }
@@ -66,8 +66,8 @@ h4 {
 }
 
 p, li {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.15rem;
+  line-height: 1.6;
 }
 
 .bold {
@@ -146,7 +146,7 @@ nav.colored-in {
 }
 
 .nav-item:before, .nav-item a:before {
-  background: #D53B6E;
+  background: #ffae3f;
   border-radius: 1px;
   bottom: 12px;
   content: "";
@@ -199,7 +199,7 @@ ul.dropdown-content {
 }
 
 .dropdown-content a:hover {
-  background-color: rgba(219, 155, 172, 0.3);
+  background-color: rgba(	255, 174, 63, 0.3);
 }
 
 .dropdown:hover .dropdown-content {
@@ -212,7 +212,7 @@ ul.dropdown-content {
 }
 
 .button {
-  border: 2px solid #DB9BAC;
+  border: 2px solid #ffae3f;
   color: #050505;
   display: block;
   margin-top: 30px;
@@ -223,7 +223,8 @@ ul.dropdown-content {
 }
 
 .button:hover {
-  background-color: #DB9BAC;
+  background-color: rgba(255, 174, 63,0.4);
+  border: 2px solid transparent;
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -251,7 +252,7 @@ ul {
 
 .fa {
   border-radius: 50%;
-  color:#D53B6E;
+  color:#3f3f3f;
   padding: 10px;
   font-size: 30px;
   width: 30px;
@@ -300,7 +301,7 @@ ul {
   }
 
   .mobile-nav-item li:hover {
-    background: #D53B6E;
+    background: #FFAFB6;
   }
 
   .menuToggle {
@@ -393,7 +394,7 @@ ul {
     margin: -100px 0 0 -100px;
     padding: 50px;
     padding-top: 125px;
-    background: #D53B6E;
+    background: #FFAFB6;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -426,7 +427,7 @@ ul {
   }
 
   .nav-item:before, .nav-item a:before {
-    background: #DB9BAC;
+    background: #FFAFB6;
     border-radius: 5px;
     bottom: 0;
     content: "";
@@ -451,7 +452,7 @@ ul {
   }
 
   .dropdown-content {
-    background-color: #D53B6E;
+    background-color: #FFAFB6;
     box-shadow: none;
     display: none;
     height: 100vh;
@@ -486,6 +487,7 @@ ul {
     font-size: 1.5rem;
     margin: 30px 0 0 0;
     padding-left: 30px;
+    padding-right: 30px;
   }
 
   h3 {
@@ -576,6 +578,10 @@ ul {
     display: inline-block;
     width: 100%;
   }
+
+  .nav-item:before, .nav-item a:before {
+    bottom: 2px;
+  }
 }
 /*Laptop*/
 @media screen and (min-width: 991px) and (max-width: 1439px) {
@@ -604,6 +610,11 @@ ul {
 @media screen and (min-width: 1440px) {
   .nav-item:before, .nav-item a:before {
     bottom: 5px;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.5em;
   }
 }
 

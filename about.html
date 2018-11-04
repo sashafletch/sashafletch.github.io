@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/about.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Allura|Lovers+Quarrel|Marck+Script|Mr+De+Haviland" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -31,6 +31,7 @@
               <ul class="nav_main">
                 <li class="nav-item dropdown">Work
                     <ul class="dropdown-content work">
+                      <li class="dropdown-nav-item"><a href="pocketchefs.html">Pocket Chefs</a></li>
                       <li class="dropdown-nav-item"><a href="burpi.html">Burpi</a></li>
                       <li class="dropdown-nav-item"><a href="lupo.html">Lupo Cloud Storage</a></li>
                     </ul>
@@ -56,6 +57,7 @@
                 <li class="mobile-nav-item dropdown"><a href="index.html">Home</a></li>
                 <li class="mobile-nav-item dropdown"><a href="#">Work
                   <ul class="dropdown-content">
+                    <li class="mobile-nav-item dropdown-nav-item"><a href="pocketchefs.html">Pocket Chefs</a></li>
                     <li class="mobile-nav-item dropdown-nav-item"><a href="burpi.html">Burpi</a></li>
                     <li class="mobile-nav-item dropdown-nav-item"><a href="lupo.html">Lupo Cloud Storage</a></li>
                   </ul>
@@ -77,31 +79,24 @@
     <main>
       <section>
         <div class="intro about-hero">
-          <div class="intro-text container">
-            <h1>Great to Meet You!</h1>
+          <div class="title-container intro-text split left">
+            <h1>Who is Sasha?</h1>
+            <p>I'm originally from Florida, but I now live in beautiful Oakland, CA! Read on to learn more about my journey to UX Design.</p>
           </div>
+          <div class="split right"></div>
         </div>
       </section>
-      <section class="about-me" id="startchange">
-        <div class="about-me-textbox">
-          <h2>Origins</h2>
-          <p>Originally from Florida, but I now live in Oakland, CA. Read on to learn more about my journey to UX Design and how my background has helped inform my design practice.</p>
-        </div>
-      </section>
-
-      <section>
+      <section id="startchange">
         <h2 id="intro-design-h2">My Introduction to Design</h2>
         <div class="container">
           <div class="row introduction_design">
             <div>
               <p>My time as a teacher introduced me to the iterative design process; I created a systematic approach to mapping content to learning objectives. Each objective was defined by assessment strategies and content analysis that then informed my design process moving forward. It consistently demanded that I think creatively to solve problems of misunderstanding, behavior intervention, and classroom management.</p>
-              <p>Curriculum design is an iterative and dynamic process in which teachers must account for students’ different learning styles, levels of understanding, and paces of growth. While teachers are often experienced in the field and thus understand more advanced topics, this can sometimes create a barrier to empathizing with students who have trouble grasping basic concepts. In the educational system, the focus on factual knowledge often leads teachers to mistakenly assume that their understanding of information can simply be transferred to their students. The foundation of the trajectory from novice-level to expert-level thinking is empathy; teachers need to be sensitive to the needs of their students and understand how each student learns. I consistently put myself into the shoes of my students and re-evaluated how my methods either aided their journey or exacerbated misunderstandings.
+              <p>Curriculum design is an iterative and dynamic process in which teachers must account for students’ different learning styles, levels of understanding, and paces of growth. As such, I consistently put myself into the shoes of my students and re-evaluated how my methods either aided their journey or exacerbated misunderstandings. I carry this same process into how I approach the user experience.</p>
               </p>
             </div>
           </div>
         </div>
-      </section>
-      <section class="hobbies">
       </section>
       <section>
         <h2 id="import-design-h2">The Importance of Design</h2>
@@ -136,5 +131,6 @@
       </div>
     </footer>
     <script src="scripts/navbar.js"></script>
+    <script src="scripts/split.js"></script>
   </body>
 </html>
