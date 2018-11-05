@@ -82,7 +82,7 @@
   }
 
   .lupo-hero {
-    background:linear-gradient(#4c4c4c5c, rgba(255, 255, 255, 0.30)), url("../images/lupo-hero.png");
+    background:linear-gradient(#4c4c4c5c, rgba(255, 255, 255, 0.30)), url("../images/lupo-hero.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,7 +111,13 @@
     padding: 0 .5em;
     position: absolute;
     transform: translateX(-50%);
-    top: 1.25em;
+    top: 0.5em;
+  }
+
+  @media only screen and (min-width: 375px) {
+    .lupo-about-textbox h2 {
+      top: 1.25em;
+    }
   }
 
   .port-button {
@@ -138,7 +144,6 @@
     margin: 10px auto;
     padding-top: 15px;
     text-align: center;
-    width: 150px;
   }
 
   .design_role li, .design_role p {
@@ -575,6 +580,13 @@
     z-index: 3;
   }
 
+  .role-wrapper {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-column-gap: 10px;
+    margin: 25px 100px;
+  }
+
   /* User Personas================== */
   .mobile-persona {
     display: none;
@@ -748,7 +760,7 @@
 @media screen and (min-width: 1024px) {
 
   .container {
-    padding: 25px 200px;
+    padding: 25px 275px;
   }
 
   .intro-text {

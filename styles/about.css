@@ -196,14 +196,6 @@ h2 {
     padding: 25px 75px;
   }
 
-  /* .split {
-    height: 100%;
-    top: 0;
-    margin: 0;
-    overflow: hidden;
-    position: absolute;
-  } */
-
   .left {
     background-color: #ffae3f;
     width: 40vw;
@@ -272,7 +264,7 @@ h2 {
 @media screen and (min-width: 1024px) {
 
   .container {
-    padding: 25px 200px;
+    padding: 25px 275px;
   }
 
   .intro-text h1 {
