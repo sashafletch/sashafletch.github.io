@@ -19,17 +19,6 @@
   margin-left: auto;
 }
 
-  .chart-legend {
-  font-size: 1rem;
-  margin-top: 1.5em;
-}
-
-  .chart-legend li span{
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin-right: 5px;
-}
 
 /*Sketches and Wireframes*/
 .sketch_wires img {
