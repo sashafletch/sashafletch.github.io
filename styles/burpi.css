@@ -284,21 +284,44 @@
     height: auto;
   }
 
-  .sketch-wrapper {
+  .big-sketch {
     display: none;
   }
+
+  .wire-detail div {
+    display: flex;
+    align-items: baseline;
+    padding: 0;
+  }
+
+  .wire-detail h3 {
+    background-color: #FFAE3F;
+    border-radius: 50%;
+    color: #FFF;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 1rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin: 1rem 1rem 1rem 0;
+    text-align: center;
+    width: 1.5rem;
+  }
+
 
   /* Testing==================== */
 
   .testing img {
     display: block;
-    margin: 25px auto;
-    width: 75%;
     height: auto;
+    width: 50%;
+    margin: 25px auto;
+    object-fit: contain;
   }
 
   h4 {
     color: #f28c00;
+    font-size: 1.45rem;
   }
 
   .nomenclature-test img:nth-of-type(1) {
@@ -425,6 +448,10 @@
 
   /* Final Design=================== */
 
+  .closeups {
+    padding: 10px 25px;
+  }
+
   .closeups img {
     display: block;
     height: auto;
@@ -501,7 +528,6 @@
   }
 
   .button {
-    margin-left: 0;
     width: 200px;
   }
 
@@ -614,7 +640,7 @@
 
   .laptop-persona h3 {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0.75em 0;
   }
 
@@ -664,23 +690,60 @@
     width: 50%;
   }
 
-  .sketch-wrapper img {
+  .big-sketch {
     display: block;
-    margin: 0 auto;
-    width: 75%;
-    height: auto;
   }
 
   .sketch-wrapper {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-row-gap: 25px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-row-gap: 50px;
+    margin: .5em 3em 2em 3em;
+    padding-top: 5em;
   }
+
+  .sketch-wrapper img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 75%;
+    height: 300px;
+    object-fit: contain;
+  }
+
+  .test-wrap1, .test-wrap2, .test-wrap3, .test-wrap4 {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    margin: .5em 3em 2em 3em;
+    justify-items: center;
+  }
+
+  .test-wrap1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .test-wrap2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .test-wrap3 {
+    grid-template-columns: 1fr 1fr 1.5fr;
+  }
+
+  .test-wrap4 {
+    grid-template-columns: 1fr 1fr;
+  }
+
 
   /* Testing========================= */
 
   .testing img {
-    width: 30%;
+    height: 250px;
+    width: auto;
+    margin: 0 auto;
+    object-fit: contain;
   }
 
   .nomenclature-test img:nth-of-type(1) {
@@ -690,7 +753,11 @@
 
   /* Final Design================ */
 
-  .closeups .wrapper {
+  .closeups {
+    padding: 0;
+  }
+
+  .closeups .test-wrap4 {
     grid-row-gap: 10px;
   }
 
@@ -775,10 +842,12 @@
     width: 650px !important;
   }
 
-  /* Branding================ */
-  .branding .button {
-    margin-left: 0;
+  /* Testing=============== */
+
+  .testing img {
+    height: 250px;
   }
+
 
   /* Footer==================== */
 
@@ -808,10 +877,32 @@
 
   .sketch-wrapper img {
     height: 500px;
+    object-fit: contain;
   }
 
   .logoVector img {
     width: 50%;
   }
 
+  .testing img {
+    height: 450px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+
+  .container {
+    padding: 50px 500px;
+  }
+
+  .title-bar {
+    height: 75px;
+  }
+
+  .wire-detail h3 {
+    font-size: 2rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+  }
 }
