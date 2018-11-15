@@ -6,13 +6,14 @@
   .button {
     display: block;
     margin: 20px auto 0 auto;
-    width: 100%;
+    max-width: 100%;
   }
 
   .slider {
     background: #f9f9f9;
     color: #000;
     height: auto;
+    margin-top: 25px;
     width: 100%;
   }
 
@@ -67,7 +68,7 @@
   }
 
   .intro-text h1 {
-    font-family: 'Open Sass', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 1rem;
     margin-top: 5rem;
   }
@@ -82,7 +83,7 @@
   }
 
   .lupo-hero {
-    background:linear-gradient(#4c4c4c5c, rgba(255, 255, 255, 0.30)), url("../images/lupo-hero.jpg");
+    background:linear-gradient(#db9bac87, rgba(0, 0, 0, 0.50)), url("../images/lupo-hero.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,33 +92,21 @@
   }
 
   .lupo-about-textbox {
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
     color: #000;
-    outline: 2px solid #ffae3f;
     outline-offset: -2em;
-    padding: 3em;
+    padding: 10px 25px;
     position: relative;
-    text-align: center;
     width: 100vw;
     }
 
   .lupo-about-textbox h2 {
-    background: #f5f5f5;
+    background: #f9f9f9;
     color: #4c4c4c;
     font-size: 1.12rem;
     font-weight: 500;
-    left: 50%;
-    margin-top: 0;
-    padding: 0 .5em;
-    position: absolute;
-    transform: translateX(-50%);
-    top: 0.5em;
-  }
-
-  @media only screen and (min-width: 375px) {
-    .lupo-about-textbox h2 {
-      top: 1.25em;
-    }
+    margin-top: 20px;
+    padding-left: 0;
   }
 
   .port-button {
@@ -241,8 +230,8 @@
   .preference_line {
     background: #DB9BAC;
     height: 1px;
-    margin: 30px 0 30px 0;
-    width: 100%;
+    margin: 30px auto 30px auto;
+    width: 75%;
   }
 
   .preference_line:last-of-type {
@@ -274,7 +263,7 @@
     height: auto;
   }
 
-  .sketch-wrapper {
+  .big-sketch {
     display: none;
   }
 
@@ -325,10 +314,10 @@
   .color_circle {
     border-radius: 50%;
     display: inline-block;
-    height: 5em;
+    height: 4em;
     margin-right: 5px;
     margin-left: 5px;
-    width: 5em;
+    width: 4em;
   }
 
   .color_circle p {
@@ -409,33 +398,56 @@
     width: 50vw;
   }
 
+  .mobile_preference h4 {
+    text-align: center;
+    margin: 1em auto 1.5em auto;
+  }
+
+  .percentage {
+    color: #ffae3f;
+    font-weight: 600;
+  }
+
   .preference1 {
     margin-top: 1em;
   }
 
-  #preference2a {
+  #preference2a, #preference2b {
     border: .5px solid #E0E0E0;
   }
 
-  #preference1a, #preference1b {
-    object-position: 50% 0;
+  .ab-detail div {
+    display: flex;
+    align-items: baseline;
+    padding: 0;
   }
 
-  #preference2a, #preference2b {
-    object-position: 0% 50%;
+  .ab-detail h3 {
+    background-color: #FFAE3F;
+    border-radius: 50%;
+    color: #FFF;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 1rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin: 1rem 1rem 1rem 0;
+    text-align: center;
+    width: 1.5rem;
   }
 
   blockquote {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
     text-align: left;
   }
 
-  .mock1 img, .mock2 img {
-    display: block;
-    margin: 1.5em auto;
-    object-fit: contain;
-    width: 50vw;
+  blockquote p {
+    margin-left: 1rem;
+  }
+
+  .vertical {
+    border-left: .3rem solid #ffae3f;
+    margin: 2.5rem;
   }
 
   /* Final Design=================== */
@@ -455,13 +467,16 @@
     margin-bottom: 0;
   }
 
+  .closeups p {
+    padding: 10px 25px;
+  }
+
   .mobile_viewbtn, .web_viewbtn {
-    margin-top: 0;
-    margin-bottom: 1em;
+    margin: 0 auto 1em auto;
   }
 
   .final {
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
     outline: 2px solid rgb(0,0,0, 0.2);
     outline-offset: -2em;
     margin-top: 25px;
@@ -471,7 +486,7 @@
   }
 
   .final h2 {
-    background: #f5f5f5;
+    background: #f9f9f9;
     font-size: 1.5rem;
     font-weight: 500;
     left: 50%;
@@ -533,7 +548,6 @@
   }
 
   .button {
-    margin-left: 0;
     width: 200px;
   }
 
@@ -547,29 +561,13 @@
 
   .lupo-about-textbox h2 {
     font-size: 1.5rem;
-    top: 0.8em;
-    left: 6.75em;
-  }
-
-  .lupo-about {
-    background: rgba(255, 255, 255, 0.5) url("../images/lupo-design.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 55% 25%;
-    background-size: cover;
-    height: 100vh;
-    margin: 4em;
-    padding: 5em;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   .lupo-about-textbox {
-    box-shadow: 0 0 3em 0 rgba(0,0,0,.25);
-    padding: 4em;
-    position: relative;
+    padding: 25px 75px;
     text-align: left;
-    top: -13em;
-    left: -7em;
-    width: 55vw;
   }
 
   .port-button {
@@ -637,7 +635,7 @@
 
   .laptop-persona h3 {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0.75em 0;
   }
 
@@ -671,13 +669,17 @@
     display: block;
     height: auto;
     margin: 20px auto 0 auto;
-    width: 90%;
+    width: 100%;
   }
 
   /* Wireframes===================== */
 
   .mobile_wires {
     display: none;
+  }
+
+  .big-sketch {
+    display: block;
   }
 
   .sketch-wrapper {
@@ -721,7 +723,7 @@
 
   .logo-wrapper {
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /* Testing==================== */
@@ -736,9 +738,15 @@
 
   .testing-wrapper {
     display: grid;
-    grid-template-columns: 20% 40% 40%;
+    grid-template-columns: 1fr 1fr;
     grid-row-gap: 2em;
-    margin: 3em auto;
+    margin: .5em 3em 0 3em;
+  }
+
+  .testing-wrapper h4 {
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto 2em auto;
   }
 
   .preference-tests img {
@@ -767,11 +775,17 @@
 
   /* Final Design================== */
 
-  .wrapper {
+  .test-wrap4 {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-row-gap: 0;
-    grid-column-gap: 15px;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 4em 3em 2em 3em;
+    justify-items: center;
+  }
+
+  .test-wrap4 .button {
+    width: 200px;
   }
 
 }
@@ -780,6 +794,17 @@
 
   .container {
     padding: 25px 275px;
+  }
+
+  .lupo-about {
+    background: rgba(255, 255, 255, 0.5) url("../images/lupo-design.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 55% 25%;
+    background-size: cover;
+    height: 100vh;
+    margin: 4em;
+    padding: 5em;
   }
 
   .intro-text {
@@ -797,9 +822,10 @@
   .lupo-about {
     margin: 5em;
     padding: 8em;
-    }
+  }
 
   .lupo-about-textbox {
+    outline: 2px solid #ffae3f;
     padding: 4em;
     top: -16em;
     left: -10em;
@@ -811,6 +837,10 @@
     font-weight: 500;
     left: 6.75em;
     margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 .5em;
+    position: absolute;
+    transform: translateX(-50%);
     top: 0.8em;
   }
 

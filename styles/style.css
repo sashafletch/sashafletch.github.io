@@ -150,7 +150,7 @@ nav.colored-in {
 .nav-item:before, .nav-item a:before {
   background: #ffae3f;
   border-radius: 1px;
-  bottom: 12px;
+  bottom: 13px;
   content: "";
   height: 4px;
   left: 0;
@@ -274,6 +274,10 @@ ul {
 @media screen and (min-width: 320px) and (max-width: 574px) {
   main {
     padding-left: 0;
+  }
+
+  li {
+    font-size: 1rem;
   }
 
   .nav_main {
@@ -582,7 +586,7 @@ ul {
   }
 
   .nav-item:before, .nav-item a:before {
-    bottom: 2px;
+    bottom: 3px;
   }
 }
 /*Laptop*/
@@ -611,7 +615,7 @@ ul {
 /*Extra Large Laptop*/
 @media screen and (min-width: 1440px) {
   .nav-item:before, .nav-item a:before {
-    bottom: 5px;
+    bottom: 13px;
   }
 
   p {

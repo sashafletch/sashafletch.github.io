@@ -9,7 +9,7 @@ body {
 .button {
   display: block;
   margin: 20px auto 0 auto;
-  width: 100%;
+  max-width: 100%;
 }
 
 .slider {
@@ -17,6 +17,7 @@ body {
   color: #000;
   height: auto;
   width: 100%;
+  margin-top: 25px;
 }
 
 .slider h2 {
@@ -84,7 +85,7 @@ nav.greyNavItem, nav.greyNavItem a {
 }
 
 .pocket-hero {
-  background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("../images/pocket.png");
+  background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("../images/pocket.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,27 +94,21 @@ nav.greyNavItem, nav.greyNavItem a {
 }
 
 .pocket-about-textbox {
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
   color: #000;
-  outline: 2px solid #ffae3f;
   outline-offset: -2em;
-  padding: 3em;
+  padding: 10px 25px;
   position: relative;
-  text-align: center;
   width: 100vw;
   }
 
 .pocket-about-textbox h2 {
-  background: #f5f5f5;
+  background: #f9f9f9;
   color: #4c4c4c;
   font-size: 1.12rem;
   font-weight: 500;
-  left: 50%;
-  margin-top: 0;
-  padding: 0 .5em;
-  position: absolute;
-  transform: translateX(-50%);
-  top: 1.25em;
+  margin-top: 20px;
+  padding-left: 0;
 }
 
 .port-button {
@@ -258,6 +253,13 @@ nav.greyNavItem, nav.greyNavItem a {
 
 /* Wireframes===================== */
 
+  .sketches {
+    display: block;
+    width: 50vw;
+    height: auto;
+    margin: 2em auto;
+  }
+
   .sketch_wires img {
     display: block;
     margin: 25px auto;
@@ -269,6 +271,26 @@ nav.greyNavItem, nav.greyNavItem a {
     display: none;
   }
 
+  .wire-detail div {
+    display: flex;
+    align-items: baseline;
+    padding: 0;
+  }
+
+  .wire-detail h3 {
+    background-color: #FFAE3F;
+    border-radius: 50%;
+    color: #FFF;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 1rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin: 1rem 1rem 1rem 0;
+    text-align: center;
+    width: 1.5rem;
+  }
+
   /* Testing================ */
 
   .testing-wrapper img {
@@ -277,7 +299,23 @@ nav.greyNavItem, nav.greyNavItem a {
     width: 60%;
   }
 
+  .testing-wrapper h4 {
+    font-weight: 600;
+    text-align: center;
+    margin: 2em auto 0 auto;
+  }
+
+  .percentage {
+    color: #ffae3f;
+    font-weight: 600;
+  }
+
+
   /* Final Design=================== */
+
+  .closeups {
+    padding: 10px 25px;
+  }
 
   .closeups img {
     display: block;
@@ -287,7 +325,7 @@ nav.greyNavItem, nav.greyNavItem a {
   }
 
   .final {
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
     outline: 2px solid rgb(0, 0, 0,0.2);
     outline-offset: -2em;
     margin-top: 25px;
@@ -297,7 +335,7 @@ nav.greyNavItem, nav.greyNavItem a {
   }
 
   .final h2 {
-    background: #f5f5f5;
+    background: #f9f9f9;
     font-size: 1.5rem;
     font-weight: 500;
     left: 50%;
@@ -354,7 +392,6 @@ nav.greyNavItem, nav.greyNavItem a {
     }
 
     .button {
-      margin-left: 0;
       width: 200px;
     }
 
@@ -364,29 +401,13 @@ nav.greyNavItem, nav.greyNavItem a {
 
     .pocket-about-textbox h2 {
       font-size: 1.5rem;
-      top: 0.8em;
-      left: 6.75em;
-    }
-
-    .pocket-about {
-      background: url("../images/pocket-design.jpg");
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-position: 55% 25%;
-      background-size: cover;
-      height: 100vh;
-      margin: 4em;
-      padding: 5em;
+      margin-top: 10px;
+      margin-bottom: 20px;
     }
 
     .pocket-about-textbox {
-      box-shadow: 0 0 3em 0 rgba(0,0,0,.25);
-      padding: 4em;
-      position: relative;
+      padding: 25px 75px;
       text-align: left;
-      top: -3em;
-      left: 3em;
-      width: 55vw;
     }
 
     .port-button {
@@ -449,6 +470,7 @@ nav.greyNavItem, nav.greyNavItem a {
       display: grid;
       grid-template-columns: 50% 50%;
       grid-row-gap: 0;
+      margin: 4em 3em 2em 3em;
     }
 
     .persona-about {
@@ -500,16 +522,16 @@ nav.greyNavItem, nav.greyNavItem a {
 
     .sketch-wrapper {
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: repeat(2, 1fr);
       grid-row-gap: 40px;
+      margin: .5em 3em 2em 3em;
     }
 
     /* Testing====================== */
     .testing-wrapper {
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 20px;
-      margin-top: 25px;
     }
 
     .testing-wrapper img {
@@ -518,6 +540,10 @@ nav.greyNavItem, nav.greyNavItem a {
     }
 
     /* Final Design================ */
+
+    .closeups {
+      padding: 0;
+    }
 
     .closeups .wrapper {
       grid-row-gap: 10px;
@@ -564,26 +590,6 @@ nav.greyNavItem, nav.greyNavItem a {
 
     .intro-text h1 {
       font-size: 5.5em;
-    }
-
-    .pocket-about {
-      margin: 5em;
-      padding: 8em;
-      }
-
-    .pocket-about-textbox {
-      padding: 4em;
-      top: -3em;
-      left: 3em;
-      width: 70%;
-    }
-
-    .pocket-about-textbox h2 {
-      font-size: 1.5rem;
-      font-weight: 500;
-      left: 9.75em;
-      margin-top: 0;
-      top: 0.8em;
     }
 
     .title-bar {
