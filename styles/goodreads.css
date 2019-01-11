@@ -1,0 +1,805 @@
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 10px 25px;
+}
+
+.button {
+  display: block;
+  margin: 20px auto 0 auto;
+  max-width: 100%;
+}
+
+.slider {
+  background: #f9f9f9;
+  color: #000;
+  height: auto;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.slider h2 {
+  color: #000;
+  margin-top: 0;
+  padding: 30px 0 20px 0;
+}
+
+/* Typography==================== */
+
+h2 {
+  margin: 30px auto 10px auto;
+  padding-left: 25px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.bold_italic {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
+/*Navigation Bar*/
+
+nav.greyNavItem, nav.greyNavItem a {
+  color: #000;
+}
+
+.whiteNavItem, .whiteNavItem a {
+  color: #FFF;
+}
+
+.whiteNavItem:hover, .whiteNavItem a:hover {
+  color: #000;
+}
+
+/* hero============= */
+
+  .intro {
+    height: 100vh;
+    margin-bottom: 0;
+    overflow-y: hidden;
+  }
+
+  .intro-text h1 {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1rem;
+    margin-top: 8rem;
+    font-size: 3rem;
+  }
+
+  .intro-text {
+    color: #fff;
+    padding-top: 10em;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .goodreads-hero {
+    background:linear-gradient(rgba(255, 255, 255, -2.4), rgba(0, 0, 0, 1.0)), url("../images/goodreads/goodreads-hero2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+  }
+
+  .goodreads-about-textbox {
+    background-color: #f9f9f9;
+    color: #000;
+    outline-offset: -2em;
+    padding: 10px 25px;
+    position: relative;
+    width: 100vw;
+    }
+
+  .goodreads-about-textbox h2 {
+    background: #f9f9f9;
+    color: #4c4c4c;
+    font-size: 1.12rem;
+    font-weight: 500;
+    margin-top: 20px;
+    padding-left: 0;
+  }
+
+  .port-button {
+    background-color: rgba(255,255,255,0.5);
+    border: none;
+    color: #000;
+    font-size: 0.85rem;
+    margin: 4em auto 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+    width: 50vw;
+    }
+
+  .port-button:hover {
+    background-color: rgba(239, 239, 239, 0.5);
+    border: none;
+    color: #FFF;
+  }
+
+  /*Intro*/
+
+  .design_role h3 {
+    display: block;
+    margin: 10px auto;
+    padding-top: 15px;
+    text-align: center;
+  }
+
+  .design_role li, .design_role p {
+    text-align: center;
+  }
+
+  .design_role p {
+    padding: 0;
+  }
+
+  /* Competitive Analysis============== */
+
+  .bullet-listing {
+    list-style: disc inside;
+  }
+
+  .competition {
+    max-width: 100%;
+  }
+
+  .competitionIcon {
+    display: inline-block;
+    height: 65px;
+    object-fit: contain;
+    margin: 25px auto;
+    padding-right: 10px;
+    width: 33%;
+  }
+
+  blockquote {
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  blockquote p {
+    margin-left: 1rem;
+  }
+
+  .vertical {
+    border-left: .15rem solid #ffae3f;
+    margin: 2rem 1rem;
+  }
+
+  /* User Research====================== */
+
+  #graph1 {
+    float: none;
+    height: 250px !important;
+    margin-bottom: 40px;
+    width: 250px !important;
+  }
+
+  #graph2, .mobile_graphs h4:nth-child(2){
+    display: none !important;
+  }
+
+  canvas {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .chart-legend {
+  font-size: 1rem;
+  margin-top: 1.5em;
+  }
+
+  .chart-legend li span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+  }
+
+  .chart-legend li {
+    font-size: 1rem;
+  }
+
+  /* Personas================= */
+
+  .demographic {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .demographic img {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    height: auto;
+  }
+
+  .mobile-persona {
+    text-align: center;
+  }
+
+  .mobile-persona h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.75em 0;
+  }
+
+  .mobile-persona h2 {
+    color: rgb(213, 59, 110);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 1em auto 0.25em auto;
+    padding: 0;
+  }
+
+  .mobile-persona p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .persona-info {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .preference_line {
+    background: #DB9BAC;
+    height: 1px;
+    margin: 30px 0 30px 0;
+    width: 100%;
+  }
+
+  .laptop-persona {
+    display: none;
+  }
+
+  .goals {
+    height: auto;
+  }
+
+  /* User Flows================ */
+
+  .userflows {
+    display: none;
+  }
+
+  /* Wireframes===================== */
+
+    .sketch_wires img {
+      display: block;
+      margin: 25px auto;
+      width: 100%;
+      height: auto;
+    }
+
+    .big-sketch {
+      display: none;
+    }
+
+    .wire-detail div {
+      display: flex;
+      align-items: baseline;
+      padding: 0;
+    }
+
+    .wire-detail h4 {
+      border-radius: 50%;
+      color: #FFF;
+      flex-grow: 0;
+      flex-shrink: 0;
+      font-size: 1rem;
+      height: 1.5rem;
+      line-height: 1.5rem;
+      margin: 1rem 1rem 1rem 0;
+      text-align: center;
+      width: 1.5rem;
+    }
+
+    .red h4 {
+      background-color: #F44336;
+    }
+
+    .green h4 {
+      background-color: #4CAF50;
+    }
+
+    #yellow {
+      background-color: #EFC10A;
+    }
+
+    /* Testing==================== */
+
+    .mobile_preference h3:nth-of-type(1) {
+      margin-top: 0;
+    }
+
+    .testing img {
+      display: block;
+      height: auto;
+      width: 90%;
+      margin: 25px auto;
+      object-fit: contain;
+    }
+
+    h4 {
+      color: #f28c00;
+      font-size: 1.15rem;
+      text-align: center;
+    }
+
+    .preference-tests {
+      display: none;
+    }
+
+    /* Final Design=================== */
+
+    .closeups {
+      padding: 10px 25px;
+    }
+
+    .closeups h3 {
+      text-align: center;
+    }
+
+    .closeups img {
+      display: block;
+      height: auto;
+      margin: 0 auto 3rem auto;
+      width: 90%;
+    }
+
+    .closeups img:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .footer-wrapper {
+      display: block;
+    }
+
+    .footer-icons {
+      text-align: center;
+    }
+
+    .fa {
+      font-size: 1.5em !important;
+      margin: 5px 10px;
+    }
+
+    .footer-copy {
+      padding-top: 25px;
+      padding-left: 30px;
+      width: 100%;
+      }
+
+    .copyright {
+      display: block;
+      margin: 1em auto;
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 575px) {
+
+      h3 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+
+      h4 {
+        text-align: left;
+      }
+
+      li {
+        font-size: 1rem;
+      }
+
+      .container {
+        padding: 25px 75px;
+      }
+
+      .button {
+        width: 200px;
+      }
+
+      .vertical {
+        border-left: .15rem solid #ffae3f;
+        margin: 2.5rem;
+      }
+
+      .intro {
+        overflow-y: hidden;
+      }
+
+      .intro-text h1 {
+        margin-top: .5em;
+      }
+
+      .goodreads-about-textbox h2 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      .goodreads-about-textbox {
+        padding: 25px 75px;
+        text-align: left;
+      }
+
+      .port-button {
+        margin: 0 auto;
+        width: 25vw;
+      }
+
+      .title-bar {
+        background: #ffae3f;
+        height: 50px;
+        position: absolute;
+        margin: -7px 0;
+        opacity: 1;
+        width: 40vw;
+        z-index: 2;
+      }
+
+      .section-title {
+        color: #FFF;
+        font-size: 1.25rem;
+        letter-spacing: 0.025em;
+        margin-bottom: 25px;
+        margin-left: 0;
+        max-width: 50%;
+        position: relative;
+        top: 0.4em;
+        z-index: 3;
+      }
+
+      .role-wrapper {
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-column-gap: 10px;
+        margin: 25px 100px;
+      }
+
+      /* Graphs===================== */
+
+      #graph2 {
+        height: 300px !important;
+        width: 550px !important;
+      }
+
+
+      /* Personas================= */
+
+      .mobile-persona {
+        display: none;
+      }
+
+      .laptop-persona {
+        display: block;
+      }
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row-gap: 0;
+      }
+
+      .persona-about {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .laptop-persona h2 {
+        color: rgb(213, 59, 110);
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 0;
+        padding: 0 .5em;
+        margin-bottom: 0.25em;
+      }
+
+      .laptop-persona h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0.75em 0;
+      }
+
+      .persona-about p {
+        line-height: 100%;
+      }
+
+      .persona1-img {
+        background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/goodreads/jador.jpg");
+        background-repeat: no-repeat;
+        background-position: 55% 2%;
+        background-size: cover;
+      }
+
+      .persona2-img {
+        background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/goodreads/uchenna.jpg");
+        background-repeat: no-repeat;
+        background-position: 55% 20%;
+        background-size: cover;
+      }
+
+      .persona3-img {
+        background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/goodreads/marcia.jpg");
+        background-repeat: no-repeat;
+        background-position: 55% 46%;
+        background-size: cover;
+      }
+
+      /* User Flows================ */
+
+      .userflows {
+        display: block;
+      }
+
+      .flow img {
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        object-fit: cover;
+        width: 50vw;
+      }
+
+      /* Wireframes===================== */
+
+      .mobile_wires {
+        display: none;
+      }
+
+      .big-sketch {
+        display: block;
+      }
+
+      .sketch-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-row-gap: 20px;
+      }
+
+      .griditem1 {
+        grid-column-start: 1;
+        grid-column-end: -1;
+      }
+
+      .sketch-wrapper img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      /* Testing==================== */
+
+      .mobile_preference {
+        display: none;
+      }
+
+      .preference-tests {
+        display: block;
+      }
+
+      .testing-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: .5em 3em 0 3em;
+      }
+
+      .testing-wrapper h4 {
+        font-weight: 600;
+        text-align: center;
+        margin: 0 auto 2em auto;
+      }
+
+      .testing-wrapper img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      blockquote {
+        margin: 1rem auto;
+      }
+
+      blockquote p {
+        display: block;
+        margin: 0 auto;
+        padding-left: 1.25rem;
+        width: 100%;
+      }
+
+      #test-results {
+        padding-bottom: 0;
+      }
+
+      #no-top-padding {
+        padding-top: 0;
+      }
+
+      /* Final Design================ */
+
+      .closeups {
+        padding: 0;
+      }
+
+      .closeups h4 {
+        padding: 25px 75px 0 75px;
+      }
+
+      .closeups .test-wrap4 {
+        grid-row-gap: 10px;
+      }
+
+      .closeups img {
+        width: 90%;
+      }
+
+      .closeups div {
+        padding: 10px;
+      }
+
+      .final h2 {
+        padding-left: 0;
+      }
+
+      .footer-wrapper {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-column-gap: 20px;
+        padding: 5px 25px;
+      }
+
+      .footer-icons {
+        padding-top: 1em;
+      }
+
+      .footer-copy {
+        padding: 25px 0 25px 30px;
+      }
+
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+      .container {
+        padding: 25px 275px;
+      }
+
+      #special-container {
+        padding: 0;
+      }
+
+      .griditem1 {
+        padding-left: 175px;
+        padding-right: 175px;
+      }
+
+      .sketch-wrapper{
+        margin: 0 100px;
+      }
+
+      li {
+        font-size: 1.25rem;
+      }
+
+      .intro-text {
+        padding: 175px 100px;
+      }
+
+      .intro-text h1 {
+        font-size: 5.5em;
+      }
+
+      .goodreads-about {
+        background: url("../images/goodreads/goodreads-hero2.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 55% 25%;
+        background-size: cover;
+        height: 100vh;
+        margin: 5em;
+        padding: 8em;
+      }
+
+      .goodreads-about-textbox {
+        outline: 2px solid #ffae3f;
+        padding: 4em;
+        top: -16em;
+        left: -10em;
+        width: 70%;
+      }
+
+      .goodreads-about-textbox h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        left: 6.75em;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0 .5em;
+        position: absolute;
+        transform: translateX(-50%);
+        top: 0.8em;
+      }
+
+      .title-bar {
+        margin: -7px 0;
+        width: 30vw;
+      }
+
+      .section-title {
+        left: 0;
+        margin-bottom: 25px;
+        max-width: 50%;
+        top: 0.5em;
+      }
+
+      /* Graphs============ */
+
+      #graph2 {
+        width: 650px !important;
+      }
+
+      /* User Personas=========== */
+
+      .persona3-img {
+        background-position: 55% 0;
+      }
+
+      .persona1-img {
+        background-position: 55% 15%;
+      }
+
+      /* Testing=============== */
+
+
+      /* Footer==================== */
+
+      .footer-icons {
+        padding-top: .25em;
+      }
+
+    }
+
+    @media only screen and (min-width: 2560px) {
+
+      .container {
+        padding: 50px 500px;
+      }
+
+      .title-bar {
+        height: 75px;
+      }
+
+      .wire-detail h3 {
+        font-size: 2rem;
+        height: 3.5rem;
+        width: 3.5rem;
+        line-height: 3.5rem;
+      }
+    }

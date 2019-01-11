@@ -5,11 +5,11 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ["Close Friends/Family", "Personal Trainers", "Someone with similar fitness goals", "Someone who has achieved my goals", "Other"],
+        labels: ["Daily Visits", "Weekly Visits", "Monthly Visits", "A Few Per Year"],
         datasets: [{
-            label: "Whose support would keeps you motivated the most?",
-            backgroundColor: ["#FADE39", "#46bebc", "#E81D62", "#8AC249", "#9B26AF"],
-            data: [18, 16, 47, 15, 4]
+            label: "How active are you on Goodreads?",
+            backgroundColor: ["#FADE39", "#46bebc", "#E81D62", "#8AC249"],
+            data: [0, 12.5, 25, 62.5]
         }]
     },
     options: {
@@ -30,7 +30,7 @@ var chart = new Chart(ctx, {
       responsive: true,
       title: {
         display: false,
-        text: "Whose support would keep you motivated the most?",
+        text: "How active are you on Goodreads?",
       },
       legend: {
         display: false,
@@ -47,11 +47,11 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ["Log Workout", "Connect with others", "Easy to use", "Motivation", "Accountability", "Other"],
+        labels: ["Browse books", "View recommended books", "View book's rating", "Add rating", "Add book to shelf", "Browse book lists"],
         datasets: [{
-            label: "What features do you like most about your app?",
+            label: "What activities are you involved in the most on Goodreads?",
             backgroundColor: [ "#FADE39","#E81D62", "#46BEBC", "#8AC249", "#9B26AF"],
-            data: [24, 4, 32, 17, 18, 6]
+            data: [6, 6, 6, 2, 1, 2]
         }]
     },
     options: {
@@ -72,7 +72,7 @@ var chart = new Chart(ctx, {
       responsive: true,
       title: {
         display: false,
-        text: "What features do you like most about your app?",
+        text: "What activities are you involved in the most on Goodreads??",
       },
     legend: {
       display: false,

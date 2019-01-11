@@ -740,12 +740,12 @@
     grid-row-gap: 10px;
   }
 
-  .closeups img {
-    width: 100%;
+  .closeups div {
+    padding: 2rem;
   }
 
-  .closeups div {
-    padding: 10px;
+  .closeups img {
+    margin-top: 1rem;
   }
 
   .final p:nth-of-type(2) {
