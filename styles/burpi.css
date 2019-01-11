@@ -675,7 +675,7 @@
 
   .sketch-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 50px;
     margin: .5em 3em 2em 3em;
     padding-top: 5em;
@@ -686,8 +686,8 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 75%;
-    height: 300px;
+    width: 90%;
+    max-height: 300px;
     object-fit: contain;
   }
 
