@@ -569,26 +569,11 @@ nav.greyNavItem, nav.greyNavItem a {
         display: block;
       }
 
-      .sketch-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        grid-row-gap: 20px;
-      }
-
-      .griditem1 {
-        grid-column-start: 1;
-        grid-column-end: -1;
-      }
-
-      .sketch-wrapper img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        width: 90%;
+      .big-sketch img {
+        max-width: 90%;
         height: auto;
-        object-fit: contain;
+        margin: 0 auto;
+        display: block;
       }
 
       /* Testing==================== */
@@ -689,19 +674,6 @@ nav.greyNavItem, nav.greyNavItem a {
 
       .container {
         padding: 25px 275px;
-      }
-
-      #special-container {
-        padding: 0;
-      }
-
-      .griditem1 {
-        padding-left: 175px;
-        padding-right: 175px;
-      }
-
-      .sketch-wrapper{
-        margin: 0 100px;
       }
 
       li {
