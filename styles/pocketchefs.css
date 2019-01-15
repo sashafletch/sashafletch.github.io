@@ -609,6 +609,16 @@ nav.greyNavItem, nav.greyNavItem a {
       background-position: 55% 50%;
     }
 
+    /* Final Design============= */
+    .closeups img {
+      width: 100%;
+    }
+
+    #last-button {
+      margin-bottom: 50px;
+    }
+
+
       /* Footer==================== */
 
     .footer-icons {

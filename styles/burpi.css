@@ -441,17 +441,23 @@
     margin-bottom: 2em;
   }
 
-  /* Final Design=================== */
+  /* Visual Iteration================ */
 
-  .closeups {
-    padding: 10px 25px;
+  .visual-iteration {
+    display: none;
   }
+
+  /* Final Design=================== */
 
   .closeups img {
     display: block;
     height: auto;
     margin: 0 auto;
     width: 75%;
+  }
+
+  .closeups ul {
+    list-style: disc inside;
   }
 
   .final {
@@ -516,6 +522,10 @@
   h3 {
     margin-top: 30px;
     margin-bottom: 20px;
+  }
+
+  li {
+    font-size: 1rem;
   }
 
   .container {
@@ -675,7 +685,7 @@
 
   .sketch-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 40% 60%;
     grid-row-gap: 50px;
     margin: .5em 3em 2em 3em;
     padding-top: 5em;
@@ -686,8 +696,8 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 90%;
-    max-height: 300px;
+    width: 100%;
+    max-height: 500px;
     object-fit: contain;
   }
 
@@ -730,22 +740,54 @@
     margin-top: 0;
   }
 
+  /* Visual Iteration================ */
+
+  .visual-iteration {
+    display: block;
+  }
+
+  .iteration-wrapper {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-row-gap: 50px;
+    margin: .5em 3em 2em 3em;
+  }
+
+  .iteration-wrapper img, .iteration-wrapper h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  .before-img {
+    max-height: 300px;
+    width: 90%;
+  }
+
+  .large-height {
+    max-height: 400px;
+    width: 100%;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+
   /* Final Design================ */
 
   .closeups {
     padding: 0;
   }
 
-  .closeups .test-wrap4 {
-    grid-row-gap: 10px;
-  }
-
-  .closeups div {
-    padding: 2rem;
-  }
-
   .closeups img {
     margin-top: 1rem;
+  }
+
+  #last-button {
+    margin-bottom: 50px;
   }
 
   .final p:nth-of-type(2) {
@@ -773,6 +815,10 @@
 
   .container {
     padding: 25px 275px;
+  }
+
+  li {
+    font-size: 1.25rem;
   }
 
   .intro-text {
@@ -835,9 +881,26 @@
   /* Testing=============== */
 
   .testing img {
-    height: 250px;
+    height: 350px;
   }
 
+  /* Visual Iteration============== */
+
+  .before-img {
+    max-height: 400px;
+    width: 90%;
+  }
+
+  .large-height {
+    max-height: 600px;
+    width: 100%;
+  }
+
+  /* Final Design=============== */
+
+  .closeups img {
+    width: 60%;
+  }
 
   /* Footer==================== */
 

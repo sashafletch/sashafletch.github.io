@@ -290,8 +290,11 @@ nav.greyNavItem, nav.greyNavItem a {
       height: auto;
     }
 
-    .big-sketch {
-      display: none;
+    .big-sketch img {
+      max-width: 90%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
     }
 
     .wire-detail div {
@@ -311,14 +314,6 @@ nav.greyNavItem, nav.greyNavItem a {
       margin: 1rem 1rem 1rem 0;
       text-align: center;
       width: 1.5rem;
-    }
-
-    .red h4 {
-      background-color: #F44336;
-    }
-
-    .green h4 {
-      background-color: #4CAF50;
     }
 
     #yellow {
@@ -350,6 +345,34 @@ nav.greyNavItem, nav.greyNavItem a {
     }
 
     /* Final Design=================== */
+
+    .final {
+      background-color: #f9f9f9;
+      outline: 2px solid rgb(0, 0, 0,0.2);
+      outline-offset: -2em;
+      margin-top: 25px;
+      padding: 3em;
+      position: relative;
+      width: 100vw;
+    }
+
+    .final h2 {
+      background: #f9f9f9;
+      font-size: 1.5rem;
+      font-weight: 500;
+      left: 50%;
+      margin-top: 0;
+      padding: 0 .5em;
+      position: absolute;
+      transform: translateX(-50%);
+      text-align: center;
+      top: 0.6em;
+    }
+
+    .final p {
+      margin-top: 30px;
+      margin-bottom: 1em;
+    }
 
     .closeups {
       padding: 10px 25px;
@@ -471,17 +494,21 @@ nav.greyNavItem, nav.greyNavItem a {
 
       .role-wrapper {
         display: grid;
-        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 10px;
         margin: 25px 100px;
       }
 
       /* Graphs===================== */
+/*
+      #graph2, .mobile_graphs h4:nth-child(2) {
+        display: block;
+      }
 
       #graph2 {
-        height: 300px !important;
-        width: 550px !important;
-      }
+        height: 300px;
+        width: 550px;
+      } */
 
 
       /* Personas================= */
@@ -541,7 +568,7 @@ nav.greyNavItem, nav.greyNavItem a {
       .persona3-img {
         background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/goodreads/marcia.jpg");
         background-repeat: no-repeat;
-        background-position: 55% 46%;
+        background-position: 55% 10%;
         background-size: cover;
       }
 
@@ -557,23 +584,6 @@ nav.greyNavItem, nav.greyNavItem a {
         margin: 0 auto;
         object-fit: cover;
         width: 50vw;
-      }
-
-      /* Wireframes===================== */
-
-      .mobile_wires {
-        display: none;
-      }
-
-      .big-sketch {
-        display: block;
-      }
-
-      .big-sketch img {
-        max-width: 90%;
-        height: auto;
-        margin: 0 auto;
-        display: block;
       }
 
       /* Testing==================== */
@@ -603,7 +613,7 @@ nav.greyNavItem, nav.greyNavItem a {
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        width: 90%;
+        width: 60%;
         height: auto;
         object-fit: contain;
       }
@@ -617,6 +627,10 @@ nav.greyNavItem, nav.greyNavItem a {
         margin: 0 auto;
         padding-left: 1.25rem;
         width: 100%;
+      }
+
+      .griditem {
+        grid-column-start: 2;
       }
 
       #test-results {
@@ -649,8 +663,8 @@ nav.greyNavItem, nav.greyNavItem a {
         padding: 10px;
       }
 
-      .final h2 {
-        padding-left: 0;
+      .final p {
+        margin-bottom: 2em;
       }
 
       .footer-wrapper {
@@ -676,6 +690,10 @@ nav.greyNavItem, nav.greyNavItem a {
         padding: 25px 275px;
       }
 
+      #special-container {
+        padding: 0;
+      }
+
       li {
         font-size: 1.25rem;
       }
@@ -689,11 +707,11 @@ nav.greyNavItem, nav.greyNavItem a {
       }
 
       .goodreads-about {
-        background: url("../images/goodreads/goodreads-hero2.jpg");
+        background: url("../images/goodreads/sketch2.jpg");
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: 55% 25%;
-        background-size: cover;
+        background-size: contain;
         height: 100vh;
         margin: 5em;
         padding: 8em;
@@ -733,22 +751,24 @@ nav.greyNavItem, nav.greyNavItem a {
 
       /* Graphs============ */
 
-      #graph2 {
-        width: 650px !important;
-      }
+      /* #graph2 {
+        width: 650px;
+      } */
 
       /* User Personas=========== */
 
       .persona3-img {
-        background-position: 55% 0;
+        background-position: 55% 10%;
       }
 
       .persona1-img {
         background-position: 55% 15%;
       }
 
-      /* Testing=============== */
-
+      /* Final Design=============== */
+      #last-button {
+        margin-bottom: 50px;
+      }
 
       /* Footer==================== */
 

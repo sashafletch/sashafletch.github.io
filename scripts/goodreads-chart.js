@@ -50,8 +50,8 @@ var chart = new Chart(ctx, {
         labels: ["Browse books", "View recommended books", "View book's rating", "Add rating", "Add book to shelf", "Browse book lists"],
         datasets: [{
             label: "What activities are you involved in the most on Goodreads?",
-            backgroundColor: [ "#FADE39","#E81D62", "#46BEBC", "#8AC249", "#9B26AF"],
-            data: [6, 6, 6, 2, 1, 2]
+            backgroundColor: [ "#FADE39","#E81D62", "#46BEBC", "#8AC249", "#9B26AF", "#FFA500"],
+            data: [75, 75, 75, 25, 12.5, 25]
         }]
     },
     options: {
