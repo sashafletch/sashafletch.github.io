@@ -164,7 +164,7 @@ h4 {
   margin-top: 1em;
 }
 
-.port-button {
+.project-button {
   font-size: 0.85rem;
   margin: 3em auto;
   width: 200px;
@@ -293,7 +293,7 @@ h4 {
     text-align: left;
   }
 
-  .port-button {
+  .project-button {
     margin: 3em auto 3em 0;
   }
 
