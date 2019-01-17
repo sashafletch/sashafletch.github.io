@@ -637,12 +637,6 @@ body, html {
       width: 275px;
   }
 
-  /* Navigation=================== */
-
-  .nav-item:before, .nav-item a:before {
-    bottom: 13px;
-  }
-
 /* Elements======================= */
 
   .medbutton {

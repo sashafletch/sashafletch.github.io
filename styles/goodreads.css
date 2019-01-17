@@ -91,7 +91,7 @@ nav.greyNavItem, nav.greyNavItem a {
   }
 
   .goodreads-hero {
-    background:linear-gradient(rgba(255, 255, 255, -2.4), rgba(0, 0, 0, 1.0)), url("../images/goodreads/goodreads-hero2.jpg");
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, -2.4)), url("../images/goodreads/goodreads-hero3a.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
