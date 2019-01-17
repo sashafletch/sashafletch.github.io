@@ -419,20 +419,6 @@
     width: 1.5rem;
   }
 
-  blockquote {
-    margin: 20px 0;
-    text-align: left;
-  }
-
-  blockquote p {
-    margin-left: 1rem;
-  }
-
-  .vertical {
-    border-left: .3rem solid #ffae3f;
-    margin: 2.5rem;
-  }
-
   /* Final Design=================== */
 
   .closeups img {
@@ -732,18 +718,6 @@
     height: auto;
     margin: 0 auto;
     width: 80%;
-  }
-
-  blockquote {
-    margin: 2em auto;
-  }
-
-  blockquote p {
-    display: block;
-    font-size: 1.25em;
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
   }
 
   .mobile_viewbtn, .web_viewbtn {

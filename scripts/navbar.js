@@ -7,9 +7,9 @@ $(document).ready(function(){
     if(scroll_start > offset.top) {
       $('#navbar').css('background-color', '#ffffff');
       $('.large-nav-item').css('background-color', '#ffffff');
-      $('.nav_main li').css('color', '#000000');
-      $('#nav_about a').css('color', '#000000');
-      $('#nav_resume a').css('color', '#000000');
+      $('.nav_main li').css('color', '#4c4c4c');
+      $('#nav_about a').css('color', '#4c4c4c');
+      $('#nav_resume a').css('color', '#4c4c4c');
       $('#navbar').css('box-shadow', '0 2px 2px -2px rgba(0,0,0,.2)');
     } else {
       $('#navbar').css('background-color', 'transparent');

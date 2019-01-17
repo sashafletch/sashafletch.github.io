@@ -153,20 +153,6 @@ nav.greyNavItem, nav.greyNavItem a {
     width: 33%;
   }
 
-  blockquote {
-    margin: 20px 0;
-    text-align: left;
-  }
-
-  blockquote p {
-    margin-left: 1rem;
-  }
-
-  .vertical {
-    border-left: .15rem solid #ffae3f;
-    margin: 2rem 1rem;
-  }
-
   /* User Research====================== */
 
   #graph1 {
@@ -420,15 +406,6 @@ nav.greyNavItem, nav.greyNavItem a {
         padding: 25px 75px;
       }
 
-      .button {
-        width: 200px;
-      }
-
-      .vertical {
-        border-left: .15rem solid #ffae3f;
-        margin: 2.5rem;
-      }
-
       .intro {
         overflow-y: hidden;
       }
@@ -595,7 +572,7 @@ nav.greyNavItem, nav.greyNavItem a {
         height: auto;
         object-fit: contain;
       }
-
+/*
       blockquote {
         margin: 1rem auto;
       }
@@ -605,7 +582,7 @@ nav.greyNavItem, nav.greyNavItem a {
         margin: 0 auto;
         padding-left: 1.25rem;
         width: 100%;
-      }
+      } */
 
       .griditem {
         grid-column-start: 2;
@@ -670,10 +647,6 @@ nav.greyNavItem, nav.greyNavItem a {
 
       #special-container {
         padding: 0;
-      }
-
-      li {
-        font-size: 1.25rem;
       }
 
       .intro-text {
