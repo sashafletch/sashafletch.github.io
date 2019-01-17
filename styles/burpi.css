@@ -7,12 +7,6 @@
     padding: 10px 25px;
   }
 
-  .button {
-    display: block;
-    margin: 20px auto 0 auto;
-    max-width: 100%;
-  }
-
   .slider {
     background: #f9f9f9;
     color: #000;
@@ -98,7 +92,7 @@
     background-color: #f9f9f9;
     color: #000;
     outline-offset: -2em;
-    padding: 10px 25px;
+    padding: 10px 25px 25px 25px;
     position: relative;
     width: 100vw;
     }
@@ -107,26 +101,9 @@
     background: #f9f9f9;
     color: #4c4c4c;
     font-size: 1.12rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 20px;
     padding-left: 0;
-  }
-
-  .port-button {
-    background-color: rgba(255,255,255,0.5);
-    border: none;
-    color: #000;
-    font-size: 0.85rem;
-    margin: 4em auto 0 auto;
-    padding: 10px 20px;
-    text-align: center;
-    width: 50vw;
-    }
-
-  .port-button:hover {
-    background-color: rgba(239, 239, 239, 0.5);
-    border: none;
-    color: #FFF;
   }
 
   /*Intro*/
@@ -262,6 +239,7 @@
     height: auto;
     margin: 20px auto 0 auto;
     width: 90%;
+    max-width: 500px;
   }
 
   /* User Flows================ */
@@ -316,7 +294,7 @@
 
   h4 {
     color: #f28c00;
-    font-size: 1.45rem;
+    font-size: 1.25rem;
   }
 
   .nomenclature-test img:nth-of-type(1) {
@@ -532,10 +510,6 @@
     padding: 25px 75px;
   }
 
-  .button {
-    width: 200px;
-  }
-
   .intro {
     overflow-y: hidden;
   }
@@ -553,11 +527,6 @@
   .burpi-about-textbox {
     padding: 25px 75px;
     text-align: left;
-  }
-
-  .port-button {
-    margin: 0 auto;
-    width: 25vw;
   }
 
   .title-bar {
@@ -705,7 +674,7 @@
     display: grid;
     grid-auto-rows: auto;
     grid-gap: 10px;
-    margin: .5em 3em 2em 3em;
+    margin: 2em 3em;
     justify-items: center;
   }
 
@@ -718,7 +687,12 @@
   }
 
   .test-wrap3 {
-    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  #oldnav img, #oldnav2 img {
+    display: inline-block;
+    margin: 10px;
   }
 
   .test-wrap4 {
@@ -729,7 +703,7 @@
   /* Testing========================= */
 
   .testing img {
-    height: 250px;
+    height: 200px;
     width: auto;
     margin: 0 auto;
     object-fit: contain;
@@ -786,10 +760,6 @@
     margin-top: 1rem;
   }
 
-  #last-button {
-    margin-bottom: 50px;
-  }
-
   .final p:nth-of-type(2) {
     margin-bottom: 2em;
   }
@@ -815,10 +785,6 @@
 
   .container {
     padding: 25px 275px;
-  }
-
-  li {
-    font-size: 1.25rem;
   }
 
   .intro-text {
