@@ -546,7 +546,7 @@
     margin: -7px 0;
     opacity: 1;
     width: 40vw;
-    z-index: 2;
+    z-index: 1;
   }
 
   .section-title {
@@ -558,7 +558,7 @@
     max-width: 50%;
     position: relative;
     top: 0.4em;
-    z-index: 3;
+    z-index: 2;
   }
 
   .role-wrapper {

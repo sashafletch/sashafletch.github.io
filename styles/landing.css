@@ -34,7 +34,7 @@ h4 {
 
 .intro {
   background: var(--container-bg-color);
-  height: 100vh;
+  height: 95vh;
   margin-bottom: 0;
   position: relative;
   overflow: hidden;
@@ -43,24 +43,18 @@ h4 {
 
 .intro-text h1 {
   font-family: 'Open Sans', sans-serif;
-  margin-bottom: 2.75rem;
+  margin-bottom: 2rem;
   margin-top: 2rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
+}
+
+.intro-text p {
+  font-size: 1rem;
 }
 
 @media only screen and (min-width: 375px) {
   .intro-text h1 {
-    font-size: 2.8rem;
-    margin-bottom: 2.75rem;
-    margin-top: 3.5rem;
-  }
-}
-
-@media only screen and (min-width: 425px) {
-  .intro-text h1 {
-    font-size: 3.25rem;
-    margin-top: 3.5rem;
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -161,7 +155,7 @@ h4 {
 
 .port-desc p {
   font-size: 1rem;
-  margin-top: 1em;
+  margin-top: .25em;
 }
 
 .project-button {
@@ -228,9 +222,17 @@ h4 {
 
 @media only screen and (min-width: 575px) {
 
+  .intro {
+    height: 85vh;
+  }
+
+  .intro-text p {
+    font-size: 1.15rem;
+  }
+
   :root {
-    --hover-width: 70%;
-    --other-width: 30%;
+    --hover-width: 60%;
+    --other-width: 40%;
     --speed: 1000ms;
   }
 
@@ -273,6 +275,9 @@ h4 {
     height: 100vh;
   }
 
+  .intro-text h1 {
+    margin-top: 0;
+  }
 
   .home-about-textbox h2 {
     margin-top: 0;
@@ -315,7 +320,7 @@ h4 {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
   .intro-text {
-    padding-top: 8em;
+    padding-top: 5em;
     padding-left: 3em;
   }
 }
@@ -330,8 +335,8 @@ h4 {
 
   .intro-text h1 {
     font-size: 5.5em;
-    margin-bottom: 1rem;
-    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 
   .intro-text {

@@ -11,6 +11,7 @@ $(document).ready(function(){
       $('#nav_about a').css('color', '#4c4c4c');
       $('#nav_resume a').css('color', '#4c4c4c');
       $('#navbar').css('box-shadow', '0 2px 2px -2px rgba(0,0,0,.2)');
+      $('#projectnav').css('display', 'block');
     } else {
       $('#navbar').css('background-color', 'transparent');
       $('.large-nav-item').css('background-color', 'rgba(250, 250, 250, 0.7)');
@@ -18,6 +19,7 @@ $(document).ready(function(){
       $('#nav_about a').css('color', '#ffffff');
       $('#nav_resume a').css('color', '#ffffff');
       $('#navbar').css('box-shadow', 'none');
+      $('#projectnav').css('display', 'none');
     }
   });
 });

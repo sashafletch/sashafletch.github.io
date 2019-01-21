@@ -36,6 +36,26 @@
               </li>
           </ul>
         </nav>
+        <nav id="projectnav">
+          <ul class="sections">
+            <li class="nav-item"><a href="#discovery">Discovery</a></li>
+            <li class="nav-item dropdown">Research
+              <ul class="dropdown-content">
+                <li class="dropdown-nav-item"><a href="#user-research">User Research</a></li>
+                <li class="dropdown-nav-item"><a href="#user-personas">User Personas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">Information Architecture
+              <ul class="dropdown-content">
+                <li class="dropdown-nav-item"><a href="#user-flows">User Flows</a></li>
+                <li class="dropdown-nav-item"><a href="#wireframes">Wireframes</a></li>
+                <li class="dropdown-nav-item"><a href="#testing">User Testing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown"><a href="#iteration">Visual Design</a></li>
+            <li class="nav-item"><a href="#prototype">Prototype</a></li>
+          </ul>
+        </nav>
         <nav class="nav_mobile">
           <div class="menuToggle">
             <input type="checkbox"/>
@@ -75,7 +95,7 @@
     </section>
     <section class="pocket-about clearfix" id="startchange">
       <div class="pocket-about-textbox container">
-        <h2>Meal Prep</h2>
+        <h2>Overview</h2>
         <p>Pocket Chefs provides affordable culinary professionals to assist families with their everyday cooking needs. The process of redesiging the web and mobile platforms was meant to better engage users through the booking process and increase the conversion rate of new registrants.</p>
       </div>
     </section>
@@ -85,6 +105,7 @@
         <div class="design_role role-wrapper">
           <div>
             <h3>Design Roles</h3>
+            <p class="bold_italic">Sole Designer</p>
             <ul class="text-center">
               <li>UX Design</li>
               <li>Visual Design</li>
@@ -116,8 +137,12 @@
         </div>
       </section>
       <!--Pocket Chefs Overview-->
-      <section class="slider container">
+      <section id="discovery" class="slider container">
         <div class="overview">
+          <div>
+            <h2>Pocket Chefs</h2>
+            <p>Pocket Chefs was my first opportunity to work with a client during my schooling. As a consumer-facing product, it also presented a good opportunity to challenge my visual design skills and learn how to communicate design to someone with little experience in it. In evaluating the problems with the site, I had to step into the role of a user and understand what would add trust to the product and encourage them to buy.</p>
+          </div>
           <div>
             <h3>The Challenge</h3>
             <p>Pocket Chefs had gone through several design iterations when I was contracted as the UX Designer. The challenge for me was to maintain the aesthetic look of the initial site but to modernize and tighten the user flow. This meant restructuring the site for easier navigation without much time for in-depth user testing. Furthermore, I had to align my design with my client's preferences and the capabilities of Wix, the platform that would be used for shipping the final product.</p>
@@ -129,7 +154,7 @@
         </div>
       </section>
       <!--User Research-->
-      <section class="clearfix">
+      <section id="user-research" class="clearfix">
         <header>
           <div class="title-bar"></div>
           <h2 class="section-title">User Research</h2>
@@ -147,87 +172,88 @@
         </div>
       </section>
       <!--User Personas-->
-      <section>
-        <div class="title-bar"></div>
-        <h2 class="section-title">User Personas</h2>
-      </section>
-      <div class="container">
-        <p>Based on the user research that had been conducted, I developed the following user personas to help guide the visual design.</p>
-      </div>
-      <div class="mobile-persona">
+      <section id="user-personas">
+        <header>
+          <div class="title-bar"></div>
+          <h2 class="section-title">User Personas</h2>
+        </header>
         <div class="container">
-          <div class="text-center persona1">
-            <div class="demographic">
-              <img src="images/pocket/parent.jpg">
-              <h2>Working Parent</h2>
-            </div>
-            <div class="persona-info">
-              <div>
-                <h3>Motivation</h3>
-                <p>Provide healthy and quick meal prep for family</p>
-                <p>Spend less time in the kitchen and more time with family</p>
+          <p>Based on the user research that had been conducted, I developed the following user personas to help guide the visual design.</p>
+        </div>
+        <div class="mobile-persona">
+          <div class="container">
+            <div class="text-center persona1">
+              <div class="demographic">
+                <img src="images/pocket/parent.jpg">
+                <h2>Working Parent</h2>
               </div>
-              <div>
-                <h3>Frustration</h3>
-                <p>Don't know what groceries to buy</p>
-                <p>Lack of time and resources</p>
-                <p>Inexperience in the kitchen</p>
+              <div class="persona-info">
+                <div>
+                  <h3>Motivation</h3>
+                  <p>Provide healthy and quick meal prep for family</p>
+                  <p>Spend less time in the kitchen and more time with family</p>
+                </div>
+                <div>
+                  <h3>Frustration</h3>
+                  <p>Don't know what groceries to buy</p>
+                  <p>Lack of time and resources</p>
+                  <p>Inexperience in the kitchen</p>
+                </div>
+              </div>
+            </div>
+            <div class="preference_line"></div>
+            <div class="text-center persona2">
+              <div class="demographic">
+                <img src="images/pocket/pocket-persona2.jpg">
+                <h2>Young Professional</h2>
+              </div>
+              <div class="persona-info">
+                <div>
+                  <h3>Motivation</h3>
+                  <p>Cheaper/healthier to meal prep</p>
+                  <p>Can create something can't find at restaurant</p>
+                </div>
+                <div>
+                  <h3>Frustration</h3>
+                  <p>Cleaning up takes time</p>
+                  <p>Wants more variety in meals</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="preference_line"></div>
-          <div class="text-center persona2">
-            <div class="demographic">
-              <img src="images/pocket/pocket-persona2.jpg">
-              <h2>Young Professional</h2>
-            </div>
-            <div class="persona-info">
-              <div>
-                <h3>Motivation</h3>
-                <p>Cheaper/healthier to meal prep</p>
-                <p>Can create something can't find at restaurant</p>
-              </div>
-              <div>
-                <h3>Frustration</h3>
-                <p>Cleaning up takes time</p>
-                <p>Wants more variety in meals</p>
-              </div>
-            </div>
+        </div>
+        <div class="laptop-persona wrapper clearfix">
+          <div class="persona1-img"></div>
+          <div class="persona-about">
+            <h2>Working Parent</h2>
+            <h3>Motivation</h3>
+            <p>Provide healthy and quick meal prep for family</p>
+            <p>Spend less time in the kitchen and more time with family</p>
+            <h3>Frustration</h3>
+            <p>Don't know what groceries to buy</p>
+            <p>Lack of time and resources</p>
+            <p>Inexperience in the kitchen</p>
           </div>
+          <div class="persona-about">
+            <h2>Young Professional</h2>
+            <h3>Motivation</h3>
+            <p>Cheaper/healthier to meal prep</p>
+            <p>Can create something can't find at restaurant</p>
+            <h3>Frustration</h3>
+            <p>Cleaning up takes time</p>
+            <p>Wants more variety in meals</p>
+          </div>
+          <div class="persona2-img"></div>
         </div>
-      </div>
-      <div class="laptop-persona wrapper clearfix">
-        <div class="persona1-img"></div>
-        <div class="persona-about">
-          <h2>Working Parent</h2>
-          <h3>Motivation</h3>
-          <p>Provide healthy and quick meal prep for family</p>
-          <p>Spend less time in the kitchen and more time with family</p>
-          <h3>Frustration</h3>
-          <p>Don't know what groceries to buy</p>
-          <p>Lack of time and resources</p>
-          <p>Inexperience in the kitchen</p>
-        </div>
-        <div class="persona-about">
-          <h2>Young Professional</h2>
-          <h3>Motivation</h3>
-          <p>Cheaper/healthier to meal prep</p>
-          <p>Can create something can't find at restaurant</p>
-          <h3>Frustration</h3>
-          <p>Cleaning up takes time</p>
-          <p>Wants more variety in meals</p>
-        </div>
-        <div class="persona2-img"></div>
-      </div>
-      <article class="goals">
-        <div class="goals_content container">
-          <p>In support of the research given, I focused on the following:
-          <img src="images/pocket/pocket-goals.png" alt="Design Goals">
-        </div>
-      </article>
-    </section>
+        <article class="goals">
+          <div class="goals_content container">
+            <p>In support of the research given, I focused on the following:
+            <img src="images/pocket/pocket-goals.png" alt="Design Goals">
+          </div>
+        </article>
+      </section>
     <!--Information Architecture-->
-    <section class="userflows">
+      <section id="user-flows" class="userflows">
         <header>
           <div class="title-bar"></div>
           <h2 class="section-title">User Flows</h2>
@@ -242,7 +268,7 @@
           </div>
         </section>
       <!--Sketches/Wireframes-->
-      <section>
+      <section id="wireframes">
         <header>
           <div class="title-bar"></div>
           <h2 class="section-title">Wireframes</h2>
@@ -346,7 +372,7 @@
           </div>
       </section>
       <!--User testing-->
-      <section>
+      <section id="testing">
         <header>
           <div class="title-bar"></div>
           <h2 class="section-title">Testing</h2>
@@ -377,7 +403,8 @@
         </div>
         <p class="container">The new placement of the booking button was considered more accessible. And given that the additional information was optional for users, it made more sense to separate it from the required information.</p>
       </section>
-      <section>
+      <!-- Visual Design Progression -->
+      <section id="iteration">
         <header>
           <div class="title-bar"></div>
           <h2 class="section-title">Iteration</h2>
@@ -402,21 +429,30 @@
         </div>
       </section>
       <!--Final Design-->
-      <section>
+      <section id="prototype">
         <header>
           <div class="title-bar"></div>
           <h2 class="section-title">Final Design</h2>
         </header>
         <div class="closeups">
-          <p class="container">The redesign process of Pocket Chefs aimed to establish an easier flow and better organize content to support conversion rates. I did this by ensuring CTAs were displayed clearly and information is discoverable. There are now dedicated pages for users to get further information about pricing packages, answers to FAQs, and an organized account page to manage bookings.</p>
+          <div class="container">
+            <p>The redesign process of Pocket Chefs aimed to establish an easier flow and better organize content to support conversion rates. I accomplished this with the following:</p>
+            <br>
+            <ul>
+              <li>CTAs are displayed clearly</li>
+              <li>Information is more discoverable with additional spacing and better alignment</li>
+              <li>Provide dedicated pages for users to get further information about pricing</li>
+              <li>Provide an organized account page to manage bookings</li>
+            </ul>
+          </div>
           <div class="wrapper">
             <img src="images/pocket/pocket-final2.png" alt="Final Design Snapshots">
             <img src="images/pocket/pocket-final.png" alt="Final Design Snapshots 2">
         </div>
         <a id="last-button" class="button bigbutton" target="_blank" href="https://invis.io/Q6OH3L9TUFV">View Prototype</a>
       </section>
+      <!--Final Thoughts-->
       <section>
-        <!--Final Thoughts-->
         <div class="container final">
           <h2>Final Thoughts</h2>
           <p>The major challenge with this project was the time constraints, which limited my ability to do thorough user research and testing and really engage with the results. Thankfully, some research was already available to help determine the direction of the visual design and establish the proper user stories and flows. This being the first project in which I was not involved in the research process, it was sometimes a challenge for me to interpret the results. This was compounded by the fact I was working remotely and had limited access to those that did the research component. </p>

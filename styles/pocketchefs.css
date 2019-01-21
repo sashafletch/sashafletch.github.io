@@ -514,7 +514,6 @@ nav.greyNavItem, nav.greyNavItem a {
 
     .testing-wrapper img {
       height: auto;
-      width: 75%;
     }
 
     /* Final Design================ */
@@ -528,12 +527,12 @@ nav.greyNavItem, nav.greyNavItem a {
     }
 
     .closeups img {
-      margin-top: 2em;
+      margin-top: 0;
       width: 75%;
     }
 
-    .closeups div {
-      padding: 10px;
+    .closeups ul {
+      list-style: disc inside;
     }
 
     .final p:nth-of-type(2) {

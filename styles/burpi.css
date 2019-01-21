@@ -139,6 +139,12 @@
     width: 33%;
   }
 
+  .comp-screenshot img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+
   /* User Research====================== */
 
   #graph1 {
@@ -308,7 +314,7 @@
 
   /* Branding================== */
 
-  .branding {
+  .branding-img {
     background:linear-gradient(rgba(255,255,255, 0.6), rgba(255,255,255,0.8)), url("../images/burpi-logo-sketches.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -536,7 +542,7 @@
     margin: -7px 0;
     opacity: 1;
     width: 40vw;
-    z-index: 2;
+    z-index: 1;
   }
 
   .section-title {
@@ -548,7 +554,7 @@
     max-width: 50%;
     position: relative;
     top: 0.4em;
-    z-index: 3;
+    z-index: 2;
   }
 
   .role-wrapper {
@@ -634,7 +640,7 @@
     height: auto;
     margin: 0 auto;
     object-fit: cover;
-    width: 50vw;
+    width: 40vw;
   }
 
 
@@ -666,7 +672,7 @@
     justify-content: center;
     margin: 0 auto;
     width: 100%;
-    max-height: 500px;
+    max-height: 400px;
     object-fit: contain;
   }
 
