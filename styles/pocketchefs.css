@@ -196,14 +196,14 @@ nav.greyNavItem, nav.greyNavItem a {
 }
 
 .persona1-img {
-  background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/parent.jpg");
+  background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/pocket/parent.jpg");
   background-repeat: no-repeat;
   background-position: 55% 2%;
   background-size: cover;
 }
 
 .persona2-img {
-  background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/pocket-persona2.jpg");
+  background:linear-gradient(rgba(255, 255, 255, 0.50), rgba(213, 59, 110, 0.20)), url("../images/pocket/pocket-persona2.jpg");
   background-repeat: no-repeat;
   background-position: 55% 2%;
   background-size: cover;
@@ -296,8 +296,8 @@ nav.greyNavItem, nav.greyNavItem a {
 
   /* Final Design=================== */
 
-  .closeups {
-    padding: 10px 25px;
+  .closeups ul {
+    list-style: disc inside;
   }
 
   .closeups img {
@@ -305,6 +305,11 @@ nav.greyNavItem, nav.greyNavItem a {
     height: auto;
     margin: 25px auto;
     width: 75%;
+  }
+
+  #last-button {
+    margin-right: 25px;
+    margin-left: 25px;
   }
 
   .final {
@@ -531,8 +536,8 @@ nav.greyNavItem, nav.greyNavItem a {
       width: 75%;
     }
 
-    .closeups ul {
-      list-style: disc inside;
+    #last-button {
+      margin: 0 auto 50px auto;
     }
 
     .final p:nth-of-type(2) {
@@ -613,6 +618,7 @@ nav.greyNavItem, nav.greyNavItem a {
     }
 
     .sketch-wrapper img {
-      height: 500px;
+      max-height: 400px;
+      object-fit: contain;
     }
   }
