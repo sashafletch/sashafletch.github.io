@@ -134,6 +134,10 @@ nav.greyNavItem, nav.greyNavItem a {
     padding: 0;
   }
 
+  .design_role .bold_italic {
+    margin-bottom: .25rem
+  }
+
   /* Competitive Analysis============== */
 
   .bullet-listing {
@@ -360,6 +364,11 @@ nav.greyNavItem, nav.greyNavItem a {
 
     .closeups img:last-of-type {
       margin-bottom: 0;
+    }
+
+    #last-button {
+      margin-left: 25px;
+      margin-right: 25px;
     }
 
     .footer-wrapper {

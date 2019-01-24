@@ -475,6 +475,11 @@
     margin-bottom: 1em;
   }
 
+  #last-button {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
   .footer-wrapper {
     display: block;
   }
@@ -680,7 +685,7 @@
     display: grid;
     grid-auto-rows: auto;
     grid-gap: 10px;
-    margin: 2em 3em;
+    margin: 2em 3em 0 3em;
     justify-items: center;
   }
 

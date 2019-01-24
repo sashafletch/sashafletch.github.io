@@ -75,6 +75,10 @@ body, html {
     font-style: italic;
   }
 
+  section {
+    margin-bottom: 2.5rem;
+  }
+
   /* Navigation=============== */
 
   .nav_main {
@@ -457,6 +461,10 @@ body, html {
     margin-bottom: 0;
   }
 
+  section {
+    margin-bottom: 4rem;
+  }
+
 
   /*Navigation==================*/
 
@@ -472,10 +480,14 @@ body, html {
     font-size: 0.875rem;
   }
 
+  .nav_main li {
+    color: #fff;
+  }
+
   #projectnav {
     background-color: #f9f9f9;
     box-shadow: 0 1px 2px -2px rgba(0,0,0,.75);
-    display: block;
+    display: none;
     height: 40px;
     margin-top: 75px;
   }
@@ -647,7 +659,7 @@ body, html {
   }
 
   #last-button {
-    margin-bottom: 50px;
+    margin: 20px auto 50px auto !important;
   }
 }
 
@@ -678,6 +690,10 @@ body, html {
   p, li {
     font-size: 1rem;
     line-height: 1.6;
+  }
+
+  section {
+    margin-bottom: 6rem;
   }
 
   .button {

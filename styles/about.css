@@ -9,6 +9,12 @@ img {
 
 h2 {
   font-weight: normal;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+#import-design-h2 {
+  margin-top: 0;
 }
 
 .white_background {
@@ -33,9 +39,10 @@ h2 {
 
 .intro {
   color: #FFF;
-  height: 100vh;
+  height: 95vh;
   overflow: hidden;
   padding-top: 100px;
+  position: relative;
 }
 
 .intro-text h1 {
@@ -258,7 +265,6 @@ h2 {
     color: #FFF;
     padding: 2em;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -273,6 +279,10 @@ h2 {
 
   p {
     margin-top: 10px;
+  }
+
+  section {
+    margin-bottom: 1rem;
   }
 
   .footer-icons {

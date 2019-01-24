@@ -37,8 +37,8 @@
   }
 
   .bold_italic {
+    font-weight: 600;
     font-style: italic;
-    color: grey;
   }
 
   .center {
@@ -727,17 +727,21 @@
 
   /* Final Design================== */
 
-  .test-wrap4 {
+  .test-wrap4, .test-wrap5 {
     display: grid;
     grid-auto-rows: auto;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    margin: 4em 3em 2em 3em;
     justify-items: center;
   }
 
-  .test-wrap4 .button {
+  .test-wrap4 {
+    margin: 4em 3em 2em 3em;
+  }
+
+  .test-wrap5 .button {
     width: 200px;
+    margin: 0 auto;
   }
 
 }
