@@ -50,6 +50,7 @@ h4 {
 
 .intro-text .bold {
   text-transform: uppercase;
+  letter-spacing: 1.25px;
 }
 
 .intro-text p {
@@ -71,7 +72,7 @@ h4 {
 
 .split.left {
   top:0;
-  background-color: #F47D43;
+  background-color: #F48B4B;
 }
 
 .split.left:before {
