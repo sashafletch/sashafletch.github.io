@@ -131,14 +131,14 @@ nav.greyNavItem, nav.greyNavItem a {
 
 /* User Research================= */
 
-.research img {
-  display: none;
+blockquote p {
+  margin-top: 1rem;
 }
 
 .research ul {
   display: block;
-  list-style-type: circle;
-  padding-top: 2rem;
+  list-style-type: disc;
+  padding-top: 1rem;
   padding-left: 1rem;
 }
 
@@ -425,18 +425,6 @@ nav.greyNavItem, nav.greyNavItem a {
       grid-template-columns: 33.33% 33.33% 33.33%;
       grid-column-gap: 10px;
       margin: 25px 100px;
-    }
-
-    /* User Research================= */
-
-    .research img {
-      display: block;
-      margin: 0 auto;
-      width: 100%;
-    }
-
-    .research ul {
-      display: none;
     }
 
     /* Personas================= */

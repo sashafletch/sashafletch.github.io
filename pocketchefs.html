@@ -39,15 +39,9 @@
         <nav id="projectnav">
           <ul class="sections">
             <li class="nav-item"><a href="#discovery">Discovery</a></li>
-            <li class="nav-item dropdown">Research
-              <ul class="dropdown-content">
-                <li class="dropdown-nav-item"><a href="#user-research">User Research</a></li>
-                <li class="dropdown-nav-item"><a href="#user-personas">User Personas</a></li>
-              </ul>
-            </li>
+            <li class="nav-item dropdown"><a href="#user-research">Research</a></li>
             <li class="nav-item dropdown">Information Architecture
               <ul class="dropdown-content">
-                <li class="dropdown-nav-item"><a href="#user-flows">User Flows</a></li>
                 <li class="dropdown-nav-item"><a href="#wireframes">Wireframes</a></li>
                 <li class="dropdown-nav-item"><a href="#testing">User Testing</a></li>
               </ul>
@@ -141,14 +135,17 @@
         <div class="overview">
           <div>
             <h2>Pocket Chefs</h2>
-            <p>Pocket Chefs was my first opportunity to work with a client during my schooling. As a consumer-facing product, it also presented a good opportunity to challenge my visual design skills and learn how to communicate design to someone with little experience in it. In evaluating the problems with the site, I had to step into the role of a user and understand what would add trust to the product and encourage them to buy.</p>
+            <div>
+              <h3>The Problem</h3>
+              <p>Pocket Chefs had gone through several iterations and lacked a coherent identity when navigating through the site. Users often reported discoverability issues and new visitors were often left with uncertainty about the what the product was selling and the process of booking a chef.</p>
+            </div>
           </div>
           <div>
-            <h3>The Challenge</h3>
-            <p>Pocket Chefs had gone through several design iterations when I was contracted as the UX Designer. The challenge for me was to maintain the aesthetic look of the initial site but to modernize and tighten the user flow. This meant restructuring the site for easier navigation without much time for in-depth user testing. Furthermore, I had to align my design with my client's preferences and the capabilities of Wix, the platform that would be used for shipping the final product.</p>
+            <h3>The Process</h3>
+            <p>10+ user interviews had been conducted to identify key pain points with the current website. I synthesized and prioritized pain points based on the impact and feasibility of designing a solution within the limited time frame as a contract designer. I conducted A/B preference tests to bring in the voice of the end-user in determining the final redesign and guerilla testing for quick user feedback.</p>
           </div>
           <div>
-            <h3>The Solution</h3>
+            <h3>Design Solution</h3>
             <p>Pocket Chefs new design condensed unnecessary webpages for easier user navigation. The design focused on creating clearer calls-to-action and providing concrete information to establish trust and social proof. In order to conform to Wix's capabilities, the overall design was kept simple but was modernized for better user engagement.</p>
           </div>
         </div>
@@ -160,8 +157,19 @@
           <h2 class="section-title">User Research</h2>
         </header>
         <div class="container research">
-          <p>Some user research had been performed prior to my contracted position to identify key pain points.To supplement what had been identified, I reviewed the website and identified additional pain points as well that could be addressed in the new design.</p>
-          <img src="images/pocket/pocket-points.png" alt="Key Pain Points">
+          <p>Some qualitative user research had been performed prior to my contracted position to identify key pain points. I reviewed and synthesized the results to inform my design process moving forward.</p>
+          <blockquote>
+            <div>
+              <p>I'm a bit uncertain as to what the product really is.</p>
+            </div>
+          </blockquote>
+          <blockquote>
+            <div>
+              <p>There's definitely a risk in having someone come to my house with my family. How do I know that this is safe?</p>
+            </div>
+          </blockquote>
+          <br>
+          <p>Overall, I identified that the redesign should prioritize the following pain points to provide a better user experience in the first stage of the redesign:</p>
           <ul>
             <li>Product is unclear: cooking lessons or personalized chef?</li>
             <li>Site navigation confusing</li>
@@ -169,104 +177,14 @@
             <li>Booking process unclear</li>
             <li>Unsure what resources chef needs</li>
           </ul>
+          <article class="goals">
+            <div class="goals_content">
+              <p>In support of the research given, I focused on the following:
+              <img src="images/pocket/pocket-goals.png" alt="Design Goals">
+            </div>
+          </article>
         </div>
       </section>
-      <!--User Personas-->
-      <section id="user-personas">
-        <header>
-          <div class="title-bar"></div>
-          <h2 class="section-title">User Personas</h2>
-        </header>
-        <div class="container">
-          <p>Based on the user research that had been conducted, I developed the following user personas to help guide the visual design.</p>
-        </div>
-        <div class="mobile-persona">
-          <div class="container">
-            <div class="text-center persona1">
-              <div class="demographic">
-                <img src="images/pocket/parent.jpg">
-                <h2>Working Parent</h2>
-              </div>
-              <div class="persona-info">
-                <div>
-                  <h3>Motivation</h3>
-                  <p>Provide healthy and quick meal prep for family</p>
-                  <p>Spend less time in the kitchen and more time with family</p>
-                </div>
-                <div>
-                  <h3>Frustration</h3>
-                  <p>Don't know what groceries to buy</p>
-                  <p>Lack of time and resources</p>
-                  <p>Inexperience in the kitchen</p>
-                </div>
-              </div>
-            </div>
-            <div class="preference_line"></div>
-            <div class="text-center persona2">
-              <div class="demographic">
-                <img src="images/pocket/pocket-persona2.jpg">
-                <h2>Young Professional</h2>
-              </div>
-              <div class="persona-info">
-                <div>
-                  <h3>Motivation</h3>
-                  <p>Cheaper/healthier to meal prep</p>
-                  <p>Can create something can't find at restaurant</p>
-                </div>
-                <div>
-                  <h3>Frustration</h3>
-                  <p>Cleaning up takes time</p>
-                  <p>Wants more variety in meals</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="laptop-persona wrapper clearfix">
-          <div class="persona1-img"></div>
-          <div class="persona-about">
-            <h2>Working Parent</h2>
-            <h3>Motivation</h3>
-            <p>Provide healthy and quick meal prep for family</p>
-            <p>Spend less time in the kitchen and more time with family</p>
-            <h3>Frustration</h3>
-            <p>Don't know what groceries to buy</p>
-            <p>Lack of time and resources</p>
-            <p>Inexperience in the kitchen</p>
-          </div>
-          <div class="persona-about">
-            <h2>Young Professional</h2>
-            <h3>Motivation</h3>
-            <p>Cheaper/healthier to meal prep</p>
-            <p>Can create something can't find at restaurant</p>
-            <h3>Frustration</h3>
-            <p>Cleaning up takes time</p>
-            <p>Wants more variety in meals</p>
-          </div>
-          <div class="persona2-img"></div>
-        </div>
-        <article class="goals">
-          <div class="goals_content container">
-            <p>In support of the research given, I focused on the following:
-            <img src="images/pocket/pocket-goals.png" alt="Design Goals">
-          </div>
-        </article>
-      </section>
-    <!--Information Architecture-->
-      <section id="user-flows" class="userflows">
-        <header>
-          <div class="title-bar"></div>
-          <h2 class="section-title">User Flows</h2>
-        </header>
-        <!--User Flows-->
-        <div class="container">
-          <p>I developed a flow diagram to envision how users would interact with the site. Keeping in mind we wanted to ensure quick conversion rates, I eliminated unnecessary links in the home page and contained the site map to three areas: landing page, package descriptions, and onboarding screens. For returning users, I aimed to make the accounts page clearly accessible from the home screen.</p>
-          <br>
-          <div class="row flow">
-              <p>Onboarding</p>
-              <img src="images/pocket/pocket-flow.svg" alt="Onboarding User Flow">
-          </div>
-        </section>
       <!--Sketches/Wireframes-->
       <section id="wireframes">
         <header>
