@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KiwiCo</title>
+    <link rel="icon" type="image/png" href="images/small-logo.png">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/kiwico.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120685831-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120685831-1');
+      </script>
+  </head>
+  <body>
+    <div>
+      <header>
+        <nav id="navbar">
+            <a href="index.html"><img class="logo" src="images/logo.svg" alt="SF"></a>
+            <ul class="nav_main">
+              <li class="nav-item dropdown">Work
+                  <ul class="dropdown-content work">
+                    <li class="dropdown-nav-item"><a href="burpi.html">Burpi</a></li>
+                    <li class="dropdown-nav-item"><a href="kiwico.html">KiwiCo</a></li>
+                    <li class="dropdown-nav-item"><a href="pocketchefs.html">Pocket Chefs</a></li>
+                    <li class="dropdown-nav-item"><a href="goodreads.html">Goodreads</a></li>
+                    <li class="dropdown-nav-item"><a href="lupo.html">Lupo Cloud Storage</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item" id="nav_about"><a href="about.html">About Me</a></li>
+              <li class="nav-item" id="nav_resume"><a target="_blank" href="https://drive.google.com/file/d/1UfnXZRDReFf1UEN1zjBcLGUij56KkBgI/view?usp=sharing">Resume</a></li>
+              <li class="nav-item dropdown">Contact
+                <ul class="dropdown-content">
+                  <li class="dropdown-nav-item"><a target="_blank" href="mailto:fletchux.design@gmail.com">Email</a></li>
+                  <li class="dropdown-nav-item"><a target="_blank" href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">LinkedIn</a></li>
+                  <li class="dropdown-nav-item"><a target="_blank" href="https://github.com/sashafletch">Github</a></li>
+                </ul>
+              </li>
+          </ul>
+        </nav>
+        <nav id="projectnav">
+          <ul class="sections">
+            <li class="nav-item"><a href="#discovery">Summary</a></li>
+            <li class="nav-item"><a href="#research">Preliminary Research</a></li>
+            <li class="nav-item dropdown">Secondary Research & Synthesis
+              <ul class="dropdown-content">
+                <li class="dropdown-nav-item"><a href="#users">User Research</a></li>
+                <li class="dropdown-nav-item"><a href="#archetypes">Archetypes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">Prototyping & Metrics
+              <ul class="dropdown-content">
+                <li class="dropdown-nav-item"><a href="#wireframes">Wireframes</a></li>
+                <li class="dropdown-nav-item"><a href="#prototype">Prototype</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav_mobile">
+          <div class="menuToggle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="menu">
+              <li class="mobile-nav-item dropdown"><a href="index.html">Home</a></li>
+              <li class="mobile-nav-item dropdown"><a href="#">Work
+                <ul class="dropdown-content">
+                  <li class="mobile-nav-item dropdown-nav-item"><a href="burpi.html">Burpi</a></li>
+                  <li class="mobile-nav-item dropdown-nav-item"><a href="kiwico.html">KiwiCo</a></li>
+                  <li class="mobile-nav-item dropdown-nav-item"><a href="pocketchefs.html">Pocket Chefs</a></li>
+                  <li class="mobile-nav-item dropdown-nav-item"><a href="goodreads.html">Goodreads</a></li>
+                  <li class="mobile-nav-item dropdown-nav-item"><a href="lupo.html">Lupo Cloud Storage</a></li>
+                </ul>
+              </li>
+              <li class="mobile-nav-item"><a href="about.html">About Me</a></li>
+              <li class="mobile-nav-item"><a target="_blank" href="https://drive.google.com/file/d/1UfnXZRDReFf1UEN1zjBcLGUij56KkBgI/view?usp=sharing">Resume</a></li>
+              <li class="mobile-nav-item dropdown"><a href="#">Contact</a>
+                <ul class="dropdown-content">
+                  <li class="mobile-nav-item dropdown-nav-item"><a target="_blank" href="mailto:fletchux.design@gmail.com">Email</a></li>
+                  <li class="mobile-nav-item dropdown-nav-item"><a target="_blank" href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/">LinkedIn</a></li>
+                  <li class="mobile-nav-item dropdown-nav-item"><a target="_blank" href="https://github.com/sashafletch">Github</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <!--Project Description-->
+    <section class="kiwico-hero intro clearfix">
+      <div class="intro-text">
+          <h1>KiwiCo</h1>
+          <a class="button port-button" target="_blank" href="https://www.figma.com/proto/ardDctyL2CK965bTaIXu2vq2/Design-Challenges?node-id=79%3A427&scaling=scale-down-width">View Prototype</a>
+      </div>
+    </section>
+    <section class="kiwico-about clearfix" id="startchange">
+      <div class="kiwico-about-textbox container">
+        <h2>Overview</h2>
+        <p>Founded in 2011, KiwiCo is an e-commerce site that delivers STEAM educational toys and games to children through monthly subscriptions.</p>
+      </div>
+    </section>
+    <main>
+      <!--Design Role-->
+      <section>
+        <div class="design_role role-wrapper">
+          <div>
+            <h3>Design Roles</h3>
+            <p class="bold_italic">Sole Designer</p>
+            <ul>
+              <li>UX Design</li>
+              <li>Product Management</li>
+            </ul>
+            <p class="bold_italic">Duration</p>
+            <ul>
+              <li>3 days</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Deliverables</h3>
+            <ul>
+              <li>Mini Spec Sheet</li>
+              <li>Wireframes</li>
+              <li>Success Metrics</li>
+              <li>Presentation</li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <h3>Tools & Software</h3>
+              <ul>
+                <li>Figma</li>
+                <li>Microsoft Excel</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--KiwiCo Overview-->
+      <section id="discovery">
+        <div class="slider container">
+          <div>
+            <h2>KiwiCo</h2>
+            <div>
+              <h3>The Problem</h3>
+              <p>As part of my final stage interview for KiwiCo, I was tasked with redesigning their cart page based on current data on their sales conversion rate and cart abandonment ratings.</p>
+            </div>
+          </div>
+          <div class="row overview">
+            <div>
+              <h3>The Process</h3>
+              <p>My process can be broken down into three phases:</p>
+              <img class="process-img" src="images/kiwico/kiwico-process.png" alt="KiwiCo Process">
+            </div>
+            <div>
+              <h3>Design Solution</h3>
+              <p>Based on customer feedback, I identified opportunities to decrease cart abandonment rates by providing temporary storage capabilities, descriptive phrases for CTA, automating the update process, and simplifying the editing process within the cart.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Discovery-->
+      <section class="clearfix" id="research">
+        <header id="competitive-analysis">
+          <div class="title-bar"></div>
+          <h2 class="section-title">Literature Review</h2>
+        </header>
+        <div class="container">
+            <div class="clearfix competition">
+              <img class="column one-third competitionIcon" src="images/kiwico/bay-logo.png" alt="Baymard Institute">
+              <img class="column one-third competitionIcon" src="images/kiwico/nng-logo.png" alt="Nielson Norman Group">
+              <img class="column one-third competitionIcon" src="images/kiwico/barilliance-logo.png" alt="Barilliance">
+            </div>
+            <div>
+              <p>Baymard Institute has indicated that the average site can <span class="bold">increase its conversion rate by 35.26%</span> solely through better checkout design. </p>
+              <p>A quantitative study revealed that <span class="bold">23%</span> of all US online shoppers have <span class="bold">abandoned orders</span> in the past solely because they <span class="bold">weren’t given an upfront estimate of the total order cost</span>.</p>
+              <p>72% of sites don’t equip users very well for saving items</p>
+            </div>
+        </div>
+      </section>
+      <!--User Research-->
+      <section id="users">
+        <header>
+          <div class="title-bar"></div>
+          <h2 class="section-title">User Research</h2>
+        </header>
+        <div class="container">
+          <p>Based on the data and literature review, I identified key assumptions that were being made in the current design and structured user interviews to address whether they were correct. I conducted one-on-one interviews with two current customers of the site and two individuals who expressed interest in potentially making a purchase on the site. Users were sourced through social media platforms.</p>
+        </div>
+        <div class="container clearfix">
+          <h4 class="bold">Using the Cart</h4>
+          <blockquote>
+            <div>
+              <p>I like to put everything [I like] in my cart and save items for later.</p>
+            </div>
+          </blockquote>
+          <blockquote>
+            <div>
+              <p>What does upgrade mean?</p>
+            </div>
+          </blockquote>
+          <p>The ambiguity behind contextual descriptions for CTA proved especially confusing for second-language learners as can be seen in this question posed by an interviewee when trying to 'update' their cart.</p>
+          <br>
+          <h4 class="bold">Efficiency</h4>
+          <blockquote>
+            <div>
+              <p>I’m an ‘on-a-whim person’ so I shop pretty quickly. So I’ll either look somewhere else or I’ll forget about it.</p>
+            </div>
+          </blockquote>
+          <blockquote>
+            <div>
+              <p>I wish PayPal was an option.</p>
+            </div>
+          </blockquote>
+          <p>While Paypal was an option during the checkout process, users visiting the cart were given no awareness of this as one interviewee addressed.</p>
+          <br>
+          <p>After having users browse and add inventory to their shopping carts, I created a customer journey map to identify areas where users felt confusion or frustration about the checkout funnel.</p>
+        </div>
+          <img class="journey" src="images/kiwico/journey-map.png" alt="Customer Journey Map">
+          <p class="container">From the interviews, I was able to identify key archetypes that I relied on to ensure I was solving key pain points. These archetypes also allowed me to connect with users on a more emotional level by empathizing with their perceptions and values.</p>
+        <div class="laptop-persona clearfix" id="archetypes">
+          <img src="images/kiwico/archetypes.jpg" alt="Archetypes Graph">
+        </div>
+      </section>
+      <!--Wireframes-->
+      <section id="wireframes" class="final-design">
+        <header>
+          <div class="title-bar"></div>
+          <h2 class="section-title">Wireframes</h2>
+        </header>
+        <div class="container wire-desc">
+          <p>After developing the key pain points for users within the 3 archetypes, I developed potential solutions and prioritized them using the Moscow Method. Items to target first included:</p>
+          <p><span class="bold">Cart as Temporary Storage and Omnichannel Capabilities:</span>For users who commonly browse and add items to their cart for comparison later, if they would prefer to save an item, they are instead given two polarizing options: buy now or delete.</p>
+          <p>As a browser, this user was also more likely to switch across different devices to complete orders. As suggested above, taking advantage of omnichannel capabilities by having users save their carts via email could be beneficial to this target group.</p>
+          <p><span class="bold">Separate Identical Items:</span> To make the cart more skimmable, identical items should be displayed separately to protect against user error.</p>
+          <p><span class="bold">Automatic Updates:</span>Currently the site has a two-step process for users to edit items in their cart. In usability tests, half of users were unable to successfully complete this task, risking error in the checkout process. Automating this process will help reduce friction in the funnel.</p>
+          <p><span class="bold">Total Cost Not Important:</span> Given that many users take advantage of promotion codes for free shipping, I determined that prioritizing total cost in the cart wouldn't have high impact on cart abandonment for phase 1.</p>
+        </div>
+        <h4>Old Cart</h4>
+        <img src="images/kiwico/old-cart.jpg" alt="Old Cart">
+        <h4>New Cart</h4>
+        <div class="wire-wrapper">
+          <img src="images/kiwico/new-cart.jpg" alt="New Cart">
+          <img id="mobile-wire" src="images/kiwico/mobile.jpg" alt="Mobile Cart">
+        </div>
+      </section>
+    <!--Metrics-->
+      <section id="prototype">
+        <header>
+          <div class="title-bar"></div>
+          <h2 class="section-title">Metrics & Prototype</h2>
+        </header>'
+        <div class="container">
+          <p>Using the HEART framework, I looked into both reporting and exploratory metrics that could be used to determine the success of these initiatives:</p>
+          <h4>Reporting Metrics</h4>
+          <ul>
+            <li>Net Promoter Score (NPS)</li>
+            <li>Average Order Value</li>
+            <li>Sales Conversion Rate</li>
+            <li>% of New Users → Customers</li>
+            <li>Cart Abandonment Rate</li>
+          </ul>
+          <h4>Exploratory Metrics</h4>
+          <ul>
+            <li>Number of visits to sale</li>
+            <li>Heat maps and click data</li>
+            <li>Time spent in checkout process</li>
+            <li>Email opt-ins by tactic</li>
+          </ul>
+        </div>
+        <a id="last-button" class="button bigbutton mobile_viewbtn" target="_blank" href="https://www.figma.com/proto/ardDctyL2CK965bTaIXu2vq2/Design-Challenges?node-id=79%3A427&scaling=scale-down-width">View Prototype</a>
+      </section>
+      <section>
+        <div class="container final">
+          <h2>Final Thoughts</h2>
+          <p>This particular design challenge was very interesting. Using my design background, I approached the PM challenge from the perspective of the user, qualifying data with actual customer interviews. At the same time, it challenged me to intentionally consider what would constitute success and what success could look like from a data perspective.</p>
+        </div>
+        <div class="row">
+          <div class="footer-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/sasha%E2%80%8Brfletcher/" class="fa fa-linkedin"></a>
+            <a target="_blank" href="https://twitter.com/Sasha_Fletch" class="fa fa-twitter"></a>
+            <a target="_blank" href="https://www.facebook.com/rashaa.fletcher" class="fa fa-facebook"></a>
+            <a target="_blank" href="https://github.com/sashafletch" class="fa fa-github"></a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+      <!-- Footer -->
+      <footer>
+        <div class="column footer-copy">
+          <p class="copyright">© 2019 Sasha Fletcher/Designed and Developed by Sasha Fletcher</p>
+        </div>
+      </footer>
+      <!--Scripts-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="scripts/navbar.js"></script>
+  </body>
+</html>

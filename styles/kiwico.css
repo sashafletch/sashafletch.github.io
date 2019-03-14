@@ -1,0 +1,452 @@
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 10px 25px;
+}
+
+.slider {
+  background: #f9f9f9;
+  color: #000;
+  height: auto;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.slider h2 {
+  color: #000;
+  margin-top: 0;
+  padding: 30px 0 20px 0;
+}
+
+/* Typography==================== */
+
+h2 {
+  margin: 30px auto 10px auto;
+  padding-left: 25px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.bold_italic {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
+/*Navigation Bar*/
+
+nav.greyNavItem, nav.greyNavItem a {
+  color: #000;
+}
+
+.whiteNavItem, .whiteNavItem a {
+  color: #FFF;
+}
+
+.whiteNavItem:hover, .whiteNavItem a:hover {
+  color: #000;
+}
+
+/* hero============= */
+
+.intro {
+  height: 100vh;
+  margin-bottom: 0;
+  overflow-y: hidden;
+}
+
+.intro-text h1 {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+.intro-text {
+  color: #fff;
+  padding-top: 10em;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+.kiwico-hero {
+  background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(213, 59, 110, 0.0)), url("../images/kiwico/kiwico-hero.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+.kiwico-about-textbox {
+  background-color: #f9f9f9;
+  color: #000;
+  outline-offset: -2em;
+  padding: 10px 25px 25px 25px;
+  position: relative;
+  width: 100vw;
+  }
+
+.kiwico-about-textbox h2 {
+  background: #f9f9f9;
+  color: #4c4c4c;
+  font-size: 1.12rem;
+  font-weight: 600;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+/*Intro*/
+
+.design_role h3 {
+  display: block;
+  margin: 10px auto;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.design_role li, .design_role p {
+  text-align: center;
+}
+
+.design_role p, .design_role ul:nth-of-type(1) {
+  padding: 10px 0 5px 0;
+}
+
+.process-img {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin: 50px auto;
+  display: block;
+}
+
+
+/* Competitive Analysis============== */
+
+.competition {
+  max-width: 100%;
+}
+
+.competitionIcon {
+  display: inline-block;
+  height: 65px;
+  object-fit: contain;
+  margin: 25px auto;
+  padding-right: 10px;
+  width: 33%;
+}
+
+#research p {
+  margin-bottom: 1em;
+}
+
+/* User Research============== */
+
+.journey {
+  display: block;
+  margin: 25px auto;
+  width: 75%;
+  height: auto;
+}
+
+blockquote p {
+  margin-top: 1em;
+}
+
+/* Personas================= */
+
+.laptop-persona {
+  display: none;
+}
+
+/* Wireframes===================== */
+
+.final-design img {
+  display: block;
+  margin: 25px auto;
+  width: 75%;
+  height: auto;
+}
+
+.wire-desc p {
+  margin-bottom: 1em;
+}
+
+#wireframes h4 {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #f28c00;
+  font-size: 1.25rem;
+}
+
+#mobile-wire {
+  display: none !important;
+}
+
+/* Metrics========================== */
+
+#prototype ul {
+  list-style: disc inside;
+}
+
+#last-button {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+/* Final Thoughts=============== */
+.final {
+  background-color: #f9f9f9;
+  outline: 2px solid rgb(0, 0, 0,0.2);
+  outline-offset: -2em;
+  margin-top: 25px;
+  padding: 3em;
+  position: relative;
+  width: 100vw;
+}
+
+.final h2 {
+  background: #f9f9f9;
+  font-size: 1.5rem;
+  font-weight: 500;
+  left: 50%;
+  margin-top: 0;
+  padding: 0 .5em;
+  position: absolute;
+  transform: translateX(-50%);
+  text-align: center;
+  top: 0.6em;
+}
+
+.final p {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.footer-icons {
+  text-align: center;
+}
+
+.fa {
+  font-size: 1.5em !important;
+  margin: 5px 10px;
+}
+
+.footer-copy {
+  padding-top: 25px;
+  padding-left: 30px;
+  width: 100%;
+  }
+
+.copyright {
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+}
+
+
+@media only screen and (min-width: 575px) {
+
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 25px 75px;
+  }
+
+  .intro {
+    overflow-y: hidden;
+  }
+
+  .intro-text h1 {
+    margin-top: .5em;
+  }
+
+  .kiwico-about-textbox h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .kiwico-about-textbox {
+    padding: 25px 75px;
+    text-align: left;
+  }
+
+  .title-bar {
+    background: #ffae3f;
+    height: 50px;
+    position: absolute;
+    margin: -7px 0;
+    opacity: 1;
+    width: 40vw;
+    z-index: 1;
+  }
+
+  .section-title {
+    color: #FFF;
+    font-size: 1.25rem;
+    letter-spacing: 0.025em;
+    margin-bottom: 25px;
+    margin-left: 0;
+    max-width: 50%;
+    position: relative;
+    top: 0.4em;
+    z-index: 2;
+  }
+
+  .role-wrapper {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-column-gap: 10px;
+    margin: 25px 100px;
+  }
+
+  /* Personas================= */
+
+  .laptop-persona {
+    display: block;
+  }
+
+  .laptop-persona img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .persona-about {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .laptop-persona h2 {
+    color: rgb(213, 59, 110);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 0;
+    padding: 0 .5em;
+    margin-bottom: 0.25em;
+  }
+
+  .laptop-persona h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.75em 0;
+  }
+
+  /* Wireframes========== */
+  .wire-wrapper {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-row-gap: 0;
+    margin: 0 25px;
+  }
+
+  #mobile-wire {
+    display: block !important;
+    max-height: 800px;
+    object-fit: contain;
+  }
+
+}
+
+  @media only screen and (min-width: 1024px) {
+
+    .container {
+      padding: 25px 275px;
+    }
+
+    .intro-text {
+      padding: 175px 100px;
+    }
+
+    .intro-text h1 {
+      font-size: 5.5em;
+    }
+
+    .kiwico-about {
+      height: 25vh;
+      /* margin: 5em;
+      padding: 8em; */
+    }
+
+    .kiwico-about-textbox {
+      outline: 2px solid #ffae3f;
+      padding: 4em;
+      top: -3em;
+      left: 2em;
+      width: 70%;
+    }
+
+    .kiwico-about-textbox h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      left: 6.75em;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0 .5em;
+      position: absolute;
+      transform: translateX(-50%);
+      top: 0.8em;
+    }
+
+    .title-bar {
+      margin: -7px 0;
+      width: 30vw;
+    }
+
+    .section-title {
+      left: 0;
+      margin-bottom: 25px;
+      max-width: 50%;
+      top: 0.5em;
+    }
+
+    /* Footer==================== */
+
+    .footer-icons {
+      padding-top: .25em;
+    }
+
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .container {
+      padding: 25px 300px;
+    }
+
+    .kiwico-about-textbox {
+      padding: 4em;
+    }
+
+  }
+
+  @media only screen and (min-width: 2560px) {
+
+    .container {
+      padding: 50px 500px;
+    }
+
+    .title-bar {
+      height: 75px;
+    }
+  }

@@ -112,7 +112,7 @@ body, html {
   }
 
   .mobile-nav-item li:hover {
-    background: #FFAFB6;
+    background: #F48B4B;
   }
 
   .menuToggle {
@@ -242,7 +242,7 @@ body, html {
   }
 
   .nav-item:before, .nav-item a:before {
-    background: #FFAFB6;
+    background: #F48B4B;
     border-radius: 5px;
     bottom: 0;
     content: "";
